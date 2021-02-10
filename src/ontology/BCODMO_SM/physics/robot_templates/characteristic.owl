@@ -124,12 +124,155 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000014">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">cyan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">magenta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">white</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">gray</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000951 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">purple</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">brown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">orange</rdfs:label>
     </owl:Class>
     
 
@@ -160,6 +303,28 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">violet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">maroon</rdfs:label>
     </owl:Class>
     
 
@@ -215,11 +380,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0070001 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0085001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0070001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0085001">
         <obo:IAO_0000115 xml:lang="en">An osmolarity quality inhering in a bearer by virtue of the total amount of ionic salts dissolved in the bearer.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Waiting for PR to be approved and merged in PATO.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Waiting for PR to be approved and merged in PATO. See https://github.com/pato-ontology/pato/pull/352</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">salinity</rdfs:label>
