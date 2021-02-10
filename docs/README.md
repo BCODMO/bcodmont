@@ -1,2 +1,2 @@
-# Start writing your documentation
+# Initial page
 
