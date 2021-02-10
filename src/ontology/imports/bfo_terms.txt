@@ -1,0 +1,2 @@
+### BCODMO_SM Operational terms:
+BFO:0000029	#site
