@@ -3,3 +3,7 @@ IAO:0000009	#data label
 IAO:0000100	#data set
 IAO:0000578	#centrally registered identifier
 IAO:0000140	#setting datum
+
+### Annotation properties
+IAO:0000115 #definition
+IAO:0000116 #editor note
