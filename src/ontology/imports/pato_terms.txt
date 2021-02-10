@@ -33,7 +33,7 @@ PATO:0000973	#porosity
 PATO:0001025	#pressure
 PATO:0000951	#purple
 PATO:0000322	#red
-PATO:0070001	#salinity
+PATO:0085001	#salinity
 PATO:0000146	#temperature
 PATO:0001424	#violet
 PATO:0000323	#white
