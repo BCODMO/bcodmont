@@ -37,6 +37,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -150,6 +156,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000014">
+        <obo:IAO_0000115>A composite chromatic quality composed of hue, saturation and intensity parts.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PATO:0000020</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>colour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>relative color</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000014</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>color</rdfs:label>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A composite chromatic quality composed of hue, saturation and intensity parts.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
@@ -168,6 +198,284 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality of the thermal energy of a system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color that lacks any hues as parts.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000317</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>black</rdfs:label>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000317"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color that lacks any hues as parts.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with low wavelength of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000318</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>blue</rdfs:label>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000318"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with low wavelength of that portion of the visible spectrum lying between green and indigo, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 490 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color consisting of green and blue hue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000319</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>cyan</rdfs:label>
+        <rdfs:label xml:lang="en">cyan</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000319"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color consisting of green and blue hue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with medium-low wavelength of that portion of the visible spectrum lying between yellow and blue, evoked in the human observer by radiant energy with wavelengths of approximately 490 to 570 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000320</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>green</rdfs:label>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000320"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with medium-low wavelength of that portion of the visible spectrum lying between yellow and blue, evoked in the human observer by radiant energy with wavelengths of approximately 490 to 570 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color consisting of red and blue hues.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000321</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>magenta</rdfs:label>
+        <rdfs:label xml:lang="en">magenta</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000321"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color consisting of red and blue hues.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Magenta</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with high wavelength of the long-wave end of the visible spectrum, evoked in the human observer by radiant energy with wavelengths of approximately 630 to 750 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000322</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>red</rdfs:label>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with high wavelength of the long-wave end of the visible spectrum, evoked in the human observer by radiant energy with wavelengths of approximately 630 to 750 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>An achromatic color of maximum brightness; the color of objects that reflect nearly all light of all visible wavelengths.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>whitish</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000323</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>white</rdfs:label>
+        <rdfs:label xml:lang="en">white</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000323"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An achromatic color of maximum brightness; the color of objects that reflect nearly all light of all visible wavelengths.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with medium wavelength of that portion of the visible spectrum lying between orange and green, evoked in the human observer by radiant energy with wavelengths of approximately 570 to 590 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000324</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>yellow</rdfs:label>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000324"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with medium wavelength of that portion of the visible spectrum lying between orange and green, evoked in the human observer by radiant energy with wavelengths of approximately 570 to 590 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color between white and black colors.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">gray</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>plumbeous</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>PATO:0000950</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>grey</rdfs:label>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000950"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color between white and black colors.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Grey</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000951 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color that falls about midway between red and blue in hue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000951</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>purple</rdfs:label>
+        <rdfs:label xml:lang="en">purple</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000951"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color that falls about midway between red and blue in hue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dictionary:http://dictionary.reference.com/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color consisting of dark orange, red, of very low intensity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000952</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>brown</rdfs:label>
+        <rdfs:label xml:lang="en">brown</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000952"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color consisting of dark orange, red, of very low intensity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Brown</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with high-medium wavelength that of that portion of the visible spectrum lying between red and yellow, evoked in the human observer by radiant energy with wavelengths of approximately 585 to 620 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000953</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>orange</rdfs:label>
+        <rdfs:label xml:lang="en">orange</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000953"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with high-medium wavelength that of that portion of the visible spectrum lying between red and yellow, evoked in the human observer by radiant energy with wavelengths of approximately 585 to 620 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Orange</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -235,6 +543,52 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality that inheres in a bearer by virtue of the bearer&apos;s amount of force per unit area it exerts.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color hue with very low wavelength of that portion of the visible spectrum lying between reddish blue or bluish purple, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 380 nanometers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001424</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>violet</rdfs:label>
+        <rdfs:label xml:lang="en">violet</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001424"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color hue with very low wavelength of that portion of the visible spectrum lying between reddish blue or bluish purple, evoked in the human observer by radiant energy with wavelengths of approximately 420 to 380 nanometers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Violet</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
+        <obo:IAO_0000115>A color consisting of purple and brown hue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001426</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>maroon</rdfs:label>
+        <rdfs:label xml:lang="en">maroon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001426"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A color consisting of purple and brown hue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Maroon</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -355,11 +709,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0070001 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0085001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0070001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0085001">
         <obo:IAO_0000115 xml:lang="en">An osmolarity quality inhering in a bearer by virtue of the total amount of ionic salts dissolved in the bearer.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Waiting for PR to be approved and merged in PATO.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Waiting for PR to be approved and merged in PATO. See https://github.com/pato-ontology/pato/pull/352</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">salinity</rdfs:label>
