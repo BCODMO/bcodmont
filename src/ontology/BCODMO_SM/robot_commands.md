@@ -71,7 +71,7 @@ robot remove --input ../imports/chebi_import.owl --axioms logical annotate --ont
 robot remove --input ../imports/envo_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --output intermediate/envo_import_axioms_removed.owl
 
 
-## Merge chemistry and matrix modules with axiom removed CHEBI and ENVO and IAO (for APs)
+## Merge chemistry and matrix modules with axiom removed CHEBI and ENVO and IAO (for APs) Note this didn't solve the issue of def and editor note not showing up
 robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input ../imports/iao_import.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 
 
