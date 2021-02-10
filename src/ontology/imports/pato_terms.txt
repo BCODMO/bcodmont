@@ -15,11 +15,26 @@ PATO:0000125 #mass
 ### BCODMO_SM Characteristic terms:
 PATO:0001842	#acidity
 PATO:0001430	#alkalinity
+PATO:0000317	#black
+PATO:0000318	#blue
+PATO:0000952	#brown
+PATO:0000014	#color
 PATO:0001585	#conductivity
+PATO:0000319	#cyan
 PATO:0001019	#density
 PATO:0001595	#depth
 PATO:0001757	#electrical conductivity
+PATO:0000950	#gray
+PATO:0000320	#green
+PATO:0000321	#magenta
+PATO:0001426	#maroon
+PATO:0000953	#orange
 PATO:0000973	#porosity
 PATO:0001025	#pressure
+PATO:0000951	#purple
+PATO:0000322	#red
 PATO:0070001	#salinity
 PATO:0000146	#temperature
+PATO:0001424	#violet
+PATO:0000323	#white
+PATO:0000324	#yellow
