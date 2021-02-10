@@ -27,6 +27,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
@@ -81,6 +93,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
@@ -99,9 +135,21 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     
 
 
@@ -125,8 +173,50 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <obo:BFO_0000179>site</obo:BFO_0000179>
+        <obo:BFO_0000180>Site</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hole in the interior of a portion of cheese</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an air traffic control region defined in the airspace above an airport</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Grand Canyon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Piazza San Marco</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cockpit of an aircraft</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the hold of a ship</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of a kangaroo pouch</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of the trunk of your car</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your bedroom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your office</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your refrigerator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the lumen of your gut</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </obo:IAO_0000602>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">site</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">SRA Experiment</rdfs:label>
     </owl:Class>
     
 
@@ -241,30 +331,6 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001901"/>
-        <obo:IAO_0000115 xml:lang="en">A specimen identifier assigned by sequencing facility which is assigned by the National Center for Biotechnology Information.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000122</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">NCBI accession number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0400011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001901"/>
-        <obo:IAO_0000115 xml:lang="en">A specimen identifier assigned by sequencing facility which identifies a Sequence Read Archive (SRA) acession number.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000123</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">SRA accession number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0400012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400012">
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen occurred.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In OMIABIS should add to OBI?</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -274,10 +340,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0400013 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0400011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400012"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400010"/>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen began.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample collection date start</rdfs:label>
@@ -285,13 +351,141 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0400014 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0400012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400012"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400010"/>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen ended.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample collection date end</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400013">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">external repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">omics repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">BioProject</rdfs:label>
+        <skos:closeMatch rdf:resource="data:2786"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">BioSample</rdfs:label>
+        <skos:closeMatch rdf:resource="data:2786"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">ENA</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002136"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">Zenodo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">PANGEA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">Dryad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400022">
+        <oboInOwl:hasExactSynonym xml:lang="en">identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">accession</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <skos:exactMatch rdf:resource="data:2091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">NCBI</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45799"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">Gene Expression Omnibus</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">GEO</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1147"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0400025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">PRIDE</rdfs:label>
+        <skos:exactMatch rdf:resource="PRIDE:0000030"/>
     </owl:Class>
     
 
@@ -306,6 +500,7 @@
         <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
         <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 </obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">data label</rdfs:label>
         <rdfs:label xml:lang="en">datum label</rdfs:label>
@@ -326,6 +521,7 @@
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">data set</rdfs:label>
     </owl:Class>
@@ -350,30 +546,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
-        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
-</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000118>CRID</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000747 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000747">
@@ -387,6 +559,27 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label>material sample</rdfs:label>
         <rdfs:label xml:lang="en">sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">GenBank ID</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol uniquely indentifies the submitted GeneBank sequence record.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
+        <obo:OBI_0001886>GenBank Record ID</obo:OBI_0001886>
+        <dc:source>NIAID GSCID-BRC</dc:source>
+        <oboInOwl:hasExactSynonym xml:lang="en">RefSeq</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:comment xml:lang="en">Technically GenBank &amp; RefSeq are different, but do not expect DMs to be able to identify the specific sub-databases within NCBI, including protein vs gene. However, distinction can be made for SRA.</rdfs:comment>
+        <rdfs:label xml:lang="en">GenBank</rdfs:label>
+        <rdfs:label xml:lang="en">GenBank ID</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1098"/>
     </owl:Class>
     
 
@@ -499,38 +692,18 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001900 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0002464 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001900">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
-        <obo:IAO_0000111 xml:lang="en">specimen identifier assigned by specimen repository</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A specimen identifier which is assigned by a specimen repository</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
-        <obo:OBI_0001886>Specimen Repository Sample ID</obo:OBI_0001886>
-        <dc:source>NIAID GSCID-BRC</dc:source>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">SRS identifier</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">An accession number that applies to a database record for an individual sample object in an NCBI Sequence Read Archive (SRA) submission. These records are imported from the NCBI BioSample database.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Stephen Fisher, Dan Berrios</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">SRA sample accession number</obo:IAO_0000118>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">identifier assigned by sample repository</rdfs:label>
-        <rdfs:label xml:lang="en">specimen identifier assigned by specimen repository</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001901 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001901">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
-        <obo:IAO_0000111 xml:lang="en">specimen identifier assigned by sequencing facility</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A specimen identifier which is assigned by a sequencing facility</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
-        <obo:OBI_0001886>Sample ID - Sequencing Facility</obo:OBI_0001886>
-        <dc:source>NIAID GSCID-BRC</dc:source>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">identifier assigned by sequencing facility</rdfs:label>
-        <rdfs:label xml:lang="en">specimen identifier assigned by sequencing facility</rdfs:label>
+        <rdfs:label xml:lang="en">SRA Sample</rdfs:label>
+        <rdfs:label xml:lang="en">SRS identifier</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
