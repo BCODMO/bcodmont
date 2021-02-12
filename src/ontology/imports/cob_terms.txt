@@ -1,0 +1,2 @@
+### BCODMO_SM Biology/Anatomy terms:
+COB:0000017	#cell
