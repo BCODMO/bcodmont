@@ -5,12 +5,6 @@
 robot template --template biology/robot_templates/physiology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/physiology.owl" -o biology/robot_templates/physiology.owl
 
 
-OLD
-```
-## Run qualifiers.tsv run from bcodmont/src/ontology/BCODMO_SM/
-robot template --template qualifiers/robot_templates/qualifiers.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --prefix "SIO:http://semanticscience.org/resource/SIO_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/qualifiers/robot_templates/qualifiers.owl" -o qualifiers/robot_templates/qualifiers.owl
-```
-
 ### Quantifiers
 ## Run quantifiers.tsv run from bcodmont/src/ontology/BCODMO_SM/
 robot template --template quantifiers/robot_templates/quantifiers.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --prefix "SIO:http://semanticscience.org/resource/SIO_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/quantifiers/robot_templates/quantifiers.owl" -o quantifiers/robot_templates/quantifiers.owl
@@ -148,3 +142,12 @@ robot convert --input qualifiers/qualifiers.owl --output exports/qualifiers_robo
 
 ## owl2vowl module to get to json
 java -jar exports/util/owl2vowl.jar -file qualifiers/qualifiers.owl && mv qualifiers.json exports/qualifiers_owl2vowl.json
+
+
+
+
+OLD Run qualifiers.tsv
+```
+## Run qualifiers.tsv run from bcodmont/src/ontology/BCODMO_SM/
+robot template --template qualifiers/robot_templates/qualifiers.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --prefix "SIO:http://semanticscience.org/resource/SIO_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/qualifiers/robot_templates/qualifiers.owl" -o qualifiers/robot_templates/qualifiers.owl
+```
