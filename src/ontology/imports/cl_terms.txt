@@ -1,0 +1,2 @@
+### BCODMO_SM Biology/Anatomy terms:
+CL:0000232	#red blood cell
