@@ -1,6 +1,6 @@
 sub category 1	sub category 2	sub category 3	sub category 4	ontology ID	label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master paramater	Entity subset	category subset
 				ID	AL rdfs:label@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
-sex				PATO:0001894	sex	descriptive quality											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+sex				PATO:0001894	sex												http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 sex	female			PATO:0000383	female	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 sex	male			PATO:0000384	male	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure				BSM:0010002	anatomical structure			UBERON:0000061		Structure components within a metazoan organism; body part.							http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
