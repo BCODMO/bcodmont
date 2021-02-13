@@ -1,0 +1,36 @@
+sub category 1	sub category 2	sub category 3	sub category 4	ontology ID	label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master paramater	Entity subset	category subset
+				ID	AL rdfs:label@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
+sex				PATO:0001894	sex	descriptive quality											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+sex	female			PATO:0000383	female	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+sex	male			PATO:0000384	male	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure				BSM:0010002	anatomical structure			UBERON:0000061		Structure components within a metazoan organism; body part.							http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	cell			COB:0000017	cell	anatomical structure			NCIT:C12508								http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue			UBERON:0000479	tissue	anatomical structure											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue	adipose		UBERON:0001013	fat (adipose)	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue	blubber		UBERON:0009754	blubber	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue	epidermis		UBERON:0001003	skin (epidermis)	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue	muscle		UBERON:0005090	muscle	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region			UBERON:0000475	anatomical region	anatomical structure				Structural regions within a metazoan organism.	UBERON has different label: organism subdivision						http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	neck		UBERON:0000974	neck	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	pelvis		UBERON:0002355	pelvis	anatomical region					UBERON has different label: pelvic region of trunk						http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	sternum		UBERON:0000975	sternum	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	axilla		UBERON:0009472	axilla (arm pit)	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	whisker		UBERON:0006378	whisker	anatomical region					UBERON has different label: strand of vibrissa hair						http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	body		UBERON:0013702	body	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	ankle		UBERON:0004454	ankle	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	ear		UBERON:0001690	ear	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	abdomen		UBERON:0000916	abdomen	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	ventral		UBERON:0013235	ventral	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	dorsal		UBERON:0001137	dorsal	anatomical region											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	anatomical region	lateral		BSM:0010003	lateral	anatomical region				Structural region referring to the side of a metazoan organism's body or body part.		This might be worth adding to UBERON perhaps as subclass to organism subdivision					http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid			UBERON:0006314	bodily fluid	anatomical structure											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	bile		UBERON:0001970	bile	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	blood		UBERON:0000178	blood	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	blood	hemoglobin	CHEBI:35143	hemoglobin	blood	haemoglobin										http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	blood	red blood cell	CL:0000232	red blood cell	blood	erythrocyte				CL has a different label: erythrocyte						http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	blood	blood plasma	UBERON:0001969	blood plasma	blood											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	blood	packed red blood cells	BSM:0010004	packed red blood cells	blood			NCIT:C126363	Red blood cells that have been separated for blood transfusion.		Could be added to an appropriated OBO ontology see https://en.wikipedia.org/wiki/Packed_red_blood_cells.					http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	lymph		UBERON:0002391	lymph	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	milk		UBERON:0001913	milk	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	mucus		UBERON:0000912	mucus	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	bodily fluid	sweat		UBERON:0001089	sweat	bodily fluid											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
