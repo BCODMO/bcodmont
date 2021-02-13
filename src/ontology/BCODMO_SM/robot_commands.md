@@ -1,6 +1,13 @@
 # Run templates
 
 ## Biology
+Run anatomy.tsv from `bcodmont/src/ontology/BCODMO_SM/`
+```
+robot template --template biology/robot_templates/anatomy.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/anatomy.owl" -o biology/robot_templates/anatomy.owl
+```
+
+
+
 Run physiology.tsv from `bcodmont/src/ontology/BCODMO_SM/`
 ```
 robot template --template biology/robot_templates/physiology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/physiology.owl" -o biology/robot_templates/physiology.owl
