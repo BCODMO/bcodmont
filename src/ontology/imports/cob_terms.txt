@@ -1,2 +1,7 @@
+### General
+COB:0000006 #material entity
+COB:0000017 #cell
+COB:0000022 #organism
+
 ### BCODMO_SM Biology/Anatomy terms:
 COB:0000017	#cell
