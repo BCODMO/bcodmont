@@ -83,7 +83,7 @@ robot template --template units/robot_templates/uo_simplified.csv -i ../bcodmont
 
 Run from `bcodmont/src/ontology/BCODMO_SM/` This is for modules other than chemistry (where we are not removing CHEBIs axioms).
 ```
-robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.owl --input ../imports/uberon_import.owl --input ../imports/go_import.owl --input ../imports/iao_import.owl --input ../imports/obi_import.owl --input ../imports/uo_import.owl --input ../imports/chebi_import.owl --input ../imports/stato_import.owl --input ../imports/ms_import.owl --input ../imports/bfo_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input physics/robot_templates/characteristic.owl --input physics/robot_templates/phenomenon.owl --input quantifiers/robot_templates/quantifiers.owl --input operational/robot_templates/operational.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --output merge_products/BCODMO_SM_merged.owl
+robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.owl --input ../imports/uberon_import.owl --input ../imports/go_import.owl --input ../imports/iao_import.owl --input ../imports/obi_import.owl --input ../imports/uo_import.owl --input ../imports/chebi_import.owl --input ../imports/stato_import.owl --input ../imports/ms_import.owl --input ../imports/bfo_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/physiology.owl --input physics/robot_templates/characteristic.owl --input physics/robot_templates/phenomenon.owl --input quantifiers/robot_templates/quantifiers.owl --input operational/robot_templates/operational.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --output merge_products/BCODMO_SM_merged.owl
 ```
 
 ### Make object property free version of CHEBI.
@@ -98,10 +98,13 @@ Only run after adding to ENVO import.
 robot remove --input ../imports/envo_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --output intermediate/envo_import_axioms_removed.owl
 ```
 
-## Merge chemistry and matrix modules with axiom removed CHEBI and ENVO and IAO (for APs)
-Note this didn't solve the issue of def and editor note not showing up.
+## Merge modules with axiom removed ontologies
+
+Modules include: both chemistry modules, all four matrix modules ...
+Axiom free ontologies include CHEBI, ENVO, IAO (for APs), ...
+Note adding IAO here didn't solve the issue of def and editor note not showing up. will need to fix this.
 ```
-robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input ../imports/iao_import.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
 
