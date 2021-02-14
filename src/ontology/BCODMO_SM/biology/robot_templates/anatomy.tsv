@@ -4,7 +4,7 @@ sex				PATO:0001894	sex												http://bcodmo/sm#biology	http://bcodmo/sm#ana
 sex	female			PATO:0000383	female	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 sex	male			PATO:0000384	male	sex											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure				BSM:0010002	anatomical structure			UBERON:0000061		Structure components within a metazoan organism; body part.							http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
-anatomical structure	cell			COB:0000017	cell	anatomical structure			NCIT:C12508								http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	cell			COB:0000017	cell	anatomical structure			NCIT:C12508	A material entity that has a plasma membrane and results from cellular division.							http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue			UBERON:0000479	tissue	anatomical structure											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue	adipose		UBERON:0001013	fat (adipose)	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue	blubber		UBERON:0009754	blubber	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
