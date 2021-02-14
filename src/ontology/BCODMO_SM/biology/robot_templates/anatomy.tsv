@@ -7,7 +7,7 @@ anatomical structure				BSM:0010002	anatomical structure			UBERON:0000061		Struc
 anatomical structure	cell			COB:0000017	cell	anatomical structure			NCIT:C12508	A material entity that has a plasma membrane and results from cellular division.							http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue			UBERON:0000479	tissue	anatomical structure											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue	adipose		UBERON:0001013	fat (adipose)	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
-anatomical structure	tissue	blubber		UBERON:0009754	blubber	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
+anatomical structure	tissue	adipose	blubber	UBERON:0009754	blubber	UBERON:0001013											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue	epidermis		UBERON:0001003	skin (epidermis)	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	tissue	muscle		UBERON:0005090	muscle	tissue											http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
 anatomical structure	anatomical region			UBERON:0000475	anatomical region	anatomical structure				Structural regions within a metazoan organism.	UBERON has different label: organism subdivision						http://bcodmo/sm#biology	http://bcodmo/sm#anatomy
