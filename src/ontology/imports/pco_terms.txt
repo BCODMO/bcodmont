@@ -1,0 +1,7 @@
+### BCODMO_SM Biology/ecology terms:
+PCO:0000000	#collection of organisms
+PCO:0000001	#population
+PCO:0000002	#community
+PCO:0000019	#diversity
+PCO:0000062	#Shannon diversity index
+PCO:0000063	#Simpson diversity index
