@@ -800,3 +800,7 @@ ENVO:00000446	#terrestrial biome
 ENVO:01000339	#polar biome
 ENVO:01001831	#temperate biome
 ENVO:01001830	#tropical biome
+
+### BCODMO_SM Biology/ecology terms:
+ENVO:00000150	#coral reef
+ENVO:01000852	#coral bleaching
