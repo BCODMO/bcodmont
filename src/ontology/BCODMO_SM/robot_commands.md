@@ -109,7 +109,12 @@ robot merge --input intermediate/chebi_import_axioms_removed.owl --input interme
 # Filter to create export products
 
 ## Biology
-Filter physiology from merged ontology
+Filter anatomy from merged ontology
+```
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:anatomy" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --output biology/anatomy.owl
+```
+
+
 ```
 robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
 ```
