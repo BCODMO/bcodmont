@@ -45,6 +45,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
@@ -758,12 +764,37 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0014406">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000115>The free-swimming first stage of the larva of certain crustaceans, having an unsegmented body with three pairs of appendages and a single median eye. The eye is known for that reason as the &apos;naupliar eye&apos;, and is often absent in later developmental stages, although it is retained into the adult form in some groups, such as the Notostraca.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">the first larval stage of many crustaceans, having an unsegmented body and a single eye.</obo:IAO_0000115>
+        <obo:UBPROP_0000001>A crustacean larva in usually the first stage after leaving the egg and with three pairs of appendages, a median eye, and little or no segmentation[BTO:0000915].</obo:UBPROP_0000001>
+        <oboInOwl:hasDbXref>BTO:0000915</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">nauplii</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>nauplius</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0014406</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">nauplius</rdfs:label>
+        <rdfs:label>nauplius stage</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014406"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The free-swimming first stage of the larva of certain crustaceans, having an unsegmented body with three pairs of appendages and a single median eye. The eye is known for that reason as the &apos;naupliar eye&apos;, and is often absent in later developmental stages, although it is retained into the adult form in some groups, such as the Notostraca.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Crustacean_larvae#Nauplius"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014406"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <owl:annotatedTarget>A crustacean larva in usually the first stage after leaving the egg and with three pairs of appendages, a median eye, and little or no segmentation[BTO:0000915].</owl:annotatedTarget>
+        <oboInOwl:source>BTO:0000915</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0014406"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>nauplius</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000915</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -771,10 +802,25 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0018241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000066"/>
+        <obo:IAO_0000115>A life cycle stage that starts at completion of development and growth of the sexually mature adult animal, and ends before senescence.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
+        <dc:contributor rdf:resource="https://github.com/cmungall"/>
+        <dc:contributor rdf:resource="https://github.com/fbastian"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>adulthood stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0018241</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
+        <rdfs:label>prime adult stage</rdfs:label>
         <rdfs:label xml:lang="en">reproductive</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0018241"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A life cycle stage that starts at completion of development and growth of the sexually mature adult animal, and ends before senescence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/496"/>
+        <oboInOwl:hasDbXref>Bgee:AN</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
