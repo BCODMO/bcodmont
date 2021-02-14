@@ -1,2 +1,9 @@
-GO:0015979 #photosynthesis
+### general
 GO:0045333 #cellular respiration
+
+### BCODMO_SM Biology/physiology terms:
+GO:0007610	#behavior
+GO:0007629	#flight
+GO:0010205	#photoinhibition
+GO:0015979	#photosynthesis
+GO:0045333	#repsiration
