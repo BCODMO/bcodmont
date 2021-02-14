@@ -6,8 +6,6 @@ Run anatomy.tsv from `bcodmont/src/ontology/BCODMO_SM/`
 robot template --template biology/robot_templates/anatomy.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "COB:http://purl.obolibrary.org/obo/COB_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/anatomy.owl" -o biology/robot_templates/anatomy.owl
 ```
 
-
-
 Run physiology.tsv from `bcodmont/src/ontology/BCODMO_SM/`
 ```
 robot template --template biology/robot_templates/physiology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/physiology.owl" -o biology/robot_templates/physiology.owl
@@ -123,7 +121,7 @@ Filter anatomy from axiom-free merged ontology
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:anatomy" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --output biology/anatomy.owl
 ```
 
-
+Filter physiology from ...
 ```
 robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
 ```
