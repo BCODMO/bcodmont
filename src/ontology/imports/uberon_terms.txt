@@ -1,6 +1,5 @@
+### BCODMO_SM Biology/anatomy terms:
 UBERON:0001062 #anatomical entity
-UBERON:0000069 #larval stage
-UBERON:0034919 #juvenile stage
 UBERON:0006314 #bodily fluid
 UBERON:0001970 #bile
 UBERON:0000178 #blood
@@ -13,3 +12,11 @@ UBERON:0001089 #sweat
 UBERON:0000479 #tissue
 UBERON:0001013 #fat tissue
 UBERON:0009754 #blubber
+
+
+### BCODMO_SM Biology/physiology terms:
+UBERON:0000066	#adult
+UBERON:0000069	#larvae
+UBERON:0014406	#nauplius
+UBERON:0018241	#reproductive
+UBERON:0034919	#juvenile
