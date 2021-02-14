@@ -429,7 +429,7 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0009754 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009754">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">blubber</rdfs:label>
