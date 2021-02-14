@@ -139,6 +139,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">cell</rdfs:label>
