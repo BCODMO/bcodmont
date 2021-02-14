@@ -102,6 +102,12 @@ Only run after adding to UBERON import.
 robot remove --input ../imports/uberon_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --output intermediate/uberon_import_axioms_removed.owl
 ```
 
+### Make object property free version of GO
+Only run after adding to GO import.
+```
+robot remove --input ../imports/go_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --output intermediate/go_import_axioms_removed.owl
+```
+
 ## Merge modules with axiom removed ontologies
 
 Modules include: both chemistry modules, all four matrix modules ...
