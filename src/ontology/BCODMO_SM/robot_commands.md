@@ -92,11 +92,20 @@ We could add others here in future. Only run after adding to CHEBI import.
 robot remove --input ../imports/chebi_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/chebi_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/chebi_import_axioms_removed.owl" --output intermediate/chebi_import_axioms_removed.owl
 ```
 
-###Make object property free version of ENVO
+### Make object property free version of ENVO
 Only run after adding to ENVO import.
 ```
 robot remove --input ../imports/envo_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --output intermediate/envo_import_axioms_removed.owl
 ```
+
+### Make object property free version of UBERON
+Only run after adding to UBERON import.
+```
+robot remove --input ../imports/uberon_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --output intermediate/uberon_import_axioms_removed.owl
+```
+
+
+--input ../imports/uberon_import.owl
 
 ## Merge modules with axiom removed ontologies
 
