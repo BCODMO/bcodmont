@@ -94,3 +94,23 @@ Using a genus-differentia structure helps both to formulate a concise and simple
 
 For more information about writing ontology definitions please see [this blog post](https://douroucouli.wordpress.com/2019/07/08/ontotip-write-simple-concise-clear-operational-textual-definitions/) written by Dr. Chris Mungall.
 
+#### Comments
+
+In the `comment` column add any supporting information which is relevant to the term but not essential for its definition. As described in the above [blog post](https://douroucouli.wordpress.com/2019/07/08/ontotip-write-simple-concise-clear-operational-textual-definitions/), any information which gets cut out while trying to write a concise genus-differentia style definition can be put into the comment.
+
+#### Editors notes
+
+The `editors note` column serves as a place for ontology developers to make notes about how to better engineer the term or discuss future developments. For new BSM terms this is where one can suggest an an appropriate OBO ontology and possible parent class for such a term.
+
+#### Synonyms
+
+Following OBO common practices, the BSM robot templates contains four types of synonyms: `exact synonym`, `broad synonym`, `narrow synonym`, `related synonym`. These follow SKOS style \(broader or narrow\) conventions. 
+
+Use `exact synonym` for interchangeable term labels, for example `seawater` and `sea water`. 
+
+Use `broad synonym` when a synonym might refer to more than just the term of interest, for example the term `acid rainfall` has `acid rain` as a broad synonym because `acid rain` might refer to more than just the process of acid rainfall. 
+
+When a synonym refers to something more specific than the class label use `narrow synonym`, for example `road` has narrow synonym `highway`. 
+
+If you unsure about a synonym being broader or narrower then use `related synonym`.
+
