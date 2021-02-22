@@ -62,13 +62,13 @@ Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follo
 
 #### Term labels
 
-In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example: we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
+In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example, we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
 
 
 
 #### Parent classes
 
-BSM terms and imported terms should make use of thhe `parent class` relationship. For example if you were adding a new class `ice fog`, you'd add the `parent class` as `fog`.  You can simply type or copy paste the label of an existing term into the `parent class` column.
+BSM terms and imported terms should make use of the `parent class` relationship. For example if you were adding a new class `ice fog`, you'd add the `parent class` as `fog`.  You can simply type or copy paste the label of an existing term into the `parent class` column.
 
 To discover new OBO terms which might be relevant to use as parent classes, you can browse them from the ENVO from the [EMBL-EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/ontologies/) \(OLS\). The OLS search can be filtered by ontology, e.g., [https://www.ebi.ac.uk/ols/ontologies/chebi](https://www.ebi.ac.uk/ols/ontologies/chebi), or [https://www.ebi.ac.uk/ols/ontologies/go](https://www.ebi.ac.uk/ols/ontologies/go) etc. 
 
@@ -78,7 +78,7 @@ Additional documentation about how to browse the Environment Ontology \(ENVO\), 
 
 #### Definitions
 
-Although defintions and other annotation properties are included for imported OBO terms, new BSM terms, are invisioned to eventually be added to appropriate OBO Foundry Ontologies. As such we encourage new BSM terms to make use of OBO conventions for writing definitions. This includes advise people to follow a genus-differentia structure, i.e., `An A is a B that C's`. The genus refers the parent term, and the differentia is that which makes a term different \(or more specific\) than its parent. Doing this also helps to identify parent/child relationships between terms.
+Although defintions and other annotation properties are included for imported OBO terms, new BSM terms, are envisioned to eventually be added to appropriate OBO Foundry Ontologies. As such we encourage new BSM terms to make use of OBO conventions for writing definitions. This includes advise people to follow a genus-differentia structure, i.e., `An A is a B that C's`. The genus refers the parent term, and the differentia is that which makes a term different \(or more specific\) than its parent. Doing this also helps to identify parent/child relationships between terms.
 
 For example in ENVO, example they define [land ice mass](http://purl.obolibrary.org/obo/ENVO_01001547) as:
 
