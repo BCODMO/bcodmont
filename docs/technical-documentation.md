@@ -62,7 +62,7 @@ Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follo
 
 #### Labels
 
-In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example, we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
+In the `label` column, put the primary labels for new or imported terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example, we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
 
 #### Parent classes
 
