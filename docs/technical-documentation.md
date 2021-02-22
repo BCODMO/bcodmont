@@ -114,10 +114,6 @@ When a synonym refers to something more specific than the class label use `narro
 
 If you unsure about a synonym being broader or narrower then use `related synonym`.
 
-#### Subsets
-
-BSM has both `category subset` and `Entity subset` columns. At the moment the `Entity subset` column is not being used, however the `category subset` is essential for the BSM compilation process. As such the `category subset` must include a module-specific iri such as `http://bcodmo/sm#material` or `http://bcodmo/sm#anatomy`.
-
 #### Cross references
 
 The `cross reference` column provides a generic way to link to other resources such as mappings to other vocabularies. This could for example be used to map BSM terms to \(individual\) terms from the [NERC vocabularies](https://www.bodc.ac.uk/resources/products/web_services/vocab/).
@@ -125,6 +121,10 @@ The `cross reference` column provides a generic way to link to other resources s
 #### BCODMO master parameter
 
 The `BCODMO master parameter` column is used to link BSM terms to the \(previous system the\) BCODMO master parameters, e.g., `http://lod.bco-dmo.org/id/parameter/1982`.
+
+#### Subsets
+
+BSM has both `category subset` and `Entity subset` columns. At the moment the `Entity subset` column is not being used, however the `category subset` is essential for the BSM compilation process. As such the `category subset` must include a module-specific iri such as `http://bcodmo/sm#material` or `http://bcodmo/sm#anatomy`.
 
 #### Columns with multiple entries
 
