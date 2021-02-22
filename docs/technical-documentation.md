@@ -36,9 +36,25 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 
 
-## Import new ontologies
+### Import new ontologies
 
 In order to import a new OBO ontology we need to do the following:
 
 
+
+## Preparing new BSM terms
+
+
+
+#### Basics about Robot templates
+
+Robot templates are structured as follows, the first row contains `headers`, these are human-readable labels that are not complied by robot. These can be renamed as needed. The second row contains the `templates` which must contain strings formatted as specified in the [Robot template documentation](https://robot.obolibrary.org/template). Please do not change these. All subsequent rows are for the addition of new terms or the modification of existing ones.
+
+
+
+#### Ontology IDs
+
+In order for a term \(a row in the spreadsheet\) to be recognized by robot and compiled into owl code, it must have an entry in the `ontology ID` column. This must either include a BCODMO Semantic Model \(BSM\) ID, or an ID from another OBO ontology. BSM terms must start with the prefix `BSM:` and be followed by seven digits e.g., `BSM:0200001`. BSM IDs must be within an appropriate numeric ID range as specified within the [BCODMO\_SM/idranges.owl](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/idranges.owl) file. 
+
+Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follow this same formatting, e.g, with imported ENVO terms one must use the prefix `ENVO:` followed by the correct identifier number, e.g. `ENVO:03000102`. This is refereed to as the `curie` ID formatting style. 
 
