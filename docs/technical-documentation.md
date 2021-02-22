@@ -38,7 +38,7 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 ### Import new ontologies
 
-In order to import a new OBO ontology we need to do the following:
+In order to import a new OBO ontology we need to do the following: ... /TODO
 
 
 
