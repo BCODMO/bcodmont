@@ -44,7 +44,7 @@ In order to import a new OBO ontology we need to do the following: ... /TODO
 
 ## Preparing new BSM terms
 
-The working versions of the BSM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) subdirectories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv).  However, relying on google sheets as the source of truth better should not to be considered a long term solution. At some point once we've stabelized the system, we will switch to treating the tsv files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
+The working versions of the BSM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) subdirectories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv).  However, relying on google sheets as the source of truth better should not to be considered a long term solution. At some point once we've stabilized the system, we will switch to treating the tsv files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
 
 #### Basics about Robot templates
 
@@ -52,7 +52,7 @@ Robot templates are structured as follows, the first row contains `headers`, the
 
 #### BSM Category Headers
 
-At the moment the first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl. These are not stricly necessary \(and could be removed, however, they can be helpful when adding new terms to the model\). 
+At the moment the first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl. These are not strictly necessary \(and could be removed, however, they can be helpful when adding new terms to the model\). 
 
 #### Ontology IDs
 
