@@ -50,21 +50,15 @@ In order to import a new OBO ontology we need to do the following:
 
 Robot templates are structured as follows, the first row contains `headers`, these are human-readable labels that are not complied by robot. These can be renamed as needed. The second row contains the `templates` which must contain strings formatted as specified in the [Robot template documentation](https://robot.obolibrary.org/template). Please do not change these. All subsequent rows are for the addition of new terms or the modification of existing ones.
 
-
-
 #### Ontology IDs
 
 In order for a term \(a row in the spreadsheet\) to be recognized by robot and compiled into owl code, it must have an entry in the `ontology ID` column. This must either include a BCODMO Semantic Model \(BSM\) ID, or an ID from another OBO ontology. BSM terms must start with the prefix `BSM:` and be followed by seven digits e.g., `BSM:0200001`. BSM IDs must be within an appropriate numeric ID range as specified within the [BCODMO\_SM/idranges.owl](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/idranges.owl) file. 
 
 Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follow this same formatting, e.g, with imported ENVO terms one must use the prefix `ENVO:` followed by the correct identifier number, e.g. `ENVO:03000102`. This is refereed to as the `curie` ID formatting style. 
 
-
-
 #### Term labels
 
 In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example, we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
-
-
 
 #### Parent classes
 
@@ -73,8 +67,6 @@ BSM terms and imported terms should make use of the `parent class` relationship.
 To discover new OBO terms which might be relevant to use as parent classes, you can browse them from the ENVO from the [EMBL-EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/ontologies/) \(OLS\). The OLS search can be filtered by ontology, e.g., [https://www.ebi.ac.uk/ols/ontologies/chebi](https://www.ebi.ac.uk/ols/ontologies/chebi), or [https://www.ebi.ac.uk/ols/ontologies/go](https://www.ebi.ac.uk/ols/ontologies/go) etc. 
 
 Additional documentation about how to browse the Environment Ontology \(ENVO\), as well as its contents, can be found at the [navigating ENVO](https://github.com/EnvironmentOntology/envo/wiki/Navigating-ENVO) github wiki page. The navigation page describes how to go about viewing ENVO \(or other OBO ontologies\), as well as what are main hierarchies within ENVO, giving examples of each.
-
-
 
 #### Definitions
 
@@ -113,4 +105,12 @@ Use `broad synonym` when a synonym might refer to more than just the term of int
 When a synonym refers to something more specific than the class label use `narrow synonym`, for example `road` has narrow synonym `highway`. 
 
 If you unsure about a synonym being broader or narrower then use `related synonym`.
+
+#### Matches
+
+BSM makes use of the SKOS `exact match` and `close match` annotation properties. `exact match` should be used in cases where two semantics are intended to be the same. For example if an OBO term is found or created that can replace a BSM term.`close match` can be used in cases where two semantics maybe the similar but aren't exactly the same representation. For example terms form the [NCI Thesaurus OBO Edition](https://www.ebi.ac.uk/ols/ontologies/ncit) e.g., `NCIT:C12508`.
+
+#### Subsets
+
+BSM has both `category subset` and `Entity subset` columns. At the moment the `Entity subset` column is not being used, however the `category subset` is essential for the BSM compilation process. As such the `category subset` must include a module-specific iri such as `http://bcodmo/sm#material` or `http://bcodmo/sm#anatomy`.
 
