@@ -114,3 +114,17 @@ BSM makes use of the SKOS `exact match` and `close match` annotation properties.
 
 BSM has both `category subset` and `Entity subset` columns. At the moment the `Entity subset` column is not being used, however the `category subset` is essential for the BSM compilation process. As such the `category subset` must include a module-specific iri such as `http://bcodmo/sm#material` or `http://bcodmo/sm#anatomy`.
 
+#### Cross references
+
+The `cross reference` column provides a generic way to link to other resources such as mappings to other vocabularies. This could for example be used to map BSM terms to \(individual\) terms from the [NERC vocabularies](https://www.bodc.ac.uk/resources/products/web_services/vocab/).
+
+#### BCODMO master parameter
+
+The `BCODMO master parameter` column is used to link BSM terms to the \(previous system the\) BCODMO master parameters, e.g., `http://lod.bco-dmo.org/id/parameter/1982`.
+
+#### Columns with multiple entries
+
+Any columns with `SPLIT=|` at the end of the string in the template \(second\) row allow for multiple `|` delimited inputs where each of which is compiled separately. For example adding `boulbie|buran|purga` within the `narrow synonym` column, which has the template `AL oboInOwl:hasNarrowSynonym@en SPLIT=|` will produce three separate narrow synonym annotation properties:
+
+![image](https://user-images.githubusercontent.com/12255688/100488568-008bce00-30dd-11eb-8c83-45324df24f0f.png)
+
