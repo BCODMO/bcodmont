@@ -60,7 +60,7 @@ In order for a term \(a row in the spreadsheet\) to be recognized by robot and c
 
 Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follow this same formatting, e.g, with imported ENVO terms one must use the prefix `ENVO:` followed by the correct identifier number, e.g. `ENVO:03000102`. This is refereed to as the `curie` ID formatting style. 
 
-#### Term labels
+#### Labels
 
 In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example, we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
 
@@ -72,15 +72,19 @@ To discover new OBO terms which might be relevant to use as parent classes, you 
 
 Additional documentation about how to browse the Environment Ontology \(ENVO\), as well as its contents, can be found at the [navigating ENVO](https://github.com/EnvironmentOntology/envo/wiki/Navigating-ENVO) github wiki page. The navigation page describes how to go about viewing ENVO \(or other OBO ontologies\), as well as what are main hierarchies within ENVO, giving examples of each.
 
+#### Matches
+
+BSM makes use of the SKOS `exact match` and `close match` annotation properties. `exact match` should be used in cases where two semantics are intended to be the same. For example if an OBO term is found or created that can replace a BSM term.`close match` can be used in cases where two semantics maybe the similar but aren't exactly the same representation. For example terms form the [NCI Thesaurus OBO Edition](https://www.ebi.ac.uk/ols/ontologies/ncit) e.g., `NCIT:C12508`.
+
 #### Definitions
 
-Although defintions and other annotation properties are included for imported OBO terms, new BSM terms, are envisioned to eventually be added to appropriate OBO Foundry Ontologies. As such we encourage new BSM terms to make use of OBO conventions for writing definitions. This includes advise people to follow a genus-differentia structure, i.e., `An A is a B that C's`. The genus refers the parent term, and the differentia is that which makes a term different \(or more specific\) than its parent. Doing this also helps to identify parent/child relationships between terms.
+Although definitions and other annotation properties are included for imported OBO terms, new BSM terms, are envisioned to eventually be added to appropriate OBO Foundry Ontologies. As such we encourage new BSM terms to make use of OBO conventions for writing definitions. This includes advise people to follow a genus-differentia structure, i.e., `An A is a B that C's`. The genus refers the parent term, and the differentia is that which makes a term different \(or more specific\) than its parent. Doing this also helps to identify parent/child relationships between terms.
 
 For example in ENVO, example they define [land ice mass](http://purl.obolibrary.org/obo/ENVO_01001547) as:
 
 > An ice mass which has formed over land.
 
-Another example, in UBERON, they define [tissue](http://purl.obolibrary.org/obo/UBERON_0000479) as
+Another example, in UBERON, they define [tissue](http://purl.obolibrary.org/obo/UBERON_0000479) as:
 
 > \[A\] multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.
 
@@ -109,10 +113,6 @@ Use `broad synonym` when a synonym might refer to more than just the term of int
 When a synonym refers to something more specific than the class label use `narrow synonym`, for example `road` has narrow synonym `highway`. 
 
 If you unsure about a synonym being broader or narrower then use `related synonym`.
-
-#### Matches
-
-BSM makes use of the SKOS `exact match` and `close match` annotation properties. `exact match` should be used in cases where two semantics are intended to be the same. For example if an OBO term is found or created that can replace a BSM term.`close match` can be used in cases where two semantics maybe the similar but aren't exactly the same representation. For example terms form the [NCI Thesaurus OBO Edition](https://www.ebi.ac.uk/ols/ontologies/ncit) e.g., `NCIT:C12508`.
 
 #### Subsets
 
