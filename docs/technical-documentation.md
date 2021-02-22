@@ -58,3 +58,9 @@ In order for a term \(a row in the spreadsheet\) to be recognized by robot and c
 
 Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follow this same formatting, e.g, with imported ENVO terms one must use the prefix `ENVO:` followed by the correct identifier number, e.g. `ENVO:03000102`. This is refereed to as the `curie` ID formatting style. 
 
+
+
+#### Term labels
+
+In the `label` column, put the primary labels for new terms, e.g., `marsh` or `ice`. BSM follows lower case naming conventions, with exceptions for proper nouns, e.g., `Taylor column` or `WMO blizzard`. In some instances BSM renames terms imported from existing OBO ontologies in order to simplify them. For example: we rename `ENVO:01000811` `nitrogen-oxygen planetary atmosphere` to `atmosphere`.
+
