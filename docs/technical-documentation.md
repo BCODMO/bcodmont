@@ -72,3 +72,5 @@ BSM terms and imported terms should make use of thhe `parent class` relationship
 
 To discover new OBO terms which might be relevant to use as parent classes, you can browse them from the ENVO from the [EMBL-EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/ontologies/) \(OLS\). The OLS search can be filtered by ontology, e.g., [https://www.ebi.ac.uk/ols/ontologies/chebi](https://www.ebi.ac.uk/ols/ontologies/chebi), or [https://www.ebi.ac.uk/ols/ontologies/go](https://www.ebi.ac.uk/ols/ontologies/go) etc. 
 
+Additional doccumentation about how to browse the Environment Ontology \(ENVO\), as well as its contents, can be found at the [navigating ENVO](https://github.com/EnvironmentOntology/envo/wiki/Navigating-ENVO) wiki page. The navigation page describes how to go about viewing ENVO \(or other OBO ontologies\), as well as what are main hierarchies within ENVO, giving examples of each.
+
