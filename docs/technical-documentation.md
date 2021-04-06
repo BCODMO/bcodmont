@@ -14,7 +14,7 @@ BSM has the following domain specific modules which can be used together in comb
 
 #### Biology
 
-The Biology module consists of several sub-modules [Anatomy](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/anatomy.owl),[ Physiology](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/physiology.owl), Ecology, Biomolecules, and Organism. 
+The Biology module consists of several sub-modules [Anatomy](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/anatomy.owl),[ Physiology](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/physiology.owl), Ecology, Biomolecules, and Organism. It is intended to represent the biologically relevant information pertinant to datasets. 
 
 #### Chemistry
 
@@ -32,59 +32,29 @@ Finally the **Material** sub-module contains terms for environmental or other ma
 
 #### Operational
 
+The [Operational](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/operational/operational.owl) module describes information about sample processing e.g., `filter fractionation size`, sample post-processing e.g.,  `external repository` as well as spatiotemporal sample collection information e.g., `latitude` or `collection date`.
+
 #### Physics
+
+The Physics module is split up into two sub-modules. The first of which, [Characteristic](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/physics/characteristic.owl) consists of terms describing qualities, characteristics or attributes of materials \(both biotic and abiotic\), e.g., the `depth` or `salinity` measured in sea water, or the `color` used to describe an organism or water body. The [Phenomenon](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/physics/phenomenon.owl) module consists of physical phenomena either mesured or believed to have a causal influence on a sample, e.g., `Taylor column` `deep ocean current` or `thunderstorm`. Note at the moment there are some overlapping terms between the Physics Phenonmena and Matrix Context modules this is intential but we may want to contstrain terms like `epilimnion` to only Matrix.  
 
 #### Quantifiers
 
-
-
-
+The [Quantifiers](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/quantifiers/quantifiers.owl) module consists of terms to describe quantitative measurements conducted on samples within datasets, including classes like `concentration`, `length`, or `standard deviation`. Which are to be used in conjunction with terms from other modules. 
 
 
 
 ## New Term Requests
 
+In the interim stages of the BSM's development we expect there to be many changes made to the model, mostly additions but perhaps also some term replacements or reshuffeling. As such this section serves as a guide for data managers to request new terms to be added to BSM. 
 
-
-
-
-## Imports
-
-In order to re-use ontology terms form existing OBO ontologies such as ENVO, UBERON or CHEBI, we need to import them into our repository. 
-
-### Add new terms to import
-
-In order to import new terms from ontologies we are already importing from we need to do the following:
-
-#### Running all imports
-
-We can run all existing imports from `bcodmont/src/ontology` with the following command: 
-
-```text
-./run.sh make all_imports
-```
-
-Note when running on linux systems depending on permissions one may need to add `sudo` in front of the above command. 
-
-#### Running individual imports
-
-To re-run an individual ontology \(instead of all imported ontologies\) one can run a command such as the following, where for example the Gene Ontology `go` is the ontology of interest. One would run the following from `bcodmont/src/ontology`: \(note `sudo` maybe required\)
-
-```text
-./run.sh make imports/go_import.owl
-```
-
-
-
-### Import new ontologies
-
-In order to import a new OBO ontology we need to do the following: ... /TODO
+## 
 
 
 
 ## Preparing new BSM terms
 
-The working versions of the BSM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) subdirectories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv).  However, relying on google sheets as the source of truth better should not to be considered a long term solution. At some point once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
+The working versions of the BSM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) sub-directories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv).  However, relying on google sheets as the source of truth better should not to be considered a long term solution. At some point once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
 
 #### Basics about Robot templates
 
@@ -171,4 +141,48 @@ BSM has both `category subset` and `Entity subset` columns. At the moment the `E
 Any columns with `SPLIT=|` at the end of the string in the template \(second\) row allow for multiple `|` delimited inputs where each of which is compiled separately. For example adding `boulbie|buran|purga` within the `narrow synonym` column, which has the template `AL oboInOwl:hasNarrowSynonym@en SPLIT=|` will produce three separate narrow synonym annotation properties:
 
 ![image](https://user-images.githubusercontent.com/12255688/100488568-008bce00-30dd-11eb-8c83-45324df24f0f.png)
+
+
+
+
+
+
+
+
+
+## Maintaining BSM
+
+### Managing Imports
+
+In order to re-use ontology terms form existing OBO ontologies such as ENVO, UBERON or CHEBI, we need to import them into our repository. 
+
+#### Add new terms to import
+
+In order to import new terms from ontologies we are already importing from we need to do the following:
+
+#### Running all imports
+
+We can run all existing imports from `bcodmont/src/ontology` with the following command: 
+
+```text
+./run.sh make all_imports
+```
+
+Note when running on linux systems depending on permissions one may need to add `sudo` in front of the above command. 
+
+#### Running individual imports
+
+To re-run an individual ontology \(instead of all imported ontologies\) one can run a command such as the following, where for example the Gene Ontology `go` is the ontology of interest. One would run the following from `bcodmont/src/ontology`: \(note `sudo` maybe required\)
+
+```text
+./run.sh make imports/go_import.owl
+```
+
+
+
+### Import new ontologies
+
+In order to import a new OBO ontology we need to do the following: ... /TODO
+
+
 
