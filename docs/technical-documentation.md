@@ -6,6 +6,46 @@ BCODMONT is an OBO style application ontology created using the [Ontology Develo
 
 The **B**CODMO **S**emantic **M**odel \(**BSM**\) is created within BCODMONT and acts as a controlled vocabulary for the BCODMO data managers to annotate data with. 
 
+The BSM is loosely based on the NERC Vocabulary Server \(NERC-VS\) model, but draws from terminology from various ontologies from the Open Biological and Biomedical Ontology \(OBO\) Foundry. It can be though of loosely as a hybrid of the two models, bridging them by playing to the stengths of both systems. 
+
+### Modules:
+
+BSM has the following domain specific modules which can be used together in combination to annotate datasets. 
+
+#### Biology
+
+The Biology module consists of several sub-modules [Anatomy](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/anatomy.owl),[ Physiology](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/physiology.owl), Ecology, Biomolecules, and Organism. 
+
+#### Chemistry
+
+The Chemistry module consists of two sub-modules [Compound](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/chemistry/compound.owl) and [Element](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/chemistry/element.owl). The Compound sub-module consists of a set of chemicals that are determined by analysis focusing on a multi-atomic compound, e.g, `nitrate` \(NO3\) or `carbohydrate`. Whereas the Element sub-module consists of chemicals that are determined by analysis focusing on specific elements including isotopes and valence states, e.g. `elemental Nitrogen` or `Nitrogen-15`.
+
+#### Matrix
+
+The Matrix module represents the environmental context from which datasets were collected. It is based on both the NERC Matrix vocabulary as well as the [MIxS](https://gensc.org/mixs/) \(Minimum Informtion about any "x" Sequence\) standards from the Genomic Standards Consortium \(GSC\). BSM's Matrix is divided into four sub-modules which like the MIxS model represent the environmental context data at increasing levels of granularity. The first module [Region](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/matrix/region.owl), describes at the highest level if data were collected from a `polar`, `temperate` or `tropical` region. 
+
+The next three sub-modules draws from terminology from the Environment Ontology \(ENVO\); following the MIxS ENVO annotation framework which includes the use of \(one or more terms\) from each of the, [Biome](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/matrix/biome.owl), [Context](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/matrix/context.owl), and [Material](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/matrix/material.owl) sub-modules. These are analogous to the `broad-scale environmental context`, `local environmental context`, and `environmental medium`, fields used in the MIxS model. In the **Biome** module are terms by which to report which major environmental system from which a sample came, namely an `aquatic`, `marine`, or `terrestrial` biome. 
+
+The **Context** sub-module contains terms by which to describe the local vicinity of a sample which may have a causal influences on data, e.g. if the data were collected from an `esturay` or a  water layer such as the `marine benthic zone`. 
+
+Finally the **Material** sub-module contains terms for environmental or other material or materials that immediately surrounded or comprise samples e.g., `sea water`, `plankton`, or `sediment`.
+
+#### Operational
+
+#### Physics
+
+#### Quantifiers
+
+
+
+
+
+
+
+## New Term Requests
+
+
+
 
 
 ## Imports
