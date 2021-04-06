@@ -46,13 +46,21 @@ The [Quantifiers](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCOD
 
 ## New Term Requests
 
-In the interim stages of the BSM's development we expect there to be many changes made to the model, mostly additions but perhaps also some term replacements or reshuffeling. As such this section serves as a guide for data managers to request new terms to be added to BSM. 
+In the interim stages of the BSM's development we expect there to be many changes made to the model, mostly additions but perhaps also some term replacements or reshuffeling. As such this section serves as a guide for data managers to request new terms to be added to BSM. Once the model is a bit more solidified and the downstream data processing in order, the  process of adding new terms could be taken up by interested Data Mangers. 
 
-## 
+For the time being, data managers can do the following to request new terms. 
 
+1\) First navigate to the [bcodmont/issues](https://github.com/BCODMO/bcodmont/issues/new) page. 
 
+2\) Create a new issue describing the requested term. Explain what it is in clear concise language what the missing term is and what **BSM** module you think it should be added to. Make sure for now to tag @kaiiam in the github issue \(untill the model is stablized and others are trained to handle this as well or in place\). 
 
-## Preparing new BSM terms
+3\) Make sure to check throughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM). //TODO either add link to web protege versions or other way to visualize these such as the EBI-docker. 
+
+4\) **Optional** Search for appropriate existing terms. Note that when possible BSM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the `Managing Imports` section of `Maintaining BSM`  for a list of the OBO ontologies we are using for BSM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start. 
+
+5\) **Optional** if you want to go the extra mile check out the following section on perparing new BSM terms for the step by step detailed instructions for adding to modules via the Robot templates by which they are compiled. 
+
+### Preparing new BSM terms
 
 The working versions of the BSM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) sub-directories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv).  However, relying on google sheets as the source of truth better should not to be considered a long term solution. At some point once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
 
@@ -154,7 +162,7 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 ### Managing Imports
 
-In order to re-use ontology terms form existing OBO ontologies such as ENVO, UBERON or CHEBI, we need to import them into our repository. 
+In order to re-use ontology terms form existing OBO ontologies  we need to import them into our repository. Currently BSM makes use of the following ontologies: BFO CHEBI CL COB ENVO GO IAO MS OBI PATO PCO RO STATO and UBERON. 
 
 #### Add new terms to import
 
