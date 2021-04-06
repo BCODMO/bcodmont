@@ -6,7 +6,7 @@ BCODMONT is an OBO style application ontology created using the [Ontology Develo
 
 The **B**CODMO **S**emantic **M**odel \(**BSM**\) is created within BCODMONT and acts as a controlled vocabulary for the BCODMO data managers to annotate data with. 
 
-The BSM is loosely based on the NERC Vocabulary Server \(NERC-VS\) model, but draws from terminology from various ontologies from the Open Biological and Biomedical Ontology \(OBO\) Foundry. It can be though of loosely as a hybrid of the two models, bridging them by playing to the stengths of both systems. 
+The BSM is loosely based on the [NERC Vocabulary Server \(NERC-VS\)](https://www.bodc.ac.uk/resources/products/web_services/vocab/) model, but draws from terminology from various ontologies from the [Open Biological and Biomedical Ontology \(OBO\) Foundry](http://www.obofoundry.org/). It can be though of loosely as a hybrid of the two models, bridging them by playing to the strengths of both systems. 
 
 ### Modules:
 
