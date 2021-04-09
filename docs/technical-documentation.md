@@ -64,21 +64,19 @@ Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/).
 
 **The Information Artifact Ontology \(IAO\)**: sometimes refereed to as the OBO Metadata Ontology \(OMO\), is the OBO ontology for information entities. IAO includies both classes, e.g., `data set` or `setting datum` and annotation properties, e.g. `defintion`. When Possible IAO classes are used within the BCO-SM Operational module. 
 
-MS: is 
+**The Mass spectrometry ontology \(MS\)**: is a structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
 
-OBI: is 
+**The Ontology for Biomedical Investigations \(OBI\)**: is an integrated ontology for the description of life-science and clinical investigations. BCO-SM makes use of various OBI classes, e.g.,  `sample` and `longitude` within the BCO-SM Operational module. 
 
-PATO: is 
+**The Phenotype And Trait Ontology \(PATO\)**: is an ontology of phenotypic qualities, aka, properties, attributes or characteristics. These include both biological attributes of organisms, e.g. `size` as well as physical qualities such as `salinity`, or `acidity`, or `color`. BCO-SM uses PATO in both the Quantifiers and Physics Characteristic modules. 
 
-PCO: is 
+The Population and Community Ontology \(PCO\): is an ontology about groups of interacting organisms such as populations and communities. PCO terms such as `Simpson diversity index`,  and `community` are used in the Biology Ecology module.
 
-RO: is 
+**The Relation Ontology \(RO\)**: is a controlled set of relationship types shared across OBO ontologies in order to enable interoperability across ontologies. The BCO-SM module currently do not heavily leverage RO relationships, however future iterations of the system could to enable more advanced querying. 
 
-STATO: is 
+**The Statistical Methods Ontology \(STATO\)**: is a general-purpose statistics Ontology, providing coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods. BCO-SM leverages STATO terms such as `median` ,  or `confidence interval` in the Quantifiers module. 
 
-UBERON: is 
-
-
+**The multi-species anatomy ontology \(UBERON\)**: is an integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies. BCO-SM uses UBERON terms such as `blood`, or `juvenile` in Biology modules such as Anatomy and Physiology respectively. 
 
 
 
