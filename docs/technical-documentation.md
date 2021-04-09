@@ -12,7 +12,7 @@ The BCO-SM is loosely based on the [NERC Vocabulary Server \(NERC-VS\)](https://
 
 BCO-SM has the following domain specific modules which can be used together in combination to annotate datasets. 
 
-**Figure 1**: Overview of the BCO-SM model 
+**Figure 1**: Overview of the BCO-SM 
 
 ![](.gitbook/assets/image%20%282%29.png)
 
@@ -46,6 +46,40 @@ The Physics module is split up into two sub-modules. The first of which, [Charac
 
 The [Quantifiers](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/quantifiers/quantifiers.owl) module consists of terms to describe quantitative measurements conducted on samples within datasets, including classes like `concentration`, `length`, or `standard deviation`. Which are to be used in conjunction with terms from other modules. 
 
+### OBO Ontologies Used
+
+Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/).
+
+**The Basic Formal Ontology \(BFO\)**: is the upper level ontology upon which OBO Foundry ontologies are built. BCO-SM makes use of BFO terms like `site`.
+
+**The Chemical Entities of Biological Interest \(CHEBI\)**: is a structured classification of molecular entities of biological interest focusing on 'small' chemical compounds. CHEBI terms comprise most of the BCO-SM chemistry terms e.g. `nitrate` and are also used in other BCO-SM modules such as the Biomolecules submodule from Biology for terms like `DNA` or `RNA`.
+
+**The Cell Ontology \(CL\)**: is a structured controlled vocabulary for cell types in animals. BCO-SM makes use of CL terms, e.g. `red blood cell` within the Biology Anatomy module. 
+
+**The Core Ontology for Biology and Biomedicine \(COB\)**: brings together key terms from a wide range of OBO projects to improve interoperability, attempting to standardize terms important across disciplines and ontologies. BCO-SM when possible tries to make use of COB terms within Biology modules, e.g. `organism`, or `cell`, which might also be found in other OBO ontologies. 
+
+**The Environment Ontology \(ENVO\)**: describes environmental features, biomes, ecosystems, planetary or other astronomical bodies, their parts, or environmental processes. The BCO-SM primarily uses ENVO terms, \(e.g.,  `abyssal plain` or `first year ice` within the Matrix modules to comprehensively describe the environmental context of collected samples, at various levels of granularity, following the MIxS model used by genomic repositories such as NCBI and EBI.  BCO-SM also uses ENVO terms in the Physics Phenomenon and Biology Ecology modules. 
+
+**The Gene Ontology \(GO\)**: describes the function of genes and gene products. BCO-SM uses GO terms, e.g., `photosynthesis` and `repsiration` in the Biology Physiology submodule. 
+
+**The Information Artifact Ontology \(IAO\)**: sometimes refereed to as the OBO Metadata Ontology \(OMO\), is the OBO ontology for information entities. IAO includies both classes, e.g., `data set` or `setting datum` and annotation properties, e.g. `defintion`. When Possible IAO classes are used within the BCO-SM Operational module. 
+
+MS: is 
+
+OBI: is 
+
+PATO: is 
+
+PCO: is 
+
+RO: is 
+
+STATO: is 
+
+UBERON: is 
+
+
+
 
 
 ## New Term Requests
@@ -60,7 +94,7 @@ For the time being, data managers can do the following to request new terms.
 
 3\) Make sure to check throughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM). //TODO either add link to web protege versions or other way to visualize these such as the EBI-docker. 
 
-4\) **Optional** Search for appropriate existing terms. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the `Managing Imports` section of `Maintaining BCO-SM`  for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start. 
+4\) **Optional** Search for appropriate existing terms. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the `OBO Ontologies Used` section of `Overview` for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start. 
 
 5\) **Optional** if you want to go the extra mile check out the following section on perparing new BCO-SM terms for the step by step detailed instructions for adding to modules via the Robot templates by which they are compiled. 
 
@@ -167,6 +201,10 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 ### Managing Imports
 
 In order to re-use ontology terms form existing OBO ontologies  we need to import them into our repository. Currently BCO-SM makes use of the following ontologies: BFO CHEBI CL COB ENVO GO IAO MS OBI PATO PCO RO STATO and UBERON. 
+
+### 
+
+
 
 #### Add new terms to import
 
