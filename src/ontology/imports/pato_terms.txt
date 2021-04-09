@@ -1,4 +1,4 @@
-### BCODMO_SM Qualifiers terms:
+### BCODMO_SM Quantifiers terms:
 PATO:0000001 #quality
 PATO:0001030 #flux
 PATO:0000033 #concentration
