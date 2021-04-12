@@ -341,3 +341,13 @@ This will produce the so import owl file containing desired classes which can th
 //todo
 ```
 
+after the \`New Term Requests Section, add a more detail about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+
+Adding a new BCO-SM module use one of the biology mods as an example. 
+
+Add section about the ODK with docker. Pulling the ODK docker and cloning the repo. 
+
+Version control how to release a new version. Can releasae a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
+
+Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
+
