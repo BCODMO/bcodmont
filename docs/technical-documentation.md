@@ -236,7 +236,7 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 ### Import A New Ontology
 
-In order to import a new OBO ontology we will need to do the following steps. Documented in this example is the process by which to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) \(followed a valid ontology file e.g. `bfo.owl`\). 
+In order to import a new OBO ontology we will need to do the following steps. Documented in this example is the process by which to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) followed a valid ontology file e.g. `bfo.owl`. 
 
 In the following directory `bcodmont/src/ontology`is the ontology `Makefile`. The `Makefile` is the heart of the BCODMONT application ontology created by the Ontology Development Kit \(ODK\) in the initial release. The `Makefile` contains instructions for managing a variety of tasks including managing ontology imports, and releases. Within the `Makefile` \(on approximately line 75 at the time of creating these docs\), there will be the `IMPORTS` code-block which will resemble the following:
 
@@ -248,7 +248,11 @@ IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 IMPORT_FILES = $(IMPORT_OWL_FILES)
 ```
 
-**Step 1\)** Add the new target ontology to be imported, \(e.g., **`so`**\)  to the list of `IMPORTS`, e.g. `IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco chebi so`. Make sure to add an appropriate commit message such as `Add so import to import target list`. 
+**Step 1\)** Add the new target ontology to be imported, \(e.g., **`so`**\)  to the list of `IMPORTS`, e.g. `IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco chebi so`. Make sure to add an appropriate commit message such as:
+
+```text
+git commit Makefile -m 'Add so import to import target list'
+```
 
 **Step 2\)** In the `Mirroring upstream ontologies` section:
 
@@ -284,9 +288,21 @@ mirror/xyz.owl: mirror/xyz.trigger
 .PRECIOUS: mirror/%.owl
 ```
 
- **Step 3\)** Add import terms file. 
+Make sure to add an appropriate commit message such as:
+
+```text
+//todo
+```
+
+**Step 3\)** Add import terms file. 
 
 In the directory `bcodmont/src/ontology/imports` create a new `xyz_terms.txt` file where `xyz` is replaced by the new ontology name, e.g., `so`. This could be done by copying one of the existing files, e.g., `cp bfo_terms.txt xyz_terms.txt`.
+
+Make sure to **Add**  the new .txt file and commit it with an appropriate commit message such as:
+
+```text
+//todo
+```
 
 **Step 4\)** Add new term\(s\) to import to the `xyz_terms.txt` file. 
 
@@ -298,4 +314,30 @@ SO:0001031 #reverse sequence
 ```
 
 Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. 
+
+Make sure to add an appropriate commit message such as:
+
+```text
+//todo
+```
+
+**Step 5\)** Run make imports:
+
+This could either be done with the generic command to run all imports:
+
+```text
+./run.sh make all_imports
+```
+
+Or by running an individual import e.g.,
+
+```text
+./run.sh make imports/so_import.owl
+```
+
+This will produce the so import owl file containing desired classes which can then be used in the BCO-SM. Make sure to add an appropriate commit message for the newly committed file such as:
+
+```text
+//todo
+```
 
