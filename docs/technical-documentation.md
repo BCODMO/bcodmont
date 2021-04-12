@@ -204,23 +204,11 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 ![image](https://user-images.githubusercontent.com/12255688/100488568-008bce00-30dd-11eb-8c83-45324df24f0f.png)
 
-
-
-
-
-
-
-
-
 ## Maintaining BCO-SM
 
 ### Managing Imports
 
-In order to re-use ontology terms form existing OBO ontologies  we need to import them into our repository. Currently BCO-SM makes use of the following ontologies: BFO CHEBI CL COB ENVO GO IAO MS OBI PATO PCO RO STATO and UBERON. 
-
-### 
-
-
+In order to re-use ontology terms form existing OBO ontologies  we need to import them into our repository. Currently BCO-SM makes use of various OBO ontologies, see the `OBO Ontologies Used` section. 
 
 #### Add new terms to import
 
@@ -246,9 +234,68 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 
 
-### Import new ontologies
+### Import A New Ontology
 
-In order to import a new OBO ontology we need to do the following: ... /TODO
+In order to import a new OBO ontology we will need to do the following steps. Documented in this example is the process by which to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) \(followed a valid ontology file e.g. `bfo.owl`\). 
 
+In the following directory `bcodmont/src/ontology`is the ontology `Makefile`. The `Makefile` is the heart of the BCODMONT application ontology created by the Ontology Development Kit \(ODK\) in the initial release. The `Makefile` contains instructions for managing a variety of tasks including managing ontology imports, and releases. Within the `Makefile` \(on approximately line 75 at the time of creating these docs\), there will be the `IMPORTS` code-block which will resemble the following:
 
+```text
+IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco chebi
+
+IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
+IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
+IMPORT_FILES = $(IMPORT_OWL_FILES)
+```
+
+**Step 1\)** Add the new target ontology to be imported, \(e.g., **`so`**\)  to the list of `IMPORTS`, e.g. `IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco chebi so`. Make sure to add an appropriate commit message such as `Add so import to import target list`. 
+
+**Step 2\)** In the `Mirroring upstream ontologies` section:
+
+```text
+# ----------------------------------------
+# Mirroring upstream ontologies
+# ----------------------------------------
+#
+
+IMP=true # Global parameter to bypass import generation
+MIR=true # Global parameter to bypass mirror generation
+
+## ONTOLOGY: ro
+## Copy of ro is re-downloaded whenever source changes
+mirror/ro.trigger: $(SRC)
+
+mirror/ro.owl: mirror/ro.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+```
+
+There are a series of make targets for various ontologies e.g., `ro` shown above. Copy and paste the following at the end of the section, replacing `xyz` with the target ontology name in lower case, e.g., `so`. 
+
+```text
+## ONTOLOGY: xyz
+## Copy of xyz is re-downloaded whenever source changes
+mirror/xyz.trigger: $(SRC)
+
+mirror/xyz.owl: mirror/xyz.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/xyz.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+```
+
+ **Step 3\)** Add import terms file. 
+
+In the directory `bcodmont/src/ontology/imports` create a new `xyz_terms.txt` file where `xyz` is replaced by the new ontology name, e.g., `so`. This could be done by copying one of the existing files, e.g., `cp bfo_terms.txt xyz_terms.txt`.
+
+**Step 4\)** Add new term\(s\) to import to the `xyz_terms.txt` file. 
+
+In our example we'll add to the following to be the content of the `so_terms.txt` file. 
+
+```text
+### BCODMO_SM Biology/Biomolecules terms:
+SO:0001031 #reverse sequence
+```
+
+Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. 
 
