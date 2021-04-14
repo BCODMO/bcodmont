@@ -355,13 +355,13 @@ git commit imports/so_import.owl -m 'Run make all_imports'
 
 \*\*\*\*
 
-**//TOOD section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
 
-**//TOOD section about** adding a new BCO-SM module use one of the biology mods as an example. 
+**//TODO section about** adding a new BCO-SM module use one of the biology mods as an example. 
 
-**//TOOD section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
+**//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
 
-**//TOOD section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
+**//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
 
 
 
