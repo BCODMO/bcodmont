@@ -1,0 +1,2 @@
+### BCODMO_SM Biology/Biomolecules terms:
+SO:0001031 #reverse sequence
