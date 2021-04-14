@@ -386,3 +386,17 @@ git clone https://github.com/BCODMO/bcodmont.git
 
 
 
+## Temp
+
+Temp notes on using CHEBI import I tried the following in the `run.sh`script to run chebi import but it still failed. Problem is documented [here](https://github.com/INCATools/ontology-development-kit/blob/master/docs/DealWithLargeOntologies.md).  I think min 8 GB is required for CHEBI. 
+
+```text
+docker run -m 4g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx3G' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
+```
+
+Try again with: 8 GB instance and the following \(if the regular command doesn't work\). 
+
+```text
+docker run -m 8g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx7' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
+```
+
