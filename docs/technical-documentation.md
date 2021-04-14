@@ -341,13 +341,34 @@ This will produce the so import owl file containing desired classes which can th
 //todo
 ```
 
-after the \`New Term Requests Section, add a more detail about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+**//TOOD section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
 
-Adding a new BCO-SM module use one of the biology mods as an example. 
+**//TOOD section about** adding a new BCO-SM module use one of the biology mods as an example. 
 
-Add section about the ODK with docker. Pulling the ODK docker and cloning the repo. 
+**//TOOD section about** Version control how to release a new version. Can releasae a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
 
-Version control how to release a new version. Can releasae a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
+**//TOOD section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
 
-Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
+
+
+## Setting up BCODMONT on a new computer
+
+BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/). 
+
+**Step 1\)** On the new system install docker \(if not already installed\), See the [https://www.docker.com/get-started](https://www.docker.com/get-started). Docker desktop on a personal computer, \(docker hub for a cloud image?\). 
+
+**Step 2\)** Following the instructions described in the [ODK](https://github.com/INCATools/ontology-development-kit), pull the ODK docker image
+
+```text
+docker pull obolibrary/odkfull
+```
+
+**Step 3\)** Clone BCODMONT repository  
+Note might suggest to do via ssh instead of HTTPS
+
+```text
+git clone https://github.com/BCODMO/bcodmont.git
+```
+
+
 
