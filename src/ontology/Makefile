@@ -382,6 +382,15 @@ mirror/pco.owl: mirror/pco.trigger
 .PRECIOUS: mirror/%.owl
 
 
+## ONTOLOGY: so
+## Copy of so is re-downloaded whenever source changes
+mirror/so.trigger: $(SRC)
+
+mirror/so.owl: mirror/so.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/so.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
 
 # # ENVO Makefile's verion of CHEBI import
 # # chebi.owl is large and the owlapi often times out when reading it; use the obo instead
