@@ -291,34 +291,38 @@ mirror/xyz.owl: mirror/xyz.trigger
 Make sure to add an appropriate commit message such as:
 
 ```text
-//todo
+git commit Makefile -m 'Add SO import mirror lines'
 ```
 
 **Step 3\)** Add import terms file. 
 
-In the directory `bcodmont/src/ontology/imports` create a new `xyz_terms.txt` file where `xyz` is replaced by the new ontology name, e.g., `so`. This could be done by copying one of the existing files, e.g., `cp bfo_terms.txt xyz_terms.txt`.
-
-Make sure to **Add**  the new .txt file and commit it with an appropriate commit message such as:
+In the directory `bcodmont/src/ontology/imports` create a new `xyz_terms.txt` file where `xyz` is replaced by the new ontology name, e.g., `so`. This could be done by copying one of the existing files, e.g., `cp bfo_terms.txt xyz_terms.txt`. For SO the command is 
 
 ```text
-//todo
+cp bfo_terms.txt so_terms.txt
 ```
 
 **Step 4\)** Add new term\(s\) to import to the `xyz_terms.txt` file. 
 
-In our example we'll add to the following to be the content of the `so_terms.txt` file. 
+In our example we'll add to the following to be the content of the `so_terms.txt` file using any standard text editor such as atom, vim, nano, emacs, gedit, notepad++, textedit, etc depending on what system you're using. 
 
 ```text
 ### BCODMO_SM Biology/Biomolecules terms:
 SO:0001031 #reverse sequence
 ```
 
-Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. 
+Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. Atfer the curie it's typical but not stricly required to put the term label e.g., `#reverse sequence`.
 
-Make sure to add an appropriate commit message such as:
+Make sure to **Add**  the new .txt file: 
 
 ```text
-//todo
+git add so_terms.txt
+```
+
+As well as commit it with an appropriate commit message such as:
+
+```text
+git commit so_terms.txt -m 'Add term imports file for SO'
 ```
 
 **Step 5\)** Run make imports:
@@ -335,17 +339,27 @@ Or by running an individual import e.g.,
 ./run.sh make imports/so_import.owl
 ```
 
-This will produce the so import owl file containing desired classes which can then be used in the BCO-SM. Make sure to add an appropriate commit message for the newly committed file such as:
+Note that on linux it might be necessary to run with sudo `sudo ./run.sh make imports/so_import.owl`
+
+This will produce the so import owl file containing desired classes which can then be used in the BCO-SM. Make sure to add the new import ontology file
 
 ```text
-//todo
+git add imports/so_import.owl
 ```
+
+As well as commit it with an appropriate message such as:
+
+```text
+git commit imports/so_import.owl -m 'Run make all_imports'
+```
+
+\*\*\*\*
 
 **//TOOD section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
 
 **//TOOD section about** adding a new BCO-SM module use one of the biology mods as an example. 
 
-**//TOOD section about** Version control how to release a new version. Can releasae a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
+**//TOOD section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
 
 **//TOOD section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
 
@@ -364,7 +378,7 @@ docker pull obolibrary/odkfull
 ```
 
 **Step 3\)** Clone BCODMONT repository  
-Note might suggest to do via ssh instead of HTTPS
+Note might suggest to do via ssh instead of HTTPS and using ssh keys as github is deprecating passwords as of the summer 2021.
 
 ```text
 git clone https://github.com/BCODMO/bcodmont.git
