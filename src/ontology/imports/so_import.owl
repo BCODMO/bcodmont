@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bcodmont/imports/so_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bcodmont/imports/so_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bcodmont/imports/so_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bcodmont/releases/2021-04-14/imports/so_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-14</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000400">
+        <obo:IAO_0000115>An attribute describes a quality of sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>sequence attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000400</oboInOwl:id>
+        <rdfs:label>sequence_attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An attribute describes a quality of sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000400"/>
+        <obo:IAO_0000115>An attribute describing a located_sequence_feature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>feature attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000733</oboInOwl:id>
+        <rdfs:label>feature_attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000733"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An attribute describing a located_sequence_feature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000733"/>
+        <obo:IAO_0000115>The attribute of whether the sequence is the same direction as a feature (forward) or the opposite direction as a feature (reverse).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>direction attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0001029</oboInOwl:id>
+        <rdfs:label>direction_attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001029"/>
+        <obo:IAO_0000115>Reverse is an attribute of the feature, where the feature is in the 3&apos; to 5&apos; direction. Again could be applied to primer.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0001031</oboInOwl:id>
+        <rdfs:label>reverse</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Reverse is an attribute of the feature, where the feature is in the 3&apos; to 5&apos; direction. Again could be applied to primer.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
