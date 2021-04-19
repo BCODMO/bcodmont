@@ -214,6 +214,8 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 After filling out the robot templtes \(see previous section\), they need to be compiled into owl modules. The first step of compiling the BCO-SM modules involves running the working Robot `tsv` files. Run the following commands in order to generate the `/robot_templates/*.owl` files. Note that these owl files are not the final module owl, products, they are only an intermediate step on the way towarding compiling the final owl files. 
 
+These commaands make use of the [Robot template command](https://robot.obolibrary.org/template) which complies owl or other ontology formats based on an input tabular file such as a `.tsv` or `.csv` file. The `--template` flag specifies the input template, here the BCO-SM tsv module files. The `-i` or input flag specifies the input ontology \(and is required\). The `-o` flag designates the output file. 
+
 Run the following commands from the `bcodmont/src/ontology/BCODMO_SM/` directory.   
 
 #### Biology
@@ -304,6 +306,50 @@ Run **operational**.tsv:
 
 ```text
 robot template --template operational/robot_templates/operational.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/operational/robot_templates/operational.owl" -o operational/robot_templates/operational.owl
+```
+
+
+
+### 2\) Merge Robot templates
+
+In section 2 we merge the robot template perliminary outputs with the ontology inports so that they later can be merged together with all desired annotation properties including those from the imports. For example in our robot templates when we are importing a term from an existing OBO ontology, we dont' need to retype it's definition because we will get that from the import version of that ontology \(assume the term is imported properly\). In this step deintions or other annotation properties are joined together with the preliminary owl robot template products. In step 3 we will filter these joint products for only those those terms specified in the original robot template `tsv` files. 
+
+As before we can run these commands from `bcodmont/src/ontology/BCODMO_SM/`
+
+#### Merge Imports and Preliminary Robot Templates
+
+The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version is used for **all modules other than the two chemistry modules.** Here we are intentiontionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. //TODO "Run this step aftering modifying any of the following ... imports or ... modules."
+
+```text
+robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.owl --input ../imports/uberon_import.owl --input ../imports/go_import.owl --input ../imports/iao_import.owl --input ../imports/obi_import.owl --input ../imports/uo_import.owl --input ../imports/chebi_import.owl --input ../imports/stato_import.owl --input ../imports/ms_import.owl --input ../imports/bfo_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/physiology.owl --input physics/robot_templates/characteristic.owl --input physics/robot_templates/phenomenon.owl --input quantifiers/robot_templates/quantifiers.owl --input operational/robot_templates/operational.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --output merge_products/BCODMO_SM_merged.owl
+```
+
+#### Make Object Property \(OP\) Free Versions of Select Import Ontologies
+
+These steps will create more intermediate products consisting of the import ontologies without object properties \(e.g. subclass relations\). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify exising hierarchies within certain OBO ontologies \(e.g, CHEBI\). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies. 
+
+**Make OP free version of CHEBI import**. Only need to run after adding to CHEBI import.
+
+```text
+robot remove --input ../imports/chebi_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/chebi_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/chebi_import_axioms_removed.owl" --output intermediate/chebi_import_axioms_removed.owl
+```
+
+**Make OP free version of ENVO import**. Only run after adding to ENVO import.
+
+```text
+robot remove --input ../imports/envo_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/envo_import_axioms_removed.owl" --output intermediate/envo_import_axioms_removed.owl
+```
+
+**Make OP free version of UBERON import**.  Only run after adding to UBERON import.
+
+```text
+robot remove --input ../imports/uberon_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/uberon_import_axioms_removed.owl" --output intermediate/uberon_import_axioms_removed.owl
+```
+
+**Make OP free version of GO import**.  Only run after adding to GO import.
+
+```text
+robot remove --input ../imports/go_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --output intermediate/go_import_axioms_removed.owl
 ```
 
 
