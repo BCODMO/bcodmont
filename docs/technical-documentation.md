@@ -80,23 +80,25 @@ Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/).
 
 **The Sequence types and features ontology \(SO\)**: is a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. Browse SO from [here](https://www.ebi.ac.uk/ols/ontologies/SO). //TODO will need to add this as new import \(can use as example on how to add new ones\). 
 
+**The NCBI organismal classification \(NCBITaxon\)**: is An ontology representation of the [NCBI organismal taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy), which is in turn a curated classification and nomenclature for all of the organisms in the public sequence databases. Not yet used but will likely be picked up for use in thhe Biology Organism module. 
+
 ### Other Ontologies Referenced but not directly used
 
-CHMO //TODO might want to use this.
+The chemical methods ontology \(CHMO\) describes methods used to collect data in chemical experiments. CHMO imports from various other ontologies and is still TBD if it provides sufficient terminology to merit inclusion in BCO-SM. 
 
-EDAM
+**The Ontology of Bioscientific Data Analysis \(**[**EDAM**](https://edamontology.org/page)**\)**: is a representation of concepts that are prevalent within computational biology, bioinformatics, and bioimage informatics. including types of data and data identifiers, data formats, operations, and topics related to data analysis in life sciences. EDAM is **NOT** part of the OBO foundry so doesn't conform the the shared design principles or use of shared annotation properties. Although some BCO-SM terminology is based on and mapped to EDAM, it's officially used or imported into BSC-SM. 
 
-GENEPIO
+**The Genomic Epidemiology Ontology \(GENEPIO\)**: covers concentps relevant to foodborne pathogens and associated outbreaks. A few GENEPIO terms maybe relevant to BCO-SM however, it's TBD if it will be included. 
 
-NCIT
+**The NCI Thesaurus OBO Edition \(NCIT\)**: is an ontology style \(owl\) representation of the National Cancer Institute \([NCI](https://ncicb.nci.nih.gov/)\) thesaurus. NCIT includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIT is not an ontology of concepts merely a representation of a thesaurus as an ontology. Although, NCIT has a broad coverage of terminology and is resonable to cross-reference, it shouldnt' be considered as an an ontological framework and hence isn't imported into BCO-SM. Importing NCIT is probably not worth the effort to maintain it as a commutable structure if it's not organized to be such a product. 
 
-NMR
+**The NMR-instrument specific component of metabolomics investigations Ontology \(NMR\)**:  was previously used to describe experimental conditions of the Nuclear Magnetic Resonance \(NMR\) component in a metabolomics investigation. However it is now **deprecated** by the OBO foundry. Hence BCO-SM shouldn't use it. 
 
-OMIABIS
+**The Ontologized MIABIS \(OMIABIS\)**: is an ontological version of MIABIS \(Minimum Information About BIobank data Sharing\). MIABIS aims to provide common biobank terminology to facilitate data sharing in biobanks and sample collections. Some terminology from OMIABIS maybe of use to BCO-SM TBD. 
 
-PRIDE
+**The PRIDE PRoteomics IDEntifications \(PRIDE\)**: is a controlled vocabulary used in the [PRIDE database](https://www.ebi.ac.uk/pride/markdownpage/citationpage) for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE is **not** part of the OBO foundry so can't be guarientied to be imported using the standard import workflow, or interoperable with the other vocabulaires. Some pride terms might be useful TBD if we cross-reference it.  
 
-SIO //TODO fix in biomolecules to use BSM instead.
+**The Semanticscience Integrated Ontology \(SIO\)**: is an ontology providing descriptions of objects, processes and their attributes. SIO is **not** part of the OBO foundry so can't be guarientied to be imported using the standard import workflow, or interoperable with the other vocabulaires. There exist many SIO terms which might be useful to BCO-SM hence will will cross reference it, for example in the Biology Biomolecules module. 
 
 ## New Term Requests
 
