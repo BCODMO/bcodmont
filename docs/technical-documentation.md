@@ -208,7 +208,7 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 ## **Compiling BCO-SM**
 
-**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. Orginal commands can be found in the  `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file. 
+**//TODO perhaps add** something about when to commit i.e, with a set of new terms to a module. Orginal commands can be found in the  `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file. 
 
 ### 1\) Run Robot Templates
 
