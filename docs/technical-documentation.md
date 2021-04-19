@@ -206,7 +206,111 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 ![image](https://user-images.githubusercontent.com/12255688/100488568-008bce00-30dd-11eb-8c83-45324df24f0f.png)
 
-**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+## **Compiling BCO-SM**
+
+**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. Orginal commands can be found in the  `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file. 
+
+### 1\) Run Robot Templates
+
+After filling out the robot templtes \(see previous section\), they need to be compiled into owl modules. The first step of compiling the BCO-SM modules involves running the working Robot `tsv` files. Run the following commands in order to generate the `/robot_templates/*.owl` files. Note that these owl files are not the final module owl, products, they are only an intermediate step on the way towarding compiling the final owl files. 
+
+Run the following commands from the `bcodmont/src/ontology/BCODMO_SM/` directory.   
+
+#### Biology
+
+Run **anatomy**.tsv:
+
+```text
+robot template --template biology/robot_templates/anatomy.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "COB:http://purl.obolibrary.org/obo/COB_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/anatomy.owl" -o biology/robot_templates/anatomy.owl
+```
+
+Run **ecology**.tsv:
+
+```text
+robot template --template biology/robot_templates/ecology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "ENVO:http://purl.obolibrary.org/obo/ENVO_" --prefix "PCO:http://purl.obolibrary.org/obo/PCO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/ecology.owl" -o biology/robot_templates/ecology.owl
+```
+
+Run **physiology**.tsv:
+
+```text
+robot template --template biology/robot_templates/physiology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/physiology.owl" -o biology/robot_templates/physiology.owl
+```
+
+#### Quantifiers
+
+Run **quantifiers**.tsv:
+
+```text
+robot template --template quantifiers/robot_templates/quantifiers.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --prefix "SIO:http://semanticscience.org/resource/SIO_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/quantifiers/robot_templates/quantifiers.owl" -o quantifiers/robot_templates/quantifiers.owl
+```
+
+#### Chemistry
+
+Run **element**.tsv:
+
+```text
+robot template --template chemistry/robot_templates/element.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/robot_templates/element.owl" -o chemistry/robot_templates/element.owl
+```
+
+Run **compound**.tsv:
+
+```text
+robot template --template chemistry/robot_templates/compound.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/robot_templates/compound.owl" -o chemistry/robot_templates/compound.owl
+```
+
+#### Physics
+
+Run **characteristic**.tsv:
+
+```text
+robot template --template physics/robot_templates/characteristic.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/physics/robot_templates/characteristic.owl" -o physics/robot_templates/characteristic.owl
+```
+
+Run **phenomenon**.tsv:
+
+```text
+robot template --template physics/robot_templates/phenomenon.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --prefix "SIO:http://semanticscience.org/resource/SIO_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/physics/robot_templates/phenomenon.owl" -o physics/robot_templates/phenomenon.owl
+```
+
+#### Matrix
+
+Run **material**.tsv:
+
+```text
+robot template --template matrix/robot_templates/material.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/material.owl" -o matrix/robot_templates/material.owl
+```
+
+Run **context**.tsv:
+
+```text
+robot template --template matrix/robot_templates/context.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/context.owl" -o matrix/robot_templates/context.owl
+```
+
+Run **biome**.tsv:
+
+```text
+robot template --template matrix/robot_templates/biome.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/biome.owl" -o matrix/robot_templates/biome.owl
+```
+
+Run **region**.tsv:
+
+```text
+robot template --template matrix/robot_templates/region.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/region.owl" -o matrix/robot_templates/region.owl
+```
+
+#### Operational
+
+Run **operational**.tsv:
+
+```text
+robot template --template operational/robot_templates/operational.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_" --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/operational/robot_templates/operational.owl" -o operational/robot_templates/operational.owl
+```
+
+
+
+
+
+
 
 ## Maintaining BCO-SM
 
@@ -236,9 +340,7 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 ./run.sh make imports/go_import.owl
 ```
 
-
-
-### Import A New Ontology
+### Importing A New Ontology
 
 In order to import a new OBO ontology we will need to do the following steps. Documented in this example is the process by which to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) followed a valid ontology file e.g. `bfo.owl`. 
 
@@ -359,7 +461,9 @@ git commit imports/so_import.owl -m 'Run make all_imports'
 
 \*\*\*\*
 
-### **Adding BSM Modules**
+### **Adding New BSM Modules**
+
+Although this likely won't be very commonplace \(after the initial establishment of the BCO-SM modules\), the following section describes how to add a new module to BCO-SM. 
 
 **//TODO section about** adding a new BCO-SM module use one of the biology mods as an example. 
 
