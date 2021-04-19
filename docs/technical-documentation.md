@@ -367,7 +367,7 @@ git commit imports/so_import.owl -m 'Run make all_imports'
 
 
 
-## Setting up BCODMONT on a new computer
+### Setting up BCODMONT on a new computer
 
 BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/). 
 
