@@ -204,6 +204,8 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 ![image](https://user-images.githubusercontent.com/12255688/100488568-008bce00-30dd-11eb-8c83-45324df24f0f.png)
 
+**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+
 ## Maintaining BCO-SM
 
 ### Managing Imports
@@ -355,13 +357,11 @@ git commit imports/so_import.owl -m 'Run make all_imports'
 
 \*\*\*\*
 
-**//TODO section** after the \`New Term Requests Section, about adding new terms and compiling them. Have this be part of the docs walkthrough on the 26th. Talk about when to commit i.e, with a set of new terms to a module. 
+### **Adding BSM Modules**
 
 **//TODO section about** adding a new BCO-SM module use one of the biology mods as an example. 
 
-**//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
-
-**//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
+\*\*\*\*
 
 
 
@@ -386,7 +386,9 @@ git clone https://github.com/BCODMO/bcodmont.git
 
 
 
-## Temp
+## Future Sections
+
+### Configuring and testing memory for running imports
 
 Temp notes on using CHEBI import I tried the following in the `run.sh`script to run chebi import but it still failed. Problem is documented [here](https://github.com/INCATools/ontology-development-kit/blob/master/docs/DealWithLargeOntologies.md).  I think min 8 GB is required for CHEBI. 
 
@@ -399,4 +401,8 @@ Try again with: 8 GB instance and the following \(if the regular command doesn't
 ```text
 docker run -m 8g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx7' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
 ```
+
+**//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do  releases with named versions. 
+
+**//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master. 
 
