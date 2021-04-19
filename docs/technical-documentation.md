@@ -352,11 +352,101 @@ robot remove --input ../imports/uberon_import.owl --axioms logical annotate --on
 robot remove --input ../imports/go_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --output intermediate/go_import_axioms_removed.owl
 ```
 
+#### Merge Modules with Axiom free Import Ontologies
 
+This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, and GO\) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules \(**compound** and **element**\), all four **matrix** modules \(region, biome, context and material\), and both current Biology modules \(**anatomy** and **physiology**\).  
 
+```text
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+```
 
+### 3\) Filter merge product to create final modules
 
+The following steps make  use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template tsv files as well as additional annotation properties and object properites brough in from the import ontologies. 
 
+#### Biology
+
+Filter **anatomy** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:anatomy" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --output biology/anatomy.owl
+```
+
+Filter **physiology** from th axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
+```
+
+#### Quantifiers 
+
+Filter **quantifiers** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:quantifiers" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/quantifiers/quantifiers.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/quantifiers/quantifiers.owl" --output quantifiers/quantifiers.owl
+```
+
+#### Chemistry 
+
+Filter **element** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:element" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/element.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/element.owl" --output chemistry/element.owl
+```
+
+Filter **compound** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:compound" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/compound.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/chemistry/compound.owl" --output chemistry/compound.owl
+```
+
+#### Physics
+
+Filter **characteristic** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:characteristic" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/physics/characteristic.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/physics/characteristic.owl" --output physics/characteristic.owl
+```
+
+Filter **phenomenon** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:phenomenon" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/physics/phenomenon.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/physics/phenomenon.owl" --output physics/phenomenon.owl
+```
+
+#### Matrix
+
+Filter **material** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:material" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/material.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/material.owl" --output matrix/material.owl
+```
+
+Filter **context** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:context" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/context.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/context.owl" --output matrix/context.owl
+```
+
+Filter **biome** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:biome" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/biome.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/biome.owl" --output matrix/biome.owl
+```
+
+Filter **region** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:region" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/region.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/matrix/region.owl" --output matrix/region.owl
+```
+
+#### Operational
+
+Filter **operational** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:operational" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/operational/operational.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/operational/operational.owl" --output operational/operational.owl
+```
 
 ## Maintaining BCO-SM
 
