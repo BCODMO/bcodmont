@@ -210,7 +210,30 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 **//TODO perhaps add** something about when to commit i.e, with a set of new terms to a module. Orginal commands can be found in the  `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file. 
 
-### 1\) Run Robot Templates
+### 1\) Download working copy Robot Templates
+
+This step is temporary as it draws from the google drive sheets. Later once the model is more settled, this can be changed to simply modify the `.tsv` files in the github repository. Perhaps we could also use aditional/fancier tools such as [COGS](https://github.com/ontodev/cogs) to work with the source files in google sheets but have their working versions stored in github \(TBD\). 
+
+#### Biology
+
+//TODO: Re-download **anatomy**.tsv:
+
+```text
+//TODO
+```
+
+Try from [https://angelov.ai/post/2020/wget-files-from-gdrive/](https://angelov.ai/post/2020/wget-files-from-gdrive/) or [https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/](https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/)or or [https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/](https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/) or similar or the command like Nico used:
+
+```text
+MIXTURES="https://docs.google.com/spreadsheets/d/e/2PACX-1vQr0nBpt5ySurXeTgAIoiI2t1wC3xk2fGrZRVQOvc_ugziNlKHoNj4-xbVGnz84ohOVc-0g693LWiiz/pub?output=tsv"
+
+templates/mixtures.tsv:
+	wget $(MIXTURES) -O $@
+```
+
+...
+
+### 2\) Run Robot Templates
 
 After filling out the robot templtes \(see previous section\), they need to be compiled into owl modules. The first step of compiling the BCO-SM modules involves running the working Robot `tsv` files. Run the following commands in order to generate the `/robot_templates/*.owl` files. Note that these owl files are not the final module owl, products, they are only an intermediate step on the way towarding compiling the final owl files. 
 
@@ -310,7 +333,7 @@ robot template --template operational/robot_templates/operational.tsv -i ../bcod
 
 
 
-### 2\) Merge Robot templates
+### 3\) Merge Robot templates
 
 In section 2 we merge the robot template perliminary outputs with the ontology inports so that they later can be merged together with all desired annotation properties including those from the imports. For example in our robot templates when we are importing a term from an existing OBO ontology, we dont' need to retype it's definition because we will get that from the import version of that ontology \(assume the term is imported properly\). In this step deintions or other annotation properties are joined together with the preliminary owl robot template products. In step 3 we will filter these joint products for only those those terms specified in the original robot template `tsv` files. 
 
@@ -360,7 +383,7 @@ This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, and
 robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
-### 3\) Filter merge product to create final modules
+### 4\) Filter merge product to create final modules
 
 The following steps make  use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template tsv files as well as additional annotation properties and object properites brough in from the import ontologies. 
 
