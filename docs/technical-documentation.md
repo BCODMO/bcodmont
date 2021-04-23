@@ -2,15 +2,15 @@
 
 ## Outline
 
-#### Overview
+#### [Overview](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#overview-1)
 
-#### New Term Requests
+#### [New Term Requests](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#new-term-requests-1)
 
-#### Compiling BCO-SM
+#### [Compiling BCO-SM](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#compiling-bco-sm-1)
 
-#### Maintaining BCO-SM
+#### [Maintaining BCO-SM](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#maintaining-bco-sm-1)
 
-#### Future Sections
+#### [Future Sections](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#future-sections-1)
 
 ## Overview
 
