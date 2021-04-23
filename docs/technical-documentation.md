@@ -534,6 +534,8 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 ### Importing A New Ontology
 
+Ontology import is a process by which we fetch a subset of the lastest versions of any given ontology. Hence any changes to imported terms made upsteam of BCO-SM in the source ontology will be pulled down when imports are run. OBO ontologies are generally aware of this and follow comunity best practices making sure not to make extremely dramatic changes which could affect downstream applications such as BCO-SM. It is possible however that a term could be depricated in which case it a replacment term should be provided. Upstream changes to term labels or definitions or axioms are possible but are usually relatively rare. Re-writing our own versions of term labels helps guard against this. 
+
 In order to import a new OBO ontology we will need to do the following steps. The example below describes the process to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) followed a valid ontology file e.g. `bfo.owl`.
 
 In the following directory `bcodmont/src/ontology`is the ontology `Makefile`. The `Makefile` is the heart of the BCODMONT application ontology created by the Ontology Development Kit \(ODK\) in the initial release. The `Makefile` contains instructions for managing a variety of tasks including managing ontology imports, and releases. Within the `Makefile` \(on approximately line 75 at the time of creating these docs\), there will be the `IMPORTS` code-block which will resemble the following:
@@ -573,7 +575,7 @@ mirror/ro.owl: mirror/ro.trigger
 .PRECIOUS: mirror/%.owl
 ```
 
-There are a series of make targets for various ontologies e.g., `ro` shown above. Copy and paste the following at the end of the section, replacing `xyz` with the target ontology name in lower case, e.g., `so`. //TODO @Kai - so, are the pre-existing ontologies being updated to reflect any changes that have been made within their sources here? \(in addition to adding in a new ontology\).
+There are a series of make targets for various ontologies e.g., `ro` shown above. Copy and paste the following at the end of the section, replacing `xyz` with the target ontology name in lower case, e.g., `so`. 
 
 ```text
 ## ONTOLOGY: xyz
@@ -609,7 +611,7 @@ In our example we'll add to the following to be the content of the `so_terms.txt
 SO:0001031 #reverse sequence
 ```
 
-Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. After the curie it's typical but not strictly required to put the term label e.g., `#reverse sequence`.
+Note the following, `#`'s are comments which are not compiled. Hence line 1 is not strictly necessary but it helps to keep track of where imported terms were intended to be used. Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `SO:0001031`once in the `so_terms.txt` file \(even if it's used in multiple modules\). Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `SO`, followed by the numeric ID `0001031`. After the curie it's typical but not strictly required to put the term label e.g., `#reverse sequence`. When adding new terms to be imported make sure to add them like this within the appropriate `xyz_terms.txt` file.
 
 Make sure to **Add** the new .txt file:
 
