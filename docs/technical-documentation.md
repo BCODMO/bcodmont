@@ -211,7 +211,7 @@ The `editors note` column serves as a place for ontology developers to make note
 
 #### Synonyms
 
-Following OBO common practices, the BCO-SM robot templates contain four types of synonyms: `exact synonym`, `broad synonym`, `narrow synonym`, `related synonym`. These follow SKOS style \(broader or narrow\) conventions. //TODO: @Kai - can you add a bit more to this? Maybe link out to docs on these conventions.
+Following OBO common practices, the BCO-SM robot templates contain four types of synonyms: `exact synonym`, `broad synonym`, `narrow synonym`, `related synonym`. These follow SKOS style \(broader or narrow\) conventions. 
 
 Use `exact synonym` for interchangeable term labels, for example `seawater` and `sea water`.
 
