@@ -653,7 +653,7 @@ As well as commit it with an appropriate message such as:
 git commit imports/so_import.owl -m 'Run make all_imports'
 ```
 
-//TODO @Kai - maybe mention the axiom include/not include here again when adding in new ontologies to the import list?
+Note that in these steps we are importing upstream OBO ontologies into BCODMONT, aka this github repository which was setup by running the Ontology Development Kit and serves as the application ontology upon which BCO-SM is built. These imports include all original axioms and annotation properties from the upstream ontologies. Note that although downstream in BCO-SM we remove some axioms from some ontologies for some modules, here we are importing everything from the upstream OBO ontologies. 
 
 \*\*\*\*
 
