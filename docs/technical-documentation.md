@@ -243,30 +243,20 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 **//TODO perhaps add** something about when to commit i.e, with a set of new terms to a module. Original commands can be found in the `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file.
 
-### 1\) Download working copy Robot Templates
+### 1\) Download working copy of Robot Templates
 
-This step is temporary as it draws from the google drive sheets. Later once the model is more settled, this can be changed to simply modify the `.tsv` files in the github repository. Perhaps we could also use aditional/fancier tools such as [COGS](https://github.com/ontodev/cogs) to work with the source files in google sheets but have their working versions stored in github \(TBD\).
+This step is temporary as it draws from the google drive sheets. Later once the model is more settled, this can be changed to simply modify the `.tsv` files in the github repository. Perhaps we could also use additional/fancier tools such as [COGS](https://github.com/ontodev/cogs) to work with the source files in google sheets but have their working versions stored in github \(TBD\).
 
-#### Biology
+Once the new additions have been made to the Robot templates \(following the steps described in the [Preparing new BCO-SM terms](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#preparing-new-bco-sm-terms) section, the working google sheet versions of the templates can be pulled down to the github working `.tsv` files. 
 
-//TODO: Re-download **anatomy**.tsv:
+To download the working google sheet versions of the vocabularies on the google sheet click `File` Then `Download`, then select `Tab-seperated valuse` makeing sure you're on the correct sheet for the module you intend to be on. See the following image below:
 
-```text
-//TODO
-```
+![](.gitbook/assets/image%20%283%29.png)
 
-Try from [https://angelov.ai/post/2020/wget-files-from-gdrive/](https://angelov.ai/post/2020/wget-files-from-gdrive/) or [https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/](https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/)or or [https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/](https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/) or similar or the command like Nico used:
+Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD.   
+ 
 
-```text
-MIXTURES="https://docs.google.com/spreadsheets/d/e/2PACX-1vQr0nBpt5ySurXeTgAIoiI2t1wC3xk2fGrZRVQOvc_ugziNlKHoNj4-xbVGnz84ohOVc-0g693LWiiz/pub?output=tsv"
-
-templates/mixtures.tsv:
-    wget $(MIXTURES) -O $@
-```
-
-...
-
-//TODO: @Kai - not sure if this is what you're looking for, but rclone is another program that easily lets you move files between googledrive & machines vis command line/programmatic interface
+//TODO add the rest of the paths. 
 
 ### 2\) Run Robot Templates
 
@@ -700,7 +690,36 @@ Try again with: 8 GB instance and the following \(if the regular command doesn't
 docker run -m 8g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx7' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
 ```
 
+\*\*\*\*
+
+**//TODO section about**  using wget or similar to download robot templates via the command line:
+
+#### Biology
+
+//TODO: Re-download **anatomy**.tsv:
+
+```text
+//TODO
+```
+
+Try from [https://angelov.ai/post/2020/wget-files-from-gdrive/](https://angelov.ai/post/2020/wget-files-from-gdrive/) or [https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/](https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/)or or [https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/](https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/) or similar or the command like Nico used:
+
+```text
+MIXTURES="https://docs.google.com/spreadsheets/d/e/2PACX-1vQr0nBpt5ySurXeTgAIoiI2t1wC3xk2fGrZRVQOvc_ugziNlKHoNj4-xbVGnz84ohOVc-0g693LWiiz/pub?output=tsv"
+
+templates/mixtures.tsv:
+    wget $(MIXTURES) -O $@
+```
+
+...
+
+ @Kai - not sure if this is what you're looking for, but rclone is another program that easily lets you move files between googledrive & machines vis command line/programmatic interface
+
+\*\*\*\*
+
 **//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do releases with named versions.
+
+
 
 **//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master.
 
