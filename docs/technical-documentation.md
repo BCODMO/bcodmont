@@ -526,7 +526,7 @@ Note when running on linux systems depending on permissions one may need to add 
 
 #### Running individual imports
 
-To re-run an individual ontology \(instead of all imported ontologies\) one can run a command such as the following, where for example the Gene Ontology `go` is the ontology of interest. One would run the following from `bcodmont/src/ontology`: \(note `sudo` may be required\) //TODO @Kai - is this run.sh the same from this repo which starts the docker? `docker run -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"`
+To re-run an individual ontology \(instead of all imported ontologies\) one can run a command such as the following, where for example the Gene Ontology `go` is the ontology of interest. One would run the following from `bcodmont/src/ontology`: \(note `sudo` may be required\). This `run.sh` script is what initiates the call to the docker with the line:`docker run -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"`
 
 ```text
 ./run.sh make imports/go_import.owl
