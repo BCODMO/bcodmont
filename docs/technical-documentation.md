@@ -146,23 +146,23 @@ At the moment the first several columns contain headers such as `Sub category 1:
 
 In order for a term \(a row in the spreadsheet\) to be recognized by robot and compiled into owl code, it must have an entry in the `ontology ID` column. This must either include a BCODMO Semantic Model \(BCO-SM\) ID, or an ID from another OBO ontology. BCO-SM terms must start with the prefix `BSM:` and be followed by seven digits e.g., `BSM:0200001`. BCO-SM IDs must be within an appropriate numeric ID range as specified within the [BCODMO\_SM/idranges.owl](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/idranges.owl) file.
 
-* Qualifiers: 0000001-0010000
-  * Biology:
-    * Anatomy: 0010001-0020000
-    * Physiology: 0020001-0030000
-    * Ecology: 0030001-0040000
-    * Biomolecules: 0040001-0050000
-    * Organism: 0050001-0060000
-  * Matrix:
-    * Material: 0100001-0110000
-    * Context: 0110001-0120000
-    * Biome: 0120001-0130000
-  * Chemistry:
-    * Element: 0200001-0210000
-    * Compound: 0210001-0220000
-  * Physics:
-    * Characteristic: 0310001-0320000
-    * Phenomenon: 0320001-0330000
+* Quantifiers: 0000001-0010000
+* Biology:
+  * Anatomy: 0010001-0020000
+  * Physiology: 0020001-0030000
+  * Ecology: 0030001-0040000
+  * Biomolecules: 0040001-0050000
+  * Organism: 0050001-0060000
+* Matrix:
+  * Material: 0100001-0110000
+  * Context: 0110001-0120000
+  * Biome: 0120001-0130000
+* Chemistry:
+  * Element: 0200001-0210000
+  * Compound: 0210001-0220000
+* Physics:
+  * Characteristic: 0310001-0320000
+  * Phenomenon: 0320001-0330000
 * Operational: 0400001-0410000
 
 Imported terms from other OBO ontologies such as ENVO, UBERON, GO etc must follow this same formatting, e.g, with imported ENVO terms one must use the prefix `ENVO:` followed by the correct identifier number, e.g. `ENVO:03000102`. This is refereed to as the `curie` ID formatting style.
