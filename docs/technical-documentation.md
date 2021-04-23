@@ -251,12 +251,37 @@ Once the new additions have been made to the Robot templates \(following the ste
 
 To download the working google sheet versions of the vocabularies on the google sheet click `File` Then `Download`, then select `Tab-seperated valuse` makeing sure you're on the correct sheet for the module you intend to be on. See the following image below:
 
-![](.gitbook/assets/image%20%283%29.png)
+Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD. 
 
-Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD.   
- 
+**Biology**:
 
-//TODO add the rest of the paths. 
+Anatomy: `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv`
+
+**Physiology**: `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/physiology.tsv`
+
+**Matrix:**
+
+Region: `bcodmont/src/ontology/BCODMO_SM/matrix/robot_templates/region.tsv`
+
+Biome: `bcodmont/src/ontology/BCODMO_SM/matrix/robot_templates/biome.tsv`
+
+Context: `bcodmont/src/ontology/BCODMO_SM/matrix/robot_templates/context.tsv`
+
+Material: `bcodmont/src/ontology/BCODMO_SM/matrix/robot_templates/material.tsv`
+
+**Chemistry**
+
+Element: `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/element.tsv`
+
+Compound: `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`
+
+**Physics**:
+
+Characteristic: `bcodmont/src/ontology/BCODMO_SM/physics/robot_templates/characteristic.tsv`
+
+Phenomenon: `bcodmont/src/ontology/BCODMO_SM/physics/robot_templates/phenomenon.tsv`
+
+**Operational:** `bcodmont/src/ontology/BCODMO_SM/operational/robot_templates/operational.tsv`
 
 ### 2\) Run Robot Templates
 
