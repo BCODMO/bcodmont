@@ -529,7 +529,23 @@ In order to re-use ontology terms from existing OBO ontologies we need to import
 
 #### Add new terms to import
 
-In order to import new terms from ontologies already incorporated into BCO-SM, we need to do the following:
+In order to import new terms from ontologies already incorporated into BCO-SM, we need to do the following. Note this step is the same as that descirbed in **step 4\)** of [Importing A New Ontology](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#importing-a-new-ontology).
+
+Add new term\(s\) to import to the ontology imports terms file\(s\), e.g., `chebi_terms.txt`. These files are located in the directory path `bcodmont/src/ontology/imports`. For example to add the following import terms to the BCO-SM CHEBI import, you can modify the `chebi_terms.txt` file using any standard text editor such as atom, vim, nano, emacs, gedit, notepad++, textedit, etc. For example add the following lines to the `BCODMO_SM compound terms:`section:
+
+```text
+CHEBI:63299	#carbohydrate derivative
+CHEBI:16493	#1-deoxy-D-xylulose 5-phosphate
+CHEBI:28681 #N,N'-diacetylchitobiose
+```
+
+Note that `#`'s are comments any code after which are not compiled, such as the term labels. Some import xyz\_terms.txt files are sorted alphabetically, this insn't stricly necessary and it just to help keep track of existing imports.  Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `CHEBI:63299` once in the so\_terms.txt file \(even if it's used in multiple modules\). Duplications to term imports won't cause problems so it doesn't hurt if it's done on accident.  Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `CHEBI`, followed by the numeric ID `63299`. After the curie it's typical but not strictly required to put the term label e.g., `#carbohydrate derivative`. When adding new terms to be imported make sure to add them like this within the appropriate `xyz_terms.txt` file.
+
+Make sure to commit modified `xyz_terms.txt` file\(s\). with an appropriate commit message such as:
+
+```text
+git commit chebi_terms.txt -m 'Add CHEBI:63299, CHEBI:16493 and CHEBI:28681 to be imported'
+```
 
 #### Running all imports
 
