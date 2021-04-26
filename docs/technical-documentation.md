@@ -60,7 +60,7 @@ The [Quantifiers](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCOD
 
 ### OBO Ontologies Used
 
-BCODMONT incorporates terms from pre-existing terms within OBO ontologies in an effort to facilitate linkage with outside data repositories as well as to minimize the burden for creation of new richly defined terms. Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/). 
+BCODMONT incorporates terms from pre-existing terms within OBO ontologies in an effort to facilitate linkage with outside data repositories as well as to minimize the burden for creation of new richly defined terms. Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/).
 
 This section is split into two subsections the first consists of OBO foundry ontologies which 1\) are guarantied to be imported using the standard Robot import workflow \(from the ODK\), 2\) which contain standardized annotation properties and axioms \(so we know we can reuse them without writing extra conditions in our search or GUI visualization workflows\) and 3\) Have been vetted as following the OBO principal of orthogonality, that is describing a specific domain or set of domains but not overlapping with the information represented by another ontology. The second section describes other ontologies which are referenced but not directly used as imports. There are several reasons for not directly using some ontologies as imports and optionally mapping to others. Non OBO ontologies are not hosted in the same way as OBO ones and aren't guarantied to work with the import workflow, they are also not guarantied to use the same annotation properties \(e.g., definitions\). Some OBO projects maybe deprecated or are not themselves examples of best practices or good sources to draw from. Some non OBO projects, \(e.g. SIO\) are well made and although not guarantied to have the required properties, they are used by other systems. hence mapping to them helps to bolster overall inter-project interoperability, and future efforts to harmonize them with OBO projects.
 
@@ -72,7 +72,7 @@ This section is split into two subsections the first consists of OBO foundry ont
 
 **The Core Ontology for Biology and Biomedicine \(COB\)**: brings together key terms from a wide range of OBO projects to improve interoperability, attempting to standardize terms important across disciplines and ontologies. BCO-SM when possible tries to make use of COB terms within Biology modules, e.g. `organism`, or `cell`, which might also be found in other OBO ontologies. Browse COB from [here](https://www.ebi.ac.uk/ols/ontologies/cob).
 
-**The Environment Ontology \(ENVO\)**: describes environmental features, biomes, ecosystems, planetary or other astronomical bodies, their parts, or environmental processes. The BCO-SM primarily uses ENVO terms, \(e.g., `abyssal plain` or `first year ice` within the Matrix modules to comprehensively describe the environmental context of collected samples, at various levels of granularity, following the MIxS model used by genomic repositories such as NCBI and EBI. BCO-SM also uses ENVO terms in the Physics Phenomenon and Biology Ecology modules. Browse ENVO from [here](https://www.ebi.ac.uk/ols/ontologies/envo).
+**The Environment Ontology \(ENVO\)**: describes environmental features, biomes, ecosystems, planetary or other astronomical bodies, their parts, or environmental processes. The BCO-SM primarily uses ENVO terms, \(e.g., `abyssal plain` or `first year ice` within the Matrix modules to comprehensively describe the environmental context of collected samples, at various levels of granularity, following the MIxS model used by genomic repositories such as NCBI and EBI. BCO-SM also uses ENVO terms in the Physics Phenomenon and Biology Ecology modules. Browse ENVO from [here](https://www.ebi.ac.uk/ols/ontologies/envo). Additional documentation about how to browse the Environment Ontology \(ENVO\), as well as its contents, can be found at the [navigating ENVO](https://github.com/EnvironmentOntology/envo/wiki/Navigating-ENVO) github wiki page. The navigation page describes how to go about viewing ENVO \(or other OBO ontologies\), as well as described the main hierarchies within ENVO, giving examples of each.
 
 **The Gene Ontology \(GO\)**: describes the function of genes and gene products. BCO-SM uses GO terms, e.g., `photosynthesis` and `repsiration` in the Biology Physiology submodule. Browse GO from [here](https://www.ebi.ac.uk/ols/ontologies/go).
 
@@ -126,13 +126,13 @@ For the time being, data managers can do the following to request new terms.
 
 3\) Make sure to thoroughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM). //TODO either add link to web protege versions or other way to visualize these such as the EBI-docker.
 
-4\) **Optional** Search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start. 
+4\) **Optional** Search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start.
 
 5\) **Optional** if you want to go the extra mile, check out the following section on preparing new BCO-SM terms for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. Make sure to check that if any new import import terms are required \(aka if we can leverage existing ontology terms\). If so, make sure to add them to the list of imports, see the [Managing Imports](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#managing-imports) section prior to [compiling](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#compiling-bco-sm-1) the robot templates. Also note that when using imported terms, we do **NOT** need to add annotion properties such as synonyms or definitions when filling out the robot templates in the following section.
 
 ### Preparing new BCO-SM terms
 
-The working versions of the BCO-SM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) sub-directories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv). However, relying on google sheets as the source of truth should not to be considered a long term solution. At some point, once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth \(place to work from\). 
+The working versions of the BCO-SM robot templates are currently the google drive sheets \(linked within the _BCO-DMO Semantic Data Project_ trello page. At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM) sub-directories e.g., [biology/robot\_templates/anatomy.tsv](https://github.com/BCODMO/bcodmont/blob/main/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv). However, relying on google sheets as the source of truth should not to be considered a long term solution. At some point, once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth \(place to work from\).
 
 #### Basics about Robot templates
 
@@ -177,8 +177,6 @@ BCO-SM terms and imported terms should make use of the `parent class` relationsh
 
 To discover new OBO terms which might be relevant to use as parent classes, you can browse them from the ENVO from the [EMBL-EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/ontologies/) \(OLS\). The OLS search can be filtered by ontology, e.g., [https://www.ebi.ac.uk/ols/ontologies/chebi](https://www.ebi.ac.uk/ols/ontologies/chebi), or [https://www.ebi.ac.uk/ols/ontologies/go](https://www.ebi.ac.uk/ols/ontologies/go) etc.
 
-Additional documentation about how to browse the Environment Ontology \(ENVO\), as well as its contents, can be found at the [navigating ENVO](https://github.com/EnvironmentOntology/envo/wiki/Navigating-ENVO) github wiki page. The navigation page describes how to go about viewing ENVO \(or other OBO ontologies\), as well as described the main hierarchies within ENVO, giving examples of each.
-
 #### Matches
 
 BCO-SM makes use of the SKOS `exact match` and `close match` annotation properties. `exact match` should be used in cases where two semantics are intended to be the same. For example if an OBO term is found or created that can replace a BCO-SM term.`close match` can be used in cases where two semantics may be similar but aren't exactly the same representation. For example terms form the [NCI Thesaurus OBO Edition](https://www.ebi.ac.uk/ols/ontologies/ncit) e.g., `NCIT:C12508`.
@@ -211,7 +209,7 @@ The `editors note` column serves as a place for ontology developers to make note
 
 #### Synonyms
 
-Following OBO common practices, the BCO-SM robot templates contain four types of synonyms: `exact synonym`, `broad synonym`, `narrow synonym`, `related synonym`. These follow SKOS style \(broader or narrow\) conventions. 
+Following OBO common practices, the BCO-SM robot templates contain four types of synonyms: `exact synonym`, `broad synonym`, `narrow synonym`, `related synonym`. These follow SKOS style \(broader or narrow\) conventions.
 
 Use `exact synonym` for interchangeable term labels, for example `seawater` and `sea water`.
 
@@ -247,11 +245,11 @@ Any columns with `SPLIT=|` at the end of the string in the template \(second\) r
 
 This step is temporary as it draws from the google drive sheets. Later once the model is more settled, this can be changed to simply modify the `.tsv` files in the github repository. Perhaps we could also use additional/fancier tools such as [COGS](https://github.com/ontodev/cogs) to work with the source files in google sheets but have their working versions stored in github \(TBD\).
 
-Once the new additions have been made to the Robot templates \(following the steps described in the [Preparing new BCO-SM terms](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#preparing-new-bco-sm-terms) section, the working google sheet versions of the templates can be pulled down to the github working `.tsv` files. 
+Once the new additions have been made to the Robot templates \(following the steps described in the [Preparing new BCO-SM terms](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#preparing-new-bco-sm-terms) section, the working google sheet versions of the templates can be pulled down to the github working `.tsv` files.
 
 To download the working google sheet versions of the vocabularies on the google sheet click `File` Then `Download`, then select `Tab-seperated valuse` makeing sure you're on the correct sheet for the module you intend to be on. See the following image below:
 
-Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD. 
+Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD.
 
 **Biology**:
 
@@ -549,7 +547,7 @@ To re-run an individual ontology \(instead of all imported ontologies\) one can 
 
 ### Importing A New Ontology
 
-Ontology import is a process by which we fetch a subset of the lastest versions of any given ontology. Hence any changes to imported terms made upsteam of BCO-SM in the source ontology will be pulled down when imports are run. OBO ontologies are generally aware of this and follow comunity best practices making sure not to make extremely dramatic changes which could affect downstream applications such as BCO-SM. It is possible however that a term could be depricated in which case it a replacment term should be provided. Upstream changes to term labels or definitions or axioms are possible but are usually relatively rare. Re-writing our own versions of term labels helps guard against this. 
+Ontology import is a process by which we fetch a subset of the lastest versions of any given ontology. Hence any changes to imported terms made upsteam of BCO-SM in the source ontology will be pulled down when imports are run. OBO ontologies are generally aware of this and follow comunity best practices making sure not to make extremely dramatic changes which could affect downstream applications such as BCO-SM. It is possible however that a term could be depricated in which case it a replacment term should be provided. Upstream changes to term labels or definitions or axioms are possible but are usually relatively rare. Re-writing our own versions of term labels helps guard against this.
 
 In order to import a new OBO ontology we will need to do the following steps. The example below describes the process to import the **Sequence types and features ontology \(SO\)** into BCODMONT. This process will work with other OBO foundry ontologies which are available from [`http://purl.obolibrary.org/obo/`](http://purl.obolibrary.org/obo/bfo.owl) followed a valid ontology file e.g. `bfo.owl`.
 
@@ -590,7 +588,7 @@ mirror/ro.owl: mirror/ro.trigger
 .PRECIOUS: mirror/%.owl
 ```
 
-There are a series of make targets for various ontologies e.g., `ro` shown above. Copy and paste the following at the end of the section, replacing `xyz` with the target ontology name in lower case, e.g., `so`. 
+There are a series of make targets for various ontologies e.g., `ro` shown above. Copy and paste the following at the end of the section, replacing `xyz` with the target ontology name in lower case, e.g., `so`.
 
 ```text
 ## ONTOLOGY: xyz
@@ -668,7 +666,7 @@ As well as commit it with an appropriate message such as:
 git commit imports/so_import.owl -m 'Run make all_imports'
 ```
 
-Note that in these steps we are importing upstream OBO ontologies into BCODMONT, aka this github repository which was setup by running the Ontology Development Kit and serves as the application ontology upon which BCO-SM is built. These imports include all original axioms and annotation properties from the upstream ontologies. Note that although downstream in BCO-SM we remove some axioms from some ontologies for some modules, here we are importing everything from the upstream OBO ontologies. 
+Note that in these steps we are importing upstream OBO ontologies into BCODMONT, aka this github repository which was setup by running the Ontology Development Kit and serves as the application ontology upon which BCO-SM is built. These imports include all original axioms and annotation properties from the upstream ontologies. Note that although downstream in BCO-SM we remove some axioms from some ontologies for some modules, here we are importing everything from the upstream OBO ontologies.
 
 \*\*\*\*
 
@@ -717,7 +715,7 @@ docker run -m 8g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='
 
 \*\*\*\*
 
-**//TODO section about**  using wget or similar to download robot templates via the command line:
+**//TODO section about** using wget or similar to download robot templates via the command line:
 
 #### Biology
 
@@ -738,13 +736,11 @@ templates/mixtures.tsv:
 
 ...
 
- @Kai - not sure if this is what you're looking for, but rclone is another program that easily lets you move files between googledrive & machines vis command line/programmatic interface
+@Kai - not sure if this is what you're looking for, but rclone is another program that easily lets you move files between googledrive & machines vis command line/programmatic interface
 
 \*\*\*\*
 
 **//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do releases with named versions.
-
-
 
 **//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master.
 
