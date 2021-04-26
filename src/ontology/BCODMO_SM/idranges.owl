@@ -34,7 +34,7 @@ AnnotationProperty: allocatedto:
 Datatype: idrange:1
 
     Annotations:
-        allocatedto: "Qualifiers"
+        allocatedto: "Quantifiers"
 
     EquivalentTo:
         xsd:integer[>= 0000001 , <= 0010000]
@@ -134,7 +134,7 @@ Datatype: idrange:11
 Datatype: idrange:12
 
     Annotations:
-        allocatedto: "Physics/characteristic"
+        allocatedto: "Physics/Characteristic"
 
     EquivalentTo:
         xsd:integer[>= 0310001 , <= 0320000]
@@ -143,7 +143,7 @@ Datatype: idrange:12
 Datatype: idrange:13
 
     Annotations:
-        allocatedto: "Physics/phenomenon"
+        allocatedto: "Physics/Phenomenon"
 
     EquivalentTo:
         xsd:integer[>= 0320001 , <= 0330000]
