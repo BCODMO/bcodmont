@@ -173,7 +173,9 @@ In the `label` column, put the primary labels for new or imported terms, e.g., `
 
 #### Parent classes
 
-BCO-SM terms and imported terms should make use of the `parent class` relationship. For example if you were adding a new class `ice fog`, you'd add the pre-existing parameter `fog` as the `parent class` for the new term. You can simply type or copy paste the label of an existing term into the `parent class` column.
+BCO-SM terms and imported terms should make use of the `parent class` relationship. An important part of the work of an ontologist is to identify parent/child \(super/sub\) class relationships. For example if you were adding a new class `ice fog`, you'd add the pre-existing parameter `fog` as the `parent class` for the new term. For the most part BCO-SM follows the heirarchal relationships that already exist within imported OBO ontologies. However in some instances, e.g., Chemistry we have simplified the hierarchy, and removed some intermediate terms. If adding new terms which themselves don't have an appropriate parent class in BCO-SM, it might be necessary to add intermediate parent classes. See this issue as an example of doing this. 
+
+In order to add to a parent class to a Robot Template, you can simply type or copy paste the label of an existing term into the `parent class` column.
 
 To discover new OBO terms which might be relevant to use as parent classes, you can browse them from the ENVO from the [EMBL-EBI Ontology Lookup Service](https://www.ebi.ac.uk/ols/ontologies/) \(OLS\). The OLS search can be filtered by ontology, e.g., [https://www.ebi.ac.uk/ols/ontologies/chebi](https://www.ebi.ac.uk/ols/ontologies/chebi), or [https://www.ebi.ac.uk/ols/ontologies/go](https://www.ebi.ac.uk/ols/ontologies/go) etc.
 
