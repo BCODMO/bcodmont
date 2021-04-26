@@ -536,7 +536,7 @@ Add new term\(s\) to import to the ontology imports terms file\(s\), e.g., `cheb
 ```text
 CHEBI:63299	#carbohydrate derivative
 CHEBI:16493	#1-deoxy-D-xylulose 5-phosphate
-CHEBI:28681 #N,N'-diacetylchitobiose
+CHEBI:28681	#N,N'-diacetylchitobiose
 ```
 
 Note that `#`'s are comments any code after which are not compiled, such as the term labels. Some import xyz\_terms.txt files are sorted alphabetically, this insn't stricly necessary and it just to help keep track of existing imports.  Once imported new terms do not need to be duplicated, i.e., we only ever need to specify `CHEBI:63299` once in the so\_terms.txt file \(even if it's used in multiple modules\). Duplications to term imports won't cause problems so it doesn't hurt if it's done on accident.  Imported terms must follow this format referred to as CURIE format with the uppercase ontology name, e.g. `CHEBI`, followed by the numeric ID `63299`. After the curie it's typical but not strictly required to put the term label e.g., `#carbohydrate derivative`. When adding new terms to be imported make sure to add them like this within the appropriate `xyz_terms.txt` file.
