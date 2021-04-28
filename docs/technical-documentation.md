@@ -112,9 +112,15 @@ For the time being, data managers can do the following to request new terms.
 
 3\) Make sure to thoroughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM). //TODO either add link to web protege versions or other way to visualize these such as the EBI-docker. 
 
+<<<<<<< Updated upstream
 4\) **Optional** Search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](#obo-ontologies-used) section of  [Overview](#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start. 
 
 5\) **Optional** if you want to go the extra mile, check out the following section on preparing new BCO-SM terms for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. 
+=======
+4\) First, search for appropriate pre-existing terms in [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index). Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start.
+
+5\) **Optional** if you want to go the extra mile, check out the following section on preparing new BCO-SM terms for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. Make sure to check that if any new import import terms are required \(aka if we can leverage existing ontology terms\). If so, make sure to add them to the list of imports, see the [Managing Imports](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#managing-imports) section prior to [compiling](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#compiling-bco-sm-1) the robot templates. Also note that when using imported terms, we do **NOT** need to add annotation properties such as synonyms or definitions when filling out the robot templates in the following section. //TODO @Kai - maybe split the developer role portion of this section somewhere else?
+>>>>>>> Stashed changes
 
 ### Preparing new BCO-SM terms
 
@@ -126,7 +132,11 @@ Robot templates are structured as follows, the first row contains `headers`, the
 
 #### BCO-SM Category Headers
 
+<<<<<<< Updated upstream
 At the moment the first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl. These are not strictly necessary \(and could be removed, however, they can be helpful when adding new terms to the model\). 
+=======
+At the moment the first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl. These are not strictly necessary \(and could be removed, however, they can be helpful when adding new terms to the model\). //TODO: @Kai - these headers are being used by the UI
+>>>>>>> Stashed changes
 
 #### Ontology IDs
 
