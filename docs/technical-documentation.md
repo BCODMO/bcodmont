@@ -710,11 +710,9 @@ The following should be done in the `bcodmont/src/ontology/BCODMO_SM` directory.
 
 **Step 1\)** identify which of the top level modules `biology`, `chemistry` , `physics`, `operational`, `quantifiers` or `matrix` that the new module should be added to. In our the example, the new `ecology` module should be added to BCO-SMs`Biology`top level module.
 
-**Step 2\)** Create the base robot template `.tsv` file. Within the top level directory folder, e.g., `bcodmont/src/ontology/BCODMO_SM/biology` the directory structure is laid out as follows. There are `.owl` files for each sub module e.g., `anatomy.owl`, and a `robot_templates/`directory which for each modules has both `.owl` and `.tsv`files. Following this stucture we will need to create all of three of these files. The first of which being the base `.tsv` file in the `robot_templates/`directory. For example with the `ecology` example create 1\) the file `ontology/BCODMO_SM/biology/robot_templates/ecology.tsv`. The new `.tsv`file will be a robot template and will thus need to formatted in a particular way, see the [**Basics about Robot templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#basics-about-robot-templates) ****section for more information. The simplest way to go about this would be to copy the structure, aka the first two header rows of an existing module. This cold be done by for example copying an existing module with a command like `cp biology/robot_templates/anatomy.tsv biology/robot_templates/ecology.tsv`.
+**Step 2\)** Create the base robot template `.tsv` file. Within the top level directory folder, e.g., `bcodmont/src/ontology/BCODMO_SM/biology` the directory structure is laid out as follows. There are `.owl` files for each sub module e.g., `anatomy.owl`, and a `robot_templates/`directory which for each modules has both `.owl` and `.tsv`files. Following this stucture we will need to create all of three of these files. The first of which being the base `.tsv` file in the `robot_templates/`directory. For example with the `ecology` example create 1\) the file `ontology/BCODMO_SM/biology/robot_templates/ecology.tsv`. The new `.tsv`file will be a robot template and will thus need to formatted in a particular way, see the ****[Basics about Robot templates](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#basics-about-robot-templates) section for more information. The simplest way to go about this would be to copy the structure, aka the first two header rows of an existing module. This cold be done by for example copying an existing module with a command like `cp biology/robot_templates/anatomy.tsv biology/robot_templates/ecology.tsv`.
 
-**Step 3\)** Make sure to add a new ontology ID range for the new module updating it in both the doccumntation [**Ontology IDs**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#ontology-ids)
-
-section, as well as the `bcodmont/src/ontology/BCODMO_SM/idranges.owl` file. For example the `ecology` module \(sub module to `biology` will be assigned the range `0030001-0040000`.
+**Step 3\)** Make sure to add a new ontology ID range for the new module updating it in both the doccumntation [Ontology IDs](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#ontology-ids) section, as well as the `bcodmont/src/ontology/BCODMO_SM/idranges.owl` file. For example the `ecology` module \(sub module to `biology` will be assigned the range `0030001-0040000`.
 
 **Step 4\)** The next step is to adjust the header rows to be specific for the new module. Although the majority of the header rows can be the same, make sure to update the `Entity subset` and `category subset` columns this is important as the latter is used in later steps to compile the final version of the `owl` modules. The `Entity subset` should be specific for the top level module for example for `biology` it should be `http://bcodmo/sm#biology` note this is not as important as this is not used in the final modle. The `category subset`, however, is required and will need to be updated, to the name of the module, for example in `ecology` will need to be renamed to `http://bcodmo/sm#ecology`. Make sure every single row in the template has these columns filled out. 
 
@@ -734,9 +732,7 @@ Note following about this command. the `--template` flag is the new module's `.t
 
 **6.3\)** Prepare robot merge command\(s\), see and update the doccumentation in the [Merge Robot templates](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#3-merge-robot-templates) section. Setting up this next section will depend on wether or not you keep the existing axioms from the imported ontologies. At a high level there may be some assertion made in the upstream import ontologies that we don't want to keep in BCO-SM, to remove complexity or change things slightly to have a simplified hierarchy in BCO-SM. 
 
-**6.3 a\)** In the case where **do not** remove axioms, aka keep the import ontologies as they are, we'll need to modify the command in the [**Merge Imports and Preliminary Robot Templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-imports-and-preliminary-robot-templates)
-
-section to add 1\) any new imports and 2\) the new module file. In the case of adding the new `ecology` module we'd need to add both the PCO import:
+**6.3 a\)** In the case where **do not** remove axioms, aka keep the import ontologies as they are, we'll need to modify the command in the [Merge Imports and Preliminary Robot Templates](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-imports-and-preliminary-robot-templates) section to add 1\) any new imports and 2\) the new module file. In the case of adding the new `ecology` module we'd need to add both the PCO import:
 
 ```text
 --input ../imports/pco_import.owl
@@ -750,7 +746,7 @@ As well as the new module file:
 
 To the existing command. 
 
-**6.3 b\)** In the case where **do** want to remove axioms, aka modify the import ontologies hierarchy, we'll need to, for each new import ontology add a new command to the [**Make Object Property \(OP\) Free Versions of Select Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#make-object-property-op-free-versions-of-select-import-ontologies) ****section. For example in the case of the new `ecology` module we'd add the following to make an hierarchy free version of PCO:
+**6.3 b\)** In the case where **do** want to remove axioms, aka modify the import ontologies hierarchy, we'll need to, for each new import ontology add a new command to the [Make Object Property \(OP\) Free Versions of Select Import Ontologies](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#make-object-property-op-free-versions-of-select-import-ontologies) section. For example in the case of the new `ecology` module we'd add the following to make an hierarchy free version of PCO:
 
 **Make OP free version of PCO import**. Only run after adding to PCO import.
 
@@ -760,7 +756,7 @@ robot remove --input ../imports/pco_import.owl --axioms logical annotate --ontol
 
 The above command can be modified to switch all instances of "pco" for the relevant import ontology or ontologies codes. The code is the same as that used in the ontology import. 
 
-Also modify the command in the [**Merge Modules with Axiom free Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) ****to include the outputs from the previous step. For example for PCO, we'd need to add a new input flag to the command \(for the file created in the step above\):
+Also modify the command in the [**Merge Modules with Axiom free Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) section to include the outputs from the previous step. For example for PCO, we'd need to add a new input flag to the command \(for the file created in the step above\):
 
 ```text
 --input intermediate/pco_import_axioms_removed.owl
