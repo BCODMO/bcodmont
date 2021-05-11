@@ -457,6 +457,12 @@ Filter **physiology** from th axiom-free merged ontology
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
 ```
 
+Filter **ecology** from th axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
+```
+
 #### Quantifiers
 
 Filter **quantifiers** from the regular merged ontology
@@ -758,7 +764,26 @@ Also modify the command in the [**Merge Modules with Axiom free Import Ontologie
 
 Note that making the axiom removed version of the ontology might not always be necessary and one could instead merge the regular import as is the case for `iao_import.owl`. //TODO double check and remove this if necessary. 
 
-**Step 6.4\)** TODO
+**Step 6.4\)** Next we'll need to add a robot filter command to the [**Filter merge product to create final modules**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#4-filter-merge-product-to-create-final-modules) section. Make sure to do so under the correct top level module. For example for adding the new `ecology`module under biology we'd add the following:  
+
+
+**6.4 a\)** If following step **6.3 a**, the command would be:
+
+Filter **ecology** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
+```
+
+**6.4 b\)** If following step **6.3 b**, the command would be:
+
+Filter **ecology** from th axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
+```
+
+In either case it's important to update the `--select "oboInOwl:inSubset=bsm:ecology"` to be the name of the new module and the same url as added in **step 4**. These steps will generate the final version of the newly added module. In the case of `ecology`, `biology/ecology.owl`.
 
 \*\*\*\*
 
