@@ -702,7 +702,7 @@ Note that in these steps we are importing upstream OBO ontologies into BCODMONT,
 
 \*\*\*\*
 
-### **Adding New BSM Modules**
+### **Adding New BCO-SM Modules**
 
 The following section explains how to add a new module to the BCO-SM. See the [**modules**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#modules) section for a description and explanation of the current modules in BCO-SM. Note that this likely won't be very commonplace after the initial establishment of the BCO-SM modules, however, just in case the following section describes how to add a new module to BCO-SM. This demonstration will use the `ecology` module as an example. 
 
