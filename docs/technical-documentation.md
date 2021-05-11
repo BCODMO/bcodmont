@@ -441,7 +441,7 @@ robot merge --input intermediate/chebi_import_axioms_removed.owl --input interme
 
 ### 4\) Filter merge product to create final modules
 
-The following steps make use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template tsv files as well as additional annotation properties and object properties brought in from the import ontologies.
+The following steps make use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template `tsv` files as well as additional annotation properties and object properties brought in from the import ontologies.
 
 #### Biology
 
@@ -451,13 +451,13 @@ Filter **anatomy** from the axiom-free merged ontology
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:anatomy" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --output biology/anatomy.owl
 ```
 
-Filter **physiology** from th axiom-free merged ontology
+Filter **physiology** from the axiom-free merged ontology
 
 ```text
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
 ```
 
-Filter **ecology** from th axiom-free merged ontology
+Filter **ecology** from the axiom-free merged ontology
 
 ```text
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
@@ -777,7 +777,7 @@ robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bc
 
 **6.4 b\)** If following step **6.3 b**, the command would be:
 
-Filter **ecology** from th axiom-free merged ontology
+Filter **ecology** from the axiom-free merged ontology
 
 ```text
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
