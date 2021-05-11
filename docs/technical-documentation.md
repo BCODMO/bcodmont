@@ -436,7 +436,7 @@ robot remove --input ../imports/pco_import.owl --axioms logical annotate --ontol
 This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, and GO\) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules \(**compound** and **element**\), all four **matrix** modules \(region, biome, context and material\), and both current Biology modules \(**anatomy** and **physiology**\).
 
 ```text
-robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
 ### 4\) Filter merge product to create final modules
@@ -763,6 +763,12 @@ Also modify the command in the [**Merge Modules with Axiom free Import Ontologie
 ```
 
 Note that making the axiom removed version of the ontology might not always be necessary and one could instead merge the regular import as is the case for `iao_import.owl`. //TODO double check and remove this if necessary. 
+
+Also make sure to add the new module as an input to the  [**Merge Modules with Axiom free Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) command,  for example for the ecology module add:
+
+```text
+--input biology/robot_templates/ecology.owl
+```
 
 **Step 6.4\)** Next we'll need to add a robot filter command to the [**Filter merge product to create final modules**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#4-filter-merge-product-to-create-final-modules) section. Make sure to do so under the correct top level module. For example for adding the new `ecology`module under biology we'd add the following:
 
