@@ -436,7 +436,7 @@ robot remove --input ../imports/pco_import.owl --axioms logical annotate --ontol
 This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, and GO\) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules \(**compound** and **element**\), all four **matrix** modules \(region, biome, context and material\), and both current Biology modules \(**anatomy** and **physiology**\).
 
 ```text
-robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
 ### 4\) Filter merge product to create final modules
@@ -726,7 +726,7 @@ Note following about this command. the `--template` flag is the new module's `.t
 
 **6.3\)** Prepare robot merge command\(s\), see and update the doccumentation in the [Merge Robot templates](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#3-merge-robot-templates) section. Setting up this next section will depend on wether or not you keep the existing axioms from the imported ontologies. At a high level there may be some assertion made in the upstream import ontologies that we don't want to keep in BCO-SM, to remove complexity or change things slightly to have a simplified hierarchy in BCO-SM. 
 
-**6.3 a\)** In the case where do don't remove axioms, aka keep the import ontologies as they are, we'll need to modify the command in the [**Merge Imports and Preliminary Robot Templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-imports-and-preliminary-robot-templates) ****section to add 1\) any new imports and 2\) the new module file. In the case of adding the new `ecology` module we'd need to add both the PCO import:
+**6.3 a\)** In the case where **do not** remove axioms, aka keep the import ontologies as they are, we'll need to modify the command in the [**Merge Imports and Preliminary Robot Templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-imports-and-preliminary-robot-templates) ****section to add 1\) any new imports and 2\) the new module file. In the case of adding the new `ecology` module we'd need to add both the PCO import:
 
 ```text
 --input ../imports/pco_import.owl
@@ -740,7 +740,7 @@ As well as the new module file:
 
 To the existing command. 
 
-**6.3 b\)** In the case where do want to remove axioms, aka modify the import ontologies hierarchy, we'll need to, for each new import ontology add a new command to the [**Make Object Property \(OP\) Free Versions of Select Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#make-object-property-op-free-versions-of-select-import-ontologies) ****section. For example in the case of the new `ecology` module we'd add the following to make an hierarchy free version of PCO:
+**6.3 b\)** In the case where **do** want to remove axioms, aka modify the import ontologies hierarchy, we'll need to, for each new import ontology add a new command to the [**Make Object Property \(OP\) Free Versions of Select Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#make-object-property-op-free-versions-of-select-import-ontologies) ****section. For example in the case of the new `ecology` module we'd add the following to make an hierarchy free version of PCO:
 
 **Make OP free version of PCO import**. Only run after adding to PCO import.
 
