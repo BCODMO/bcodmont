@@ -126,7 +126,7 @@ For the time being, data managers can do the following to request new terms.
 
 3\) Make sure to thoroughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO_SM). //TODO either add link to web protege versions or other way to visualize these such as the EBI-docker.
 
-4\) **Optional** Search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start.
+4\) Next, search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start.
 
 5\) **Optional** if you want to go the extra mile, check out the following section on preparing new BCO-SM terms for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. Make sure to check that if any new import import terms are required \(aka if we can leverage existing ontology terms\). If so, make sure to add them to the list of imports, see the [Managing Imports](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#managing-imports) section prior to [compiling](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#compiling-bco-sm-1) the robot templates. Also note that when using imported terms, we do **NOT** need to add annotion properties such as synonyms or definitions when filling out the robot templates in the following section.
 
@@ -391,7 +391,7 @@ As before we can run these commands from `bcodmont/src/ontology/BCODMO_SM/`
 
 #### Merge Imports and Preliminary Robot Templates
 
-The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version is used for **all modules other than the two chemistry modules.** Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. //TODO "Run this step after modifying any of the following ... imports or ... modules." //TODO @Kai - a little confused. Are we removing or not removing axioms for CHEBI?
+The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version is used for **all modules other than the two chemistry modules.** Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. //TODO "Run this step after modifying any of the following ... imports or ... modules.". Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. The commands in later steps clarify which merge product is used for what modules. 
 
 ```text
 robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.owl --input ../imports/uberon_import.owl --input ../imports/go_import.owl --input ../imports/iao_import.owl --input ../imports/obi_import.owl --input ../imports/uo_import.owl --input ../imports/chebi_import.owl --input ../imports/stato_import.owl --input ../imports/ms_import.owl --input ../imports/bfo_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/physiology.owl --input physics/robot_templates/characteristic.owl --input physics/robot_templates/phenomenon.owl --input quantifiers/robot_templates/quantifiers.owl --input operational/robot_templates/operational.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --output merge_products/BCODMO_SM_merged.owl
@@ -425,17 +425,23 @@ robot remove --input ../imports/uberon_import.owl --axioms logical annotate --on
 robot remove --input ../imports/go_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/go_import_axioms_removed.owl" --output intermediate/go_import_axioms_removed.owl
 ```
 
+**Make OP free version of PCO import**. Only run after adding to PCO import.
+
+```text
+robot remove --input ../imports/pco_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/pco_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/pco_import_axioms_removed.owl" --output intermediate/pco_import_axioms_removed.owl
+```
+
 #### Merge Modules with Axiom free Import Ontologies
 
 This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, and GO\) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules \(**compound** and **element**\), all four **matrix** modules \(region, biome, context and material\), and both current Biology modules \(**anatomy** and **physiology**\).
 
 ```text
-robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
 ### 4\) Filter merge product to create final modules
 
-The following steps make use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template tsv files as well as additional annotation properties and object properties brought in from the import ontologies.
+The following steps make use of the [Robot filter comand](https://robot.obolibrary.org/filter) in order to produce final export versions of the BCO-SM modules including all terms asserted in the Robot template `tsv` files as well as additional annotation properties and object properties brought in from the import ontologies.
 
 #### Biology
 
@@ -445,10 +451,16 @@ Filter **anatomy** from the axiom-free merged ontology
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:anatomy" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/anatomy.owl" --output biology/anatomy.owl
 ```
 
-Filter **physiology** from th axiom-free merged ontology
+Filter **physiology** from the axiom-free merged ontology
 
 ```text
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:physiology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/physiology.owl" --output biology/physiology.owl
+```
+
+Filter **ecology** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
 ```
 
 #### Quantifiers
@@ -690,11 +702,93 @@ Note that in these steps we are importing upstream OBO ontologies into BCODMONT,
 
 \*\*\*\*
 
-### **Adding New BSM Modules**
+### **Adding New BCO-SM Modules**
 
-Although this likely won't be very commonplace \(after the initial establishment of the BCO-SM modules\), the following section describes how to add a new module to BCO-SM.
+The following section explains how to add a new module to the BCO-SM. See the [**modules**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#modules) section for a description and explanation of the current modules in BCO-SM. Note that this likely won't be very commonplace after the initial establishment of the BCO-SM modules, however, just in case the following section describes how to add a new module to BCO-SM. This demonstration will use the `ecology` module as an example. 
 
-**//TODO section about** adding a new BCO-SM module use one of the biology mods as an example.
+The following should be done in the `bcodmont/src/ontology/BCODMO_SM` directory. 
+
+**Step 1\)** identify which of the top level modules `biology`, `chemistry` , `physics`, `operational`, `quantifiers` or `matrix` that the new module should be added to. In our the example, the new `ecology` module should be added to BCO-SMs`Biology`top level module.
+
+**Step 2\)** Create the base robot template `.tsv` file. Within the top level directory folder, e.g., `bcodmont/src/ontology/BCODMO_SM/biology` the directory structure is laid out as follows. There are `.owl` files for each sub module e.g., `anatomy.owl`, and a `robot_templates/`directory which for each modules has both `.owl` and `.tsv`files. Following this structuredoccumntation we will need to create all of three of these files. The first of which being the base `.tsv` file in the `robot_templates/`directory. For example with the `ecology` example create 1\) the file `ontology/BCODMO_SM/biology/robot_templates/ecology.tsv`. The new `.tsv`file will be a robot template and will thus need to formatted in a particular way, see the [**Basics about Robot templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#basics-about-robot-templates) section for more information. The simplest way to go about this would be to copy the structure, aka the first two header rows of an existing module. This cold be done by for example copying an existing module with a command like `cp biology/robot_templates/anatomy.tsv biology/robot_templates/ecology.tsv`.
+
+**Step 3\)** Make sure to add a new ontology ID range for the new module updating it in both the documentation [**Ontology IDs**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#ontology-ids) section, as well as the `bcodmont/src/ontology/BCODMO_SM/idranges.owl` file. For example the `ecology` module \(sub module to `biology` will be assigned the range `0030001-0040000`.
+
+**Step 4\)** The next step is to adjust the header rows to be specific for the new module. Although the majority of the header rows can be the same, make sure to update the `Entity subset` and `category subset` columns this is important as the latter is used in later steps to compile the final version of the `owl` modules. The `Entity subset` should be specific for the top level module for example for `biology` it should be `http://bcodmo/sm#biology` note this is not as important as this is not used in the final model. The `category subset`, however, is required and will need to be updated, to the name of the module, for example in `ecology` will need to be renamed to `http://bcodmo/sm#ecology`. Make sure every single row in the template has these columns filled out. 
+
+**Step 5\)** Fill out the new module with appropriate terms \(making sure not to duplicate any if the file was copied from an existing module in **step 2**\). This will be a bit more work depending on the content being represented by the new module. See the [**Preparing new BCO-SM terms**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#preparing-new-bco-sm-terms) section for details about editing the new robot template `.tsv` file. Although it can't be be prescribed exactly what the content of a new BCO-SM module might be an important consideration is what terminology from existing OBO ontologies can imported and reused in the new module. See the [**OBO Ontologies Used**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#obo-ontologies-used) section for a list of possibilities, though note that it is not exhaustiveappropirate. Depending on the content other appropriate OBO projects could be brought in. If using any imports, make sure to see and follow the directions in the [**Importing A New Ontology**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#importing-a-new-ontology) section. In the `ecology` example we'll make use of terms from the Population and Community Ontology \(PCO\) when possible. For non imported terms make sure to only use BCO-SM terms in the ID range specified in **step 3**. Note that this does not need to be completely finished in order to move on the the next steps. As long as there is at least one "data" row in addition to the two header rows you can return to this after completing the remaining steps. It might be helpful to also include some rows containing imported ontology terms to make sure they are being used and imported correctly.  
+
+**Step 6\)** Adding steps to compile BCO-SM. At some point while working on the previous step \(even with just one term in\) you can move on to this and the following steps. See the [**Compiling BCO-SM**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#compiling-bco-sm-1) section, to which we will add new robot compilation commands. 
+
+**6.1\)** The first part of this \(is the previous step\) aka adding the new content to the module's robot template tsv file. For example `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/ecology.tsv`. 
+
+**6.2\)** Next we'll need to add a command to run the new robot template see the [**Run Robot Template**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#2-run-robot-templates) section. The example command added to comple the ecology template is:
+
+```text
+robot template --template biology/robot_templates/ecology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "ENVO:http://purl.obolibrary.org/obo/ENVO_" --prefix "PCO:http://purl.obolibrary.org/obo/PCO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/ecology.owl" -o biology/robot_templates/ecology.owl
+```
+
+Note following about this command. the `--template` flag is the new module's `.tsv` file. The -i flag is the upstream `bcodmont-edit.owl` application ontology. There are multiple `--prefix` flags including for `RO`, `BSM` and any imported ontologies, for example `PCO`. Make sure to add prefix flags for all imported ontologies. The `--ontology-iri` flag is the machine-readable name of the owl module generated, it is of the format `https...prefix.../BCODMO_SM/module/robot_templates/sub-module.owl`. Finally the `-o` flag is the output file, and should be of the format`module/robot_templates/sub-module.owl`. Make sure to run this new command from `bcodmont/src/ontology/BCODMO_SM`, debugging as needed till it compiles and produces the expected output file, e.g. `biology/robot_templates/ecology.owl`. 
+
+**6.3\)** Prepare robot merge command\(s\), see and update the documentation in the [**Merge Robot templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#3-merge-robot-templates) section. Setting up this next section will depend on wether or not you keep the existing axioms from the imported ontologies. At a high level there may be some assertion made in the upstream import ontologies that we don't want to keep in BCO-SM, to remove complexity or change things slightly to have a simplified hierarchy in BCO-SM. 
+
+**6.3 a\)** In the case where **do not** remove axioms, aka keep the import ontologies as they are, we'll need to modify the command in the [**Merge Imports and Preliminary Robot Templates**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-imports-and-preliminary-robot-templates) section to add 1\) any new imports and 2\) the new module file. In the case of adding the new `ecology` module we'd need to add both the PCO import:
+
+```text
+--input ../imports/pco_import.owl
+```
+
+As well as the new module file:
+
+```text
+--input biology/robot_templates/ecology.owl
+```
+
+To the existing command. 
+
+**6.3 b\)** In the case where **do** want to remove axioms, aka modify the import ontologies hierarchy, we'll need to, for each new import ontology add a new command to the [**Make Object Property \(OP\) Free Versions of Select Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#make-object-property-op-free-versions-of-select-import-ontologies) section. For example in the case of the new `ecology` module we'd add the following to make an hierarchy free version of PCO:
+
+**Make OP free version of PCO import**. Only run after adding to PCO import.
+
+```text
+robot remove --input ../imports/pco_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/pco_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/pco_import_axioms_removed.owl" --output intermediate/pco_import_axioms_removed.owl
+```
+
+The above command can be modified to switch all instances of "pco" for the relevant import ontology or ontologies codes. The code is the same as that used in the ontology import. 
+
+Also modify the command in the [**Merge Modules with Axiom free Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) section to include the outputs from the previous step. For example for PCO, we'd need to add a new input flag to the command \(for the file created in the step above\):
+
+```text
+--input intermediate/pco_import_axioms_removed.owl
+```
+
+Note that making the axiom removed version of the ontology might not always be necessary and one could instead merge the regular import as is the case for `iao_import.owl`. //TODO double check and remove this if necessary. 
+
+Also make sure to add the new module as an input to the  [**Merge Modules with Axiom free Import Ontologies**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) command,  for example for the ecology module add:
+
+```text
+--input biology/robot_templates/ecology.owl
+```
+
+**Step 6.4\)** Next we'll need to add a robot filter command to the [**Filter merge product to create final modules**](https://github.com/BCODMO/bcodmont/blob/main/docs/technical-documentation.md#4-filter-merge-product-to-create-final-modules) section. Make sure to do so under the correct top level module. For example for adding the new `ecology`module under biology we'd add the following:
+
+**6.4 a\)** If following step **6.3 a**, the command would be:
+
+Filter **ecology** from the regular merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
+```
+
+**6.4 b\)** If following step **6.3 b**, the command would be:
+
+Filter **ecology** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
+```
+
+In either case it's important to update the `--select "oboInOwl:inSubset=bsm:ecology"` to be the name of the new module and the same url as added in **step 4**. These steps will generate the final version of the newly added module. In the case of `ecology`, `biology/ecology.owl`.
 
 \*\*\*\*
 
