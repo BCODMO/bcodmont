@@ -1,0 +1,1937 @@
+ID	LABEL	definition
+unit:%25	percent	
+unit:%25%5Bslope%5D	percent of slope	
+unit:%27	plane angle minute	A unit which 1) is a unit of plane and phase angle, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to π/ 10800 radian.
+unit:%27%27	plane angle second	A unit which 1) is a unit of plane and phase angle, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to π/ 648000 radian.
+unit:%5BAPL%27U%5D	APL unit	
+unit:%5BAU%5D	allergy unit	
+unit:%5BAmb%27a%271%27U%5D	Ambrosia artemisiifolia allergen unit	
+unit:%5BBAU%5D	bioequivalent allergen unit	
+unit:%5BBtu%5D	British thermal unit	
+unit:%5BBtu_39%5D	British thermal unit at 39°F	
+unit:%5BBtu_59%5D	British thermal unit at 59°F	
+unit:%5BBtu_60%5D	British thermal unit at 60°F	
+unit:%5BBtu_IT%5D	international table British thermal unit	
+unit:%5BBtu_m%5D	mean British thermal unit	
+unit:%5BBtu_th%5D	thermochemical British thermal unit	
+unit:%5BCCID_50%5D	50% cell culture infectious dose	
+unit:%5BCFU%5D	colony forming unit	
+unit:%5BCal%5D	large calorie	
+unit:%5BCh%5D	Charrière	
+unit:%5BD%27ag%27U%5D	D-antigen unit	
+unit:%5BEID_50%5D	50% embryo infectious dose unit	
+unit:%5BELU%5D	ELISA unit	
+unit:%5BEU%5D	Ehrlich unit	
+unit:%5BFEU%5D	fibrinogen equivalent unit	
+unit:%5BFFU%5D	focus forming units	
+unit:%5BG%5D	Newtonian constant of gravitation	
+unit:%5BGPL%27U%5D	GPL unit	
+unit:%5BHP%5D	horsepower	
+unit:%5BHPF%5D	high power field	
+unit:%5BIR%5D	index of allergen reactivity	
+unit:%5BIU%5D	arbitrary international unit	
+unit:%5BLPF%5D	low power field	
+unit:%5BLf%5D	Limit of flocculation	
+unit:%5BMET%5D	Metabolic Equivalent of Task	
+unit:%5BMPL%27U%5D	MPL unit	
+unit:%5BPFU%5D	plaque forming unit	
+unit:%5BPNU%5D	protein nitrogen unit	
+unit:%5BPRU%5D	peripheral vascular resistance unit	
+unit:%5BS%5D	Svedberg unit	
+unit:%5BTCID_50%5D	50% tissue culture infectious dose unit	
+unit:%5BUSP%27U%5D	United States Pharmacopeia unit	
+unit:%5Bacr_br%5D	British acre	
+unit:%5Bacr_us%5D	US customary acre	
+unit:%5Banti%27Xa%27U%5D	anti factor Xa unit	
+unit:%5Barb%27U%5D	arbitary unit	
+unit:%5Bbbl_us%5D	US barrel	
+unit:%5Bbdsk%27U%5D	Bodansky unit	
+unit:%5Bbeth%27U%5D	Bethesda unit	
+unit:%5Bbf_i%5D	board foot	
+unit:%5Bbu_br%5D	British bushel	
+unit:%5Bbu_us%5D	US bushel	
+unit:%5Bc%5D	velocity of light in a vacuum	
+unit:%5Bcar_Au%5D	gold alloys carat	
+unit:%5Bcar_m%5D	metric carat	
+unit:%5Bcft_i%5D	cubic foot	
+unit:%5Bch_br%5D	British Gunter's chain	
+unit:%5Bch_us%5D	US Gunter's chain	
+unit:%5Bcicero%5D	cicero	
+unit:%5Bcin_i%5D	cubic inch	
+unit:%5Bcml_i%5D	circular mil	
+unit:%5Bcr_i%5D	cord	
+unit:%5Bcrd_us%5D	US cord	
+unit:%5Bcup_m%5D	US legal cup	
+unit:%5Bcup_us%5D	US customary cup	
+unit:%5Bcyd_i%5D	cubic international yard	
+unit:%5BdegF%5D	degree Fahrenheit	
+unit:%5BdegR%5D	degree Rankine	
+unit:%5BdegRe%5D	degree Réaumur	
+unit:%5Bden%5D	denier	
+unit:%5Bdidot%5D	didot	
+unit:%5Bdiop%5D	diopter	
+unit:%5Bdpt_us%5D	US dry pint	
+unit:%5Bdqt_us%5D	US dry quart	
+unit:%5Bdr_ap%5D	drachm	
+unit:%5Bdr_av%5D	dram mass unit	
+unit:%5Bdrp%5D	drop	
+unit:%5Bdye%27U%5D	Dye unit	
+unit:%5Be%5D	elementary charge	
+unit:%5Beps_0%5D	permittivity of vacuum	
+unit:%5Bfdr_br%5D	British fluid dram	
+unit:%5Bfdr_us%5D	US fluid dram	
+unit:%5Bfoz_br%5D	British fluid ounce	
+unit:%5Bfoz_m%5D	metric fluid ounce	
+unit:%5Bfoz_us%5D	US fluid ounce	
+unit:%5Bft_br%5D	British foot	
+unit:%5Bft_i%5D	international foot	
+unit:%5Bft_us%5D	US foot	
+unit:%5Bfth_br%5D	British fathom	
+unit:%5Bfth_i%5D	international fathom	
+unit:%5Bfth_us%5D	US fathom	
+unit:%5Bfur_us%5D	US furlong	
+unit:%5Bg%5D	standard acceleration of free fall	
+unit:%5Bgal_br%5D	British gallon	
+unit:%5Bgal_us%5D	US gallon	
+unit:%5Bgal_wi%5D	historical gallon	
+unit:%5Bgil_br%5D	British gill	
+unit:%5Bgil_us%5D	US gill	
+unit:%5Bgr%5D	grain	
+unit:%5Bh%5D	Planck constant	
+unit:%5Bhd_i%5D	hand	
+unit:%5Bhnsf%27U%5D	Hounsfield unit	
+unit:%5Bhp%27_C%5D	homeopathic potency of centesimal series	
+unit:%5Bhp%27_M%5D	homeopathic potency of millesimal series	
+unit:%5Bhp%27_Q%5D	homeopathic potency of quintamillesimal series	
+unit:%5Bhp%27_X%5D	homeopathic potency of decimal series	
+unit:%5Bhp_C%5D	homeopathic potency of centesimal hahnemannian series	
+unit:%5Bhp_M%5D	homeopathic potency of millesimal hahnemannian series	
+unit:%5Bhp_Q%5D	homeopathic potency of quintamillesimal hahnemannian series	
+unit:%5Bhp_X%5D	homeopathic potency of decimal hahnemannian series	
+unit:%5BiU%5D	arbitrary international unit	
+unit:%5Bin_br%5D	British inch	
+unit:%5Bin_i%27H2O%5D	inch of water column	
+unit:%5Bin_i%27Hg%5D	inch of mercury column	
+unit:%5Bin_i%5D	inch	
+unit:%5Bin_us%5D	US inch	
+unit:%5Bk%5D	Boltzmann constant	
+unit:%5Bka%27U%5D	King-Armstrong unit	
+unit:%5Bkn_br%5D	British knot	
+unit:%5Bkn_i%5D	international knot	
+unit:%5Bknk%27U%5D	Kunkel unit	
+unit:%5Bkp_C%5D	homeopathic potency of centesimal korsakovian series	
+unit:%5Bkp_M%5D	homeopathic potency of millesimal korsakovian series	
+unit:%5Bkp_Q%5D	homeopathic potency of quintamillesimal korsakovian series	
+unit:%5Bkp_X%5D	homeopathic potency of decimal korsakovian series	
+unit:%5Blb_ap%5D	apothecary pound	
+unit:%5Blb_av%5D	international pound	
+unit:%5Blb_tr%5D	troy pound	
+unit:%5Blbf_av%5D	US pound force	
+unit:%5Blcwt_av%5D	long hundredweight	
+unit:%5Bligne%5D	French line	
+unit:%5Blk_br%5D	British link for Gunter's chain	
+unit:%5Blk_us%5D	US link for Gunter's chain	
+unit:%5Blne%5D	British line	
+unit:%5Blton_av%5D	British ton	
+unit:%5Bly%5D	light-year	
+unit:%5Bm_e%5D	electron mass	
+unit:%5Bm_p%5D	proton mass	
+unit:%5Bmclg%27U%5D	Mac Lagan unit	
+unit:%5Bmesh_i%5D	mesh	
+unit:%5Bmi_br%5D	British mile	
+unit:%5Bmi_i%5D	international mile	
+unit:%5Bmi_us%5D	US mile	
+unit:%5Bmil_i%5D	international mil	
+unit:%5Bmil_us%5D	US mil	
+unit:%5Bmin_br%5D	British minim	
+unit:%5Bmin_us%5D	US minim	
+unit:%5Bmu_0%5D	permeability of free space	
+unit:%5Bnmi_br%5D	British nautical mile	
+unit:%5Bnmi_i%5D	nautical mile	
+unit:%5Boz_ap%5D	apothecary ounce	
+unit:%5Boz_av%5D	international ounce	
+unit:%5Boz_m%5D	metric ounce	
+unit:%5Boz_tr%5D	troy ounce	
+unit:%5Bp%27diop%5D	prism diopter	
+unit:%5BpH%5D	pH	
+unit:%5Bpc_br%5D	British pace	
+unit:%5Bpca%5D	pica	
+unit:%5Bpca_pr%5D	Printer's pica	
+unit:%5Bpi%5D	the number pi	
+unit:%5Bpied%5D	pied	
+unit:%5Bpk_br%5D	British peck	
+unit:%5Bpk_us%5D	US peck	
+unit:%5Bpnt%5D	point	
+unit:%5Bpnt_pr%5D	Printer's point	
+unit:%5Bpouce%5D	pouce	
+unit:%5Bppb%5D	parts per billion	
+unit:%5Bppm%5D	parts per million	
+unit:%5Bppth%5D	parts per thousand	
+unit:%5Bpptr%5D	parts per trillion	
+unit:%5Bpsi%5D	pound per square inch	
+unit:%5Bpt_br%5D	British pint	
+unit:%5Bpt_us%5D	US pint	
+unit:%5Bpwt_tr%5D	troy pennyweight	
+unit:%5Bqt_br%5D	British quart	
+unit:%5Bqt_us%5D	US quart	
+unit:%5Brch_us%5D	US Ramden's chain	
+unit:%5Brd_br%5D	British rod	
+unit:%5Brd_us%5D	US rod	
+unit:%5Brlk_us%5D	US link for Ramden's chain	
+unit:%5Bsc_ap%5D	scruple	
+unit:%5Bsct%5D	section	
+unit:%5Bscwt_av%5D	short hundredweight	
+unit:%5Bsft_i%5D	international square foot	
+unit:%5Bsft_i%5D.h	international square foot hour	A unit which is equal to 1 international square foot by 1 hour.
+unit:%5Bsft_i%5D.s	international square foot second	A unit which is equal to 1 international square foot by 1 second.
+unit:%5Bsin_i%5D	international square inch	
+unit:%5Bsmgy%27U%5D	Somogyi unit	
+unit:%5Bsmi_us%5D	US square mile	
+unit:%5Bsmoot%5D	Smoot	
+unit:%5Bsrd_us%5D	US square rod	
+unit:%5Bston_av%5D	US short ton	
+unit:%5Bstone_av%5D	British stone	
+unit:%5Bsyd_i%5D	square international yard	
+unit:%5Btb%27U%5D	tuberculin unit	
+unit:%5Btbs_m%5D	metric tablespoon	
+unit:%5Btbs_us%5D	US tablespoon	
+unit:%5Btodd%27U%5D	Todd unit	
+unit:%5Btsp_m%5D	metric teaspoon	
+unit:%5Btsp_us%5D	US teaspoon	
+unit:%5Btwp%5D	township	
+unit:%5Bwood%27U%5D	Wood unit	
+unit:%5Byd_br%5D	British yard	
+unit:%5Byd_i%5D	international yard	
+unit:%5Byd_us%5D	US yard	
+unit:A	ampere	An SI base unit which 1) is the SI unit of electric current and 2) is defined by taking the fixed numerical value of the elementary charge, e, to be 1.602 176 634 × 10⁻¹⁹ when expressed in the unit coulomb, which is equal to an ampere second, where the second is defined in terms of ∆νCs.
+unit:A-1.h-1.K-1	reciprocal ampere hour kelvin	A unit which is equal to the reciprocal of 1 ampere by 1 hour by 1 kelvin.
+unit:A.Cel-1	ampere per degree Celsius	A unit which is equal to 1 ampere per 1 degree Celsius.
+unit:A.J-1	ampere per joule	A unit which is equal to 1 ampere per 1 joule.
+unit:A.K-1.m-2	ampere per kelvin square metre	A unit which is equal to 1 ampere per 1 kelvin by 1 square metre.
+unit:A.MV	ampere megavolt	A unit which is equal to 1 ampere by 10⁶ volt.
+unit:A.V	ampere volt	A unit which is equal to 1 ampere by 1 volt.
+unit:A.V-1	ampere per volt	A unit which is equal to 1 ampere per 1 volt.
+unit:A.W-1	ampere per watt	A unit which is equal to 1 ampere per 1 watt.
+unit:A.cm-1	ampere per centimetre	A unit which is equal to 1 ampere per 10⁻² metre.
+unit:A.cm-2	ampere per square centimetre	A unit which is equal to 1 ampere per 10⁻² square metre.
+unit:A.h	ampere hour	A unit which is equal to 1 ampere by 1 hour.
+unit:A.h.MV	ampere hour megavolt	A unit which is equal to 1 ampere by 1 hour by 10⁶ volt.
+unit:A.h.V	ampere hour volt	A unit which is equal to 1 ampere by 1 hour by 1 volt.
+unit:A.h.kV	ampere hour kilovolt	A unit which is equal to 1 ampere by 1 hour by 10³ volt.
+unit:A.kV	ampere kilovolt	A unit which is equal to 1 ampere by 10³ volt.
+unit:A.m-1	ampere per metre	A unit which is equal to 1 ampere per 1 metre.
+unit:A.m-2	ampere per square metre	A unit which is equal to 1 ampere per 1 square metre.
+unit:A.m2	ampere square metre	A unit which is equal to 1 ampere by 1 square metre.
+unit:A.mm-1	ampere per millimetre	A unit which is equal to 1 ampere per 10⁻³ metre.
+unit:A.mm-2	ampere per square millimetre	A unit which is equal to 1 ampere per 10⁻³ square metre.
+unit:A.rad-1	ampere per radian	A unit which is equal to 1 ampere per 1 radian.
+unit:A.s	ampere second	A unit which is equal to 1 ampere by 1 second.
+unit:AU	astronomical unit	A unit which 1) is a unit of length, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 149 597 870 700 metre.
+unit:Ao	Angstrom	
+unit:Ao-1	reciprocal Angstrom	A unit which is equal to the reciprocal of 1 Angstrom.
+unit:Ao2	square Angstrom	A unit which is equal to 1 square Angstrom.
+unit:B	bel	A unit which 1) is a unit of logarithmic ratio quantities, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is defined as the logarithm of a ratio between two power quantities of 10:1, or the logarithm of a ratio between two root-power quantities of √10:1.
+unit:B%5B10.nV%5D	bel 10 nanovolt	
+unit:B%5BSPL%5D	bel sound pressure	
+unit:B%5BV%5D	bel volt	
+unit:B%5BW%5D	bel watt	
+unit:B%5BkW%5D	bel kilowatt	
+unit:B%5BmV%5D	bel millivolt	
+unit:B%5BuV%5D	bel microvolt	
+unit:Bd	baud	
+unit:Bi	Biot	
+unit:Bi.cm-2	Biot per square centimetre	A unit which is equal to 1 Biot per 10⁻² square metre.
+unit:Bi.cm2	Biot square centimetre	A unit which is equal to 1 Biot by 10⁻² square metre.
+unit:Bq	becquerel	A special named SI unit which 1) is a unit of activity referred to a radionuclide and 2) is equal to a reciprocal second.
+unit:Bq.L-1	becquerel per litre	A unit which is equal to 1 becquerel per 1 litre.
+unit:Bq.kg-1	becquerel per kilogram	A unit which is equal to 1 becquerel per 10³ gram.
+unit:Bq.m-2	becquerel per square metre	A unit which is equal to 1 becquerel per 1 square metre.
+unit:Bq.m-3	becquerel per cubic metre	A unit which is equal to 1 becquerel per 1 cubic metre.
+unit:Bq.s.m-3	becquerel second per cubic metre	A unit which is equal to 1 becquerel by 1 second per 1 cubic metre.
+unit:By	byte	
+unit:C	coulomb	A special named SI unit which 1) is a unit of electric charge and 2) is equal to an ampere second.
+unit:C.V-1	coulomb per volt	A unit which is equal to 1 coulomb per 1 volt.
+unit:C.cm-2	coulomb per square centimetre	A unit which is equal to 1 coulomb per 10⁻² square metre.
+unit:C.kg-1	coulomb per kilogram	A unit which is equal to 1 coulomb per 10³ gram.
+unit:C.m	coulomb metre	A unit which is equal to 1 coulomb by 1 metre.
+unit:C.m-1	coulomb per metre	A unit which is equal to 1 coulomb per 1 metre.
+unit:C.m-2	coulomb per square metre	A unit which is equal to 1 coulomb per 1 square metre.
+unit:C.m-3	coulomb per cubic metre	A unit which is equal to 1 coulomb per 1 cubic metre.
+unit:C.m2	coulomb square metre	A unit which is equal to 1 coulomb by 1 square metre.
+unit:C.m2.V-1	coulomb square metre per volt	A unit which is equal to 1 coulomb by 1 square metre per 1 volt.
+unit:C.mm-2	coulomb per square millimetre	A unit which is equal to 1 coulomb per 10⁻³ square metre.
+unit:C.mm-3	coulomb per cubic millimetre	A unit which is equal to 1 coulomb per 10⁻³ cubic metre.
+unit:C.mol-1	coulomb per mole	A unit which is equal to 1 coulomb per 1 mole.
+unit:C2.m.J-1	square coulomb metre per joule	A unit which is equal to 1 square coulomb by 1 metre per 1 joule.
+unit:C3.m.J-2	cubic coulomb metre per square joule	A unit which is equal to 1 cubic coulomb by 1 metre per 1 square joule.
+unit:C4.m4.J-3	quartic coulomb quartic metre per cubic joule	A unit which is equal to 1 quartic coulomb by 1 quartic metre per 1 cubic joule.
+unit:Cel	degree Celsius	A special named SI unit which 1) is a unit of temperature and 2) is equal to a one kelvin.
+unit:Cel-1	reciprocal degree Celsius	A unit which is equal to the reciprocal of 1 degree Celsius.
+unit:Cel-1.d-1	reciprocal degree Celsius day	A unit which is equal to the reciprocal of 1 degree Celsius by 1 day.
+unit:Cel.K-1	degree Celsius per kelvin	A unit which is equal to 1 degree Celsius per 1 kelvin.
+unit:Cel.a-1	degree Celsius per year	A unit which is equal to 1 degree Celsius per 1 year.
+unit:Cel.cm	degree Celsius centimetre	A unit which is equal to 1 degree Celsius by 10⁻² metre.
+unit:Cel.d	degree Celsius day	A unit which is equal to 1 degree Celsius by 1 day.
+unit:Cel.h-1	degree Celsius per hour	A unit which is equal to 1 degree Celsius per 1 hour.
+unit:Cel.kg.m-2	degree Celsius kilogram per square metre	A unit which is equal to 1 degree Celsius by 10³ gram per 1 square metre.
+unit:Cel.m-1	degree Celsius per metre	A unit which is equal to 1 degree Celsius per 1 metre.
+unit:Cel.min-1	degree Celsius per minute	A unit which is equal to 1 degree Celsius per 1 minute.
+unit:Cel.mol	degree Celsius mole	A unit which is equal to 1 degree Celsius by 1 mole.
+unit:Cel.s-1	degree Celsius per second	A unit which is equal to 1 degree Celsius per 1 second.
+unit:Ci	curie	
+unit:Ci.L-1	curie per litre	A unit which is equal to 1 curie per 1 litre.
+unit:E%27%27	exaplane angle second	A unit which is equal to 10¹⁸ plane angle second.
+unit:EA	exaampere	A unit which is equal to 10¹⁸ ampere.
+unit:EB	exabel	A unit which is equal to 10¹⁸ bel.
+unit:EBq	exabecquerel	A unit which is equal to 10¹⁸ becquerel.
+unit:EC	exacoulomb	A unit which is equal to 10¹⁸ coulomb.
+unit:EF	exafarad	A unit which is equal to 10¹⁸ farad.
+unit:EGy	exagray	A unit which is equal to 10¹⁸ gray.
+unit:EH	exahenry	A unit which is equal to 10¹⁸ henry.
+unit:EHz	exahertz	A unit which is equal to 10¹⁸ hertz.
+unit:EJ	exajoule	A unit which is equal to 10¹⁸ joule.
+unit:EK	exakelvin	A unit which is equal to 10¹⁸ kelvin.
+unit:EL	exalitre	A unit which is equal to 10¹⁸ litre.
+unit:EN	exanewton	A unit which is equal to 10¹⁸ newton.
+unit:ENp	exaneper	A unit which is equal to 10¹⁸ neper.
+unit:EOhm	exaohm	A unit which is equal to 10¹⁸ ohm.
+unit:EPa	exapascal	A unit which is equal to 10¹⁸ pascal.
+unit:ES	exasiemens	A unit which is equal to 10¹⁸ siemens.
+unit:ESv	exasievert	A unit which is equal to 10¹⁸ sievert.
+unit:ET	exatesla	A unit which is equal to 10¹⁸ tesla.
+unit:EV	exavolt	A unit which is equal to 10¹⁸ volt.
+unit:EW	exawatt	A unit which is equal to 10¹⁸ watt.
+unit:EWb	exaweber	A unit which is equal to 10¹⁸ weber.
+unit:Ear	exaare	A unit which is equal to 10¹⁸ are.
+unit:Ecd	exacandela	A unit which is equal to 10¹⁸ candela.
+unit:EeV	exaelectronvolt	A unit which is equal to 10¹⁸ electronvolt.
+unit:Eg	exagram	A unit which is equal to 10¹⁸ gram.
+unit:Eg.L-1	exagram per litre	A unit which is equal to 10¹⁸ gram per 1 litre.
+unit:Ekat	exakatal	A unit which is equal to 10¹⁸ katal.
+unit:Elm	exalumen	A unit which is equal to 10¹⁸ lumen.
+unit:Elx	exalux	A unit which is equal to 10¹⁸ lux.
+unit:Em	exametre	A unit which is equal to 10¹⁸ metre.
+unit:Em.s-1	exametre per second	A unit which is equal to 10¹⁸ metre per 1 second.
+unit:Em.s-2	exametre per square second	A unit which is equal to 10¹⁸ metre per 1 square second.
+unit:Em2	square exametre	A unit which is equal to 10¹⁸ square metre.
+unit:Em3	cubic exametre	A unit which is equal to 10¹⁸ cubic metre.
+unit:Emol	examole	A unit which is equal to 10¹⁸ mole.
+unit:Emol.L-1	examole per litre	A unit which is equal to 10¹⁸ mole per 1 litre.
+unit:Emol.m-1	examole per metre	A unit which is equal to 10¹⁸ mole per 1 metre.
+unit:Erad	exaradian	A unit which is equal to 10¹⁸ radian.
+unit:Es	exasecond	A unit which is equal to 10¹⁸ second.
+unit:Es2	square exasecond	A unit which is equal to 10¹⁸ square second.
+unit:Esr	exasteradian	A unit which is equal to 10¹⁸ steradian.
+unit:Et	exatonne	A unit which is equal to 10¹⁸ tonne.
+unit:Eu	exadalton	A unit which is equal to 10¹⁸ dalton.
+unit:F	farad	A special named SI unit which 1) is a unit of capacitance and 2) is equal to a square ampere quartic second per kilogram square metre.
+unit:F.km-1	farad per kilometre	A unit which is equal to 1 farad per 10³ metre.
+unit:F.m-1	farad per metre	A unit which is equal to 1 farad per 1 metre.
+unit:G	Gauss	
+unit:G%27%27	gigaplane angle second	A unit which is equal to 10⁹ plane angle second.
+unit:GA	gigaampere	A unit which is equal to 10⁹ ampere.
+unit:GB	gigabel	A unit which is equal to 10⁹ bel.
+unit:GBq	gigabecquerel	A unit which is equal to 10⁹ becquerel.
+unit:GC	gigacoulomb	A unit which is equal to 10⁹ coulomb.
+unit:GC.m-3	gigacoulomb per cubic metre	A unit which is equal to 10⁹ coulomb per 1 cubic metre.
+unit:GF	gigafarad	A unit which is equal to 10⁹ farad.
+unit:GF.cm-1	gigafarad per centimetre	A unit which is equal to 10⁹ farad per 10⁻² metre.
+unit:GGy	gigagray	A unit which is equal to 10⁹ gray.
+unit:GH	gigahenry	A unit which is equal to 10⁹ henry.
+unit:GHz	gigahertz	A unit which is equal to 10⁹ hertz.
+unit:GHz.m	gigahertz metre	A unit which is equal to 10⁹ hertz by 1 metre.
+unit:GJ	gigajoule	A unit which is equal to 10⁹ joule.
+unit:GK	gigakelvin	A unit which is equal to 10⁹ kelvin.
+unit:GL	gigalitre	A unit which is equal to 10⁹ litre.
+unit:GN	giganewton	A unit which is equal to 10⁹ newton.
+unit:GNp	giganeper	A unit which is equal to 10⁹ neper.
+unit:GOhm	gigaohm	A unit which is equal to 10⁹ ohm.
+unit:GPa	gigapascal	A unit which is equal to 10⁹ pascal.
+unit:GS	gigasiemens	A unit which is equal to 10⁹ siemens.
+unit:GSv	gigasievert	A unit which is equal to 10⁹ sievert.
+unit:GT	gigatesla	A unit which is equal to 10⁹ tesla.
+unit:GV	gigavolt	A unit which is equal to 10⁹ volt.
+unit:GW	gigawatt	A unit which is equal to 10⁹ watt.
+unit:GW.h	gigawatt hour	A unit which is equal to 10⁹ watt by 1 hour.
+unit:GWb	gigaweber	A unit which is equal to 10⁹ weber.
+unit:Gal	Gal	
+unit:Gar	gigaare	A unit which is equal to 10⁹ are.
+unit:Gb	Gilbert	
+unit:Gcd	gigacandela	A unit which is equal to 10⁹ candela.
+unit:GeV	gigaelectronvolt	A unit which is equal to 10⁹ electronvolt.
+unit:GeV-2	reciprocal square gigaelectronvolt	A unit which is equal to the reciprocal of 10⁹ square electronvolt.
+unit:Gg	gigagram	A unit which is equal to 10⁹ gram.
+unit:Gg.L-1	gigagram per litre	A unit which is equal to 10⁹ gram per 1 litre.
+unit:Gkat	gigakatal	A unit which is equal to 10⁹ katal.
+unit:Glm	gigalumen	A unit which is equal to 10⁹ lumen.
+unit:Glx	gigalux	A unit which is equal to 10⁹ lux.
+unit:Gm	gigametre	A unit which is equal to 10⁹ metre.
+unit:Gm.s-1	gigametre per second	A unit which is equal to 10⁹ metre per 1 second.
+unit:Gm.s-2	gigametre per square second	A unit which is equal to 10⁹ metre per 1 square second.
+unit:Gm2	square gigametre	A unit which is equal to 10⁹ square metre.
+unit:Gm3	cubic gigametre	A unit which is equal to 10⁹ cubic metre.
+unit:Gmol	gigamole	A unit which is equal to 10⁹ mole.
+unit:Gmol.L-1	gigamole per litre	A unit which is equal to 10⁹ mole per 1 litre.
+unit:Gmol.m-1	gigamole per metre	A unit which is equal to 10⁹ mole per 1 metre.
+unit:Grad	gigaradian	A unit which is equal to 10⁹ radian.
+unit:Gs	gigasecond	A unit which is equal to 10⁹ second.
+unit:Gs2	square gigasecond	A unit which is equal to 10⁹ square second.
+unit:Gsr	gigasteradian	A unit which is equal to 10⁹ steradian.
+unit:Gt	gigatonne	A unit which is equal to 10⁹ tonne.
+unit:Gu	gigadalton	A unit which is equal to 10⁹ dalton.
+unit:Gy	gray	A special named SI unit which 1) is a unit of absorbed dose and 2) is equal to a square metre per square second.
+unit:Gy.s-1	gray per second	A unit which is equal to 1 gray per 1 second.
+unit:H	henry	A special named SI unit which 1) is a unit of inductance or kerma and 2) is equal to a kilogram square metre per square ampere square second.
+unit:H-1	reciprocal henry	A unit which is equal to the reciprocal of 1 henry.
+unit:H.Ohm-1	henry per ohm	A unit which is equal to 1 henry per 1 ohm.
+unit:H.kOhm-1	henry per kiloohm	A unit which is equal to 1 henry per 10³ ohm.
+unit:H.m-1	henry per metre	A unit which is equal to 1 henry per 1 metre.
+unit:Hz	hertz	A special named SI unit which 1) is a unit of frequency and 2) is equal to a reciprocal second.
+unit:Hz.K-1	hertz per kelvin	A unit which is equal to 1 hertz per 1 kelvin.
+unit:Hz.T-1	hertz per tesla	A unit which is equal to 1 hertz per 1 tesla.
+unit:Hz.V-1	hertz per volt	A unit which is equal to 1 hertz per 1 volt.
+unit:Hz.m	hertz metre	A unit which is equal to 1 hertz by 1 metre.
+unit:Hz.m2	hertz square metre	A unit which is equal to 1 hertz by 1 square metre.
+unit:Hz.m2.sr	hertz square metre steradian	A unit which is equal to 1 hertz by 1 square metre by 1 steradian.
+unit:Hz2.m2	square hertz square metre	A unit which is equal to 1 square hertz by 1 square metre.
+unit:Hz3.m2	cubic hertz square metre	A unit which is equal to 1 cubic hertz by 1 square metre.
+unit:Hz4.m2	quartic hertz square metre	A unit which is equal to 1 quartic hertz by 1 square metre.
+unit:J	joule	A special named SI unit which 1) is a unit of energy, work, or amount of heat and 2) is equal to a kilogram square metre per square second.
+unit:J-1.m-3	reciprocal joule cubic metre	A unit which is equal to the reciprocal of 1 joule by 1 cubic metre.
+unit:J.K-1	joule per kelvin	A unit which is equal to 1 joule per 1 kelvin.
+unit:J.K-1.kg-1	joule per kelvin kilogram	A unit which is equal to 1 joule per 1 kelvin by 10³ gram.
+unit:J.K-1.kg-1.Pa-1	joule per kelvin kilogram pascal	A unit which is equal to 1 joule per 1 kelvin by 10³ gram by 1 pascal.
+unit:J.K-1.m-3	joule per kelvin cubic metre	A unit which is equal to 1 joule per 1 kelvin by 1 cubic metre.
+unit:J.K-1.mol-1	joule per kelvin mole	A unit which is equal to 1 joule per 1 kelvin by 1 mole.
+unit:J.K.kg-1.m-3	joule kelvin per kilogram cubic metre	A unit which is equal to 1 joule by 1 kelvin per 10³ gram by 1 cubic metre.
+unit:J.T-1	joule per tesla	A unit which is equal to 1 joule per 1 tesla.
+unit:J.T-2	joule per square tesla	A unit which is equal to 1 joule per 1 square tesla.
+unit:J.cm-2	joule per square centimetre	A unit which is equal to 1 joule per 10⁻² square metre.
+unit:J.cm-2.d-1	joule per square centimetre day	A unit which is equal to 1 joule per 10⁻² square metre by 1 day.
+unit:J.d-1.m-2	joule per day square metre	A unit which is equal to 1 joule per 1 day by 1 square metre.
+unit:J.g-1	joule per gram	A unit which is equal to 1 joule per 1 gram.
+unit:J.h-1	joule per hour	A unit which is equal to 1 joule per 1 hour.
+unit:J.kg-1	joule per kilogram	A unit which is equal to 1 joule per 10³ gram.
+unit:J.m-1	joule per metre	A unit which is equal to 1 joule per 1 metre.
+unit:J.m-2	joule per square metre	A unit which is equal to 1 joule per 1 square metre.
+unit:J.m-2.s-1	joule per square metre second	A unit which is equal to 1 joule per 1 square metre by 1 second.
+unit:J.m-3	joule per cubic metre	A unit which is equal to 1 joule per 1 cubic metre.
+unit:J.m-4	joule per quartic metre	A unit which is equal to 1 joule per 1 quartic metre.
+unit:J.m.mol-1	joule metre per mole	A unit which is equal to 1 joule by 1 metre per 1 mole.
+unit:J.m2.kg-1	joule square metre per kilogram	A unit which is equal to 1 joule by 1 square metre per 10³ gram.
+unit:J.mol-1	joule per mole	A unit which is equal to 1 joule per 1 mole.
+unit:J.s	joule second	A unit which is equal to 1 joule by 1 second.
+unit:J.s-1	joule per second	A unit which is equal to 1 joule per 1 second.
+unit:J.s.mol-1	joule second per mole	A unit which is equal to 1 joule by 1 second per 1 mole.
+unit:K	kelvin	An SI base unit which 1) is the SI unit of thermodynamic temperature and 2) is defined by taking the fixed numerical value of the Boltzmann constant, k, to be 1.380 649 × 10⁻²³ when expressed in the unit joule per kelvin, which is equal to kilogram square metre per kelvin square second, where the kilogram, metre and second are defined in terms of h, c and ∆νCs.
+unit:K-1	reciprocal kelvin	A unit which is equal to the reciprocal of 1 kelvin.
+unit:K-1.m-1	reciprocal kelvin metre	A unit which is equal to the reciprocal of 1 kelvin by 1 metre.
+unit:K.K-1	kelvin per kelvin	A unit which is equal to 1 kelvin per 1 kelvin.
+unit:K.Pa.s-1	kelvin pascal per second	A unit which is equal to 1 kelvin by 1 pascal per 1 second.
+unit:K.T-1	kelvin per tesla	A unit which is equal to 1 kelvin per 1 tesla.
+unit:K.W-1	kelvin per watt	A unit which is equal to 1 kelvin per 1 watt.
+unit:K.h-1	kelvin per hour	A unit which is equal to 1 kelvin per 1 hour.
+unit:K.kg	kelvin kilogram	A unit which is equal to 1 kelvin by 10³ gram.
+unit:K.m	kelvin metre	A unit which is equal to 1 kelvin by 1 metre.
+unit:K.m-1	kelvin per metre	A unit which is equal to 1 kelvin per 1 metre.
+unit:K.m.W-1	kelvin metre per watt	A unit which is equal to 1 kelvin by 1 metre per 1 watt.
+unit:K.m.s-1	kelvin metre per second	A unit which is equal to 1 kelvin by 1 metre per 1 second.
+unit:K.m2	kelvin square metre	A unit which is equal to 1 kelvin by 1 square metre.
+unit:K.m2.W-1	kelvin square metre per watt	A unit which is equal to 1 kelvin by 1 square metre per 1 watt.
+unit:K.m2.kg-1.s-1	kelvin square metre per kilogram second	A unit which is equal to 1 kelvin by 1 square metre per 10³ gram by 1 second.
+unit:K.m3	kelvin cubic metre	A unit which is equal to 1 kelvin by 1 cubic metre.
+unit:K.min-1	kelvin per minute	A unit which is equal to 1 kelvin per 1 minute.
+unit:K.mol	kelvin mole	A unit which is equal to 1 kelvin by 1 mole.
+unit:K.s	kelvin second	A unit which is equal to 1 kelvin by 1 second.
+unit:K.s-1	kelvin per second	A unit which is equal to 1 kelvin per 1 second.
+unit:K2	square kelvin	A unit which is equal to 1 square kelvin.
+unit:K2.s-1	square kelvin per second	A unit which is equal to 1 square kelvin per 1 second.
+unit:Ky	Kayser	
+unit:L	litre	A unit which 1) is a unit of volume, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 10⁻³ cubic metre.
+unit:L-1	reciprocal litre	A unit which is equal to the reciprocal of 1 litre.
+unit:L-1.umol-1	reciprocal litre micromole	A unit which is equal to the reciprocal of 1 litre by 10⁻⁶ mole.
+unit:L.K-1	litre per kelvin	A unit which is equal to 1 litre per 1 kelvin.
+unit:L.L-1	litre per litre	A unit which is equal to 1 litre per 1 litre.
+unit:L.MPa.s-1	litre megapascal per second	A unit which is equal to 1 litre by 10⁶ pascal per 1 second.
+unit:L.Pa.s-1	litre pascal per second	A unit which is equal to 1 litre by 1 pascal per 1 second.
+unit:L.d-1	litre per day	A unit which is equal to 1 litre per 1 day.
+unit:L.h-1	litre per hour	A unit which is equal to 1 litre per 1 hour.
+unit:L.kg-1	litre per kilogram	A unit which is equal to 1 litre per 10³ gram.
+unit:L.min-1	litre per minute	A unit which is equal to 1 litre per 1 minute.
+unit:L.mol-1	litre per mole	A unit which is equal to 1 litre per 1 mole.
+unit:L.s-1	litre per second	A unit which is equal to 1 litre per 1 second.
+unit:L.ug	litre microgram	A unit which is equal to 1 litre by 10⁻⁶ gram.
+unit:L.umol	litre micromole	A unit which is equal to 1 litre by 10⁻⁶ mole.
+unit:L.umol-1	litre per micromole	A unit which is equal to 1 litre per 10⁻⁶ mole.
+unit:Lmb	Lambert	
+unit:M%27%27	megaplane angle second	A unit which is equal to 10⁶ plane angle second.
+unit:MA	megaampere	A unit which is equal to 10⁶ ampere.
+unit:MA.m-2	megaampere per square metre	A unit which is equal to 10⁶ ampere per 1 square metre.
+unit:MB	megabel	A unit which is equal to 10⁶ bel.
+unit:MBq	megabecquerel	A unit which is equal to 10⁶ becquerel.
+unit:MC	megacoulomb	A unit which is equal to 10⁶ coulomb.
+unit:MC.m-2	megacoulomb per square metre	A unit which is equal to 10⁶ coulomb per 1 square metre.
+unit:MC.m-3	megacoulomb per cubic metre	A unit which is equal to 10⁶ coulomb per 1 cubic metre.
+unit:MF	megafarad	A unit which is equal to 10⁶ farad.
+unit:MGy	megagray	A unit which is equal to 10⁶ gray.
+unit:MH	megahenry	A unit which is equal to 10⁶ henry.
+unit:MHz	megahertz	A unit which is equal to 10⁶ hertz.
+unit:MHz.K-1	megahertz per kelvin	A unit which is equal to 10⁶ hertz per 1 kelvin.
+unit:MHz.T-1	megahertz per tesla	A unit which is equal to 10⁶ hertz per 1 tesla.
+unit:MJ	megajoule	A unit which is equal to 10⁶ joule.
+unit:MJ.K-1	megajoule per kelvin	A unit which is equal to 10⁶ joule per 1 kelvin.
+unit:MJ.d-1.m-2	megajoule per day square metre	A unit which is equal to 10⁶ joule per 1 day by 1 square metre.
+unit:MJ.kg-1	megajoule per kilogram	A unit which is equal to 10⁶ joule per 10³ gram.
+unit:MJ.m-2	megajoule per square metre	A unit which is equal to 10⁶ joule per 1 square metre.
+unit:MJ.m-3	megajoule per cubic metre	A unit which is equal to 10⁶ joule per 1 cubic metre.
+unit:MJ.s-1	megajoule per second	A unit which is equal to 10⁶ joule per 1 second.
+unit:MK	megakelvin	A unit which is equal to 10⁶ kelvin.
+unit:ML	megalitre	A unit which is equal to 10⁶ litre.
+unit:MN	meganewton	A unit which is equal to 10⁶ newton.
+unit:MNp	meganeper	A unit which is equal to 10⁶ neper.
+unit:MOhm	megaohm	A unit which is equal to 10⁶ ohm.
+unit:MPa	megapascal	A unit which is equal to 10⁶ pascal.
+unit:MPa.K-1	megapascal per kelvin	A unit which is equal to 10⁶ pascal per 1 kelvin.
+unit:MPa.bar-1	megapascal per bar	A unit which is equal to 10⁶ pascal per 1 bar.
+unit:MS	megasiemens	A unit which is equal to 10⁶ siemens.
+unit:MSv	megasievert	A unit which is equal to 10⁶ sievert.
+unit:MT	megatesla	A unit which is equal to 10⁶ tesla.
+unit:MV	megavolt	A unit which is equal to 10⁶ volt.
+unit:MV.m-1	megavolt per metre	A unit which is equal to 10⁶ volt per 1 metre.
+unit:MW	megawatt	A unit which is equal to 10⁶ watt.
+unit:MWb	megaweber	A unit which is equal to 10⁶ weber.
+unit:Mar	megaare	A unit which is equal to 10⁶ are.
+unit:Mcd	megacandela	A unit which is equal to 10⁶ candela.
+unit:MeV	megaelectronvolt	A unit which is equal to 10⁶ electronvolt.
+unit:MeV.%5Bc%5D-1	megaelectronvolt per velocity of light in a vacuum	A unit which is equal to 10⁶ electronvolt per 1 velocity of light in a vacuum.
+unit:MeV.cm-1	megaelectronvolt per centimetre	A unit which is equal to 10⁶ electronvolt per 10⁻² metre.
+unit:Mg	megagram	A unit which is equal to 10⁶ gram.
+unit:Mg.m-3	megagram per cubic metre	A unit which is equal to 10⁶ gram per 1 cubic metre.
+unit:Mkat	megakatal	A unit which is equal to 10⁶ katal.
+unit:Mlm	megalumen	A unit which is equal to 10⁶ lumen.
+unit:Mlx	megalux	A unit which is equal to 10⁶ lux.
+unit:Mm	megametre	A unit which is equal to 10⁶ metre.
+unit:Mm.kJ-1	megametre per kilojoule	A unit which is equal to 10⁶ metre per 10³ joule.
+unit:Mm.s-2	megametre per square second	A unit which is equal to 10⁶ metre per 1 square second.
+unit:Mmol	megamole	A unit which is equal to 10⁶ mole.
+unit:Mmol.m-1	megamole per metre	A unit which is equal to 10⁶ mole per 1 metre.
+unit:Mrad	megaradian	A unit which is equal to 10⁶ radian.
+unit:Ms	megasecond	A unit which is equal to 10⁶ second.
+unit:Ms2	square megasecond	A unit which is equal to 10⁶ square second.
+unit:Msr	megasteradian	A unit which is equal to 10⁶ steradian.
+unit:Mt	megatonne	A unit which is equal to 10⁶ tonne.
+unit:Mu	megadalton	A unit which is equal to 10⁶ dalton.
+unit:Mx	Maxwell	
+unit:N	newton	A special named SI unit which 1) is a unit of force and 2) is equal to a kilogram metre per square second.
+unit:N.A-1	newton per ampere	A unit which is equal to 1 newton per 1 ampere.
+unit:N.C-1	newton per coulomb	A unit which is equal to 1 newton per 1 coulomb.
+unit:N.cm-1	newton per centimetre	A unit which is equal to 1 newton per 10⁻² metre.
+unit:N.kg-1	newton per kilogram	A unit which is equal to 1 newton per 10³ gram.
+unit:N.m-1	newton per metre	A unit which is equal to 1 newton per 1 metre.
+unit:N.m-2	newton per square metre	A unit which is equal to 1 newton per 1 square metre.
+unit:N.m-3	newton per cubic metre	A unit which is equal to 1 newton per 1 cubic metre.
+unit:N.mm-1	newton per millimetre	A unit which is equal to 1 newton per 10⁻³ metre.
+unit:N.mm-2	newton per square millimetre	A unit which is equal to 1 newton per 10⁻³ square metre.
+unit:N.s	newton second	A unit which is equal to 1 newton by 1 second.
+unit:N.s.m-1	newton second per metre	A unit which is equal to 1 newton by 1 second per 1 metre.
+unit:N.s.m-3	newton second per cubic metre	A unit which is equal to 1 newton by 1 second per 1 cubic metre.
+unit:Np	neper	A unit which 1) is a unit of logarithmic ratio quantities, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is used to express the values of quantities whose numerical values are based on the use of the neperian (or natural) logarithm, ln = log(e).
+unit:Oe	Oersted	
+unit:Ohm	ohm	A special named SI unit which 1) is a unit of electric resistance and 2) is equal to a kilogram square metre per square ampere cubic second.
+unit:P	poise	
+unit:P%27%27	petaplane angle second	A unit which is equal to 10¹⁵ plane angle second.
+unit:P.bar-1	poise per bar	A unit which is equal to 1 poise per 1 bar.
+unit:P.s.m-1	poise second per metre	A unit which is equal to 1 poise by 1 second per 1 metre.
+unit:PA	petaampere	A unit which is equal to 10¹⁵ ampere.
+unit:PB	petabel	A unit which is equal to 10¹⁵ bel.
+unit:PBq	petabecquerel	A unit which is equal to 10¹⁵ becquerel.
+unit:PC	petacoulomb	A unit which is equal to 10¹⁵ coulomb.
+unit:PF	petafarad	A unit which is equal to 10¹⁵ farad.
+unit:PGy	petagray	A unit which is equal to 10¹⁵ gray.
+unit:PH	petahenry	A unit which is equal to 10¹⁵ henry.
+unit:PHz	petahertz	A unit which is equal to 10¹⁵ hertz.
+unit:PJ	petajoule	A unit which is equal to 10¹⁵ joule.
+unit:PK	petakelvin	A unit which is equal to 10¹⁵ kelvin.
+unit:PL	petalitre	A unit which is equal to 10¹⁵ litre.
+unit:PN	petanewton	A unit which is equal to 10¹⁵ newton.
+unit:PNp	petaneper	A unit which is equal to 10¹⁵ neper.
+unit:POhm	petaohm	A unit which is equal to 10¹⁵ ohm.
+unit:PPa	petapascal	A unit which is equal to 10¹⁵ pascal.
+unit:PS	petasiemens	A unit which is equal to 10¹⁵ siemens.
+unit:PSv	petasievert	A unit which is equal to 10¹⁵ sievert.
+unit:PT	petatesla	A unit which is equal to 10¹⁵ tesla.
+unit:PV	petavolt	A unit which is equal to 10¹⁵ volt.
+unit:PW	petawatt	A unit which is equal to 10¹⁵ watt.
+unit:PWb	petaweber	A unit which is equal to 10¹⁵ weber.
+unit:Pa	pascal	A special named SI unit which 1) is a unit of pressure or stress and 2) is equal to a kilogram per metre square second.
+unit:Pa-1	reciprocal pascal	A unit which is equal to the reciprocal of 1 pascal.
+unit:Pa-1.s-1	reciprocal pascal second	A unit which is equal to the reciprocal of 1 pascal by 1 second.
+unit:Pa.K-1	pascal per kelvin	A unit which is equal to 1 pascal per 1 kelvin.
+unit:Pa.bar-1	pascal per bar	A unit which is equal to 1 pascal per 1 bar.
+unit:Pa.h-1	pascal per hour	A unit which is equal to 1 pascal per 1 hour.
+unit:Pa.m-1	pascal per metre	A unit which is equal to 1 pascal per 1 metre.
+unit:Pa.min-1	pascal per minute	A unit which is equal to 1 pascal per 1 minute.
+unit:Pa.s	pascal second	A unit which is equal to 1 pascal by 1 second.
+unit:Pa.s-1	pascal per second	A unit which is equal to 1 pascal per 1 second.
+unit:Pa.s.bar-1	pascal second per bar	A unit which is equal to 1 pascal by 1 second per 1 bar.
+unit:Pa.s.m-3	pascal second per cubic metre	A unit which is equal to 1 pascal by 1 second per 1 cubic metre.
+unit:Pa2.s	square pascal second	A unit which is equal to 1 square pascal by 1 second.
+unit:Pa2.s-2	square pascal per square second	A unit which is equal to 1 square pascal per 1 square second.
+unit:Par	petaare	A unit which is equal to 10¹⁵ are.
+unit:Pcd	petacandela	A unit which is equal to 10¹⁵ candela.
+unit:PeV	petaelectronvolt	A unit which is equal to 10¹⁵ electronvolt.
+unit:Pg	petagram	A unit which is equal to 10¹⁵ gram.
+unit:Pkat	petakatal	A unit which is equal to 10¹⁵ katal.
+unit:Plm	petalumen	A unit which is equal to 10¹⁵ lumen.
+unit:Plx	petalux	A unit which is equal to 10¹⁵ lux.
+unit:Pm	petametre	A unit which is equal to 10¹⁵ metre.
+unit:Pm.s-1	petametre per second	A unit which is equal to 10¹⁵ metre per 1 second.
+unit:Pm.s-2	petametre per square second	A unit which is equal to 10¹⁵ metre per 1 square second.
+unit:Pm2	square petametre	A unit which is equal to 10¹⁵ square metre.
+unit:Pm3	cubic petametre	A unit which is equal to 10¹⁵ cubic metre.
+unit:Pmol	petamole	A unit which is equal to 10¹⁵ mole.
+unit:Pmol.m-1	petamole per metre	A unit which is equal to 10¹⁵ mole per 1 metre.
+unit:Prad	petaradian	A unit which is equal to 10¹⁵ radian.
+unit:Ps	petasecond	A unit which is equal to 10¹⁵ second.
+unit:Ps2	square petasecond	A unit which is equal to 10¹⁵ square second.
+unit:Psr	petasteradian	A unit which is equal to 10¹⁵ steradian.
+unit:Pt	petatonne	A unit which is equal to 10¹⁵ tonne.
+unit:Pu	petadalton	A unit which is equal to 10¹⁵ dalton.
+unit:R	roentgen	
+unit:RAD	radiation absorbed dose	
+unit:REM	radiation equivalent man	
+unit:S	siemens	A special named SI unit which 1) is a unit of electric conductance and 2) is equal to a square ampere cubic second per kilogram square metre.
+unit:S.cm-2	siemens per square centimetre	A unit which is equal to 1 siemens per 10⁻² square metre.
+unit:S.m-1	siemens per metre	A unit which is equal to 1 siemens per 1 metre.
+unit:St	Stokes	
+unit:Sv	sievert	A special named SI unit which 1) is a unit of dose equivalent and 2) is equal to a square metre per square second.
+unit:T	tesla	A special named SI unit which 1) is a unit of magnetic flux density and 2) is equal to a kilogram per ampere square second.
+unit:T%27%27	teraplane angle second	A unit which is equal to 10¹² plane angle second.
+unit:TA	teraampere	A unit which is equal to 10¹² ampere.
+unit:TB	terabel	A unit which is equal to 10¹² bel.
+unit:TBq	terabecquerel	A unit which is equal to 10¹² becquerel.
+unit:TC	teracoulomb	A unit which is equal to 10¹² coulomb.
+unit:TF	terafarad	A unit which is equal to 10¹² farad.
+unit:TGy	teragray	A unit which is equal to 10¹² gray.
+unit:TH	terahenry	A unit which is equal to 10¹² henry.
+unit:THz	terahertz	A unit which is equal to 10¹² hertz.
+unit:TJ	terajoule	A unit which is equal to 10¹² joule.
+unit:TK	terakelvin	A unit which is equal to 10¹² kelvin.
+unit:TL	teralitre	A unit which is equal to 10¹² litre.
+unit:TN	teranewton	A unit which is equal to 10¹² newton.
+unit:TNp	teraneper	A unit which is equal to 10¹² neper.
+unit:TOhm	teraohm	A unit which is equal to 10¹² ohm.
+unit:TPa	terapascal	A unit which is equal to 10¹² pascal.
+unit:TS	terasiemens	A unit which is equal to 10¹² siemens.
+unit:TSv	terasievert	A unit which is equal to 10¹² sievert.
+unit:TT	teratesla	A unit which is equal to 10¹² tesla.
+unit:TV	teravolt	A unit which is equal to 10¹² volt.
+unit:TW	terawatt	A unit which is equal to 10¹² watt.
+unit:TW.h-1	terawatt per hour	A unit which is equal to 10¹² watt per 1 hour.
+unit:TWb	teraweber	A unit which is equal to 10¹² weber.
+unit:Tar	teraare	A unit which is equal to 10¹² are.
+unit:Tcd	teracandela	A unit which is equal to 10¹² candela.
+unit:TeV	teraelectronvolt	A unit which is equal to 10¹² electronvolt.
+unit:Tg	teragram	A unit which is equal to 10¹² gram.
+unit:Tg.L-1	teragram per litre	A unit which is equal to 10¹² gram per 1 litre.
+unit:Tkat	terakatal	A unit which is equal to 10¹² katal.
+unit:Tlm	teralumen	A unit which is equal to 10¹² lumen.
+unit:Tlx	teralux	A unit which is equal to 10¹² lux.
+unit:Tm	terametre	A unit which is equal to 10¹² metre.
+unit:Tm.s-1	terametre per second	A unit which is equal to 10¹² metre per 1 second.
+unit:Tm.s-2	terametre per square second	A unit which is equal to 10¹² metre per 1 square second.
+unit:Tm2	square terametre	A unit which is equal to 10¹² square metre.
+unit:Tm3	cubic terametre	A unit which is equal to 10¹² cubic metre.
+unit:Tmol	teramole	A unit which is equal to 10¹² mole.
+unit:Tmol.L-1	teramole per litre	A unit which is equal to 10¹² mole per 1 litre.
+unit:Tmol.m-1	teramole per metre	A unit which is equal to 10¹² mole per 1 metre.
+unit:Trad	teraradian	A unit which is equal to 10¹² radian.
+unit:Ts	terasecond	A unit which is equal to 10¹² second.
+unit:Ts2	square terasecond	A unit which is equal to 10¹² square second.
+unit:Tsr	terasteradian	A unit which is equal to 10¹² steradian.
+unit:Tt	teratonne	A unit which is equal to 10¹² tonne.
+unit:Tu	teradalton	A unit which is equal to 10¹² dalton.
+unit:U	enzyme unit	
+unit:V	volt	A special named SI unit which 1) is a unit of electric potential difference and 2) is equal to a kilogram square metre per ampere cubic second.
+unit:V.%5Bin_i%5D-1	volt per inch	A unit which is equal to 1 volt per 1 inch.
+unit:V.A-1	volt per ampere	A unit which is equal to 1 volt per 1 ampere.
+unit:V.K-1	volt per kelvin	A unit which is equal to 1 volt per 1 kelvin.
+unit:V.W-1	volt per watt	A unit which is equal to 1 volt per 1 watt.
+unit:V.cm-1	volt per centimetre	A unit which is equal to 1 volt per 10⁻² metre.
+unit:V.m-1	volt per metre	A unit which is equal to 1 volt per 1 metre.
+unit:V.m-2	volt per square metre	A unit which is equal to 1 volt per 1 square metre.
+unit:V.mm-1	volt per millimetre	A unit which is equal to 1 volt per 10⁻³ metre.
+unit:V.s-1	volt per second	A unit which is equal to 1 volt per 1 second.
+unit:V.us-1	volt per microsecond	A unit which is equal to 1 volt per 10⁻⁶ second.
+unit:V2.K-2	square volt per square kelvin	A unit which is equal to 1 square volt per 1 square kelvin.
+unit:W	watt	A special named SI unit which 1) is a unit of power or radiant flux and 2) is equal to a kilogram square metre per cubic second.
+unit:W-1	reciprocal watt	A unit which is equal to the reciprocal of 1 watt.
+unit:W.%27%27-2	watt per square plane angle second	A unit which is equal to 1 watt per 1 square plane angle second.
+unit:W.%5Bsft_i%5D-1	watt per international square foot	A unit which is equal to 1 watt per 1 international square foot.
+unit:W.%5Bsin_i%5D-1	watt per international square inch	A unit which is equal to 1 watt per 1 international square inch.
+unit:W.A-1	watt per ampere	A unit which is equal to 1 watt per 1 ampere.
+unit:W.Hz-1	watt per hertz	A unit which is equal to 1 watt per 1 hertz.
+unit:W.Hz-1.m-2	watt per hertz square metre	A unit which is equal to 1 watt per 1 hertz by 1 square metre.
+unit:W.Hz-1.m-2.sr-1	watt per hertz square metre steradian	A unit which is equal to 1 watt per 1 hertz by 1 square metre by 1 steradian.
+unit:W.K-1	watt per kelvin	A unit which is equal to 1 watt per 1 kelvin.
+unit:W.K-1.m-1	watt per kelvin metre	A unit which is equal to 1 watt per 1 kelvin by 1 metre.
+unit:W.K-1.m-2	watt per kelvin square metre	A unit which is equal to 1 watt per 1 kelvin by 1 square metre.
+unit:W.K-4.m-2	watt per quartic kelvin square metre	A unit which is equal to 1 watt per 1 quartic kelvin by 1 square metre.
+unit:W.cm-2	watt per square centimetre	A unit which is equal to 1 watt per 10⁻² square metre.
+unit:W.kg-1	watt per kilogram	A unit which is equal to 1 watt per 10³ gram.
+unit:W.m-1	watt per metre	A unit which is equal to 1 watt per 1 metre.
+unit:W.m-2	watt per square metre	A unit which is equal to 1 watt per 1 square metre.
+unit:W.m-2.Pa-1	watt per square metre pascal	A unit which is equal to 1 watt per 1 square metre by 1 pascal.
+unit:W.m-2.nm-1	watt per square metre nanometre	A unit which is equal to 1 watt per 1 square metre by 10⁻⁹ metre.
+unit:W.m-2.nm-1.sr-1	watt per square metre nanometre steradian	A unit which is equal to 1 watt per 1 square metre by 10⁻⁹ metre by 1 steradian.
+unit:W.m-2.sr-1	watt per square metre steradian	A unit which is equal to 1 watt per 1 square metre by 1 steradian.
+unit:W.m-3	watt per cubic metre	A unit which is equal to 1 watt per 1 cubic metre.
+unit:W.nm-1	watt per nanometre	A unit which is equal to 1 watt per 10⁻⁹ metre.
+unit:W.sr-1	watt per steradian	A unit which is equal to 1 watt per 1 steradian.
+unit:Wb	weber	A special named SI unit which 1) is a unit of magnetic flux and 2) is equal to a kilogram square metre per ampere square second.
+unit:Wb-1	reciprocal weber	A unit which is equal to the reciprocal of 1 weber.
+unit:Wb.A-1	weber per ampere	A unit which is equal to 1 weber per 1 ampere.
+unit:Wb.m-1	weber per metre	A unit which is equal to 1 weber per 1 metre.
+unit:Wb.m-2	weber per square metre	A unit which is equal to 1 weber per 1 square metre.
+unit:Wb.mm-1	weber per millimetre	A unit which is equal to 1 weber per 10⁻³ metre.
+unit:Y%27%27	yottaplane angle second	A unit which is equal to 10²⁴ plane angle second.
+unit:YA	yottaampere	A unit which is equal to 10²⁴ ampere.
+unit:YB	yottabel	A unit which is equal to 10²⁴ bel.
+unit:YBq	yottabecquerel	A unit which is equal to 10²⁴ becquerel.
+unit:YC	yottacoulomb	A unit which is equal to 10²⁴ coulomb.
+unit:YF	yottafarad	A unit which is equal to 10²⁴ farad.
+unit:YGy	yottagray	A unit which is equal to 10²⁴ gray.
+unit:YH	yottahenry	A unit which is equal to 10²⁴ henry.
+unit:YHz	yottahertz	A unit which is equal to 10²⁴ hertz.
+unit:YJ	yottajoule	A unit which is equal to 10²⁴ joule.
+unit:YK	yottakelvin	A unit which is equal to 10²⁴ kelvin.
+unit:YL	yottalitre	A unit which is equal to 10²⁴ litre.
+unit:YN	yottanewton	A unit which is equal to 10²⁴ newton.
+unit:YNp	yottaneper	A unit which is equal to 10²⁴ neper.
+unit:YOhm	yottaohm	A unit which is equal to 10²⁴ ohm.
+unit:YPa	yottapascal	A unit which is equal to 10²⁴ pascal.
+unit:YS	yottasiemens	A unit which is equal to 10²⁴ siemens.
+unit:YSv	yottasievert	A unit which is equal to 10²⁴ sievert.
+unit:YT	yottatesla	A unit which is equal to 10²⁴ tesla.
+unit:YV	yottavolt	A unit which is equal to 10²⁴ volt.
+unit:YW	yottawatt	A unit which is equal to 10²⁴ watt.
+unit:YWb	yottaweber	A unit which is equal to 10²⁴ weber.
+unit:Yar	yottaare	A unit which is equal to 10²⁴ are.
+unit:Ycd	yottacandela	A unit which is equal to 10²⁴ candela.
+unit:YeV	yottaelectronvolt	A unit which is equal to 10²⁴ electronvolt.
+unit:Yg	yottagram	A unit which is equal to 10²⁴ gram.
+unit:Ykat	yottakatal	A unit which is equal to 10²⁴ katal.
+unit:Ylm	yottalumen	A unit which is equal to 10²⁴ lumen.
+unit:Ylx	yottalux	A unit which is equal to 10²⁴ lux.
+unit:Ym	yottametre	A unit which is equal to 10²⁴ metre.
+unit:Ymol	yottamole	A unit which is equal to 10²⁴ mole.
+unit:Yrad	yottaradian	A unit which is equal to 10²⁴ radian.
+unit:Ys	yottasecond	A unit which is equal to 10²⁴ second.
+unit:Ysr	yottasteradian	A unit which is equal to 10²⁴ steradian.
+unit:Yt	yottatonne	A unit which is equal to 10²⁴ tonne.
+unit:Yu	yottadalton	A unit which is equal to 10²⁴ dalton.
+unit:Z%27%27	zettaplane angle second	A unit which is equal to 10²¹ plane angle second.
+unit:ZA	zettaampere	A unit which is equal to 10²¹ ampere.
+unit:ZB	zettabel	A unit which is equal to 10²¹ bel.
+unit:ZBq	zettabecquerel	A unit which is equal to 10²¹ becquerel.
+unit:ZC	zettacoulomb	A unit which is equal to 10²¹ coulomb.
+unit:ZF	zettafarad	A unit which is equal to 10²¹ farad.
+unit:ZGy	zettagray	A unit which is equal to 10²¹ gray.
+unit:ZH	zettahenry	A unit which is equal to 10²¹ henry.
+unit:ZHz	zettahertz	A unit which is equal to 10²¹ hertz.
+unit:ZJ	zettajoule	A unit which is equal to 10²¹ joule.
+unit:ZK	zettakelvin	A unit which is equal to 10²¹ kelvin.
+unit:ZL	zettalitre	A unit which is equal to 10²¹ litre.
+unit:ZN	zettanewton	A unit which is equal to 10²¹ newton.
+unit:ZNp	zettaneper	A unit which is equal to 10²¹ neper.
+unit:ZOhm	zettaohm	A unit which is equal to 10²¹ ohm.
+unit:ZPa	zettapascal	A unit which is equal to 10²¹ pascal.
+unit:ZS	zettasiemens	A unit which is equal to 10²¹ siemens.
+unit:ZSv	zettasievert	A unit which is equal to 10²¹ sievert.
+unit:ZT	zettatesla	A unit which is equal to 10²¹ tesla.
+unit:ZV	zettavolt	A unit which is equal to 10²¹ volt.
+unit:ZW	zettawatt	A unit which is equal to 10²¹ watt.
+unit:ZWb	zettaweber	A unit which is equal to 10²¹ weber.
+unit:Zar	zettaare	A unit which is equal to 10²¹ are.
+unit:Zcd	zettacandela	A unit which is equal to 10²¹ candela.
+unit:ZeV	zettaelectronvolt	A unit which is equal to 10²¹ electronvolt.
+unit:Zg	zettagram	A unit which is equal to 10²¹ gram.
+unit:Zkat	zettakatal	A unit which is equal to 10²¹ katal.
+unit:Zlm	zettalumen	A unit which is equal to 10²¹ lumen.
+unit:Zlx	zettalux	A unit which is equal to 10²¹ lux.
+unit:Zm	zettametre	A unit which is equal to 10²¹ metre.
+unit:Zmol	zettamole	A unit which is equal to 10²¹ mole.
+unit:Zrad	zettaradian	A unit which is equal to 10²¹ radian.
+unit:Zs	zettasecond	A unit which is equal to 10²¹ second.
+unit:Zsr	zettasteradian	A unit which is equal to 10²¹ steradian.
+unit:Zt	zettatonne	A unit which is equal to 10²¹ tonne.
+unit:Zu	zettadalton	A unit which is equal to 10²¹ dalton.
+unit:a	year	
+unit:a%27%27	attoplane angle second	A unit which is equal to 10⁻¹⁸ plane angle second.
+unit:a-1	reciprocal year	A unit which is equal to the reciprocal of 1 year.
+unit:a.s-1	year per second	A unit which is equal to 1 year per 1 second.
+unit:a.s-2	year per square second	A unit which is equal to 1 year per 1 square second.
+unit:aA	attoampere	A unit which is equal to 10⁻¹⁸ ampere.
+unit:aB	attobel	A unit which is equal to 10⁻¹⁸ bel.
+unit:aBq	attobecquerel	A unit which is equal to 10⁻¹⁸ becquerel.
+unit:aC	attocoulomb	A unit which is equal to 10⁻¹⁸ coulomb.
+unit:aF	attofarad	A unit which is equal to 10⁻¹⁸ farad.
+unit:aGy	attogray	A unit which is equal to 10⁻¹⁸ gray.
+unit:aH	attohenry	A unit which is equal to 10⁻¹⁸ henry.
+unit:aHz	attohertz	A unit which is equal to 10⁻¹⁸ hertz.
+unit:aJ	attojoule	A unit which is equal to 10⁻¹⁸ joule.
+unit:aJ.s	attojoule second	A unit which is equal to 10⁻¹⁸ joule by 1 second.
+unit:aK	attokelvin	A unit which is equal to 10⁻¹⁸ kelvin.
+unit:aL	attolitre	A unit which is equal to 10⁻¹⁸ litre.
+unit:aN	attonewton	A unit which is equal to 10⁻¹⁸ newton.
+unit:aNp	attoneper	A unit which is equal to 10⁻¹⁸ neper.
+unit:aOhm	attoohm	A unit which is equal to 10⁻¹⁸ ohm.
+unit:aPa	attopascal	A unit which is equal to 10⁻¹⁸ pascal.
+unit:aS	attosiemens	A unit which is equal to 10⁻¹⁸ siemens.
+unit:aSv	attosievert	A unit which is equal to 10⁻¹⁸ sievert.
+unit:aT	attotesla	A unit which is equal to 10⁻¹⁸ tesla.
+unit:aV	attovolt	A unit which is equal to 10⁻¹⁸ volt.
+unit:aW	attowatt	A unit which is equal to 10⁻¹⁸ watt.
+unit:aWb	attoweber	A unit which is equal to 10⁻¹⁸ weber.
+unit:a_g	mean Gregorian year	
+unit:a_j	mean Julian year	
+unit:a_t	tropical year	
+unit:aar	attoare	A unit which is equal to 10⁻¹⁸ are.
+unit:acd	attocandela	A unit which is equal to 10⁻¹⁸ candela.
+unit:aeV	attoelectronvolt	A unit which is equal to 10⁻¹⁸ electronvolt.
+unit:ag	attogram	A unit which is equal to 10⁻¹⁸ gram.
+unit:ag.L-1	attogram per litre	A unit which is equal to 10⁻¹⁸ gram per 1 litre.
+unit:akat	attokatal	A unit which is equal to 10⁻¹⁸ katal.
+unit:alm	attolumen	A unit which is equal to 10⁻¹⁸ lumen.
+unit:alx	attolux	A unit which is equal to 10⁻¹⁸ lux.
+unit:am	attometre	A unit which is equal to 10⁻¹⁸ metre.
+unit:am2	square attometre	A unit which is equal to 10⁻¹⁸ square metre.
+unit:am3	cubic attometre	A unit which is equal to 10⁻¹⁸ cubic metre.
+unit:amol	attomole	A unit which is equal to 10⁻¹⁸ mole.
+unit:amol.L-1	attomole per litre	A unit which is equal to 10⁻¹⁸ mole per 1 litre.
+unit:amol.m-1	attomole per metre	A unit which is equal to 10⁻¹⁸ mole per 1 metre.
+unit:ar	are	A unit which 1) is a unit of area, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 10⁴ square metre.
+unit:arad	attoradian	A unit which is equal to 10⁻¹⁸ radian.
+unit:as	attosecond	A unit which is equal to 10⁻¹⁸ second.
+unit:as2	square attosecond	A unit which is equal to 10⁻¹⁸ square second.
+unit:asr	attosteradian	A unit which is equal to 10⁻¹⁸ steradian.
+unit:at	attotonne	A unit which is equal to 10⁻¹⁸ tonne.
+unit:atm	standard atmosphere	
+unit:atm-1	reciprocal standard atmosphere	A unit which is equal to the reciprocal of 1 standard atmosphere.
+unit:att	technical atmosphere	
+unit:au	attodalton	A unit which is equal to 10⁻¹⁸ dalton.
+unit:b	barn	
+unit:bar	bar	
+unit:bar-1	reciprocal bar	A unit which is equal to the reciprocal of 1 bar.
+unit:bar.K-1	bar per kelvin	A unit which is equal to 1 bar per 1 kelvin.
+unit:bar.L.s-1	bar litre per second	A unit which is equal to 1 bar by 1 litre per 1 second.
+unit:bar.bar-1	bar per bar	A unit which is equal to 1 bar per 1 bar.
+unit:bar.m3.s-1	bar cubic metre per second	A unit which is equal to 1 bar by 1 cubic metre per 1 second.
+unit:bit	bit	
+unit:bit.s-1	bit per second	A unit which is equal to 1 bit per 1 second.
+unit:bit_s	logarithmic bit	
+unit:c%27%27	centiplane angle second	A unit which is equal to 10⁻² plane angle second.
+unit:cA	centiampere	A unit which is equal to 10⁻² ampere.
+unit:cB	centibel	A unit which is equal to 10⁻² bel.
+unit:cBq	centibecquerel	A unit which is equal to 10⁻² becquerel.
+unit:cC	centicoulomb	A unit which is equal to 10⁻² coulomb.
+unit:cF	centifarad	A unit which is equal to 10⁻² farad.
+unit:cGy	centigray	A unit which is equal to 10⁻² gray.
+unit:cH	centihenry	A unit which is equal to 10⁻² henry.
+unit:cHz	centihertz	A unit which is equal to 10⁻² hertz.
+unit:cJ	centijoule	A unit which is equal to 10⁻² joule.
+unit:cK	centikelvin	A unit which is equal to 10⁻² kelvin.
+unit:cL	centilitre	A unit which is equal to 10⁻² litre.
+unit:cN	centinewton	A unit which is equal to 10⁻² newton.
+unit:cN.m	centinewton metre	A unit which is equal to 10⁻² newton by 1 metre.
+unit:cNp	centineper	A unit which is equal to 10⁻² neper.
+unit:cOhm	centiohm	A unit which is equal to 10⁻² ohm.
+unit:cPa	centipascal	A unit which is equal to 10⁻² pascal.
+unit:cS	centisiemens	A unit which is equal to 10⁻² siemens.
+unit:cSv	centisievert	A unit which is equal to 10⁻² sievert.
+unit:cT	centitesla	A unit which is equal to 10⁻² tesla.
+unit:cV	centivolt	A unit which is equal to 10⁻² volt.
+unit:cW	centiwatt	A unit which is equal to 10⁻² watt.
+unit:cWb	centiweber	A unit which is equal to 10⁻² weber.
+unit:cal	calorie	
+unit:cal.Cel-1.g-1	calorie per degree Celsius gram	A unit which is equal to 1 calorie per 1 degree Celsius by 1 gram.
+unit:cal_%5B15%5D	calorie at 15°C	
+unit:cal_%5B20%5D	calorie at 20°C	
+unit:cal_IT	international table calorie	
+unit:cal_IT.cm-1.K-1.s-1	international table calorie per centimetre kelvin second	A unit which is equal to 1 international table calorie per 10⁻² metre by 1 kelvin by 1 second.
+unit:cal_IT.cm-2.K-1.s-1	international table calorie per square centimetre kelvin second	A unit which is equal to 1 international table calorie per 10⁻² square metre by 1 kelvin by 1 second.
+unit:cal_IT.g-1	international table calorie per gram	A unit which is equal to 1 international table calorie per 1 gram.
+unit:cal_IT.g-1.K-1	international table calorie per gram kelvin	A unit which is equal to 1 international table calorie per 1 gram by 1 kelvin.
+unit:cal_m	mean calorie	
+unit:cal_th	thermochemical calorie	
+unit:cal_th.Cel-1.cm-1.s-1	thermochemical calorie per degree Celsius centimetre second	A unit which is equal to 1 thermochemical calorie per 1 degree Celsius by 10⁻² metre by 1 second.
+unit:cal_th.cm-1.K-1.s-1	thermochemical calorie per centimetre kelvin second	A unit which is equal to 1 thermochemical calorie per 10⁻² metre by 1 kelvin by 1 second.
+unit:cal_th.g-1	thermochemical calorie per gram	A unit which is equal to 1 thermochemical calorie per 1 gram.
+unit:cal_th.g-1.K-1	thermochemical calorie per gram kelvin	A unit which is equal to 1 thermochemical calorie per 1 gram by 1 kelvin.
+unit:cal_th.min-1	thermochemical calorie per minute	A unit which is equal to 1 thermochemical calorie per 1 minute.
+unit:cal_th.s-1	thermochemical calorie per second	A unit which is equal to 1 thermochemical calorie per 1 second.
+unit:car	centiare	A unit which is equal to 10⁻² are.
+unit:ccd	centicandela	A unit which is equal to 10⁻² candela.
+unit:cd	candela	An SI base unit which 1) is the SI unit of of luminous intensity in a given direction and 2) is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 × 10¹² Hz, Kcd, to be 683 when expressed in the unit lumen per watt, which is equal to candela steradian per watt, or candela cubic second steradian per kilogram square metre, where the kilogram, metre and second are defined in terms of h, c and ∆νCs.
+unit:cd.%5Bin_i%5D-2	candela per square inch	A unit which is equal to 1 candela per 1 square inch.
+unit:cd.cm-2	candela per square centimetre	A unit which is equal to 1 candela per 10⁻² square metre.
+unit:cd.m-2	candela per square metre	A unit which is equal to 1 candela per 1 square metre.
+unit:cd.sr	candela steradian	A unit which is equal to 1 candela by 1 steradian.
+unit:ceV	centielectronvolt	A unit which is equal to 10⁻² electronvolt.
+unit:cg	centigram	A unit which is equal to 10⁻² gram.
+unit:cg.L-1	centigram per litre	A unit which is equal to 10⁻² gram per 1 litre.
+unit:circ	plane angle circle	
+unit:ckat	centikatal	A unit which is equal to 10⁻² katal.
+unit:clm	centilumen	A unit which is equal to 10⁻² lumen.
+unit:clx	centilux	A unit which is equal to 10⁻² lux.
+unit:cm	centimetre	A unit which is equal to 10⁻² metre.
+unit:cm-1	reciprocal centimetre	A unit which is equal to the reciprocal of 10⁻² metre.
+unit:cm-2	reciprocal square centimetre	A unit which is equal to the reciprocal of 10⁻² square metre.
+unit:cm-3	reciprocal cubic centimetre	A unit which is equal to the reciprocal of 10⁻² cubic metre.
+unit:cm.K-1	centimetre per kelvin	A unit which is equal to 10⁻² metre per 1 kelvin.
+unit:cm.N	centimetre newton	A unit which is equal to 10⁻² metre by 1 newton.
+unit:cm.Oe	centimetre Oersted	A unit which is equal to 10⁻² metre by 1 Oersted.
+unit:cm.cm-3	centimetre per cubic centimetre	A unit which is equal to 10⁻² metre per 10⁻² cubic metre.
+unit:cm.d-1	centimetre per day	A unit which is equal to 10⁻² metre per 1 day.
+unit:cm.dyn	centimetre dyne	A unit which is equal to 10⁻² metre by 1 dyne.
+unit:cm.h-1	centimetre per hour	A unit which is equal to 10⁻² metre per 1 hour.
+unit:cm.s-1	centimetre per second	A unit which is equal to 10⁻² metre per 1 second.
+unit:cm.s-2	centimetre per square second	A unit which is equal to 10⁻² metre per 1 square second.
+unit:cm.s.Cel-1	centimetre second per degree Celsius	A unit which is equal to 10⁻² metre by 1 second per 1 degree Celsius.
+unit:cm2	square centimetre	A unit which is equal to 10⁻² square metre.
+unit:cm2.cm-3	square centimetre per cubic centimetre	A unit which is equal to 10⁻² square metre per 10⁻² cubic metre.
+unit:cm2.kg	square centimetre kilogram	A unit which is equal to 10⁻² square metre by 10³ gram.
+unit:cm2.min	square centimetre minute	A unit which is equal to 10⁻² square metre by 1 minute.
+unit:cm2.s	square centimetre second	A unit which is equal to 10⁻² square metre by 1 second.
+unit:cm2.s-1	square centimetre per second	A unit which is equal to 10⁻² square metre per 1 second.
+unit:cm3	cubic centimetre	A unit which is equal to 10⁻² cubic metre.
+unit:cm3.K-1	cubic centimetre per kelvin	A unit which is equal to 10⁻² cubic metre per 1 kelvin.
+unit:cm3.cm-3	cubic centimetre per cubic centimetre	A unit which is equal to 10⁻² cubic metre per 10⁻² cubic metre.
+unit:cm3.d-1	cubic centimetre per day	A unit which is equal to 10⁻² cubic metre per 1 day.
+unit:cm3.h-1	cubic centimetre per hour	A unit which is equal to 10⁻² cubic metre per 1 hour.
+unit:cm3.m-3	cubic centimetre per cubic metre	A unit which is equal to 10⁻² cubic metre per 1 cubic metre.
+unit:cm3.min-1	cubic centimetre per minute	A unit which is equal to 10⁻² cubic metre per 1 minute.
+unit:cm3.mol-1	cubic centimetre per mole	A unit which is equal to 10⁻² cubic metre per 1 mole.
+unit:cm3.s-1	cubic centimetre per second	A unit which is equal to 10⁻² cubic metre per 1 second.
+unit:cmol	centimole	A unit which is equal to 10⁻² mole.
+unit:cmol.L-1	centimole per litre	A unit which is equal to 10⁻² mole per 1 litre.
+unit:cmol.kg-1	centimole per kilogram	A unit which is equal to 10⁻² mole per 10³ gram.
+unit:cmol.m-1	centimole per metre	A unit which is equal to 10⁻² mole per 1 metre.
+unit:crad	centiradian	A unit which is equal to 10⁻² radian.
+unit:cs	centisecond	A unit which is equal to 10⁻² second.
+unit:cs2	square centisecond	A unit which is equal to 10⁻² square second.
+unit:csr	centisteradian	A unit which is equal to 10⁻² steradian.
+unit:ct	centitonne	A unit which is equal to 10⁻² tonne.
+unit:cu	centidalton	A unit which is equal to 10⁻² dalton.
+unit:d	day	A unit which 1) is a unit of time, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 24 hour or 86400 second.
+unit:d%27%27	deciplane angle second	A unit which is equal to 10⁻¹ plane angle second.
+unit:d-1	reciprocal day	A unit which is equal to the reciprocal of 1 day.
+unit:d.Cel-1	day per degree Celsius	A unit which is equal to 1 day per 1 degree Celsius.
+unit:d.har	day hectare	A unit which is equal to 1 day by 10² are.
+unit:d.m2	day square metre	A unit which is equal to 1 day by 1 square metre.
+unit:dA	deciampere	A unit which is equal to 10⁻¹ ampere.
+unit:dB	decibel	A unit which is equal to 10⁻¹ bel.
+unit:dBq	decibecquerel	A unit which is equal to 10⁻¹ becquerel.
+unit:dC	decicoulomb	A unit which is equal to 10⁻¹ coulomb.
+unit:dF	decifarad	A unit which is equal to 10⁻¹ farad.
+unit:dGy	decigray	A unit which is equal to 10⁻¹ gray.
+unit:dH	decihenry	A unit which is equal to 10⁻¹ henry.
+unit:dHz	decihertz	A unit which is equal to 10⁻¹ hertz.
+unit:dJ	decijoule	A unit which is equal to 10⁻¹ joule.
+unit:dK	decikelvin	A unit which is equal to 10⁻¹ kelvin.
+unit:dL	decilitre	A unit which is equal to 10⁻¹ litre.
+unit:dL.g-1	decilitre per gram	A unit which is equal to 10⁻¹ litre per 1 gram.
+unit:dN	decinewton	A unit which is equal to 10⁻¹ newton.
+unit:dN.m	decinewton metre	A unit which is equal to 10⁻¹ newton by 1 metre.
+unit:dNp	decineper	A unit which is equal to 10⁻¹ neper.
+unit:dOhm	deciohm	A unit which is equal to 10⁻¹ ohm.
+unit:dPa	decipascal	A unit which is equal to 10⁻¹ pascal.
+unit:dS	decisiemens	A unit which is equal to 10⁻¹ siemens.
+unit:dS.m-1	decisiemens per metre	A unit which is equal to 10⁻¹ siemens per 1 metre.
+unit:dSv	decisievert	A unit which is equal to 10⁻¹ sievert.
+unit:dT	decitesla	A unit which is equal to 10⁻¹ tesla.
+unit:dV	decivolt	A unit which is equal to 10⁻¹ volt.
+unit:dW	deciwatt	A unit which is equal to 10⁻¹ watt.
+unit:dWb	deciweber	A unit which is equal to 10⁻¹ weber.
+unit:da%27%27	decaplane angle second	A unit which is equal to 10¹ plane angle second.
+unit:daA	decaampere	A unit which is equal to 10¹ ampere.
+unit:daB	decabel	A unit which is equal to 10¹ bel.
+unit:daBq	decabecquerel	A unit which is equal to 10¹ becquerel.
+unit:daC	decacoulomb	A unit which is equal to 10¹ coulomb.
+unit:daF	decafarad	A unit which is equal to 10¹ farad.
+unit:daGy	decagray	A unit which is equal to 10¹ gray.
+unit:daH	decahenry	A unit which is equal to 10¹ henry.
+unit:daHz	decahertz	A unit which is equal to 10¹ hertz.
+unit:daJ	decajoule	A unit which is equal to 10¹ joule.
+unit:daK	decakelvin	A unit which is equal to 10¹ kelvin.
+unit:daL	decalitre	A unit which is equal to 10¹ litre.
+unit:daN	decanewton	A unit which is equal to 10¹ newton.
+unit:daNp	decaneper	A unit which is equal to 10¹ neper.
+unit:daOhm	decaohm	A unit which is equal to 10¹ ohm.
+unit:daPa	decapascal	A unit which is equal to 10¹ pascal.
+unit:daS	decasiemens	A unit which is equal to 10¹ siemens.
+unit:daSv	decasievert	A unit which is equal to 10¹ sievert.
+unit:daT	decatesla	A unit which is equal to 10¹ tesla.
+unit:daV	decavolt	A unit which is equal to 10¹ volt.
+unit:daW	decawatt	A unit which is equal to 10¹ watt.
+unit:daWb	decaweber	A unit which is equal to 10¹ weber.
+unit:daar	decare	A unit which is equal to 10¹ are.
+unit:dacd	decacandela	A unit which is equal to 10¹ candela.
+unit:daeV	decaelectronvolt	A unit which is equal to 10¹ electronvolt.
+unit:dag	decagram	A unit which is equal to 10¹ gram.
+unit:dag.L-1	decagram per litre	A unit which is equal to 10¹ gram per 1 litre.
+unit:dakat	decakatal	A unit which is equal to 10¹ katal.
+unit:dalm	decalumen	A unit which is equal to 10¹ lumen.
+unit:dalx	decalux	A unit which is equal to 10¹ lux.
+unit:dam	decametre	A unit which is equal to 10¹ metre.
+unit:dam.s-1	decametre per second	A unit which is equal to 10¹ metre per 1 second.
+unit:dam.s-2	decametre per square second	A unit which is equal to 10¹ metre per 1 square second.
+unit:dam2	square decametre	A unit which is equal to 10¹ square metre.
+unit:dam3	cubic decametre	A unit which is equal to 10¹ cubic metre.
+unit:damol	decamole	A unit which is equal to 10¹ mole.
+unit:damol.L-1	decamole per litre	A unit which is equal to 10¹ mole per 1 litre.
+unit:damol.m-1	decamole per metre	A unit which is equal to 10¹ mole per 1 metre.
+unit:dar	deciare	A unit which is equal to 10⁻¹ are.
+unit:darad	decaradian	A unit which is equal to 10¹ radian.
+unit:das	decasecond	A unit which is equal to 10¹ second.
+unit:das2	square decasecond	A unit which is equal to 10¹ square second.
+unit:dasr	decasteradian	A unit which is equal to 10¹ steradian.
+unit:dat	decatonne	A unit which is equal to 10¹ tonne.
+unit:dau	decadalton	A unit which is equal to 10¹ dalton.
+unit:dcd	decicandela	A unit which is equal to 10⁻¹ candela.
+unit:deV	decielectronvolt	A unit which is equal to 10⁻¹ electronvolt.
+unit:deg	plane angle degree	A unit which 1) is a unit of plane and phase angle, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to π/180 radian.
+unit:deg.h-1	plane angle degree per hour	A unit which is equal to 1 plane angle degree per 1 hour.
+unit:deg.m-1	plane angle degree per metre	A unit which is equal to 1 plane angle degree per 1 metre.
+unit:deg.min-1	plane angle degree per minute	A unit which is equal to 1 plane angle degree per 1 minute.
+unit:deg.s-1	plane angle degree per second	A unit which is equal to 1 plane angle degree per 1 second.
+unit:deg.s-2	plane angle degree per square second	A unit which is equal to 1 plane angle degree per 1 square second.
+unit:deg2	square plane angle degree	A unit which is equal to 1 square plane angle degree.
+unit:dg	decigram	A unit which is equal to 10⁻¹ gram.
+unit:dg.L-1	decigram per litre	A unit which is equal to 10⁻¹ gram per 1 litre.
+unit:dkat	decikatal	A unit which is equal to 10⁻¹ katal.
+unit:dlm	decilumen	A unit which is equal to 10⁻¹ lumen.
+unit:dlx	decilux	A unit which is equal to 10⁻¹ lux.
+unit:dm	decimetre	A unit which is equal to 10⁻¹ metre.
+unit:dm.s-1	decimetre per second	A unit which is equal to 10⁻¹ metre per 1 second.
+unit:dm.s-2	decimetre per square second	A unit which is equal to 10⁻¹ metre per 1 square second.
+unit:dm2	square decimetre	A unit which is equal to 10⁻¹ square metre.
+unit:dm3	cubic decimetre	A unit which is equal to 10⁻¹ cubic metre.
+unit:dm3.d-1	cubic decimetre per day	A unit which is equal to 10⁻¹ cubic metre per 1 day.
+unit:dm3.h-1	cubic decimetre per hour	A unit which is equal to 10⁻¹ cubic metre per 1 hour.
+unit:dm3.m-3	cubic decimetre per cubic metre	A unit which is equal to 10⁻¹ cubic metre per 1 cubic metre.
+unit:dm3.min-3	cubic decimetre per cubic minute	A unit which is equal to 10⁻¹ cubic metre per 1 cubic minute.
+unit:dm3.mol-1	cubic decimetre per mole	A unit which is equal to 10⁻¹ cubic metre per 1 mole.
+unit:dm3.s-1	cubic decimetre per second	A unit which is equal to 10⁻¹ cubic metre per 1 second.
+unit:dmol	decimole	A unit which is equal to 10⁻¹ mole.
+unit:dmol.L-1	decimole per litre	A unit which is equal to 10⁻¹ mole per 1 litre.
+unit:dmol.m-1	decimole per metre	A unit which is equal to 10⁻¹ mole per 1 metre.
+unit:drad	deciradian	A unit which is equal to 10⁻¹ radian.
+unit:ds	decisecond	A unit which is equal to 10⁻¹ second.
+unit:ds2	square decisecond	A unit which is equal to 10⁻¹ square second.
+unit:dsr	decisteradian	A unit which is equal to 10⁻¹ steradian.
+unit:dt	decitonne	A unit which is equal to 10⁻¹ tonne.
+unit:du	decidalton	A unit which is equal to 10⁻¹ dalton.
+unit:dyn	dyne	
+unit:dyn.cm-1	dyne per centimetre	A unit which is equal to 1 dyne per 10⁻² metre.
+unit:dyn.cm-2	dyne per square centimetre	A unit which is equal to 1 dyne per 10⁻² square metre.
+unit:dyn.s.cm-1	dyne second per centimetre	A unit which is equal to 1 dyne by 1 second per 10⁻² metre.
+unit:dyn.s.cm-3	dyne second per cubic centimetre	A unit which is equal to 1 dyne by 1 second per 10⁻² cubic metre.
+unit:eV	electronvolt	A unit which 1) is a unit of energy, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 1.602 176 634 × 10⁻¹⁹ joule.
+unit:eV.K-1	electronvolt per kelvin	A unit which is equal to 1 electronvolt per 1 kelvin.
+unit:eV.T-1	electronvolt per tesla	A unit which is equal to 1 electronvolt per 1 tesla.
+unit:eV.m-1	electronvolt per metre	A unit which is equal to 1 electronvolt per 1 metre.
+unit:eV.s-1	electronvolt per second	A unit which is equal to 1 electronvolt per 1 second.
+unit:eq	equivalent	
+unit:erg	erg	
+unit:erg.cm-1	erg per centimetre	A unit which is equal to 1 erg per 10⁻² metre.
+unit:erg.cm-3	erg per cubic centimetre	A unit which is equal to 1 erg per 10⁻² cubic metre.
+unit:erg.g-1	erg per gram	A unit which is equal to 1 erg per 1 gram.
+unit:erg.g-1.s-1	erg per gram second	A unit which is equal to 1 erg per 1 gram by 1 second.
+unit:erg.s	erg second	A unit which is equal to 1 erg by 1 second.
+unit:erg.s-1	erg per second	A unit which is equal to 1 erg per 1 second.
+unit:f%27%27	femtoplane angle second	A unit which is equal to 10⁻¹⁵ plane angle second.
+unit:fA	femtoampere	A unit which is equal to 10⁻¹⁵ ampere.
+unit:fB	femtobel	A unit which is equal to 10⁻¹⁵ bel.
+unit:fBq	femtobecquerel	A unit which is equal to 10⁻¹⁵ becquerel.
+unit:fC	femtocoulomb	A unit which is equal to 10⁻¹⁵ coulomb.
+unit:fF	femtofarad	A unit which is equal to 10⁻¹⁵ farad.
+unit:fGy	femtogray	A unit which is equal to 10⁻¹⁵ gray.
+unit:fH	femtohenry	A unit which is equal to 10⁻¹⁵ henry.
+unit:fHz	femtohertz	A unit which is equal to 10⁻¹⁵ hertz.
+unit:fJ	femtojoule	A unit which is equal to 10⁻¹⁵ joule.
+unit:fK	femtokelvin	A unit which is equal to 10⁻¹⁵ kelvin.
+unit:fL	femtolitre	A unit which is equal to 10⁻¹⁵ litre.
+unit:fN	femtonewton	A unit which is equal to 10⁻¹⁵ newton.
+unit:fNp	femtoneper	A unit which is equal to 10⁻¹⁵ neper.
+unit:fOhm	femtoohm	A unit which is equal to 10⁻¹⁵ ohm.
+unit:fPa	femtopascal	A unit which is equal to 10⁻¹⁵ pascal.
+unit:fS	femtosiemens	A unit which is equal to 10⁻¹⁵ siemens.
+unit:fSv	femtosievert	A unit which is equal to 10⁻¹⁵ sievert.
+unit:fT	femtotesla	A unit which is equal to 10⁻¹⁵ tesla.
+unit:fV	femtovolt	A unit which is equal to 10⁻¹⁵ volt.
+unit:fW	femtowatt	A unit which is equal to 10⁻¹⁵ watt.
+unit:fWb	femtoweber	A unit which is equal to 10⁻¹⁵ weber.
+unit:far	femtoare	A unit which is equal to 10⁻¹⁵ are.
+unit:fcd	femtocandela	A unit which is equal to 10⁻¹⁵ candela.
+unit:feV	femtoelectronvolt	A unit which is equal to 10⁻¹⁵ electronvolt.
+unit:fg	femtogram	A unit which is equal to 10⁻¹⁵ gram.
+unit:fg.L-1	femtogram per litre	A unit which is equal to 10⁻¹⁵ gram per 1 litre.
+unit:fg.kg-1	femtogram per kilogram	A unit which is equal to 10⁻¹⁵ gram per 10³ gram.
+unit:fkat	femtokatal	A unit which is equal to 10⁻¹⁵ katal.
+unit:flm	femtolumen	A unit which is equal to 10⁻¹⁵ lumen.
+unit:flx	femtolux	A unit which is equal to 10⁻¹⁵ lux.
+unit:fm	femtometre	A unit which is equal to 10⁻¹⁵ metre.
+unit:fm.MeV	femtometre megaelectronvolt	A unit which is equal to 10⁻¹⁵ metre by 10⁶ electronvolt.
+unit:fm.s-1	femtometre per second	A unit which is equal to 10⁻¹⁵ metre per 1 second.
+unit:fm.s-2	femtometre per square second	A unit which is equal to 10⁻¹⁵ metre per 1 square second.
+unit:fm2	square femtometre	A unit which is equal to 10⁻¹⁵ square metre.
+unit:fm3	cubic femtometre	A unit which is equal to 10⁻¹⁵ cubic metre.
+unit:fmol	femtomole	A unit which is equal to 10⁻¹⁵ mole.
+unit:fmol.L-1	femtomole per litre	A unit which is equal to 10⁻¹⁵ mole per 1 litre.
+unit:fmol.kg-1	femtomole per kilogram	A unit which is equal to 10⁻¹⁵ mole per 10³ gram.
+unit:fmol.m-1	femtomole per metre	A unit which is equal to 10⁻¹⁵ mole per 1 metre.
+unit:frad	femtoradian	A unit which is equal to 10⁻¹⁵ radian.
+unit:fs	femtosecond	A unit which is equal to 10⁻¹⁵ second.
+unit:fs2	square femtosecond	A unit which is equal to 10⁻¹⁵ square second.
+unit:fsr	femtosteradian	A unit which is equal to 10⁻¹⁵ steradian.
+unit:ft	femtotonne	A unit which is equal to 10⁻¹⁵ tonne.
+unit:fu	femtodalton	A unit which is equal to 10⁻¹⁵ dalton.
+unit:g	gram	An SI unit which is equal to 10⁻³ kilogram.
+unit:g%25	gram percent	
+unit:g-1	reciprocal gram	A unit which is equal to the reciprocal of 1 gram.
+unit:g-1.m-2	reciprocal gram square metre	A unit which is equal to the reciprocal of 1 gram by 1 square metre.
+unit:g.EL-1	gram per exalitre	A unit which is equal to 1 gram per 10¹⁸ litre.
+unit:g.GL-1	gram per gigalitre	A unit which is equal to 1 gram per 10⁹ litre.
+unit:g.J-1	gram per joule	A unit which is equal to 1 gram per 1 joule.
+unit:g.L-1	gram per litre	A unit which is equal to 1 gram per 1 litre.
+unit:g.MJ-1	gram per megajoule	A unit which is equal to 1 gram per 10⁶ joule.
+unit:g.PL-1	gram per petalitre	A unit which is equal to 1 gram per 10¹⁵ litre.
+unit:g.TL-1	gram per teralitre	A unit which is equal to 1 gram per 10¹² litre.
+unit:g.a-1.cm-2	gram per year square centimetre	A unit which is equal to 1 gram per 1 year by 10⁻² square metre.
+unit:g.aL-1	gram per attolitre	A unit which is equal to 1 gram per 10⁻¹⁸ litre.
+unit:g.cL-1	gram per centilitre	A unit which is equal to 1 gram per 10⁻² litre.
+unit:g.cm-2	gram per square centimetre	A unit which is equal to 1 gram per 10⁻² square metre.
+unit:g.cm-3	gram per cubic centimetre	A unit which is equal to 1 gram per 10⁻² cubic metre.
+unit:g.d-1	gram per day	A unit which is equal to 1 gram per 1 day.
+unit:g.d-1.m-2	gram per day square metre	A unit which is equal to 1 gram per 1 day by 1 square metre.
+unit:g.dL-1	gram per decilitre	A unit which is equal to 1 gram per 10⁻¹ litre.
+unit:g.daL-1	gram per decalitre	A unit which is equal to 1 gram per 10¹ litre.
+unit:g.dm-3	gram per cubic decimetre	A unit which is equal to 1 gram per 10⁻¹ cubic metre.
+unit:g.fL-1	gram per femtolitre	A unit which is equal to 1 gram per 10⁻¹⁵ litre.
+unit:g.g-1	gram per gram	A unit which is equal to 1 gram per 1 gram.
+unit:g.h-1	gram per hour	A unit which is equal to 1 gram per 1 hour.
+unit:g.hL-1	gram per hectolitre	A unit which is equal to 1 gram per 10² litre.
+unit:g.hg-1	gram per hectogram	A unit which is equal to 1 gram per 10² gram.
+unit:g.kL-1	gram per kilolitre	A unit which is equal to 1 gram per 10³ litre.
+unit:g.kg-1	gram per kilogram	A unit which is equal to 1 gram per 10³ gram.
+unit:g.m-1	gram per metre	A unit which is equal to 1 gram per 1 metre.
+unit:g.m-2	gram per square metre	A unit which is equal to 1 gram per 1 square metre.
+unit:g.m-2.s-1	gram per square metre second	A unit which is equal to 1 gram per 1 square metre by 1 second.
+unit:g.m-3	gram per cubic metre	A unit which is equal to 1 gram per 1 cubic metre.
+unit:g.mL-1	gram per millilitre	A unit which is equal to 1 gram per 10⁻³ litre.
+unit:g.min-1	gram per minute	A unit which is equal to 1 gram per 1 minute.
+unit:g.mm	gram millimetre	A unit which is equal to 1 gram by 10⁻³ metre.
+unit:g.mm-1	gram per millimetre	A unit which is equal to 1 gram per 10⁻³ metre.
+unit:g.mol-1	gram per mole	A unit which is equal to 1 gram per 1 mole.
+unit:g.nL-1	gram per nanolitre	A unit which is equal to 1 gram per 10⁻⁹ litre.
+unit:g.s-1	gram per second	A unit which is equal to 1 gram per 1 second.
+unit:g.uL-1	gram per microlitre	A unit which is equal to 1 gram per 10⁻⁶ litre.
+unit:g.ug	gram microgram	A unit which is equal to 1 gram by 10⁻⁶ gram.
+unit:g.yL-1	gram per yoctolitre	A unit which is equal to 1 gram per 10⁻²⁴ litre.
+unit:g.zL-1	gram per zeptolitre	A unit which is equal to 1 gram per 10⁻²¹ litre.
+unit:gf	gram-force	
+unit:gf.cm-2	gram-force per square centimetre	A unit which is equal to 1 gram-force per 10⁻² square metre.
+unit:gon	gon	
+unit:h	hour	A unit which 1) is a unit of time, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 60 minute or 3600 second.
+unit:h%27%27	hectoplane angle second	A unit which is equal to 10² plane angle second.
+unit:h.MW	hour megawatt	A unit which is equal to 1 hour by 10⁶ watt.
+unit:h.TW	hour terawatt	A unit which is equal to 1 hour by 10¹² watt.
+unit:h.V	hour volt	A unit which is equal to 1 hour by 1 volt.
+unit:h.W	hour watt	A unit which is equal to 1 hour by 1 watt.
+unit:h.W.m-3	hour watt per cubic metre	A unit which is equal to 1 hour by 1 watt per 1 cubic metre.
+unit:h.kA	hour kiloampere	A unit which is equal to 1 hour by 10³ ampere.
+unit:h.kV	hour kilovolt	A unit which is equal to 1 hour by 10³ volt.
+unit:h.kW	hour kilowatt	A unit which is equal to 1 hour by 10³ watt.
+unit:h.lx	hour lux	A unit which is equal to 1 hour by 1 lux.
+unit:h.mA	hour milliampere	A unit which is equal to 1 hour by 10⁻³ ampere.
+unit:hA	hectoampere	A unit which is equal to 10² ampere.
+unit:hB	hectobel	A unit which is equal to 10² bel.
+unit:hBq	hectobecquerel	A unit which is equal to 10² becquerel.
+unit:hC	hectocoulomb	A unit which is equal to 10² coulomb.
+unit:hF	hectofarad	A unit which is equal to 10² farad.
+unit:hGy	hectogray	A unit which is equal to 10² gray.
+unit:hH	hectohenry	A unit which is equal to 10² henry.
+unit:hHz	hectohertz	A unit which is equal to 10² hertz.
+unit:hJ	hectojoule	A unit which is equal to 10² joule.
+unit:hK	hectokelvin	A unit which is equal to 10² kelvin.
+unit:hL	hectolitre	A unit which is equal to 10² litre.
+unit:hN	hectonewton	A unit which is equal to 10² newton.
+unit:hNp	hectoneper	A unit which is equal to 10² neper.
+unit:hOhm	hectoohm	A unit which is equal to 10² ohm.
+unit:hPa	hectopascal	A unit which is equal to 10² pascal.
+unit:hPa.K-1	hectopascal per kelvin	A unit which is equal to 10² pascal per 1 kelvin.
+unit:hPa.L.s-1	hectopascal litre per second	A unit which is equal to 10² pascal by 1 litre per 1 second.
+unit:hPa.bar-1	hectopascal per bar	A unit which is equal to 10² pascal per 1 bar.
+unit:hPa.h-1	hectopascal per hour	A unit which is equal to 10² pascal per 1 hour.
+unit:hPa.m3.s-1	hectopascal cubic metre per second	A unit which is equal to 10² pascal by 1 cubic metre per 1 second.
+unit:hS	hectosiemens	A unit which is equal to 10² siemens.
+unit:hSv	hectosievert	A unit which is equal to 10² sievert.
+unit:hT	hectotesla	A unit which is equal to 10² tesla.
+unit:hV	hectovolt	A unit which is equal to 10² volt.
+unit:hW	hectowatt	A unit which is equal to 10² watt.
+unit:hWb	hectoweber	A unit which is equal to 10² weber.
+unit:har	hectare	A unit which is equal to 10² are.
+unit:hcd	hectocandela	A unit which is equal to 10² candela.
+unit:heV	hectoelectronvolt	A unit which is equal to 10² electronvolt.
+unit:hg	hectogram	A unit which is equal to 10² gram.
+unit:hg.L-1	hectogram per litre	A unit which is equal to 10² gram per 1 litre.
+unit:hkat	hectokatal	A unit which is equal to 10² katal.
+unit:hlm	hectolumen	A unit which is equal to 10² lumen.
+unit:hlx	hectolux	A unit which is equal to 10² lux.
+unit:hm	hectometre	A unit which is equal to 10² metre.
+unit:hm.s-1	hectometre per second	A unit which is equal to 10² metre per 1 second.
+unit:hm.s-2	hectometre per square second	A unit which is equal to 10² metre per 1 square second.
+unit:hm2	square hectometre	A unit which is equal to 10² square metre.
+unit:hm3	cubic hectometre	A unit which is equal to 10² cubic metre.
+unit:hmol	hectomole	A unit which is equal to 10² mole.
+unit:hmol.L-1	hectomole per litre	A unit which is equal to 10² mole per 1 litre.
+unit:hmol.m-1	hectomole per metre	A unit which is equal to 10² mole per 1 metre.
+unit:hrad	hectoradian	A unit which is equal to 10² radian.
+unit:hs	hectosecond	A unit which is equal to 10² second.
+unit:hs2	square hectosecond	A unit which is equal to 10² square second.
+unit:hsr	hectosteradian	A unit which is equal to 10² steradian.
+unit:ht	hectotonne	A unit which is equal to 10² tonne.
+unit:hu	hectodalton	A unit which is equal to 10² dalton.
+unit:k%27%27	kiloplane angle second	A unit which is equal to 10³ plane angle second.
+unit:kA	kiloampere	A unit which is equal to 10³ ampere.
+unit:kA.m-1	kiloampere per metre	A unit which is equal to 10³ ampere per 1 metre.
+unit:kA.m-2	kiloampere per square metre	A unit which is equal to 10³ ampere per 1 square metre.
+unit:kB	kilobel	A unit which is equal to 10³ bel.
+unit:kBq	kilobecquerel	A unit which is equal to 10³ becquerel.
+unit:kC	kilocoulomb	A unit which is equal to 10³ coulomb.
+unit:kC.m-2	kilocoulomb per square metre	A unit which is equal to 10³ coulomb per 1 square metre.
+unit:kC.m-3	kilocoulomb per cubic metre	A unit which is equal to 10³ coulomb per 1 cubic metre.
+unit:kF	kilofarad	A unit which is equal to 10³ farad.
+unit:kGy	kilogray	A unit which is equal to 10³ gray.
+unit:kH	kilohenry	A unit which is equal to 10³ henry.
+unit:kHz	kilohertz	A unit which is equal to 10³ hertz.
+unit:kHz.m	kilohertz metre	A unit which is equal to 10³ hertz by 1 metre.
+unit:kJ	kilojoule	A unit which is equal to 10³ joule.
+unit:kJ.K-1	kilojoule per kelvin	A unit which is equal to 10³ joule per 1 kelvin.
+unit:kJ.K-1.kg-1	kilojoule per kelvin kilogram	A unit which is equal to 10³ joule per 1 kelvin by 10³ gram.
+unit:kJ.d-1.m-2	kilojoule per day square metre	A unit which is equal to 10³ joule per 1 day by 1 square metre.
+unit:kJ.hg-1	kilojoule per hectogram	A unit which is equal to 10³ joule per 10² gram.
+unit:kJ.kg-1	kilojoule per kilogram	A unit which is equal to 10³ joule per 10³ gram.
+unit:kJ.mol-1	kilojoule per mole	A unit which is equal to 10³ joule per 1 mole.
+unit:kK	kilokelvin	A unit which is equal to 10³ kelvin.
+unit:kL	kilolitre	A unit which is equal to 10³ litre.
+unit:kL.h-1	kilolitre per hour	A unit which is equal to 10³ litre per 1 hour.
+unit:kN	kilonewton	A unit which is equal to 10³ newton.
+unit:kN.m	kilonewton metre	A unit which is equal to 10³ newton by 1 metre.
+unit:kNp	kiloneper	A unit which is equal to 10³ neper.
+unit:kOhm	kiloohm	A unit which is equal to 10³ ohm.
+unit:kPa	kilopascal	A unit which is equal to 10³ pascal.
+unit:kPa.K-1	kilopascal per kelvin	A unit which is equal to 10³ pascal per 1 kelvin.
+unit:kPa.bar-1	kilopascal per bar	A unit which is equal to 10³ pascal per 1 bar.
+unit:kPa.m2.g-1	kilopascal square metre per gram	A unit which is equal to 10³ pascal by 1 square metre per 1 gram.
+unit:kPa.mm-1	kilopascal per millimetre	A unit which is equal to 10³ pascal per 10⁻³ metre.
+unit:kS	kilosiemens	A unit which is equal to 10³ siemens.
+unit:kS.m-1	kilosiemens per metre	A unit which is equal to 10³ siemens per 1 metre.
+unit:kSv	kilosievert	A unit which is equal to 10³ sievert.
+unit:kT	kilotesla	A unit which is equal to 10³ tesla.
+unit:kV	kilovolt	A unit which is equal to 10³ volt.
+unit:kV.m-1	kilovolt per metre	A unit which is equal to 10³ volt per 1 metre.
+unit:kW	kilowatt	A unit which is equal to 10³ watt.
+unit:kWb	kiloweber	A unit which is equal to 10³ weber.
+unit:kWb.m-1	kiloweber per metre	A unit which is equal to 10³ weber per 1 metre.
+unit:kar	kiloare	A unit which is equal to 10³ are.
+unit:kat	katal	A special named SI unit which 1) is a unit of catalytic activity and 2) is equal to a mole per second.
+unit:kat.m-3	katal per cubic metre	A unit which is equal to 1 katal per 1 cubic metre.
+unit:kcd	kilocandela	A unit which is equal to 10³ candela.
+unit:keV	kiloelectronvolt	A unit which is equal to 10³ electronvolt.
+unit:keV.um-1	kiloelectronvolt per micrometre	A unit which is equal to 10³ electronvolt per 10⁻⁶ metre.
+unit:kg	kilogram	An SI base unit which 1) is the SI unit of mass and 2) is defined by taking the fixed numerical value of the Planck constant, h, to be 6.626 070 15 × 10⁻³⁴ when expressed in the unit joule second, which is equal to kilogram square metre per second, where the metre and the second are defined in terms of c and ∆νCs.
+unit:kg.GJ-1	kilogram per gigajoule	A unit which is equal to 10³ gram per 10⁹ joule.
+unit:kg.L-1	kilogram per litre	A unit which is equal to 10³ gram per 1 litre.
+unit:kg.cm-2	kilogram per square centimetre	A unit which is equal to 10³ gram per 10⁻² square metre.
+unit:kg.cm-3	kilogram per cubic centimetre	A unit which is equal to 10³ gram per 10⁻² cubic metre.
+unit:kg.d-1	kilogram per day	A unit which is equal to 10³ gram per 1 day.
+unit:kg.d-1.har-1	kilogram per day hectare	A unit which is equal to 10³ gram per 1 day by 10² are.
+unit:kg.d-1.m-2	kilogram per day square metre	A unit which is equal to 10³ gram per 1 day by 1 square metre.
+unit:kg.dm-3	kilogram per cubic decimetre	A unit which is equal to 10³ gram per 10⁻¹ cubic metre.
+unit:kg.h-1	kilogram per hour	A unit which is equal to 10³ gram per 1 hour.
+unit:kg.h-1.m-1	kilogram per hour metre	A unit which is equal to 10³ gram per 1 hour by 1 metre.
+unit:kg.har-1	kilogram per hectare	A unit which is equal to 10³ gram per 10² are.
+unit:kg.kg-1	kilogram per kilogram	A unit which is equal to 10³ gram per 10³ gram.
+unit:kg.km-2	kilogram per square kilometre	A unit which is equal to 10³ gram per 10³ square metre.
+unit:kg.m	kilogram metre	A unit which is equal to 10³ gram by 1 metre.
+unit:kg.m-1	kilogram per metre	A unit which is equal to 10³ gram per 1 metre.
+unit:kg.m-1.s-1	kilogram per metre second	A unit which is equal to 10³ gram per 1 metre by 1 second.
+unit:kg.m-2	kilogram per square metre	A unit which is equal to 10³ gram per 1 square metre.
+unit:kg.m-2.Pa-1.s-1	kilogram per square metre pascal second	A unit which is equal to 10³ gram per 1 square metre by 1 pascal by 1 second.
+unit:kg.m-2.s-1	kilogram per square metre second	A unit which is equal to 10³ gram per 1 square metre by 1 second.
+unit:kg.m-3	kilogram per cubic metre	A unit which is equal to 10³ gram per 1 cubic metre.
+unit:kg.m-3.s-1	kilogram per cubic metre second	A unit which is equal to 10³ gram per 1 cubic metre by 1 second.
+unit:kg.m.s-1	kilogram metre per second	A unit which is equal to 10³ gram by 1 metre per 1 second.
+unit:kg.m.s-2	kilogram metre per square second	A unit which is equal to 10³ gram by 1 metre per 1 square second.
+unit:kg.m2	kilogram square metre	A unit which is equal to 10³ gram by 1 square metre.
+unit:kg.m2.s-1	kilogram square metre per second	A unit which is equal to 10³ gram by 1 square metre per 1 second.
+unit:kg.min-1	kilogram per minute	A unit which is equal to 10³ gram per 1 minute.
+unit:kg.mm-1	kilogram per millimetre	A unit which is equal to 10³ gram per 10⁻³ metre.
+unit:kg.mm2	kilogram square millimetre	A unit which is equal to 10³ gram by 10⁻³ square metre.
+unit:kg.mol-1	kilogram per mole	A unit which is equal to 10³ gram per 1 mole.
+unit:kg.s-1	kilogram per second	A unit which is equal to 10³ gram per 1 second.
+unit:kg.s-2	kilogram per square second	A unit which is equal to 10³ gram per 1 square second.
+unit:kg.s2	kilogram square second	A unit which is equal to 10³ gram by 1 square second.
+unit:kg.s2.m-1	kilogram square second per metre	A unit which is equal to 10³ gram by 1 square second per 1 metre.
+unit:kg.umol	kilogram micromole	A unit which is equal to 10³ gram by 10⁻⁶ mole.
+unit:kg2.s-2	square kilogram per square second	A unit which is equal to 10³ square gram per 1 square second.
+unit:kkat	kilokatal	A unit which is equal to 10³ katal.
+unit:klm	kilolumen	A unit which is equal to 10³ lumen.
+unit:klx	kilolux	A unit which is equal to 10³ lux.
+unit:km	kilometre	A unit which is equal to 10³ metre.
+unit:km.d-1	kilometre per day	A unit which is equal to 10³ metre per 1 day.
+unit:km.h-1	kilometre per hour	A unit which is equal to 10³ metre per 1 hour.
+unit:km.s-1	kilometre per second	A unit which is equal to 10³ metre per 1 second.
+unit:km.s-2	kilometre per square second	A unit which is equal to 10³ metre per 1 square second.
+unit:km2	square kilometre	A unit which is equal to 10³ square metre.
+unit:km3	cubic kilometre	A unit which is equal to 10³ cubic metre.
+unit:km3.s-2	cubic kilometre per square second	A unit which is equal to 10³ cubic metre per 1 square second.
+unit:kmol	kilomole	A unit which is equal to 10³ mole.
+unit:kmol.L-1	kilomole per litre	A unit which is equal to 10³ mole per 1 litre.
+unit:kmol.h-1	kilomole per hour	A unit which is equal to 10³ mole per 1 hour.
+unit:kmol.m-1	kilomole per metre	A unit which is equal to 10³ mole per 1 metre.
+unit:kmol.m-3	kilomole per cubic metre	A unit which is equal to 10³ mole per 1 cubic metre.
+unit:kmol.min-1	kilomole per minute	A unit which is equal to 10³ mole per 1 minute.
+unit:kmol.s-1	kilomole per second	A unit which is equal to 10³ mole per 1 second.
+unit:krad	kiloradian	A unit which is equal to 10³ radian.
+unit:ks	kilosecond	A unit which is equal to 10³ second.
+unit:ks2	square kilosecond	A unit which is equal to 10³ square second.
+unit:ksr	kilosteradian	A unit which is equal to 10³ steradian.
+unit:kt	kilotonne	A unit which is equal to 10³ tonne.
+unit:ku	kilodalton	A unit which is equal to 10³ dalton.
+unit:lm	lumen	A special named SI unit which 1) is a unit of luminous flux and 2) is equal to a candela steradian.
+unit:lm.W-1	lumen per watt	A unit which is equal to 1 lumen per 1 watt.
+unit:lm.m-2	lumen per square metre	A unit which is equal to 1 lumen per 1 square metre.
+unit:lm.s	lumen second	A unit which is equal to 1 lumen by 1 second.
+unit:lm.s-1	lumen per second	A unit which is equal to 1 lumen per 1 second.
+unit:lx	lux	A special named SI unit which 1) is a unit of illuminance and 2) is equal to a candela steradian per square metre.
+unit:lx.s	lux second	A unit which is equal to 1 lux by 1 second.
+unit:m	metre	An SI base unit which 1) is the SI unit of length and 2) is defined by taking the fixed numerical value of the speed of light in vacuum, c, to be 299 792 458 when expressed in the unit metre per second, where the second is defined in terms of the caesium frequency ∆νCs.
+unit:m%27%27	milliplane angle second	A unit which is equal to 10⁻³ plane angle second.
+unit:m%27%27.a-1	milliplane angle second per year	A unit which is equal to 10⁻³ plane angle second per 1 year.
+unit:m%5BH2O%5D	meter of water column	
+unit:m%5BHg%5D	meter of mercury column	
+unit:m-1	reciprocal metre	A unit which is equal to the reciprocal of 1 metre.
+unit:m-1.T-1	reciprocal metre tesla	A unit which is equal to the reciprocal of 1 metre by 1 tesla.
+unit:m-1.nm-1	reciprocal metre nanometre	A unit which is equal to the reciprocal of 1 metre by 10⁻⁹ metre.
+unit:m-1.nm-1.sr-1	reciprocal metre nanometre steradian	A unit which is equal to the reciprocal of 1 metre by 10⁻⁹ metre by 1 steradian.
+unit:m-1.s-1	reciprocal metre second	A unit which is equal to the reciprocal of 1 metre by 1 second.
+unit:m-1.sr-1	reciprocal metre steradian	A unit which is equal to the reciprocal of 1 metre by 1 steradian.
+unit:m-2	reciprocal square metre	A unit which is equal to the reciprocal of 1 square metre.
+unit:m-2.s-1	reciprocal square metre second	A unit which is equal to the reciprocal of 1 square metre by 1 second.
+unit:m-2.s-1.sr-1	reciprocal square metre second steradian	A unit which is equal to the reciprocal of 1 square metre by 1 second by 1 steradian.
+unit:m-3	reciprocal cubic metre	A unit which is equal to the reciprocal of 1 cubic metre.
+unit:m-3.s-1	reciprocal cubic metre second	A unit which is equal to the reciprocal of 1 cubic metre by 1 second.
+unit:m.Es-1	metre per exasecond	A unit which is equal to 1 metre per 10¹⁸ second.
+unit:m.Es-2	metre per square exasecond	A unit which is equal to 1 metre per 10¹⁸ square second.
+unit:m.F-1	metre per farad	A unit which is equal to 1 metre per 1 farad.
+unit:m.Gs-1	metre per gigasecond	A unit which is equal to 1 metre per 10⁹ second.
+unit:m.Gs-2	metre per square gigasecond	A unit which is equal to 1 metre per 10⁹ square second.
+unit:m.K-1	metre per kelvin	A unit which is equal to 1 metre per 1 kelvin.
+unit:m.MHz	metre megahertz	A unit which is equal to 1 metre by 10⁶ hertz.
+unit:m.Ms-1	metre per megasecond	A unit which is equal to 1 metre per 10⁶ second.
+unit:m.Ms-2	metre per square megasecond	A unit which is equal to 1 metre per 10⁶ square second.
+unit:m.N	metre newton	A unit which is equal to 1 metre by 1 newton.
+unit:m.N.A-1	metre newton per ampere	A unit which is equal to 1 metre by 1 newton per 1 ampere.
+unit:m.N.kg-1	metre newton per kilogram	A unit which is equal to 1 metre by 1 newton per 10³ gram.
+unit:m.N.kg-2	metre newton per square kilogram	A unit which is equal to 1 metre by 1 newton per 10³ square gram.
+unit:m.N.m-2	metre newton per square metre	A unit which is equal to 1 metre by 1 newton per 1 square metre.
+unit:m.N.s-1	metre newton per second	A unit which is equal to 1 metre by 1 newton per 1 second.
+unit:m.Ohm	metre ohm	A unit which is equal to 1 metre by 1 ohm.
+unit:m.Ohm2.m-1	metre square ohm per metre	A unit which is equal to 1 metre by 1 square ohm per 1 metre.
+unit:m.Pa	metre pascal	A unit which is equal to 1 metre by 1 pascal.
+unit:m.Pa.s-1	metre pascal per second	A unit which is equal to 1 metre by 1 pascal per 1 second.
+unit:m.Pa.s-2	metre pascal per square second	A unit which is equal to 1 metre by 1 pascal per 1 square second.
+unit:m.Ps-1	metre per petasecond	A unit which is equal to 1 metre per 10¹⁵ second.
+unit:m.Ps-2	metre per square petasecond	A unit which is equal to 1 metre per 10¹⁵ square second.
+unit:m.T	metre tesla	A unit which is equal to 1 metre by 1 tesla.
+unit:m.Ts-1	metre per terasecond	A unit which is equal to 1 metre per 10¹² second.
+unit:m.Ts-2	metre per square terasecond	A unit which is equal to 1 metre per 10¹² square second.
+unit:m.V	metre volt	A unit which is equal to 1 metre by 1 volt.
+unit:m.Wb	metre weber	A unit which is equal to 1 metre by 1 weber.
+unit:m.a-1	metre per year	A unit which is equal to 1 metre per 1 year.
+unit:m.as-1	metre per attosecond	A unit which is equal to 1 metre per 10⁻¹⁸ second.
+unit:m.as-2	metre per square attosecond	A unit which is equal to 1 metre per 10⁻¹⁸ square second.
+unit:m.cs-1	metre per centisecond	A unit which is equal to 1 metre per 10⁻² second.
+unit:m.cs-2	metre per square centisecond	A unit which is equal to 1 metre per 10⁻² square second.
+unit:m.d-1	metre per day	A unit which is equal to 1 metre per 1 day.
+unit:m.das-1	metre per decasecond	A unit which is equal to 1 metre per 10¹ second.
+unit:m.das-2	metre per square decasecond	A unit which is equal to 1 metre per 10¹ square second.
+unit:m.ds-1	metre per decisecond	A unit which is equal to 1 metre per 10⁻¹ second.
+unit:m.ds-2	metre per square decisecond	A unit which is equal to 1 metre per 10⁻¹ square second.
+unit:m.fs-1	metre per femtosecond	A unit which is equal to 1 metre per 10⁻¹⁵ second.
+unit:m.fs-2	metre per square femtosecond	A unit which is equal to 1 metre per 10⁻¹⁵ square second.
+unit:m.h-1	metre per hour	A unit which is equal to 1 metre per 1 hour.
+unit:m.hs-1	metre per hectosecond	A unit which is equal to 1 metre per 10² second.
+unit:m.hs-2	metre per square hectosecond	A unit which is equal to 1 metre per 10² square second.
+unit:m.ks-1	metre per kilosecond	A unit which is equal to 1 metre per 10³ second.
+unit:m.ks-2	metre per square kilosecond	A unit which is equal to 1 metre per 10³ square second.
+unit:m.m-1	metre per metre	A unit which is equal to 1 metre per 1 metre.
+unit:m.m-1.s-1	metre per metre second	A unit which is equal to 1 metre per 1 metre by 1 second.
+unit:m.m-3	metre per cubic metre	A unit which is equal to 1 metre per 1 cubic metre.
+unit:m.mN	metre millinewton	A unit which is equal to 1 metre by 10⁻³ newton.
+unit:m.min-1	metre per minute	A unit which is equal to 1 metre per 1 minute.
+unit:m.ns-1	metre per nanosecond	A unit which is equal to 1 metre per 10⁻⁹ second.
+unit:m.ns-2	metre per square nanosecond	A unit which is equal to 1 metre per 10⁻⁹ square second.
+unit:m.s-1	metre per second	A unit which is equal to 1 metre per 1 second.
+unit:m.s-2	metre per square second	A unit which is equal to 1 metre per 1 square second.
+unit:m.uN	metre micronewton	A unit which is equal to 1 metre by 10⁻⁶ newton.
+unit:m.us-1	metre per microsecond	A unit which is equal to 1 metre per 10⁻⁶ second.
+unit:m.us-2	metre per square microsecond	A unit which is equal to 1 metre per 10⁻⁶ square second.
+unit:m.ys-1	metre per yoctosecond	A unit which is equal to 1 metre per 10⁻²⁴ second.
+unit:m.ys-2	metre per square yoctosecond	A unit which is equal to 1 metre per 10⁻²⁴ square second.
+unit:m.zs-1	metre per zeptosecond	A unit which is equal to 1 metre per 10⁻²¹ second.
+unit:m.zs-2	metre per square zeptosecond	A unit which is equal to 1 metre per 10⁻²¹ square second.
+unit:m2	square metre	A unit which is equal to 1 square metre.
+unit:m2.Hz-1	square metre per hertz	A unit which is equal to 1 square metre per 1 hertz.
+unit:m2.Hz-2	square metre per square hertz	A unit which is equal to 1 square metre per 1 square hertz.
+unit:m2.J-1	square metre per joule	A unit which is equal to 1 square metre per 1 joule.
+unit:m2.J-1.sr-1	square metre per joule steradian	A unit which is equal to 1 square metre per 1 joule by 1 steradian.
+unit:m2.K-1	square metre per kelvin	A unit which is equal to 1 square metre per 1 kelvin.
+unit:m2.N-1	square metre per newton	A unit which is equal to 1 square metre per 1 newton.
+unit:m2.Pa.s	square metre pascal second	A unit which is equal to 1 square metre by 1 pascal by 1 second.
+unit:m2.S.mol-1	square metre siemens per mole	A unit which is equal to 1 square metre by 1 siemens per 1 mole.
+unit:m2.W	square metre watt	A unit which is equal to 1 square metre by 1 watt.
+unit:m2.W.sr-1	square metre watt per steradian	A unit which is equal to 1 square metre by 1 watt per 1 steradian.
+unit:m2.d-1.m-2	square metre per day square metre	A unit which is equal to 1 square metre per 1 day by 1 square metre.
+unit:m2.deg-1.Hz-1	square metre per plane angle degree hertz	A unit which is equal to 1 square metre per 1 plane angle degree by 1 hertz.
+unit:m2.g-1	square metre per gram	A unit which is equal to 1 square metre per 1 gram.
+unit:m2.har-1	square metre per hectare	A unit which is equal to 1 square metre per 10² are.
+unit:m2.kg-1	square metre per kilogram	A unit which is equal to 1 square metre per 10³ gram.
+unit:m2.m-2	square metre per square metre	A unit which is equal to 1 square metre per 1 square metre.
+unit:m2.mol-1	square metre per mole	A unit which is equal to 1 square metre per 1 mole.
+unit:m2.nm	square metre nanometre	A unit which is equal to 1 square metre by 10⁻⁹ metre.
+unit:m2.rad.kg-1	square metre radian per kilogram	A unit which is equal to 1 square metre by 1 radian per 10³ gram.
+unit:m2.s	square metre second	A unit which is equal to 1 square metre by 1 second.
+unit:m2.s-1	square metre per second	A unit which is equal to 1 square metre per 1 second.
+unit:m2.s-1.V-1	square metre per second volt	A unit which is equal to 1 square metre per 1 second by 1 volt.
+unit:m2.s-2	square metre per square second	A unit which is equal to 1 square metre per 1 square second.
+unit:m2.s.rad-1	square metre second per radian	A unit which is equal to 1 square metre by 1 second per 1 radian.
+unit:m2.sr	square metre steradian	A unit which is equal to 1 square metre by 1 steradian.
+unit:m2.sr-1	square metre per steradian	A unit which is equal to 1 square metre per 1 steradian.
+unit:m3	cubic metre	A unit which is equal to 1 cubic metre.
+unit:m3.C-1	cubic metre per coulomb	A unit which is equal to 1 cubic metre per 1 coulomb.
+unit:m3.K-1	cubic metre per kelvin	A unit which is equal to 1 cubic metre per 1 kelvin.
+unit:m3.MPa.s-1	cubic metre megapascal per second	A unit which is equal to 1 cubic metre by 10⁶ pascal per 1 second.
+unit:m3.Pa.s-1	cubic metre pascal per second	A unit which is equal to 1 cubic metre by 1 pascal per 1 second.
+unit:m3.a-1	cubic metre per year	A unit which is equal to 1 cubic metre per 1 year.
+unit:m3.d-1	cubic metre per day	A unit which is equal to 1 cubic metre per 1 day.
+unit:m3.h-1	cubic metre per hour	A unit which is equal to 1 cubic metre per 1 hour.
+unit:m3.kg-1	cubic metre per kilogram	A unit which is equal to 1 cubic metre per 10³ gram.
+unit:m3.m-3	cubic metre per cubic metre	A unit which is equal to 1 cubic metre per 1 cubic metre.
+unit:m3.min-1	cubic metre per minute	A unit which is equal to 1 cubic metre per 1 minute.
+unit:m3.mol-1	cubic metre per mole	A unit which is equal to 1 cubic metre per 1 mole.
+unit:m3.s-1	cubic metre per second	A unit which is equal to 1 cubic metre per 1 second.
+unit:m3.s-2	cubic metre per square second	A unit which is equal to 1 cubic metre per 1 square second.
+unit:m4	quartic metre	A unit which is equal to 1 quartic metre.
+unit:m4.s-1	quartic metre per second	A unit which is equal to 1 quartic metre per 1 second.
+unit:mA	milliampere	A unit which is equal to 10⁻³ ampere.
+unit:mA.%5Bin_i%5D-1	milliampere per inch	A unit which is equal to 10⁻³ ampere per 1 inch.
+unit:mA.mm-1	milliampere per millimetre	A unit which is equal to 10⁻³ ampere per 10⁻³ metre.
+unit:mB	millibel	A unit which is equal to 10⁻³ bel.
+unit:mBq	millibecquerel	A unit which is equal to 10⁻³ becquerel.
+unit:mBq.L-1	millibecquerel per litre	A unit which is equal to 10⁻³ becquerel per 1 litre.
+unit:mBq.d-1.m-2	millibecquerel per day square metre	A unit which is equal to 10⁻³ becquerel per 1 day by 1 square metre.
+unit:mBq.g-1	millibecquerel per gram	A unit which is equal to 10⁻³ becquerel per 1 gram.
+unit:mBq.kg-1	millibecquerel per kilogram	A unit which is equal to 10⁻³ becquerel per 10³ gram.
+unit:mC	millicoulomb	A unit which is equal to 10⁻³ coulomb.
+unit:mC.kg-1	millicoulomb per kilogram	A unit which is equal to 10⁻³ coulomb per 10³ gram.
+unit:mF	millifarad	A unit which is equal to 10⁻³ farad.
+unit:mGy	milligray	A unit which is equal to 10⁻³ gray.
+unit:mH	millihenry	A unit which is equal to 10⁻³ henry.
+unit:mH.Ohm-1	millihenry per ohm	A unit which is equal to 10⁻³ henry per 1 ohm.
+unit:mH.kOhm-1	millihenry per kiloohm	A unit which is equal to 10⁻³ henry per 10³ ohm.
+unit:mHz	millihertz	A unit which is equal to 10⁻³ hertz.
+unit:mJ	millijoule	A unit which is equal to 10⁻³ joule.
+unit:mK	millikelvin	A unit which is equal to 10⁻³ kelvin.
+unit:mL	millilitre	A unit which is equal to 10⁻³ litre.
+unit:mL.K-1	millilitre per kelvin	A unit which is equal to 10⁻³ litre per 1 kelvin.
+unit:mL.L-1	millilitre per litre	A unit which is equal to 10⁻³ litre per 1 litre.
+unit:mL.cm-2	millilitre per square centimetre	A unit which is equal to 10⁻³ litre per 10⁻² square metre.
+unit:mL.cm-2.s-1	millilitre per square centimetre second	A unit which is equal to 10⁻³ litre per 10⁻² square metre by 1 second.
+unit:mL.d-1	millilitre per day	A unit which is equal to 10⁻³ litre per 1 day.
+unit:mL.d-1.m-2	millilitre per day square metre	A unit which is equal to 10⁻³ litre per 1 day by 1 square metre.
+unit:mL.h-1	millilitre per hour	A unit which is equal to 10⁻³ litre per 1 hour.
+unit:mL.kg-1	millilitre per kilogram	A unit which is equal to 10⁻³ litre per 10³ gram.
+unit:mL.m-3	millilitre per cubic metre	A unit which is equal to 10⁻³ litre per 1 cubic metre.
+unit:mL.min-1	millilitre per minute	A unit which is equal to 10⁻³ litre per 1 minute.
+unit:mL.s-1	millilitre per second	A unit which is equal to 10⁻³ litre per 1 second.
+unit:mN	millinewton	A unit which is equal to 10⁻³ newton.
+unit:mN.m-1	millinewton per metre	A unit which is equal to 10⁻³ newton per 1 metre.
+unit:mNp	millineper	A unit which is equal to 10⁻³ neper.
+unit:mOhm	milliohm	A unit which is equal to 10⁻³ ohm.
+unit:mPa	millipascal	A unit which is equal to 10⁻³ pascal.
+unit:mPa.s	millipascal second	A unit which is equal to 10⁻³ pascal by 1 second.
+unit:mPa.s.bar-1	millipascal second per bar	A unit which is equal to 10⁻³ pascal by 1 second per 1 bar.
+unit:mS	millisiemens	A unit which is equal to 10⁻³ siemens.
+unit:mS.cm-1	millisiemens per centimetre	A unit which is equal to 10⁻³ siemens per 10⁻² metre.
+unit:mS.m-1	millisiemens per metre	A unit which is equal to 10⁻³ siemens per 1 metre.
+unit:mSv	millisievert	A unit which is equal to 10⁻³ sievert.
+unit:mT	millitesla	A unit which is equal to 10⁻³ tesla.
+unit:mV	millivolt	A unit which is equal to 10⁻³ volt.
+unit:mV.min-1	millivolt per minute	A unit which is equal to 10⁻³ volt per 1 minute.
+unit:mW	milliwatt	A unit which is equal to 10⁻³ watt.
+unit:mW.cm-2.sr-1.um-1	milliwatt per square centimetre steradian micrometre	A unit which is equal to 10⁻³ watt per 10⁻² square metre by 1 steradian by 10⁻⁶ metre.
+unit:mW.m-2	milliwatt per square metre	A unit which is equal to 10⁻³ watt per 1 square metre.
+unit:mW.m-2.nm-1	milliwatt per square metre nanometre	A unit which is equal to 10⁻³ watt per 1 square metre by 10⁻⁹ metre.
+unit:mW.m-2.nm-1.sr-1	milliwatt per square metre nanometre steradian	A unit which is equal to 10⁻³ watt per 1 square metre by 10⁻⁹ metre by 1 steradian.
+unit:mWb	milliweber	A unit which is equal to 10⁻³ weber.
+unit:mar	milliare	A unit which is equal to 10⁻³ are.
+unit:mcd	millicandela	A unit which is equal to 10⁻³ candela.
+unit:meV	millielectronvolt	A unit which is equal to 10⁻³ electronvolt.
+unit:mg	milligram	A unit which is equal to 10⁻³ gram.
+unit:mg.L-1	milligram per litre	A unit which is equal to 10⁻³ gram per 1 litre.
+unit:mg.cm-2	milligram per square centimetre	A unit which is equal to 10⁻³ gram per 10⁻² square metre.
+unit:mg.cm-3	milligram per cubic centimetre	A unit which is equal to 10⁻³ gram per 10⁻² cubic metre.
+unit:mg.d-1	milligram per day	A unit which is equal to 10⁻³ gram per 1 day.
+unit:mg.d-1.kg-1	milligram per day kilogram	A unit which is equal to 10⁻³ gram per 1 day by 10³ gram.
+unit:mg.d-1.m-2	milligram per day square metre	A unit which is equal to 10⁻³ gram per 1 day by 1 square metre.
+unit:mg.d-1.m-3	milligram per day cubic metre	A unit which is equal to 10⁻³ gram per 1 day by 1 cubic metre.
+unit:mg.dL-1	milligram per decilitre	A unit which is equal to 10⁻³ gram per 10⁻¹ litre.
+unit:mg.g-1	milligram per gram	A unit which is equal to 10⁻³ gram per 1 gram.
+unit:mg.h-1	milligram per hour	A unit which is equal to 10⁻³ gram per 1 hour.
+unit:mg.h-1.m-2	milligram per hour square metre	A unit which is equal to 10⁻³ gram per 1 hour by 1 square metre.
+unit:mg.h-1.m-3	milligram per hour cubic metre	A unit which is equal to 10⁻³ gram per 1 hour by 1 cubic metre.
+unit:mg.hg-1	milligram per hectogram	A unit which is equal to 10⁻³ gram per 10² gram.
+unit:mg.kg-1	milligram per kilogram	A unit which is equal to 10⁻³ gram per 10³ gram.
+unit:mg.km-1	milligram per kilometre	A unit which is equal to 10⁻³ gram per 10³ metre.
+unit:mg.m-1	milligram per metre	A unit which is equal to 10⁻³ gram per 1 metre.
+unit:mg.m-2	milligram per square metre	A unit which is equal to 10⁻³ gram per 1 square metre.
+unit:mg.min-1	milligram per minute	A unit which is equal to 10⁻³ gram per 1 minute.
+unit:mg.s-1	milligram per second	A unit which is equal to 10⁻³ gram per 1 second.
+unit:mho	mho	
+unit:min	minute	A unit which 1) is a unit of time, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 60 second.
+unit:min-1	reciprocal minute	A unit which is equal to the reciprocal of 1 minute.
+unit:mkat	millikatal	A unit which is equal to 10⁻³ katal.
+unit:mlm	millilumen	A unit which is equal to 10⁻³ lumen.
+unit:mlx	millilux	A unit which is equal to 10⁻³ lux.
+unit:mm	millimetre	A unit which is equal to 10⁻³ metre.
+unit:mm-3	reciprocal cubic millimetre	A unit which is equal to the reciprocal of 10⁻³ cubic metre.
+unit:mm.K-1	millimetre per kelvin	A unit which is equal to 10⁻³ metre per 1 kelvin.
+unit:mm.a-1	millimetre per year	A unit which is equal to 10⁻³ metre per 1 year.
+unit:mm.d-1	millimetre per day	A unit which is equal to 10⁻³ metre per 1 day.
+unit:mm.h-1	millimetre per hour	A unit which is equal to 10⁻³ metre per 1 hour.
+unit:mm.min-1	millimetre per minute	A unit which is equal to 10⁻³ metre per 1 minute.
+unit:mm.s-1	millimetre per second	A unit which is equal to 10⁻³ metre per 1 second.
+unit:mm2	square millimetre	A unit which is equal to 10⁻³ square metre.
+unit:mm2.s-1	square millimetre per second	A unit which is equal to 10⁻³ square metre per 1 second.
+unit:mm3	cubic millimetre	A unit which is equal to 10⁻³ cubic metre.
+unit:mm3.m-3	cubic millimetre per cubic metre	A unit which is equal to 10⁻³ cubic metre per 1 cubic metre.
+unit:mm3.mm-3	cubic millimetre per cubic millimetre	A unit which is equal to 10⁻³ cubic metre per 10⁻³ cubic metre.
+unit:mm4	quartic millimetre	A unit which is equal to 10⁻³ quartic metre.
+unit:mmol	millimole	A unit which is equal to 10⁻³ mole.
+unit:mmol.L-1	millimole per litre	A unit which is equal to 10⁻³ mole per 1 litre.
+unit:mmol.d-1.m-2	millimole per day square metre	A unit which is equal to 10⁻³ mole per 1 day by 1 square metre.
+unit:mmol.d-1.m-3	millimole per day cubic metre	A unit which is equal to 10⁻³ mole per 1 day by 1 cubic metre.
+unit:mmol.g-1	millimole per gram	A unit which is equal to 10⁻³ mole per 1 gram.
+unit:mmol.kg-1	millimole per kilogram	A unit which is equal to 10⁻³ mole per 10³ gram.
+unit:mmol.m-2	millimole per square metre	A unit which is equal to 10⁻³ mole per 1 square metre.
+unit:mmol.m-3	millimole per cubic metre	A unit which is equal to 10⁻³ mole per 1 cubic metre.
+unit:mmol.mol-1	millimole per mole	A unit which is equal to 10⁻³ mole per 1 mole.
+unit:mo	month	
+unit:mo-1	reciprocal month	A unit which is equal to the reciprocal of 1 month.
+unit:mo_g	mean Gregorian month	
+unit:mo_j	mean Julian month	
+unit:mo_s	synodal month	
+unit:mol	mole	An SI base unit which 1) is the SI unit of amount of substance and 2) is defined such that one mole contains exactly 6.022 140 76 × 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit reciprocal mol and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles.
+unit:mol-1	reciprocal mole	A unit which is equal to the reciprocal of 1 mole.
+unit:mol.EL-1	mole per exalitre	A unit which is equal to 1 mole per 10¹⁸ litre.
+unit:mol.Em-1	mole per exametre	A unit which is equal to 1 mole per 10¹⁸ metre.
+unit:mol.GL-1	mole per gigalitre	A unit which is equal to 1 mole per 10⁹ litre.
+unit:mol.Gm-1	mole per gigametre	A unit which is equal to 1 mole per 10⁹ metre.
+unit:mol.L-1	mole per litre	A unit which is equal to 1 mole per 1 litre.
+unit:mol.ML-1	mole per megalitre	A unit which is equal to 1 mole per 10⁶ litre.
+unit:mol.Mm-1	mole per megametre	A unit which is equal to 1 mole per 10⁶ metre.
+unit:mol.PL-1	mole per petalitre	A unit which is equal to 1 mole per 10¹⁵ litre.
+unit:mol.Pm-1	mole per petametre	A unit which is equal to 1 mole per 10¹⁵ metre.
+unit:mol.TL-1	mole per teralitre	A unit which is equal to 1 mole per 10¹² litre.
+unit:mol.Tm-1	mole per terametre	A unit which is equal to 1 mole per 10¹² metre.
+unit:mol.aL-1	mole per attolitre	A unit which is equal to 1 mole per 10⁻¹⁸ litre.
+unit:mol.am-1	mole per attometre	A unit which is equal to 1 mole per 10⁻¹⁸ metre.
+unit:mol.cL-1	mole per centilitre	A unit which is equal to 1 mole per 10⁻² litre.
+unit:mol.cm-1	mole per centimetre	A unit which is equal to 1 mole per 10⁻² metre.
+unit:mol.dL-1	mole per decilitre	A unit which is equal to 1 mole per 10⁻¹ litre.
+unit:mol.daL-1	mole per decalitre	A unit which is equal to 1 mole per 10¹ litre.
+unit:mol.dam-1	mole per decametre	A unit which is equal to 1 mole per 10¹ metre.
+unit:mol.dm-1	mole per decimetre	A unit which is equal to 1 mole per 10⁻¹ metre.
+unit:mol.dm-3	mole per cubic decimetre	A unit which is equal to 1 mole per 10⁻¹ cubic metre.
+unit:mol.fL-1	mole per femtolitre	A unit which is equal to 1 mole per 10⁻¹⁵ litre.
+unit:mol.fm-1	mole per femtometre	A unit which is equal to 1 mole per 10⁻¹⁵ metre.
+unit:mol.g-1.h-1	mole per gram hour	A unit which is equal to 1 mole per 1 gram by 1 hour.
+unit:mol.h-1	mole per hour	A unit which is equal to 1 mole per 1 hour.
+unit:mol.hL-1	mole per hectolitre	A unit which is equal to 1 mole per 10² litre.
+unit:mol.hm-1	mole per hectometre	A unit which is equal to 1 mole per 10² metre.
+unit:mol.kL-1	mole per kilolitre	A unit which is equal to 1 mole per 10³ litre.
+unit:mol.kg-1	mole per kilogram	A unit which is equal to 1 mole per 10³ gram.
+unit:mol.km-1	mole per kilometre	A unit which is equal to 1 mole per 10³ metre.
+unit:mol.m-1	mole per metre	A unit which is equal to 1 mole per 1 metre.
+unit:mol.m-2	mole per square metre	A unit which is equal to 1 mole per 1 square metre.
+unit:mol.m-2.s-1	mole per square metre second	A unit which is equal to 1 mole per 1 square metre by 1 second.
+unit:mol.m-2.s-1.sr-1	mole per square metre second steradian	A unit which is equal to 1 mole per 1 square metre by 1 second by 1 steradian.
+unit:mol.m-3	mole per cubic metre	A unit which is equal to 1 mole per 1 cubic metre.
+unit:mol.m-3.s-1	mole per cubic metre second	A unit which is equal to 1 mole per 1 cubic metre by 1 second.
+unit:mol.min-1	mole per minute	A unit which is equal to 1 mole per 1 minute.
+unit:mol.mol-1	mole per mole	A unit which is equal to 1 mole per 1 mole.
+unit:mol.nL-1	mole per nanolitre	A unit which is equal to 1 mole per 10⁻⁹ litre.
+unit:mol.nm-1	mole per nanometre	A unit which is equal to 1 mole per 10⁻⁹ metre.
+unit:mol.s-1	mole per second	A unit which is equal to 1 mole per 1 second.
+unit:mol.uL-1	mole per microlitre	A unit which is equal to 1 mole per 10⁻⁶ litre.
+unit:mol.um	mole micrometre	A unit which is equal to 1 mole by 10⁻⁶ metre.
+unit:mol.um-1	mole per micrometre	A unit which is equal to 1 mole per 10⁻⁶ metre.
+unit:mol.um.cm-2	mole micrometre per square centimetre	A unit which is equal to 1 mole by 10⁻⁶ metre per 10⁻² square metre.
+unit:mol.um.cm-2.s-1	mole micrometre per square centimetre second	A unit which is equal to 1 mole by 10⁻⁶ metre per 10⁻² square metre by 1 second.
+unit:mol.yL-1	mole per yoctolitre	A unit which is equal to 1 mole per 10⁻²⁴ litre.
+unit:mol.ym-1	mole per yoctometre	A unit which is equal to 1 mole per 10⁻²⁴ metre.
+unit:mol.zL-1	mole per zeptolitre	A unit which is equal to 1 mole per 10⁻²¹ litre.
+unit:mol.zm-1	mole per zeptometre	A unit which is equal to 1 mole per 10⁻²¹ metre.
+unit:mrad	milliradian	A unit which is equal to 10⁻³ radian.
+unit:ms	millisecond	A unit which is equal to 10⁻³ second.
+unit:ms-1	reciprocal millisecond	A unit which is equal to the reciprocal of 10⁻³ second.
+unit:msr	millisteradian	A unit which is equal to 10⁻³ steradian.
+unit:mt	millitonne	A unit which is equal to 10⁻³ tonne.
+unit:mu	millidalton	A unit which is equal to 10⁻³ dalton.
+unit:n%27%27	nanoplane angle second	A unit which is equal to 10⁻⁹ plane angle second.
+unit:nA	nanoampere	A unit which is equal to 10⁻⁹ ampere.
+unit:nB	nanobel	A unit which is equal to 10⁻⁹ bel.
+unit:nBq	nanobecquerel	A unit which is equal to 10⁻⁹ becquerel.
+unit:nBq.L-1	nanobecquerel per litre	A unit which is equal to 10⁻⁹ becquerel per 1 litre.
+unit:nC	nanocoulomb	A unit which is equal to 10⁻⁹ coulomb.
+unit:nF	nanofarad	A unit which is equal to 10⁻⁹ farad.
+unit:nF.m-1	nanofarad per metre	A unit which is equal to 10⁻⁹ farad per 1 metre.
+unit:nGy	nanogray	A unit which is equal to 10⁻⁹ gray.
+unit:nH	nanohenry	A unit which is equal to 10⁻⁹ henry.
+unit:nH.m-1	nanohenry per metre	A unit which is equal to 10⁻⁹ henry per 1 metre.
+unit:nHz	nanohertz	A unit which is equal to 10⁻⁹ hertz.
+unit:nJ	nanojoule	A unit which is equal to 10⁻⁹ joule.
+unit:nK	nanokelvin	A unit which is equal to 10⁻⁹ kelvin.
+unit:nL	nanolitre	A unit which is equal to 10⁻⁹ litre.
+unit:nN	nanonewton	A unit which is equal to 10⁻⁹ newton.
+unit:nNp	nanoneper	A unit which is equal to 10⁻⁹ neper.
+unit:nOhm	nanoohm	A unit which is equal to 10⁻⁹ ohm.
+unit:nPa	nanopascal	A unit which is equal to 10⁻⁹ pascal.
+unit:nS	nanosiemens	A unit which is equal to 10⁻⁹ siemens.
+unit:nS.cm-1	nanosiemens per centimetre	A unit which is equal to 10⁻⁹ siemens per 10⁻² metre.
+unit:nS.m-1	nanosiemens per metre	A unit which is equal to 10⁻⁹ siemens per 1 metre.
+unit:nSv	nanosievert	A unit which is equal to 10⁻⁹ sievert.
+unit:nT	nanotesla	A unit which is equal to 10⁻⁹ tesla.
+unit:nV	nanovolt	A unit which is equal to 10⁻⁹ volt.
+unit:nW	nanowatt	A unit which is equal to 10⁻⁹ watt.
+unit:nWb	nanoweber	A unit which is equal to 10⁻⁹ weber.
+unit:nar	nanoare	A unit which is equal to 10⁻⁹ are.
+unit:ncd	nanocandela	A unit which is equal to 10⁻⁹ candela.
+unit:neV	nanoelectronvolt	A unit which is equal to 10⁻⁹ electronvolt.
+unit:ng	nanogram	A unit which is equal to 10⁻⁹ gram.
+unit:ng.L-1	nanogram per litre	A unit which is equal to 10⁻⁹ gram per 1 litre.
+unit:ng.d-1	nanogram per day	A unit which is equal to 10⁻⁹ gram per 1 day.
+unit:ng.kg-1	nanogram per kilogram	A unit which is equal to 10⁻⁹ gram per 10³ gram.
+unit:ng.m-3	nanogram per cubic metre	A unit which is equal to 10⁻⁹ gram per 1 cubic metre.
+unit:ng.mL-1	nanogram per millilitre	A unit which is equal to 10⁻⁹ gram per 10⁻³ litre.
+unit:ng.uL-1	nanogram per microlitre	A unit which is equal to 10⁻⁹ gram per 10⁻⁶ litre.
+unit:nkat	nanokatal	A unit which is equal to 10⁻⁹ katal.
+unit:nkat.mg-1	nanokatal per milligram	A unit which is equal to 10⁻⁹ katal per 10⁻³ gram.
+unit:nlm	nanolumen	A unit which is equal to 10⁻⁹ lumen.
+unit:nlx	nanolux	A unit which is equal to 10⁻⁹ lux.
+unit:nm	nanometre	A unit which is equal to 10⁻⁹ metre.
+unit:nm.s-1	nanometre per second	A unit which is equal to 10⁻⁹ metre per 1 second.
+unit:nm.s-2	nanometre per square second	A unit which is equal to 10⁻⁹ metre per 1 square second.
+unit:nm2	square nanometre	A unit which is equal to 10⁻⁹ square metre.
+unit:nm3	cubic nanometre	A unit which is equal to 10⁻⁹ cubic metre.
+unit:nmol	nanomole	A unit which is equal to 10⁻⁹ mole.
+unit:nmol.L-1	nanomole per litre	A unit which is equal to 10⁻⁹ mole per 1 litre.
+unit:nmol.cm-3.h-1	nanomole per cubic centimetre hour	A unit which is equal to 10⁻⁹ mole per 10⁻² cubic metre by 1 hour.
+unit:nmol.d-1.L-1	nanomole per day litre	A unit which is equal to 10⁻⁹ mole per 1 day by 1 litre.
+unit:nmol.d-1.m-2	nanomole per day square metre	A unit which is equal to 10⁻⁹ mole per 1 day by 1 square metre.
+unit:nmol.d-1.umol-1	nanomole per day micromole	A unit which is equal to 10⁻⁹ mole per 1 day by 10⁻⁶ mole.
+unit:nmol.h-1.L-1	nanomole per hour litre	A unit which is equal to 10⁻⁹ mole per 1 hour by 1 litre.
+unit:nmol.h-1.ug-1	nanomole per hour microgram	A unit which is equal to 10⁻⁹ mole per 1 hour by 10⁻⁶ gram.
+unit:nmol.kg-1	nanomole per kilogram	A unit which is equal to 10⁻⁹ mole per 10³ gram.
+unit:nmol.m-1	nanomole per metre	A unit which is equal to 10⁻⁹ mole per 1 metre.
+unit:nmol.umol-1	nanomole per micromole	A unit which is equal to 10⁻⁹ mole per 10⁻⁶ mole.
+unit:nrad	nanoradian	A unit which is equal to 10⁻⁹ radian.
+unit:ns	nanosecond	A unit which is equal to 10⁻⁹ second.
+unit:ns2	square nanosecond	A unit which is equal to 10⁻⁹ square second.
+unit:nsr	nanosteradian	A unit which is equal to 10⁻⁹ steradian.
+unit:nt	nanotonne	A unit which is equal to 10⁻⁹ tonne.
+unit:nu	nanodalton	A unit which is equal to 10⁻⁹ dalton.
+unit:osm	osmole	
+unit:p%27%27	picoplane angle second	A unit which is equal to 10⁻¹² plane angle second.
+unit:pA	picoampere	A unit which is equal to 10⁻¹² ampere.
+unit:pA.L-1.umol-1	picoampere per litre micromole	A unit which is equal to 10⁻¹² ampere per 1 litre by 10⁻⁶ mole.
+unit:pB	picobel	A unit which is equal to 10⁻¹² bel.
+unit:pBq	picobecquerel	A unit which is equal to 10⁻¹² becquerel.
+unit:pC	picocoulomb	A unit which is equal to 10⁻¹² coulomb.
+unit:pF	picofarad	A unit which is equal to 10⁻¹² farad.
+unit:pF.m-1	picofarad per metre	A unit which is equal to 10⁻¹² farad per 1 metre.
+unit:pGy	picogray	A unit which is equal to 10⁻¹² gray.
+unit:pH	picohenry	A unit which is equal to 10⁻¹² henry.
+unit:pHz	picohertz	A unit which is equal to 10⁻¹² hertz.
+unit:pJ	picojoule	A unit which is equal to 10⁻¹² joule.
+unit:pK	picokelvin	A unit which is equal to 10⁻¹² kelvin.
+unit:pL	picolitre	A unit which is equal to 10⁻¹² litre.
+unit:pN	piconewton	A unit which is equal to 10⁻¹² newton.
+unit:pNp	piconeper	A unit which is equal to 10⁻¹² neper.
+unit:pOhm	picoohm	A unit which is equal to 10⁻¹² ohm.
+unit:pPa	picopascal	A unit which is equal to 10⁻¹² pascal.
+unit:pPa.km-1	picopascal per kilometre	A unit which is equal to 10⁻¹² pascal per 10³ metre.
+unit:pS	picosiemens	A unit which is equal to 10⁻¹² siemens.
+unit:pS.m-1	picosiemens per metre	A unit which is equal to 10⁻¹² siemens per 1 metre.
+unit:pSv	picosievert	A unit which is equal to 10⁻¹² sievert.
+unit:pT	picotesla	A unit which is equal to 10⁻¹² tesla.
+unit:pV	picovolt	A unit which is equal to 10⁻¹² volt.
+unit:pW	picowatt	A unit which is equal to 10⁻¹² watt.
+unit:pW.cm-2.L-1	picowatt per square centimetre litre	A unit which is equal to 10⁻¹² watt per 10⁻² square metre by 1 litre.
+unit:pW.m-2	picowatt per square metre	A unit which is equal to 10⁻¹² watt per 1 square metre.
+unit:pWb	picoweber	A unit which is equal to 10⁻¹² weber.
+unit:par	picoare	A unit which is equal to 10⁻¹² are.
+unit:pc	parsec	
+unit:pc-3	reciprocal cubic parsec	A unit which is equal to the reciprocal of 1 cubic parsec.
+unit:pc3	cubic parsec	A unit which is equal to 1 cubic parsec.
+unit:pcd	picocandela	A unit which is equal to 10⁻¹² candela.
+unit:peV	picoelectronvolt	A unit which is equal to 10⁻¹² electronvolt.
+unit:pg	picogram	A unit which is equal to 10⁻¹² gram.
+unit:pg.L-1	picogram per litre	A unit which is equal to 10⁻¹² gram per 1 litre.
+unit:pg.g-1	picogram per gram	A unit which is equal to 10⁻¹² gram per 1 gram.
+unit:pg.kg-1	picogram per kilogram	A unit which is equal to 10⁻¹² gram per 10³ gram.
+unit:ph	phot	
+unit:pkat	picokatal	A unit which is equal to 10⁻¹² katal.
+unit:plm	picolumen	A unit which is equal to 10⁻¹² lumen.
+unit:plx	picolux	A unit which is equal to 10⁻¹² lux.
+unit:pm	picometre	A unit which is equal to 10⁻¹² metre.
+unit:pmol	picomole	A unit which is equal to 10⁻¹² mole.
+unit:pmol.L-1	picomole per litre	A unit which is equal to 10⁻¹² mole per 1 litre.
+unit:pmol.d-1.L-1	picomole per day litre	A unit which is equal to 10⁻¹² mole per 1 day by 1 litre.
+unit:pmol.d-1.m-2	picomole per day square metre	A unit which is equal to 10⁻¹² mole per 1 day by 1 square metre.
+unit:pmol.h-1.L-1	picomole per hour litre	A unit which is equal to 10⁻¹² mole per 1 hour by 1 litre.
+unit:pmol.kg-1	picomole per kilogram	A unit which is equal to 10⁻¹² mole per 10³ gram.
+unit:pmol.m-1.s-1.W-1	picomole per metre second watt	A unit which is equal to 10⁻¹² mole per 1 metre by 1 second by 1 watt.
+unit:pmol.m-3	picomole per cubic metre	A unit which is equal to 10⁻¹² mole per 1 cubic metre.
+unit:pmol.m-3.s-1	picomole per cubic metre second	A unit which is equal to 10⁻¹² mole per 1 cubic metre by 1 second.
+unit:prad	picoradian	A unit which is equal to 10⁻¹² radian.
+unit:ps	picosecond	A unit which is equal to 10⁻¹² second.
+unit:psr	picosteradian	A unit which is equal to 10⁻¹² steradian.
+unit:pt	picotonne	A unit which is equal to 10⁻¹² tonne.
+unit:pu	picodalton	A unit which is equal to 10⁻¹² dalton.
+unit:rad	radian	A special named SI unit which 1) is a unit of plane angle and 2) is equal to a metre per metre.
+unit:rad.h-1	radian per hour	A unit which is equal to 1 radian per 1 hour.
+unit:rad.m-1	radian per metre	A unit which is equal to 1 radian per 1 metre.
+unit:rad.m-2.mol-1	radian per square metre mole	A unit which is equal to 1 radian per 1 square metre by 1 mole.
+unit:rad.min-1	radian per minute	A unit which is equal to 1 radian per 1 minute.
+unit:rad.s-1	radian per second	A unit which is equal to 1 radian per 1 second.
+unit:rad.s-2	radian per square second	A unit which is equal to 1 radian per 1 square second.
+unit:s	second	An SI base unit which 1) is the SI unit of time and 2) is defined by taking the fixed numerical value of the caesium frequency, ∆νCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9 192 631 770 when expressed in the unit hertz, which is equal to a reciprocal second.
+unit:s-1	reciprocal second	A unit which is equal to the reciprocal of 1 second.
+unit:s-1.T-1	reciprocal second tesla	A unit which is equal to the reciprocal of 1 second by 1 tesla.
+unit:s-1.sr-1	reciprocal second steradian	A unit which is equal to the reciprocal of 1 second by 1 steradian.
+unit:s-2	reciprocal square second	A unit which is equal to the reciprocal of 1 square second.
+unit:s.T	second tesla	A unit which is equal to 1 second by 1 tesla.
+unit:s.V.cm-2	second volt per square centimetre	A unit which is equal to 1 second by 1 volt per 10⁻² square metre.
+unit:s.V.m-1	second volt per metre	A unit which is equal to 1 second by 1 volt per 1 metre.
+unit:s.W	second watt	A unit which is equal to 1 second by 1 watt.
+unit:s.W.m-2	second watt per square metre	A unit which is equal to 1 second by 1 watt per 1 square metre.
+unit:s.d-1	second per day	A unit which is equal to 1 second per 1 day.
+unit:s.m-1	second per metre	A unit which is equal to 1 second per 1 metre.
+unit:s.m-2	second per square metre	A unit which is equal to 1 second per 1 square metre.
+unit:s2	square second	A unit which is equal to 1 square second.
+unit:sb	stilb	
+unit:sph	solid angle spere	
+unit:sr	steradian	A special named SI unit which 1) is a unit of solid angle and 2) is equal to a square metre per square metre.
+unit:sr-1	reciprocal steradian	A unit which is equal to the reciprocal of 1 steradian.
+unit:sr.W.m-2	steradian watt per square metre	A unit which is equal to 1 steradian by 1 watt per 1 square metre.
+unit:st	stere	
+unit:t	tonne	A unit which 1) is a unit of mass, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 10³ kilogram.
+unit:t.d-1	tonne per day	A unit which is equal to 1 tonne per 1 day.
+unit:t.har-1	tonne per hectare	A unit which is equal to 1 tonne per 10² are.
+unit:t.m-3	tonne per cubic metre	A unit which is equal to 1 tonne per 1 cubic metre.
+unit:t.min-1	tonne per minute	A unit which is equal to 1 tonne per 1 minute.
+unit:t.s-1	tonne per second	A unit which is equal to 1 tonne per 1 second.
+unit:tex	tex	
+unit:u	dalton	A unit which 1) is a unit of mass, 2) is a non-SI but is accepted accepted for use with the SI Units and 2) is equal to 1.66053906660(50)×10⁻²⁷ kilogram.
+unit:u%27%27	microplane angle second	A unit which is equal to 10⁻⁶ plane angle second.
+unit:uA	microampere	A unit which is equal to 10⁻⁶ ampere.
+unit:uB	microbel	A unit which is equal to 10⁻⁶ bel.
+unit:uBq	microbecquerel	A unit which is equal to 10⁻⁶ becquerel.
+unit:uBq.L-1	microbecquerel per litre	A unit which is equal to 10⁻⁶ becquerel per 1 litre.
+unit:uBq.kg-1	microbecquerel per kilogram	A unit which is equal to 10⁻⁶ becquerel per 10³ gram.
+unit:uC	microcoulomb	A unit which is equal to 10⁻⁶ coulomb.
+unit:uC.m-2	microcoulomb per square metre	A unit which is equal to 10⁻⁶ coulomb per 1 square metre.
+unit:uC.m-3	microcoulomb per cubic metre	A unit which is equal to 10⁻⁶ coulomb per 1 cubic metre.
+unit:uF	microfarad	A unit which is equal to 10⁻⁶ farad.
+unit:uF.km-1	microfarad per kilometre	A unit which is equal to 10⁻⁶ farad per 10³ metre.
+unit:uF.m-1	microfarad per metre	A unit which is equal to 10⁻⁶ farad per 1 metre.
+unit:uGy	microgray	A unit which is equal to 10⁻⁶ gray.
+unit:uH	microhenry	A unit which is equal to 10⁻⁶ henry.
+unit:uH.Ohm-1	microhenry per ohm	A unit which is equal to 10⁻⁶ henry per 1 ohm.
+unit:uH.kOhm-1	microhenry per kiloohm	A unit which is equal to 10⁻⁶ henry per 10³ ohm.
+unit:uH.m-1	microhenry per metre	A unit which is equal to 10⁻⁶ henry per 1 metre.
+unit:uHz	microhertz	A unit which is equal to 10⁻⁶ hertz.
+unit:uJ	microjoule	A unit which is equal to 10⁻⁶ joule.
+unit:uK	microkelvin	A unit which is equal to 10⁻⁶ kelvin.
+unit:uL	microlitre	A unit which is equal to 10⁻⁶ litre.
+unit:uL.L-1	microlitre per litre	A unit which is equal to 10⁻⁶ litre per 1 litre.
+unit:uL.kg-1	microlitre per kilogram	A unit which is equal to 10⁻⁶ litre per 10³ gram.
+unit:uL.m-1	microlitre per metre	A unit which is equal to 10⁻⁶ litre per 1 metre.
+unit:uN	micronewton	A unit which is equal to 10⁻⁶ newton.
+unit:uNp	microneper	A unit which is equal to 10⁻⁶ neper.
+unit:uOhm	microohm	A unit which is equal to 10⁻⁶ ohm.
+unit:uPa	micropascal	A unit which is equal to 10⁻⁶ pascal.
+unit:uS	microsiemens	A unit which is equal to 10⁻⁶ siemens.
+unit:uS.cm-1	microsiemens per centimetre	A unit which is equal to 10⁻⁶ siemens per 10⁻² metre.
+unit:uS.m-1	microsiemens per metre	A unit which is equal to 10⁻⁶ siemens per 1 metre.
+unit:uSv	microsievert	A unit which is equal to 10⁻⁶ sievert.
+unit:uSv.h-1	microsievert per hour	A unit which is equal to 10⁻⁶ sievert per 1 hour.
+unit:uT	microtesla	A unit which is equal to 10⁻⁶ tesla.
+unit:uV	microvolt	A unit which is equal to 10⁻⁶ volt.
+unit:uV.m-1	microvolt per metre	A unit which is equal to 10⁻⁶ volt per 1 metre.
+unit:uW	microwatt	A unit which is equal to 10⁻⁶ watt.
+unit:uW.m-2	microwatt per square metre	A unit which is equal to 10⁻⁶ watt per 1 square metre.
+unit:uWb	microweber	A unit which is equal to 10⁻⁶ weber.
+unit:uar	microare	A unit which is equal to 10⁻⁶ are.
+unit:ucd	microcandela	A unit which is equal to 10⁻⁶ candela.
+unit:ueV	microelectronvolt	A unit which is equal to 10⁻⁶ electronvolt.
+unit:ug	microgram	A unit which is equal to 10⁻⁶ gram.
+unit:ug.J-1	microgram per joule	A unit which is equal to 10⁻⁶ gram per 1 joule.
+unit:ug.L-1	microgram per litre	A unit which is equal to 10⁻⁶ gram per 1 litre.
+unit:ug.cm-3	microgram per cubic centimetre	A unit which is equal to 10⁻⁶ gram per 10⁻² cubic metre.
+unit:ug.d-1.m-2	microgram per day square metre	A unit which is equal to 10⁻⁶ gram per 1 day by 1 square metre.
+unit:ug.g-1	microgram per gram	A unit which is equal to 10⁻⁶ gram per 1 gram.
+unit:ug.h-1.L-1	microgram per hour litre	A unit which is equal to 10⁻⁶ gram per 1 hour by 1 litre.
+unit:ug.h-1.m-3	microgram per hour cubic metre	A unit which is equal to 10⁻⁶ gram per 1 hour by 1 cubic metre.
+unit:ug.hg-1	microgram per hectogram	A unit which is equal to 10⁻⁶ gram per 10² gram.
+unit:ug.kg-1	microgram per kilogram	A unit which is equal to 10⁻⁶ gram per 10³ gram.
+unit:ug.m-2.s-1	microgram per square metre second	A unit which is equal to 10⁻⁶ gram per 1 square metre by 1 second.
+unit:ug.m-3	microgram per cubic metre	A unit which is equal to 10⁻⁶ gram per 1 cubic metre.
+unit:ug.mL-1	microgram per millilitre	A unit which is equal to 10⁻⁶ gram per 10⁻³ litre.
+unit:ukat	microkatal	A unit which is equal to 10⁻⁶ katal.
+unit:ulm	microlumen	A unit which is equal to 10⁻⁶ lumen.
+unit:ulx	microlux	A unit which is equal to 10⁻⁶ lux.
+unit:um	micrometre	A unit which is equal to 10⁻⁶ metre.
+unit:um.K-1	micrometre per kelvin	A unit which is equal to 10⁻⁶ metre per 1 kelvin.
+unit:um.d-1.L-1	micrometre per day litre	A unit which is equal to 10⁻⁶ metre per 1 day by 1 litre.
+unit:um.s-1	micrometre per second	A unit which is equal to 10⁻⁶ metre per 1 second.
+unit:um.s-2	micrometre per square second	A unit which is equal to 10⁻⁶ metre per 1 square second.
+unit:um2	square micrometre	A unit which is equal to 10⁻⁶ square metre.
+unit:um2.mL-1	square micrometre per millilitre	A unit which is equal to 10⁻⁶ square metre per 10⁻³ litre.
+unit:um3	cubic micrometre	A unit which is equal to 10⁻⁶ cubic metre.
+unit:um3.m-3	cubic micrometre per cubic metre	A unit which is equal to 10⁻⁶ cubic metre per 1 cubic metre.
+unit:um3.mL-1	cubic micrometre per millilitre	A unit which is equal to 10⁻⁶ cubic metre per 10⁻³ litre.
+unit:umol	micromole	A unit which is equal to 10⁻⁶ mole.
+unit:umol.L-1	micromole per litre	A unit which is equal to 10⁻⁶ mole per 1 litre.
+unit:umol.d-1.m-2	micromole per day square metre	A unit which is equal to 10⁻⁶ mole per 1 day by 1 square metre.
+unit:umol.d-1.umol-1	micromole per day micromole	A unit which is equal to 10⁻⁶ mole per 1 day by 10⁻⁶ mole.
+unit:umol.g-1.s-1	micromole per gram second	A unit which is equal to 10⁻⁶ mole per 1 gram by 1 second.
+unit:umol.h-1.L-1	micromole per hour litre	A unit which is equal to 10⁻⁶ mole per 1 hour by 1 litre.
+unit:umol.h-1.m-2	micromole per hour square metre	A unit which is equal to 10⁻⁶ mole per 1 hour by 1 square metre.
+unit:umol.kg-1	micromole per kilogram	A unit which is equal to 10⁻⁶ mole per 10³ gram.
+unit:umol.m-1	micromole per metre	A unit which is equal to 10⁻⁶ mole per 1 metre.
+unit:umol.m-2.s-1	micromole per square metre second	A unit which is equal to 10⁻⁶ mole per 1 square metre by 1 second.
+unit:umol.m-3	micromole per cubic metre	A unit which is equal to 10⁻⁶ mole per 1 cubic metre.
+unit:umol.mol-1	micromole per mole	A unit which is equal to 10⁻⁶ mole per 1 mole.
+unit:umol.s-1	micromole per second	A unit which is equal to 10⁻⁶ mole per 1 second.
+unit:urad	microradian	A unit which is equal to 10⁻⁶ radian.
+unit:us	microsecond	A unit which is equal to 10⁻⁶ second.
+unit:us2	square microsecond	A unit which is equal to 10⁻⁶ square second.
+unit:usr	microsteradian	A unit which is equal to 10⁻⁶ steradian.
+unit:ut	microtonne	A unit which is equal to 10⁻⁶ tonne.
+unit:uu	microdalton	A unit which is equal to 10⁻⁶ dalton.
+unit:wk	week	
+unit:wk-1	reciprocal week	A unit which is equal to the reciprocal of 1 week.
+unit:y%27%27	yoctoplane angle second	A unit which is equal to 10⁻²⁴ plane angle second.
+unit:yA	yoctoampere	A unit which is equal to 10⁻²⁴ ampere.
+unit:yB	yoctobel	A unit which is equal to 10⁻²⁴ bel.
+unit:yBq	yoctobecquerel	A unit which is equal to 10⁻²⁴ becquerel.
+unit:yC	yoctocoulomb	A unit which is equal to 10⁻²⁴ coulomb.
+unit:yF	yoctofarad	A unit which is equal to 10⁻²⁴ farad.
+unit:yGy	yoctogray	A unit which is equal to 10⁻²⁴ gray.
+unit:yH	yoctohenry	A unit which is equal to 10⁻²⁴ henry.
+unit:yHz	yoctohertz	A unit which is equal to 10⁻²⁴ hertz.
+unit:yJ	yoctojoule	A unit which is equal to 10⁻²⁴ joule.
+unit:yK	yoctokelvin	A unit which is equal to 10⁻²⁴ kelvin.
+unit:yL	yoctolitre	A unit which is equal to 10⁻²⁴ litre.
+unit:yN	yoctonewton	A unit which is equal to 10⁻²⁴ newton.
+unit:yNp	yoctoneper	A unit which is equal to 10⁻²⁴ neper.
+unit:yOhm	yoctoohm	A unit which is equal to 10⁻²⁴ ohm.
+unit:yPa	yoctopascal	A unit which is equal to 10⁻²⁴ pascal.
+unit:yS	yoctosiemens	A unit which is equal to 10⁻²⁴ siemens.
+unit:ySv	yoctosievert	A unit which is equal to 10⁻²⁴ sievert.
+unit:yT	yoctotesla	A unit which is equal to 10⁻²⁴ tesla.
+unit:yV	yoctovolt	A unit which is equal to 10⁻²⁴ volt.
+unit:yW	yoctowatt	A unit which is equal to 10⁻²⁴ watt.
+unit:yWb	yoctoweber	A unit which is equal to 10⁻²⁴ weber.
+unit:yar	yoctoare	A unit which is equal to 10⁻²⁴ are.
+unit:ycd	yoctocandela	A unit which is equal to 10⁻²⁴ candela.
+unit:yeV	yoctoelectronvolt	A unit which is equal to 10⁻²⁴ electronvolt.
+unit:yg	yoctogram	A unit which is equal to 10⁻²⁴ gram.
+unit:yg.L-1	yoctogram per litre	A unit which is equal to 10⁻²⁴ gram per 1 litre.
+unit:ykat	yoctokatal	A unit which is equal to 10⁻²⁴ katal.
+unit:ylm	yoctolumen	A unit which is equal to 10⁻²⁴ lumen.
+unit:ylx	yoctolux	A unit which is equal to 10⁻²⁴ lux.
+unit:ym	yoctometre	A unit which is equal to 10⁻²⁴ metre.
+unit:ym.s-1	yoctometre per second	A unit which is equal to 10⁻²⁴ metre per 1 second.
+unit:ym.s-2	yoctometre per square second	A unit which is equal to 10⁻²⁴ metre per 1 square second.
+unit:ym2	square yoctometre	A unit which is equal to 10⁻²⁴ square metre.
+unit:ym3	cubic yoctometre	A unit which is equal to 10⁻²⁴ cubic metre.
+unit:ymol	yoctomole	A unit which is equal to 10⁻²⁴ mole.
+unit:ymol.L-1	yoctomole per litre	A unit which is equal to 10⁻²⁴ mole per 1 litre.
+unit:ymol.m-1	yoctomole per metre	A unit which is equal to 10⁻²⁴ mole per 1 metre.
+unit:yrad	yoctoradian	A unit which is equal to 10⁻²⁴ radian.
+unit:ys	yoctosecond	A unit which is equal to 10⁻²⁴ second.
+unit:ys2	square yoctosecond	A unit which is equal to 10⁻²⁴ square second.
+unit:ysr	yoctosteradian	A unit which is equal to 10⁻²⁴ steradian.
+unit:yt	yoctotonne	A unit which is equal to 10⁻²⁴ tonne.
+unit:yu	yoctodalton	A unit which is equal to 10⁻²⁴ dalton.
+unit:z%27%27	zeptoplane angle second	A unit which is equal to 10⁻²¹ plane angle second.
+unit:zA	zeptoampere	A unit which is equal to 10⁻²¹ ampere.
+unit:zB	zeptobel	A unit which is equal to 10⁻²¹ bel.
+unit:zBq	zeptobecquerel	A unit which is equal to 10⁻²¹ becquerel.
+unit:zC	zeptocoulomb	A unit which is equal to 10⁻²¹ coulomb.
+unit:zF	zeptofarad	A unit which is equal to 10⁻²¹ farad.
+unit:zGy	zeptogray	A unit which is equal to 10⁻²¹ gray.
+unit:zH	zeptohenry	A unit which is equal to 10⁻²¹ henry.
+unit:zHz	zeptohertz	A unit which is equal to 10⁻²¹ hertz.
+unit:zJ	zeptojoule	A unit which is equal to 10⁻²¹ joule.
+unit:zK	zeptokelvin	A unit which is equal to 10⁻²¹ kelvin.
+unit:zL	zeptolitre	A unit which is equal to 10⁻²¹ litre.
+unit:zN	zeptonewton	A unit which is equal to 10⁻²¹ newton.
+unit:zNp	zeptoneper	A unit which is equal to 10⁻²¹ neper.
+unit:zOhm	zeptoohm	A unit which is equal to 10⁻²¹ ohm.
+unit:zPa	zeptopascal	A unit which is equal to 10⁻²¹ pascal.
+unit:zS	zeptosiemens	A unit which is equal to 10⁻²¹ siemens.
+unit:zSv	zeptosievert	A unit which is equal to 10⁻²¹ sievert.
+unit:zT	zeptotesla	A unit which is equal to 10⁻²¹ tesla.
+unit:zV	zeptovolt	A unit which is equal to 10⁻²¹ volt.
+unit:zW	zeptowatt	A unit which is equal to 10⁻²¹ watt.
+unit:zWb	zeptoweber	A unit which is equal to 10⁻²¹ weber.
+unit:zar	zeptoare	A unit which is equal to 10⁻²¹ are.
+unit:zcd	zeptocandela	A unit which is equal to 10⁻²¹ candela.
+unit:zeV	zeptoelectronvolt	A unit which is equal to 10⁻²¹ electronvolt.
+unit:zg	zeptogram	A unit which is equal to 10⁻²¹ gram.
+unit:zg.L-1	zeptogram per litre	A unit which is equal to 10⁻²¹ gram per 1 litre.
+unit:zkat	zeptokatal	A unit which is equal to 10⁻²¹ katal.
+unit:zlm	zeptolumen	A unit which is equal to 10⁻²¹ lumen.
+unit:zlx	zeptolux	A unit which is equal to 10⁻²¹ lux.
+unit:zm	zeptometre	A unit which is equal to 10⁻²¹ metre.
+unit:zm.s-1	zeptometre per second	A unit which is equal to 10⁻²¹ metre per 1 second.
+unit:zm.s-2	zeptometre per square second	A unit which is equal to 10⁻²¹ metre per 1 square second.
+unit:zm2	square zeptometre	A unit which is equal to 10⁻²¹ square metre.
+unit:zm3	cubic zeptometre	A unit which is equal to 10⁻²¹ cubic metre.
+unit:zmol	zeptomole	A unit which is equal to 10⁻²¹ mole.
+unit:zmol.L-1	zeptomole per litre	A unit which is equal to 10⁻²¹ mole per 1 litre.
+unit:zmol.m-1	zeptomole per metre	A unit which is equal to 10⁻²¹ mole per 1 metre.
+unit:zrad	zeptoradian	A unit which is equal to 10⁻²¹ radian.
+unit:zs	zeptosecond	A unit which is equal to 10⁻²¹ second.
+unit:zs2	square zeptosecond	A unit which is equal to 10⁻²¹ square second.
+unit:zsr	zeptosteradian	A unit which is equal to 10⁻²¹ steradian.
+unit:zt	zeptotonne	A unit which is equal to 10⁻²¹ tonne.
+unit:zu	zeptodalton	A unit which is equal to 10⁻²¹ dalton.
