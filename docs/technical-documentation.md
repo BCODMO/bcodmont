@@ -533,6 +533,32 @@ Filter **operational** from the regular merged ontology
 robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:operational" --select annotations  --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/operational/operational.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/operational/operational.owl" --output operational/operational.owl
 ```
 
+### 5\) Units
+
+The units system used in BCO-SM is a new units system based on the [The Unified Code for Units of Measure](https://ucum.org/ucum.html) \(UCUM\), an existing standard in healthcare data interoperability. It’s not an ontology but instead makes use of codes e.g. meter per second is `m.s-1`. The long term plan would be for the new unit system to be hosted by my collaborator Dr. James Overton’s company Knocean, which would host the web server making the system free for use for anyone, and would enable people to dynamically add new units and get back an IRI right away. In the mean time prior to him setting up a server for all to use, we can just use a local implementation of the [units generating script](https://github.com/kaiiam/UO_revamp/blob/main/nc_name_script/nc_name.py) that can be used to manage new term requests.
+
+#### **Temporary steps for getting the units system:**
+
+Run the following steps in the directory `bcodmont/src/ontology/BCODMO_SM`
+
+Download the lastest version of the output file.
+
+```text
+wget https://raw.githubusercontent.com/kaiiam/UO_revamp/main/nc_name_script/output/production/working_output.ttl -O units/units.ttl
+```
+
+Export the ttl file to a tsv file for the UI script to process:
+
+```text
+robot export --input units/units.ttl --header "ID|LABEL|definition" --prefix "unit:https://w3id.org/units/" --export units/robot_templates/units_export.tsv
+```
+
+Rename the header column in a new units.tsv file:
+
+```text
+./units/robot_templates/parse_units_export.py -i units/robot_templates/units_export.tsv -o units/robot_templates/units.tsv
+```
+
 ## Maintaining BCO-SM
 
 ### Managing Imports
