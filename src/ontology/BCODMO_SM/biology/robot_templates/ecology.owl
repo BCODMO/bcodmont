@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/ecology.owl#"
+     xml:base="http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/ecology.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/ecology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">Two or more conspecific individuals living in close association with, or connected to, one another.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to ENVO perhaps as SC to animal habitation. Or perhaps PCO?</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">colony</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61515"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
+        <obo:IAO_0000115 xml:lang="en">Two or more conspecific individuals connected together in a linear fashion.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Perhaps something to add to ENVO or PCO.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">chain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41207"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">How much surface of a plot/surface/location that an organism (or group of organsims) covers; cover is a method of determining relative abundance of a plant or sessile animal based on the amount of space they occupy within a plot of substrate. In this method, rather than counting the number of individuals, each species is assigned a percent cover based on a visual estimate of how much of the sample plot they occupy</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">coverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">Organisms that have been captured or caught.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">capture</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000975"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">Catch per unit effort (fisheries term). Indirect measure of abundance for a target species.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This could be furthur broken down and clarified. Perhaps a more specific term for collection of fish. TBD in OBO.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">catch per unit effort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">corals</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">coral reef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">coral bleaching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000001">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000002">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000002"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">diversity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000019"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">Shannon diversity index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000019"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">Simpson diversity index</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
