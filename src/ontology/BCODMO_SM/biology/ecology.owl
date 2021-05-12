@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl#"
+     xml:base="http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">Two or more conspecific individuals living in close association with, or connected to, one another.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to ENVO perhaps as SC to animal habitation. Or perhaps PCO?</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">colony</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61515"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
+        <obo:IAO_0000115 xml:lang="en">Two or more conspecific individuals connected together in a linear fashion.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Perhaps something to add to ENVO or PCO.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">chain</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41207"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">How much surface of a plot/surface/location that an organism (or group of organsims) covers; cover is a method of determining relative abundance of a plant or sessile animal based on the amount of space they occupy within a plot of substrate. In this method, rather than counting the number of individuals, each species is assigned a percent cover based on a visual estimate of how much of the sample plot they occupy</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">coverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">Organisms that have been captured or caught.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">capture</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000975"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0030005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">Catch per unit effort (fisheries term). Indirect measure of abundance for a target species.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This could be furthur broken down and clarified. Perhaps a more specific term for collection of fish. TBD in OBO.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">catch per unit effort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
+        <obo:IAO_0000115>Aragonite structures produced by living organisms, found in shallow, marine waters with little nutrients in the water.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>LTER:127</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>EcoLexicon:coral_reef</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:202</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:547</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:H.RFC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>LTER:127</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Coral_reef</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>CoralReef</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coral reef</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">corals</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>barrier reef</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fringing reef</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reef</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label>coral reef</rdfs:label>
+        <rdfs:label xml:lang="en">coral reef</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Aragonite structures produced by living organisms, found in shallow, marine waters with little nutrients in the water.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Coral_reef</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedTarget>LTER:127</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=127&amp;/coral-reefs</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CoralReef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA:earthrealm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>coral reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>coral reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:feature</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>coral reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>fringing reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>fringing reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>reef</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000150"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">coral bleaching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <obo:IAO_0000112>Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <obo:IAO_0000118>group of organism</obo:IAO_0000118>
+        <obo:IAO_0000118>organism collection</obo:IAO_0000118>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:comment>May be of the same or different species.</rdfs:comment>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000001">
+        <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">This a general term that can include every organism of a species living in an area or any subset of them.  Subclasses can be more specific as needed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A collection of organisms, all of the same species, that live in the same place.</obo:IAO_0000115>
+        <obo:IAO_0000119>ISBN:0878932739</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:comment xml:lang="en">It is sometimes difficult to define the physical boundaries of a population. In the case of sexually reproducing organisms, the individuals within a population have the potential to reproduce with one another during the course of their lifetimes. &apos;Community&apos;, as often used to describe a group of humans, is a type of population of organisms. 
+
+Classes for population already  exist in IDO (&apos;organism population&apos;, IDO_0000509) and OBI (&apos;population&apos;, OBI_0000181). The definitions should be standardized across OBO Foundry ontologies and only one term used.</rdfs:comment>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+        <rdfs:label xml:lang="en">population of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000002">
+        <obo:IAO_0000115 xml:lang="en">A multi-species collection of organisms of at least two different species, living in a particular area. Must have at least two populations of different species as members.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">multispecies community</obo:IAO_0000118>
+        <obo:IAO_0000119>ISBN:0865423504</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">Ecological community is defined broadly here, but includes both ecological interactions (inherited from parent term community) and spatial co-existence. It may be used to describe every organisms living in an area, but is often used to refer only to organisms of a particular taxon or guild (e.g., the plant community, the insect community, the herbivore community). The word community, as it often used to describe a group of humans living together, is a type of single-species collection of organisms, not an ecological community.</rdfs:comment>
+        <rdfs:label xml:lang="en">community</rdfs:label>
+        <rdfs:label xml:lang="en">ecological community</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000002"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">The number of different species that are represented in a given community, weighted by their abundance. Community species diversity can be calculated in different ways, but consists of two components: species richness and species evenness.</obo:IAO_0000115>
+        <obo:IAO_0000116>If your metric does not include the abundances of different species, but rather just the numer of species, you should use community species richness (PCO_0000010). More specific subclasses or instances of this class may be created to describe specific ways of measuring diversity.</obo:IAO_0000116>
+        <obo:IAO_0000119>adapted from http://en.wikipedia.org/wiki/Species_diversity</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:comment xml:lang="en">The Shannon Index and Simpson Index are examples of ways in which species diversity is quantified.</rdfs:comment>
+        <rdfs:label xml:lang="en">community species diversity</rdfs:label>
+        <rdfs:label xml:lang="en">diversity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000019"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>A community species diversity metric that accounts for both the abundance and evenness of the species present quantified via the following formula: the negative sum of, the product of the proportion of species i relative to the total number of species (pi) multiplied by the natural logarithm of this proportion (ln pi).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://www.tiem.utk.edu/~gross/bioed/bealsmodules/shannonDI.html"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Diversity_index#Shannon_index"/>
+        <oboInOwl:hasExactSynonym>Shannon entropy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon&apos;s diversity index</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Shannon-Wiener index</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">Shannon diversity index</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000019"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>A community species diversity metric that is quantified via the following formula: the reciprocal of the sum of squared proportion of species i relative to the total number of species (pi).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://www.tiem.utk.edu/~gross/bioed/bealsmodules/simpsonDI.html"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Diversity_index#Simpson_index"/>
+        <oboInOwl:hasExactSynonym>Simpson index</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">Simpson diversity index</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
