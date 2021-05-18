@@ -503,6 +503,12 @@ Filter **ecology** from the axiom-free merged ontology
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:ecology" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/ecology.owl" --output biology/ecology.owl
 ```
 
+Filter **biomolecules** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:biomolecules" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl" --output biology/biomolecules.owl
+```
+
 #### Quantifiers
 
 Filter **quantifiers** from the regular merged ontology
