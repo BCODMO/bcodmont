@@ -61,7 +61,7 @@ def main():
                 input_list.append(row[0])
 
     # header row
-    header = ('Ontology ID', 'label', 'definition')
+    header = ('ontology ID', 'label', 'definition')
     # Open and print outfile
     f = open(outfile, mode='w', encoding='utf-8-sig')
     print('\t'.join(header), file=f)
