@@ -1,0 +1,953 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl#"
+     xml:base="http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/charge -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/charge"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi/formula -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi/formula"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000115 xml:lang="en">A unique gene name approved by an organism specific nomenclature committee.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">gene symbol</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment xml:lang="en">NCIT has different label: gene symbol.</rdfs:comment>
+        <rdfs:label xml:lang="en">gene name</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43568"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000115 xml:lang="en">Brief description of gene function.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">gene description</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48664"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115 xml:lang="en">A protein acid sequence is the character representation of the molecular structure of a protein.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">protein sequence</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MS_1001344"/>
+        <skos:exactMatch rdf:resource="SIO:010015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115 xml:lang="en">In mass spectrometery, peptides are shorter amino acid sequences found within a protein that are generated from enzymatic cleavage of a protein. The sequence describes the order of amino acids in the peptide.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">peptide sequence</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/MS_1001344"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NMR_1000892"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0040005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115 xml:lang="en">A numerical classification scheme for enzymes, based on the chemical reactions they catalyze.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Definition source https://archive.org/details/enzymenomenclatu0000inte_d6c2</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym xml:lang="en">Enzyme Commision number</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">Enzyme Commision</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111>peptide</obo:IAO_0000111>
+        <obo:IAO_0000115>Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <chebi:charge>0</chebi:charge>
+        <chebi:formula>(C2H2NOR)nC2H3NOR</chebi:formula>
+        <oboInOwl:hasAlternativeId>CHEBI:14753</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:25906</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:7990</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>KEGG:C00012</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Peptide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>peptides</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Peptid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>peptido</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>peptidos</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:16670</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:comment xml:lang="en">In mass spectrometery, peptides are shorter amino acid sequences found within a protein that are generated from enzymatic cleavage of a protein.</rdfs:comment>
+        <rdfs:label>peptide</rdfs:label>
+        <rdfs:label xml:lang="en">peptide</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Peptide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>peptides</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Peptid</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>peptido</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>peptidos</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111>ribonucleic acid</obo:IAO_0000111>
+        <obo:IAO_0000115>High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">RNA</rdfs:label>
+        <rdfs:label>ribonucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <obo:IAO_0000115>A biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:13677</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:14911</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>proteins</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:36080</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>protein</rdfs:label>
+        <rdfs:label xml:lang="en">protein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>proteins</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0447">
+        <obo:IAO_0000115>A database describing a feature on a molecule.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Descriptive annotations of omics data linking to externally controlled annotation resources.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>feature xref</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0447</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>feature database</rdfs:label>
+        <rdfs:label xml:lang="en">omics annotation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A database describing a feature on a molecule.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>feature xref</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115>Pfam is a large collection of multiple sequence alignments and hidden Markov models covering many common protein domains.
+http://www.sanger.ac.uk/Software/Pfam</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Pfam</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0451</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">PFam</rdfs:label>
+        <rdfs:label>pfam</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1138"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0451"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>id-validation-regexp:</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PF[0-9]{5}</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0451"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Pfam</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0451"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Pfam is a large collection of multiple sequence alignments and hidden Markov models covering many common protein domains.
+http://www.sanger.ac.uk/Software/Pfam</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115>TIGRFAMs is a collection of protein families, featuring curated multiple sequence alignments, Hidden Markov Models (HMMs) and annotation.
+http://www.tigr.org/TIGRFAMs</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>TIGRFAMs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0458</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">TIGRFam ID</rdfs:label>
+        <rdfs:label>tigrfams</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1141"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0458"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>TIGRFAMs is a collection of protein families, featuring curated multiple sequence alignments, Hidden Markov Models (HMMs) and annotation.
+http://www.tigr.org/TIGRFAMs</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0458"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>id-validation-regexp:</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIGR[0-9]+</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0458"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TIGRFAMs</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115>KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.
+http://www.genome.ad.jp/kegg/</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>KEGG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">KO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0470</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#Drugable"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">KEGG</rdfs:label>
+        <rdfs:label>kegg</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1154"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0470"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.
+http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0470"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>id-validation-regexp:</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[a-zA-Z]+:[a-zA-Z]+[0-9]+</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0470"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>KEGG</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_1083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_1083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115>Clusters of Orthologous Groups of proteins (COGs) were delineated by comparing protein sequences encoded in complete genomes, representing major phylogenetic lineages. Each COG consists of individual proteins or groups of paralogs from at least 3 lineages and thus corresponds to an ancient conserved domain.</obo:IAO_0000115>
+        <oboInOwl:created_by>orchard</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-07-05T10:59:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym xml:lang="en">Cluster of Orthologous Genes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Clusters of Orthologous Groups</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">KOG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cogg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:1083</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">COG</rdfs:label>
+        <rdfs:label>cog</rdfs:label>
+        <skos:exactMatch rdf:resource="data:1113"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_1083"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Clusters of Orthologous Groups of proteins (COGs) were delineated by comparing protein sequences encoded in complete genomes, representing major phylogenetic lineages. Each COG consists of individual proteins or groups of paralogs from at least 3 lineages and thus corresponds to an ancient conserved domain.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11125040</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_1083"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cogg</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_1097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_1097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000115>UniProt is a centralized repository of protein sequences with comprehensive coverage and a systematic approach to protein annotation, incorporating, interpreting, integrating and standardizing data from numerous sources and is the most comprehensive catalog of protein sequences and functional annotation.</obo:IAO_0000115>
+        <oboInOwl:created_by>orchard</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-07-06T08:14:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym xml:lang="en">TrEMBL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>uniprot</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:1097</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label xml:lang="en">UniProt</rdfs:label>
+        <rdfs:label>uniprot</rdfs:label>
+        <skos:exactMatch rdf:resource="data:3021"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_1097"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>UniProt is a centralized repository of protein sequences with comprehensive coverage and a systematic approach to protein annotation, incorporating, interpreting, integrating and standardizing data from numerous sources and is the most comprehensive catalog of protein sequences and functional annotation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21051339</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_1097"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>uniprot</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1000883 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000883">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>A short name or symbol of a protein (e.g., HSF 1 or HSF1_HUMAN).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1000883</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment xml:lang="en">MS has different label: protein short name</rdfs:comment>
+        <rdfs:label>protein short name</rdfs:label>
+        <rdfs:label xml:lang="en">protein symbol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000883"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A short name or symbol of a protein (e.g., HSF 1 or HSF1_HUMAN).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:MS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000883"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1000886 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000886">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>A long name describing the function of the protein.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1000886</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment xml:lang="en">MS has different label: protein name</rdfs:comment>
+        <rdfs:label xml:lang="en">protein description</rdfs:label>
+        <rdfs:label>protein name</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000886"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A long name describing the function of the protein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:MS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000886"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1000933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000933">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>Encoding of modifications of the protein sequence from the specified accession, written in PEFF notation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1000933</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label>protein modifications</rdfs:label>
+        <rdfs:label xml:lang="en">protein modifications</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000933"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Encoding of modifications of the protein sequence from the specified accession, written in PEFF notation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:MS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000933"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:string</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1001844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1001844">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>Area of MS1 feature.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:double</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1001844</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment xml:lang="en">MS has different label: MS1 feature area</rdfs:comment>
+        <rdfs:label>MS1 feature area</rdfs:label>
+        <rdfs:label xml:lang="en">MS1 feature area</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1001844"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Area of MS1 feature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:PI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1001844"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:double</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1002015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1002015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>Spectral count peptide level quantitation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:boolean</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1002015</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">peptide spectal count</rdfs:label>
+        <rdfs:label>spectral count peptide level quantitation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1002015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectral count peptide level quantitation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:PI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1002015"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:boolean</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MS_1002016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1002016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000115>Spectral count protein level quantitation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>value-type:xsd:boolean</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MS:1002016</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">protein spectral count</rdfs:label>
+        <rdfs:label>spectral count protein level quantitation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1002016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectral count protein level quantitation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:PI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1002016"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>value-type:xsd:boolean</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000427">
+        <obo:IAO_0000111 xml:lang="en">enzyme</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">(protein or rna) or has_part (protein or rna) and
+has_function some GO:0003824 (catalytic activity)</obo:IAO_0000115>
+        <obo:IAO_0000116>MC: known issue: enzyme doesn&apos;t classify under material entity for now as it isn&apos;t stated that anything
+that has_part some material entity is a material entity. If we add as equivalent classes to material entity has_part some material entity and part_of some material entity  (each one in his own necessary and sufficient block) Pellet in P3 doesn&apos;t classify any more.</obo:IAO_0000116>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP:OBI</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">enzyme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000973 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111>sequence data</obo:IAO_0000111>
+        <obo:IAO_0000112>example of usage: the representation of a nucleotide sequence in FASTA format used for a sequence similarity search.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A measurement datum that representing the primary structure of a macromolecule(it&apos;s sequence) sometimes associated with an indicator of confidence of that measurement.
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">genetic sequence</rdfs:label>
+        <rdfs:label xml:lang="en">sequence data</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GSSO_009401"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001868 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001868">
+        <obo:IAO_0000111>genetic material</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>A nucleic acid macromolecule that is part of a cell or virion and is inherited from an immediate ancestor, or incorporated in a manner that it has the disposition to be replicated and inherited by descendants.</obo:IAO_0000115>
+        <obo:IAO_0000116>MHB 3-22-13: Discussions are ongoing about the label of this class, given consideration of a second class that covers nucleic acid parts of cells or virions that participate in gene expression processes as a template for expression or a direct effector of expression of some other genetic element (e.g. an siRNA), but are not necessarily heritable by progeny or inherited from ancestors.  So things like transiently transfected plasmids and siRNAs would qualify as instances of this second class, but not of &apos;genetic material&apos; as defined here.
+
+Also, OBI needs to import a class representing virions for an axiom on genetic material (part_of some (cell or virion).</obo:IAO_0000116>
+        <obo:IAO_0000118>genomic material</obo:IAO_0000118>
+        <obo:IAO_0000118>hereditary genetic material</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI developer calls, March 4 2013 and March 11 2013</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment>Naturally occurring or experimentally incorporated nucleic acids that meet these criteria can qualify as genetic/genomic material.
+
+Qualifying examples include: (1) inherited chromosomal DNA in germ cells, stem cells, fully differentiated cells, or cell line cells, or the DNA/RNA content of a virion; (2) natural replicons exchanged through horizontal gene transfer mechanisms such as bacterial conjugation, which are capable of replication and inheritance by progeny; (3) a chromosomally integrated  gene targeting DNA construct transfected into a cell; or (4) a stable extra-chromosomal replicon delivered into cells, such as a plasmid in bacterial host with ori allowing indefinite propagation.  
+
+Non-qualifying examples include a transiently transfected plasmid or siRNA oligo (as these are not able to be replicated and inherited by progeny cells).
+</rdfs:comment>
+        <rdfs:label>genetic material</rdfs:label>
+        <rdfs:label xml:lang="en">genetic material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002977 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002977">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000111>input gene sequence start site</obo:IAO_0000111>
+        <obo:IAO_0000112>When a new genome is sequenced, the start sites of genes are identified by comparing the new sequence to that of a reference sequence in a database. The first nucelotide of a gene sequence being analyzed is the input gene sequence start site.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>The position of the first nucleotide in a gene sequence being analyzed (input gene sequence).</obo:IAO_0000115>
+        <obo:IAO_0000117>Emma Griffiths</obo:IAO_0000117>
+        <obo:IAO_0000118>input gene start</obo:IAO_0000118>
+        <obo:IAO_0000118>query gene start site</obo:IAO_0000118>
+        <obo:IAO_0000119>Emma Griffiths</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">genetic sequence start location</rdfs:label>
+        <rdfs:label>input gene sequence start site</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C135488"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002978 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000111>input gene sequence stop site</obo:IAO_0000111>
+        <obo:IAO_0000112>When a new genome is sequenced, the termination sites of genes are identified by comparing the new sequence to that of a reference sequence in a database. The last nucelotide of a gene sequence being analyzed is the input gene sequence stop site.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>The position of the last nucelotide in a gene sequence being analyzed (input gene sequence).</obo:IAO_0000115>
+        <obo:IAO_0000117>Emma Griffiths</obo:IAO_0000117>
+        <obo:IAO_0000118>input gene stop</obo:IAO_0000118>
+        <obo:IAO_0000118>query gene stop site</obo:IAO_0000118>
+        <obo:IAO_0000119>Emma Griffiths</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">genetic sequence stop location</rdfs:label>
+        <rdfs:label>input gene sequence stop site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000115>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>INSDC_feature:gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000704</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
+        <rdfs:comment>This term is mapped to MGED. Do not obsolete without consulting MGED ontology. A gene may be considered as a unit of inheritance.</rdfs:comment>
+        <rdfs:label>gene</rdfs:label>
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:immuno_workshop</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>http://en.wikipedia.org/wiki/Gene</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wiki</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000115>Reverse is an attribute of the feature, where the feature is in the 3&apos; to 5&apos; direction. Again could be applied to primer.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">complement, complementary sequence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0001031</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label>reverse</rdfs:label>
+        <rdfs:label xml:lang="en">reverse sequence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Reverse is an attribute of the feature, where the feature is in the 3&apos; to 5&apos; direction. Again could be applied to primer.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0002236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000115>A gene which codes for 18S_rRNA, which functions as the small subunit of the ribosome in eukaryotes.</obo:IAO_0000115>
+        <oboInOwl:created_by>david</oboInOwl:created_by>
+        <oboInOwl:creation_date>2020-05-07T16:12:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>18S rRNA gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>18S_rRNA_gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0002236</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472)</rdfs:comment>
+        <rdfs:label>rRNA_18S_gene</rdfs:label>
+        <rdfs:label xml:lang="en">ribosomal 18S gene</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C48172"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0002237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000115>A gene which codes for 16S_rRNA, which functions as the small subunit of the ribosome in prokaryotes.</obo:IAO_0000115>
+        <oboInOwl:created_by>david</oboInOwl:created_by>
+        <oboInOwl:creation_date>2020-05-07T16:12:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>16S rRNA gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>16S_rRNA_gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0002237</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472)</rdfs:comment>
+        <rdfs:label>rRNA_16S_gene</rdfs:label>
+        <rdfs:label xml:lang="en">ribosomal 16S gene</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105370"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
