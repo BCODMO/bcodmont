@@ -1,0 +1,7 @@
+### Biology biomolecules
+MI:0447	#omics annotation
+MI:0451	#PFam
+MI:0458	#TIGRFam ID
+MI:0470	#KEGG
+MI:1083	#COG
+MI:1097	#UniProt
