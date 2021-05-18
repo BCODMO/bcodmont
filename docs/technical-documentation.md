@@ -261,7 +261,15 @@ Once downloaded save the file in excel or move it on the command line to replace
 
 Anatomy: `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/anatomy.tsv`
 
-**Physiology**: `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/physiology.tsv`
+Physiology: `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/physiology.tsv`
+
+Ecology: 
+
+`bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/ecology.tsv`
+
+Biomolecules:
+
+`bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/biomolecules.tsv`
 
 **Matrix:**
 
@@ -313,6 +321,12 @@ Run **physiology**.tsv:
 
 ```text
 robot template --template biology/robot_templates/physiology.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/physiology.owl" -o biology/robot_templates/physiology.owl
+```
+
+Run **biomolecules**.tsv:
+
+```text
+robot template --template biology/robot_templates/biomolecules.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/biomolecules.owl" -o biology/robot_templates/biomolecules.owl
 ```
 
 #### Quantifiers
