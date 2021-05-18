@@ -8,3 +8,10 @@ OBI:0001621	#longitude
 OBI:0001622	#study title
 OBI:0001898	#comment on investigation
 OBI:0002464	#SRA Sample
+
+### BCODMO_SM Biology biomolecules terms:
+OBI:0000427	#enzyme
+OBI:0000973	#genetic sequence
+OBI:0001868	#genetic material
+OBI:0002977	#genetic sequence start location
+OBI:0002978	#genetic sequence stop location
