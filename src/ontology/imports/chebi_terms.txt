@@ -1473,3 +1473,9 @@ CHEBI:65244	#zeinoxanthin
 CHEBI:27362	#zeta-carotene
 CHEBI:49976	#zinc dichloride
 CHEBI:35176	#zinc sulfate
+
+### BCODMO_SM Biology biomolecules terms:
+CHEBI:16670	#peptide
+CHEBI:16991	#DNA
+CHEBI:33697	#RNA
+CHEBI:36080	#protein
