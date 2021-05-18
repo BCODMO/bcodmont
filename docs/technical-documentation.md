@@ -94,6 +94,8 @@ This section is split into two subsections the first consists of OBO foundry ont
 
 **The Sequence types and features ontology \(SO\)**: is a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. Browse SO from [here](https://www.ebi.ac.uk/ols/ontologies/SO).
 
+**The Molecular Interactions Controlled Vocabulary \(MI\)**: is a structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. BCO-SM uses MI terms such as `pfam` in the Biology biomolecules module. Browse MI from [here](https://www.ebi.ac.uk/ols/ontologies/mi). 
+
 **The NCBI organismal classification \(NCBITaxon\)**: is An ontology representation of the [NCBI organismal taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy), which is in turn a curated classification and nomenclature for all of the organisms in the public sequence databases. Not yet used but will likely be picked up for use in the Biology Organism module.
 
 ### Other Ontologies Referenced but not directly used
