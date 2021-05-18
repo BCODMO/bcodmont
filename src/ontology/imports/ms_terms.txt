@@ -1,1 +1,9 @@
 MS:1000224  #molecular mass
+
+### Biology biomolecules
+MS:1000883	#protein symbol
+MS:1000886	#protein description
+MS:1000933	#protein modifications
+MS:1001844	#MS1 feature area
+MS:1002015	#peptide spectal count
+MS:1002016	#protein spectral count
