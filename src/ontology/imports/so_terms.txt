@@ -1,2 +1,5 @@
-### BCODMO_SM Biology/Biomolecules terms:
-SO:0001031 #reverse sequence
+### BCODMO_SM Biology biomolecules terms:
+SO:0000704	#gene
+SO:0001031	#reverse sequence
+SO:0002236	#ribosomal 18S gene
+SO:0002237	#ribosomal 16S gene
