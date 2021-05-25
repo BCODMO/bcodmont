@@ -1,0 +1,836 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl#"
+     xml:base="http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_order -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_order">
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above family and below class.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">order</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050001">
+        <obo:IAO_0000115 xml:lang="en">An organismal grouping baised on how a living entity acquires or generates food and energy from a living, dead, or non-living entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">In ECOCORE these are direct subclasses to organism OBI:0100026, we could do that here if desired.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">trophic class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050002">
+        <obo:IAO_0000115 xml:lang="en">The classification groups of biological organisms based on shared characteristics that are not part of a rigorous taxonomic framework.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">informal classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
+        <obo:IAO_0000115 xml:lang="en">Classification by planktonic size range.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">plankton size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: &lt;0.2 um (viruses).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Femtoplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 0.2-2.0 um (bacteria, very small Eukaryotes).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Picoplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 2-20 um (diatoms, dinoflagellates, protozoa).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Nanoplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 20-200 um (diatoms, dinoflagellates, protozoa, copepod nauplii, etc.).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Microplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 0.2-20 mm (mostly zooplankton).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Mesoplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 2-20 cm.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">Macroplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton classification by general functional group.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">plankton group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton consisting of small animals and the immature stages of larger animals.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">zooplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton consisting of small (mainly microscopic) photosynthetic organisms.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">phytoplankton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
+        <obo:IAO_0000115 xml:lang="en">Plankton consisting of single-celled protozoa with cilia.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">ciliate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
+        <obo:IAO_0000115 xml:lang="en">The natural language (non-taxonomic) name of the type of organism that is the subject of a given investigation, study and/or specimen.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">subject organism common name</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">common name</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0001724"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050014"/>
+        <obo:IAO_0000115 xml:lang="en">A limbless cold-blooded vertebrate animal with gills and fins and living wholly in water.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">fish</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411222"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050014"/>
+        <obo:IAO_0000115 xml:lang="en">An organism capable of nitrogen fixation (conversion of atmospheric dinitrogen into bioavailable forms).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Could be added to ECOCORE.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:comment xml:lang="en">Part of NCBITaxon:1117</rdfs:comment>
+        <rdfs:label xml:lang="en">diazotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050016"/>
+        <obo:IAO_0000115 xml:lang="en">An organism which uses heterocycts for nitrogen fixation (conversion of atmospheric dinitrogen into bioavailable forms).</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:comment xml:lang="en">Part of NCBITaxon:1117</rdfs:comment>
+        <rdfs:label xml:lang="en">heterocyst-forming diazotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050018">
+        <obo:IAO_0000115 xml:lang="en">The classification groups of biological organisms based on shared characteristics.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">taxonomy</rdfs:label>
+        <skos:closeMatch rdf:resource="data:3028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
+        <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the World Register of Marine Species (WoRMS) taxonomic classification database.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Future direction to make OBO compliant IDs for WoRMS</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">WoRMS ID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000115 xml:lang="en">A sample that is comprised predominately of living (or decomposing) material; for use when more specific information on composition of sample is not provided.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">biomass specimen</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">organic material specimen</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">biomaterial specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
+        <obo:IAO_0000115 xml:lang="en">A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">cell</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12508"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050001"/>
+        <obo:IAO_0000115>An organism that obtains carbon for growth and development by metabolizing biogenic organic compounds derived from living or dead material.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">ECOCORE has more subclasses that could be imported.</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-4366-3088</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>consumer</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">heterotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050001"/>
+        <obo:IAO_0000115 xml:lang="en">An organism that obtains carbon for growth and development by a combination of heterotrophy (metabolizing biogenic organic compounds derived from living or dead material ) and autotrophy (capable of incorporating inorganic carbon into its biomass).</obo:IAO_0000115>
+        <obo:IAO_0000115>An organism which is capable of heterotrophic and autotrophic trophic processes.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-4366-3088</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">mixotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050001"/>
+        <obo:IAO_0000115>An organism which is capable of incorporating abiogenic (inorganic) carbon into its biomass.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-4366-3088</obo:IAO_0000117>
+        <oboInOwl:hasRelatedSynonym>primary producer</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">autotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000010"/>
+        <obo:IAO_0000115>A heterotroph that consumes animals in whole or in part via ingestion through a type of &quot;mouth&quot;. Animal matter is broken down through an internal digestion process.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>carnivore</rdfs:label>
+        <rdfs:label xml:lang="en">carnivore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000023"/>
+        <obo:IAO_0000115>An autotroph which is capable of obtaining energy from the bonds in a chemical compound.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>chemoautotroph</rdfs:label>
+        <rdfs:label xml:lang="en">chemoautotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000023"/>
+        <obo:IAO_0000115>An autotroph which is capable of transforming light into chemical energy.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>photoautotroph</rdfs:label>
+        <rdfs:label xml:lang="en">photoautotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000010"/>
+        <obo:IAO_0000115>A heterotroph which is capable of obtaining energy from the bonds in a chemical compound.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>chemoheterotroph</rdfs:label>
+        <rdfs:label xml:lang="en">chemoheterotroph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050001"/>
+        <obo:IAO_0000115>an organism that does not require oxygen for growth</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>anaerobic organism</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>anaerobe</rdfs:label>
+        <rdfs:label xml:lang="en">anaerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050001"/>
+        <obo:IAO_0000115>an organism that can survive and grow in an oxygenated environment</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>aerobic organism</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>aerobe</rdfs:label>
+        <rdfs:label xml:lang="en">aerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000172"/>
+        <obo:IAO_0000115>an anaerobe that makes ATP by aerobic respiration if oxygen is present, but is capable of switching to fermentation if oxygen is absent.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>facultative anaerobic organism</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>facultative anaerobe</rdfs:label>
+        <rdfs:label xml:lang="en">facultative anaerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000172"/>
+        <obo:IAO_0000115>an anaerobe that cannot grow in the presence of oxygen</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>obligate anaerobe</rdfs:label>
+        <rdfs:label xml:lang="en">obligate anaerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000173"/>
+        <obo:IAO_0000115>an aerobe that requires oxygen to grow</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>obligate aerobe</rdfs:label>
+        <rdfs:label xml:lang="en">obligate aerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000173"/>
+        <obo:IAO_0000115>an aerobe that can grow at oxygen levels lower than what is present in the atmosphere</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>microaerophilic organism</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>microaerophile</rdfs:label>
+        <rdfs:label xml:lang="en">microaerophile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECOCORE_00000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000172"/>
+        <obo:IAO_0000115>an anaerobe that can tolerate low levels of oxygen</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>aerotolerant anaerobe</rdfs:label>
+        <rdfs:label xml:lang="en">aerotolerant anaerobe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
+        <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the National Center for Biotechnology Information (NCBI) taxonomy database.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Cross listed in external repositories? Perhaps better to import relevant NCBITaxon subclasses and add them here.</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>all</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>NCBITaxon:1</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">NCBI taxonomy ID</rdfs:label>
+        <rdfs:label>root</rdfs:label>
+        <skos:closeMatch rdf:resource="data:1179"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>all</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>all</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#synonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_class -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_class">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above order and below phylum.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_family -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_family">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above genus and below order.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">family</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_genus -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_genus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above species and below family.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">genus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_kingdom -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_kingdom">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above phylum and below domain.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">kingdom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_phylum -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_phylum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above class and below kingdom.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">phylum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_species -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_species">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is most basic or specific unit of classification.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_superkingdom -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_superkingdom">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is the broadest unit of classification.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">empire</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">realm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">superkingdom</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000111 xml:lang="en">specimen from organism</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tissue specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>MO_954 organism_part</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">specimen from organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000111>individual organism specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A specimen composed of an individual organism to be studied in an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>EFO_0000542 individual</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1092</obo:IAO_0000233>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>individual organism specimen</rdfs:label>
+        <rdfs:label xml:lang="en">individual organism specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
+        <obo:IAO_0000116>13-02-2009:
+OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI.</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <oboInOwl:hasOBONamespace>obi</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0100026</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label>organism</rdfs:label>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
+        <obo:IAO_0000111 xml:lang="en">specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has the specimen role.</obo:IAO_0000115>
+        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
+        <obo:IAO_0000115 xml:lang="en">The relative level of a group of organisms in a taxonomic hierarchy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">taxon level</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">taxonomic rank</rdfs:label>
+        <skos:closeMatch rdf:resource="data:1868"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
