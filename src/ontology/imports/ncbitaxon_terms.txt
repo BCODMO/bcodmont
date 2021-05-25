@@ -1,0 +1,11 @@
+### BCODMO_SM Biology organism terms:
+NCBITaxon:_taxonomic:rank	#taxonomic rank
+NCBITaxon:1	#NCBI taxonomy ID
+NCBITaxon:class	#class
+NCBITaxon:family	#family
+NCBITaxon:genus	#genus
+NCBITaxon:kingdom	#kingdom
+NCBITaxon:order	#order
+NCBITaxon:phylum	#phylum
+NCBITaxon:species	#species
+NCBITaxon:superkingdom	#domain
