@@ -15,3 +15,9 @@ OBI:0000973	#genetic sequence
 OBI:0001868	#genetic material
 OBI:0002977	#genetic sequence start location
 OBI:0002978	#genetic sequence stop location
+
+### BCODMO_SM Biology organism terms:
+OBI:0001479	#specimen from organism
+OBI:0002648	#individual organism specimen
+OBI:0100026	#organism
+OBI:0100051	#specimen
