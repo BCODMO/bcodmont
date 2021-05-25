@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi #chebi
+IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore #chebi
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -399,6 +399,18 @@ mirror/mi.trigger: $(SRC)
 
 mirror/mi.owl: mirror/mi.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/mi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+
+
+## ONTOLOGY: ecocore
+## Copy of ecocore is re-downloaded whenever source changes
+mirror/ecocore.trigger: $(SRC)
+
+mirror/ecocore.owl: mirror/ecocore.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ecocore.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
