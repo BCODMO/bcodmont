@@ -316,6 +316,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0050020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000115 xml:lang="en">A sample that is comprised predominately of living (or decomposing) material; for use when more specific information on composition of sample is not provided.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">biomass specimen</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">organic material specimen</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">biomaterial specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
@@ -479,20 +493,6 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
         <rdfs:label xml:lang="en">aerotolerant anaerobe</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-        <oboInOwl:hasExactSynonym xml:lang="en">biomass</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">organic material</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
-        <rdfs:comment xml:lang="en">A sample that is comprised predominately of living (or decomposing) material; for use when more specific information on composition of sample is not provided.</rdfs:comment>
-        <rdfs:label xml:lang="en">biomaterial</rdfs:label>
     </owl:Class>
     
 

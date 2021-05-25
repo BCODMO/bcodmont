@@ -4,15 +4,14 @@ organism				OBI:0100026	organism												http://bcodmo/sm#biology	http://bcod
 specimen				OBI:0100051	specimen												http://bcodmo/sm#biology	http://bcodmo/sm#organism
 specimen	individual organism specimen			OBI:0002648	individual organism specimen	specimen											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 specimen	specimen from organism			OBI:0001479	specimen from organism	specimen											http://bcodmo/sm#biology	http://bcodmo/sm#organism
-specimen	biomaterial			ENVO:01000155	biomaterial	specimen	biomass|organic material				A sample that is comprised predominately of living (or decomposing) material; for use when more specific information on composition of sample is not provided.						http://bcodmo/sm#biology	http://bcodmo/sm#organism
+specimen	biomaterial specimen			BSM:0050020	biomaterial specimen	specimen	biomass specimen |organic material specimen			A sample that is comprised predominately of living (or decomposing) material; for use when more specific information on composition of sample is not provided.							http://bcodmo/sm#biology	http://bcodmo/sm#organism
 cell				COB:0000017	cell					A material entity that has a plasma membrane and results from cellular division.							http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class				BSM:0050001	trophic class					"An organismal grouping baised on how a living entity acquires or generates food and energy from a living, dead, or non-living entity."		"In ECOCORE these are direct subclasses to organism OBI:0100026, we could do that here if desired."					http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	autotroph			ECOCORE:00000023	autotroph	trophic class											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	autotroph	chemoautotroph		ECOCORE:00000129	chemoautotroph	autotroph											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	autotroph	photoautotroph		ECOCORE:00000130	photoautotroph	autotroph											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	heterotroph			ECOCORE:00000010	heterotroph	trophic class						ECOCORE has more subclasses that could be imported.					http://bcodmo/sm#biology	http://bcodmo/sm#organism
-trophic class	heterotroph	"chemoheterotroph
-"		ECOCORE:00000132	chemoheterotroph	heterotroph											http://bcodmo/sm#biology	http://bcodmo/sm#organism
+trophic class	heterotroph	chemoheterotroph		ECOCORE:00000132	chemoheterotroph	heterotroph											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	heterotroph	carnivore		ECOCORE:00000088	carnivore	heterotroph											http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	mixotroph			ECOCORE:00000012	mixotroph	trophic class				An organism that obtains carbon for growth and development by a combination of heterotrophy (metabolizing biogenic organic compounds derived from living or dead material ) and autotrophy (capable of incorporating inorganic carbon into its biomass).							http://bcodmo/sm#biology	http://bcodmo/sm#organism
 trophic class	aerobe			ECOCORE:00000173	aerobe	trophic class											http://bcodmo/sm#biology	http://bcodmo/sm#organism
