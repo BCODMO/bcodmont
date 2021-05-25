@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore ncbitaxon #chebi
+IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore #chebi ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -414,6 +414,8 @@ mirror/ecocore.owl: mirror/ecocore.trigger
 
 ## ONTOLOGY: ncbitaxon
 ## Copy of ncbitaxon is re-downloaded whenever source changes
+## version modifed from PO makefile: https://github.com/Planteome/plant-ontology/blob/master/Makefile
+## NOT currently working will need to figure this out.
 mirror/ncbitaxon.owl:
 	owltools $(URIBASE)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
