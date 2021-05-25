@@ -271,6 +271,10 @@ Biomolecules:
 
 `bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/biomolecules.tsv`
 
+Organism:
+
+`bcodmont/src/ontology/BCODMO_SM/biology/robot_templates/organism.tsv`
+
 **Matrix:**
 
 Region: `bcodmont/src/ontology/BCODMO_SM/matrix/robot_templates/region.tsv`
@@ -327,6 +331,12 @@ Run **biomolecules**.tsv:
 
 ```text
 robot template --template biology/robot_templates/biomolecules.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/biomolecules.owl" -o biology/robot_templates/biomolecules.owl
+```
+
+Run **organism**.tsv:
+
+```text
+robot template --template biology/robot_templates/organism.tsv -i ../bcodmont-edit.owl --prefix "RO:http://purl.obolibrary.org/obo/RO_" --prefix "BSM:http://purl.obolibrary.org/obo/BSM_"  --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/robot_templates/organism.owl" -o biology/robot_templates/organism.owl
 ```
 
 #### Quantifiers
