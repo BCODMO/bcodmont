@@ -1,0 +1,15 @@
+### BCODMO_SM Biology Organism terms:
+ECOCORE:00000010	#heterotroph
+ECOCORE:00000012	#mixotroph
+ECOCORE:00000023	#autotroph
+ECOCORE:00000088	#carnivore
+ECOCORE:00000129	#chemoautotroph
+ECOCORE:00000130	#photoautotroph
+ECOCORE:00000132	#chemoheterotroph
+ECOCORE:00000172	#anaerobe
+ECOCORE:00000173	#aerobe
+ECOCORE:00000177	#facultative anaerobe
+ECOCORE:00000178	#obligate anaerobe
+ECOCORE:00000179	#obligate aerobe
+ECOCORE:00000180	#microaerophile
+ECOCORE:00000181	#aerotolerant anaerobe
