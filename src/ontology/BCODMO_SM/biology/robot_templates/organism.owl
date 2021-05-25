@@ -108,7 +108,19 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0050003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
+        <obo:IAO_0000115 xml:lang="en">Classification by planktonic size range.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">plankton size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0050004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: &lt;0.2 um (viruses).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -117,10 +129,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050004 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 0.2-2.0 um (bacteria, very small Eukaryotes).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -129,10 +141,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050005 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 2-20 um (diatoms, dinoflagellates, protozoa).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -141,10 +153,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050006 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 20-200 um (diatoms, dinoflagellates, protozoa, copepod nauplii, etc.).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -153,10 +165,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050007 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 0.2-20 mm (mostly zooplankton).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -165,10 +177,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050008 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000063"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050003"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by size range: 2-20 cm.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -177,9 +189,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050009 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
         <obo:IAO_0000115 xml:lang="en">Plankton classification by general functional group.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -189,10 +201,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050010 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
         <obo:IAO_0000115 xml:lang="en">Plankton consisting of small animals and the immature stages of larger animals.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -201,10 +213,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050011 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
         <obo:IAO_0000115 xml:lang="en">Plankton consisting of small (mainly microscopic) photosynthetic organisms.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -213,10 +225,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050012 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050010"/>
         <obo:IAO_0000115 xml:lang="en">Plankton consisting of single-celled protozoa with cilia.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -225,9 +237,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050013 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
         <obo:IAO_0000115 xml:lang="en">The natural language (non-taxonomic) name of the type of organism that is the subject of a given investigation, study and/or specimen.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">subject organism common name</oboInOwl:hasExactSynonym>
@@ -239,10 +251,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050014 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050014"/>
         <obo:IAO_0000115 xml:lang="en">A limbless cold-blooded vertebrate animal with gills and fins and living wholly in water.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -252,10 +264,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050015 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050014"/>
         <obo:IAO_0000115 xml:lang="en">An organism capable of nitrogen fixation (conversion of atmospheric dinitrogen into bioavailable forms).</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Could be added to ECOCORE.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -266,10 +278,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050016 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050015"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050016"/>
         <obo:IAO_0000115 xml:lang="en">An organism which uses heterocycts for nitrogen fixation (conversion of atmospheric dinitrogen into bioavailable forms).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -279,9 +291,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050017 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050017">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050018">
         <obo:IAO_0000115 xml:lang="en">The classification groups of biological organisms based on shared characteristics.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -291,10 +303,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0050018 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0050019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050017"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
         <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the World Register of Marine Species (WoRMS) taxonomic classification database.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Future direction to make OBO compliant IDs for WoRMS</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -471,18 +483,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000063 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050002"/>
-        <obo:IAO_0000115 xml:lang="en">Classification by planktonic size range</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
-        <rdfs:label xml:lang="en">plankton size</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
@@ -500,7 +500,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
         <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the National Center for Biotechnology Information (NCBI) taxonomy database.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Cross listed in external repositories? Perhaps better to import relevant NCBITaxon subclasses and add them here.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -643,7 +643,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
         <obo:IAO_0000115 xml:lang="en">The relative level of a group of organisms in a taxonomic hierarchy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">taxon level</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
