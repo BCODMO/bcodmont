@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore #chebi
+IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore ncbitaxon #chebi
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -392,7 +392,6 @@ mirror/so.owl: mirror/so.trigger
 .PRECIOUS: mirror/%.owl
 
 
-
 ## ONTOLOGY: mi
 ## Copy of mi is re-downloaded whenever source changes
 mirror/mi.trigger: $(SRC)
@@ -403,8 +402,6 @@ mirror/mi.owl: mirror/mi.trigger
 .PRECIOUS: mirror/%.owl
 
 
-
-
 ## ONTOLOGY: ecocore
 ## Copy of ecocore is re-downloaded whenever source changes
 mirror/ecocore.trigger: $(SRC)
@@ -413,6 +410,14 @@ mirror/ecocore.owl: mirror/ecocore.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ecocore.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: ncbitaxon
+## Copy of ncbitaxon is re-downloaded whenever source changes
+mirror/ncbitaxon.owl:
+	$(OWLTOOLS) $(OBO)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
+.PRECIOUS: mirror/ncbitaxon.owl
+
 
 # # ENVO Makefile's verion of CHEBI import
 # # chebi.owl is large and the owlapi often times out when reading it; use the obo instead
