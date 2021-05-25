@@ -481,12 +481,18 @@ robot remove --input ../imports/mi_import.owl --axioms logical annotate --ontolo
 robot remove --input ../imports/ms_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/ms_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/ms_import_axioms_removed.owl" --output intermediate/ms_import_axioms_removed.owl
 ```
 
+**Make OP free version of ECOCORE import**. Only run after adding to ECOCORE import.
+
+```text
+robot remove --input ../imports/ecocore_import.owl --axioms logical annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/ecocore_import_axioms_removed.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/intermediate/ecocore_import_axioms_removed.owl" --output intermediate/ecocore_import_axioms_removed.owl
+```
+
 #### Merge Modules with Axiom free Import Ontologies
 
 This step will merge the axiom free import ontologies \(CHEBI, ENVO, UBERON, GO etc\) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules \(**compound** and **element**\), all four **matrix** modules \(region, biome, context and material\), and all current Biology modules.
 
 ```text
-robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input intermediate/obi_import_axioms_removed.owl --input intermediate/so_import_axioms_removed.owl --input intermediate/mi_import_axioms_removed.owl --input intermediate/ms_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input biology/robot_templates/biomolecules.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
+robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input intermediate/obi_import_axioms_removed.owl --input intermediate/so_import_axioms_removed.owl --input intermediate/mi_import_axioms_removed.owl --input intermediate/ms_import_axioms_removed.owl --input intermediate/ecocore_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input biology/robot_templates/biomolecules.owl --input biology/robot_templates/organism.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
 ```
 
 ### 4\) Filter merge product to create final modules
@@ -517,6 +523,12 @@ Filter **biomolecules** from the axiom-free merged ontology
 
 ```text
 robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:biomolecules" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/biomolecules.owl" --output biology/biomolecules.owl
+```
+
+Filter **organism** from the axiom-free merged ontology
+
+```text
+robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix "bsm:http://bcodmo/sm#" --select "oboInOwl:inSubset=bsm:organism" --select annotations --signature true annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/biology/organism.owl" --output biology/organism.owl
 ```
 
 #### Quantifiers
