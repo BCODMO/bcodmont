@@ -415,7 +415,7 @@ mirror/ecocore.owl: mirror/ecocore.trigger
 ## ONTOLOGY: ncbitaxon
 ## Copy of ncbitaxon is re-downloaded whenever source changes
 mirror/ncbitaxon.owl:
-	$(OWLTOOLS) $(OBO)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
+	owltools $(URIBASE)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
 
 
