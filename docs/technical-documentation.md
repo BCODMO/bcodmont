@@ -627,6 +627,12 @@ Rename the header column in a new units.tsv file:
 ./units/robot_templates/parse_units_export.py -i units/robot_templates/units_export.tsv -o units/robot_templates/units.tsv
 ```
 
+Create RDF/XML version of units file, `units.owl`:
+
+```text
+robot convert --input units/units.ttl --output units/units.owl
+```
+
 ## Maintaining BCO-SM
 
 ### Managing Imports
