@@ -56,7 +56,7 @@ electrical conductivity	electrical resistivity		BSM:0310001	electrical resistivi
 fugacity			BSM:0310002	fugacity							TO ADD TO PATO					http://bcodmo/sm#quantifiers
 porosity			PATO:0000973	porosity												http://bcodmo/sm#quantifiers
 pressure			PATO:0001025	pressure												http://bcodmo/sm#quantifiers
-salinity			PATO:0085001	salinity					An osmolarity quality inhering in a bearer by virtue of the total amount of ionic salts dissolved in the bearer.		Waiting for PR to be approved and merged in PATO. See https://github.com/pato-ontology/pato/pull/352					http://bcodmo/sm#quantifiers
+salinity			PATO:0085001	salinity												http://bcodmo/sm#quantifiers
 temperature			PATO:0000146	temperature												http://bcodmo/sm#quantifiers
 temperature	potential temperature		BSM:0310004	potential temperature	temperature				A temperature which would inhere in a bearer if such bearer were adiabatically compressed from it's existing temperature and pressure to a standard presure.				theta			http://bcodmo/sm#quantifiers
 turbidity			BSM:0310005	turbidity							TO ADD TO PATO High priority.					http://bcodmo/sm#quantifiers
