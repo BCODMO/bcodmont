@@ -1,23 +1,23 @@
-sub category 1	sub category 2	sub category 3	sub category 4	ontology ID	label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master paramater	Entity subset	category subset
-				ID	AL rdfs:label@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
-life stage				BSM:0020001	life stage				UBERON:0000105								http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	copepod life stage			BSM:0020002	copepod life stage	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	copepod life stage	C1		BSM:0020003	C1	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	copepod life stage	C2		BSM:0020004	C2	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	copepod life stage	C3		BSM:0020005	C3	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	copepod life stage	C4		BSM:0020006	C4	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	larvae			UBERON:0000069	larvae	life stage	larval										http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	nauplius			UBERON:0014406	nauplius	life stage	nauplii			"the first larval stage of many crustaceans, having an unsegmented body and a single eye."							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	juvenile			UBERON:0034919	juvenile	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	adult			UBERON:0000066	adult	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-life stage	adult	reproductive		UBERON:0018241	reproductive	adult											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process				BSM:0020007	biochemical process				NCIT:C28498								http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	photosynthesis			GO:0015979	photosynthesis	biochemical process											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	photosynthesis	alpha		BSM:0020008	alpha	photosynthesis				Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis–Irradiance Response Curve (P versus E curve)							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	photosynthesis	photoinhibition		GO:0010205	photoinhibition	photosynthesis				"Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis–Irradiance Response Curve (P versus E curve)"							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	photosynthesis	Fv/Fm		BSM:0020009	Fv/Fm	photosynthesis				Fv/Fm is a normalized ratio created by dividing variable fluorescence by maximum fluorescence. It is a measurement ratio that represents the maximum potential quantum efficiency of Photosystem II if all capable reaction centers were open.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	repsiration			GO:0045333	repsiration	biochemical process											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	production			BSM:0020010	production	biochemical process	growth			The synthesis of biomass; growth.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-biochemical process	production	primary production		BSM:0020011	primary production	production				The synthesis of organic compounds/biomass from inorganic carbon dioxide.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-behavior				GO:0007610	behavior												http://bcodmo/sm#biological	http://bcodmo/sm#physiology
-behavior	flight			GO:0007629	flight	behavior											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+sub category 1	sub category 2	sub category 3	sub category 4	ontology ID	label	prefered label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master parameter	Entity subset	category subset
+				ID	AL rdfs:label@en	AL IAO:0000111@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
+life stage				BSM:0020001	life stage	life stage				UBERON:0000105								http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	copepod life stage			BSM:0020002	copepod life stage	copepod life stage	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	copepod life stage	C1		BSM:0020003	C1	C1	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	copepod life stage	C2		BSM:0020004	C2	C2	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	copepod life stage	C3		BSM:0020005	C3	C3	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	copepod life stage	C4		BSM:0020006	C4	C4	copepod life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	larvae			UBERON:0000069	larvae	larvae	life stage	larval										http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	nauplius			UBERON:0014406	nauplius	nauplius	life stage	nauplii			"the first larval stage of many crustaceans, having an unsegmented body and a single eye."							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	juvenile			UBERON:0034919	juvenile	juvenile	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	adult			UBERON:0000066	adult	adult	life stage											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+life stage	adult	reproductive		UBERON:0018241	reproductive	reproductive	adult											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process				BSM:0020007	biochemical process	biochemical process				NCIT:C28498								http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	photosynthesis			GO:0015979	photosynthesis	photosynthesis	biochemical process											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	photosynthesis	alpha		BSM:0020008	alpha	alpha	photosynthesis				Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis-Irradiance Response Curve (P versus E curve)							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	photosynthesis	photoinhibition		GO:0010205	photoinhibition	photoinhibition	photosynthesis				"Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis-Irradiance Response Curve (P versus E curve)"							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	photosynthesis	Fv/Fm		BSM:0020009	Fv/Fm	Fv/Fm	photosynthesis				Fv/Fm is a normalized ratio created by dividing variable fluorescence by maximum fluorescence. It is a measurement ratio that represents the maximum potential quantum efficiency of Photosystem II if all capable reaction centers were open.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	repsiration			GO:0045333	repsiration	repsiration	biochemical process											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	production			BSM:0020010	production	production	biochemical process	growth			The synthesis of biomass; growth.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+biochemical process	production	primary production		BSM:0020011	primary production	primary production	production				The synthesis of organic compounds/biomass from inorganic carbon dioxide.							http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+behavior				GO:0007610	behavior	behavior												http://bcodmo/sm#biological	http://bcodmo/sm#physiology
+behavior	flight			GO:0007629	flight	flight	behavior											http://bcodmo/sm#biological	http://bcodmo/sm#physiology
