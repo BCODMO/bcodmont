@@ -27,6 +27,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -161,6 +167,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0020001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020001">
+        <obo:IAO_0000111 xml:lang="en">life stage</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">life stage</rdfs:label>
@@ -173,6 +180,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">copepod life stage</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">copepod life stage</rdfs:label>
@@ -184,6 +192,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C1</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C1</rdfs:label>
@@ -195,6 +204,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C2</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C2</rdfs:label>
@@ -206,6 +216,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C3</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C3</rdfs:label>
@@ -217,6 +228,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C4</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C4</rdfs:label>
@@ -227,6 +239,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0020007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020007">
+        <obo:IAO_0000111 xml:lang="en">biochemical process</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">biochemical process</rdfs:label>
@@ -239,7 +252,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
-        <obo:IAO_0000115 xml:lang="en">Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis�Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">alpha</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis-Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">alpha</rdfs:label>
@@ -251,6 +265,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
+        <obo:IAO_0000111 xml:lang="en">Fv/Fm</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Fv/Fm is a normalized ratio created by dividing variable fluorescence by maximum fluorescence. It is a measurement ratio that represents the maximum potential quantum efficiency of Photosystem II if all capable reaction centers were open.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -263,6 +278,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">production</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The synthesis of biomass; growth.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">growth</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
@@ -276,6 +292,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020010"/>
+        <obo:IAO_0000111 xml:lang="en">primary production</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The synthesis of organic compounds/biomass from inorganic carbon dioxide.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -287,6 +304,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
+        <obo:IAO_0000111 xml:lang="en">behavior</obo:IAO_0000111>
         <obo:IAO_0000115>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-09-20T14:06:08Z</oboInOwl:creation_date>
@@ -326,6 +344,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007629">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000111 xml:lang="en">flight</obo:IAO_0000111>
         <obo:IAO_0000115>The response to external or internal stimuli that results in the locomotory process of flight. Flight is the self-propelled movement of an organism through the air.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>flight behaviour</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -349,7 +368,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
-        <obo:IAO_0000115 xml:lang="en">Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis�Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">photoinhibition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis-Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
         <obo:IAO_0000115>The mechanism by which high light intensity inhibits photosynthesis through inactivation of the D1 protein of photosystem II.</obo:IAO_0000115>
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <oboInOwl:hasBroadSynonym>photosystem II inhibition</oboInOwl:hasBroadSynonym>
@@ -375,6 +395,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0015979">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">photosynthesis</obo:IAO_0000111>
         <obo:IAO_0000115>The synthesis by organisms of organic chemical compounds, especially carbohydrates, from carbon dioxide (CO2) using energy obtained from light rather than from the oxidation of chemical compounds.</obo:IAO_0000115>
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4895"/>
@@ -388,6 +409,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:label>photosynthesis</rdfs:label>
         <rdfs:label xml:lang="en">photosynthesis</rdfs:label>
     </owl:Class>
@@ -404,6 +426,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0045333">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">repsiration</obo:IAO_0000111>
         <obo:IAO_0000115>The enzymatic release of energy from inorganic and organic compounds (especially carbohydrates and fats) which either requires oxygen (aerobic respiration) or does not (anaerobic respiration).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>respiration</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>Wikipedia:Cellular_respiration</oboInOwl:hasDbXref>
@@ -435,6 +458,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">adult</obo:IAO_0000111>
         <obo:IAO_0000115>The stage of development at which the animal is fully formed, including immaturity and maturity. Includes both sexually immature stage, and adult stage.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>adult stage</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>BTO:0001043</oboInOwl:hasDbXref>
@@ -467,6 +491,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">larvae</obo:IAO_0000111>
         <obo:IAO_0000115>A distinct juvenile stage many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle.</obo:IAO_0000115>
         <obo:IAO_0000232>Uberon includes clade-specific subclasses, e.g. nematod larva</obo:IAO_0000232>
         <obo:UBPROP_0000008>It is a misunderstanding that the larval form always reflects the group&apos;s evolutionary history. It could be the case, but often the larval stage has evolved secondarily, as in insects. In these cases the larval form might differ more from the group&apos;s common origin than the adult form</obo:UBPROP_0000008>
@@ -764,6 +789,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0014406">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">nauplius</obo:IAO_0000111>
         <obo:IAO_0000115>The free-swimming first stage of the larva of certain crustaceans, having an unsegmented body with three pairs of appendages and a single median eye. The eye is known for that reason as the &apos;naupliar eye&apos;, and is often absent in later developmental stages, although it is retained into the adult form in some groups, such as the Notostraca.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">the first larval stage of many crustaceans, having an unsegmented body and a single eye.</obo:IAO_0000115>
         <obo:UBPROP_0000001>A crustacean larva in usually the first stage after leaving the egg and with three pairs of appendages, a median eye, and little or no segmentation[BTO:0000915].</obo:UBPROP_0000001>
@@ -802,6 +828,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0018241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000066"/>
+        <obo:IAO_0000111 xml:lang="en">reproductive</obo:IAO_0000111>
         <obo:IAO_0000115>A life cycle stage that starts at completion of development and growth of the sexually mature adult animal, and ends before senescence.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
         <dc:contributor rdf:resource="https://github.com/cmungall"/>
@@ -828,6 +855,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0034919">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">juvenile</obo:IAO_0000111>
         <obo:IAO_0000115>The stage of being no more dependent of the nest and/or from caregivers for subsistence while having not reach sexual maturity.</obo:IAO_0000115>
         <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
         <dc:contributor rdf:resource="https://github.com/cmungall"/>
