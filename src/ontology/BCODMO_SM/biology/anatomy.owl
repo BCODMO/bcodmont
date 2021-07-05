@@ -28,6 +28,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -222,6 +228,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0010002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010002">
+        <obo:IAO_0000111 xml:lang="en">anatomical structure</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structure components within a metazoan organism; body part.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -235,6 +242,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">lateral</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structural region referring to the side of a metazoan organism&apos;s body or body part.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This might be worth adding to UBERON perhaps as subclass to organism subdivision</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
@@ -248,6 +256,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">packed red blood cells</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Red blood cells that have been separated for blood transfusion.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Could be added to an appropriated OBO ontology see https://en.wikipedia.org/wiki/Packed_red_blood_cells.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
@@ -262,9 +271,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">hemoglobin</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">haemoglobin</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
         <rdfs:label xml:lang="en">hemoglobin</rdfs:label>
     </owl:Class>
     
@@ -274,6 +286,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">red blood cell</obo:IAO_0000111>
         <obo:IAO_0000115>A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BTO:0000424</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CALOHA:TS-0290</oboInOwl:hasDbXref>
@@ -302,9 +315,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">cell</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
         <rdfs:label xml:lang="en">cell</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12508"/>
     </owl:Class>
@@ -315,6 +330,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000111 xml:lang="en">female</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">female</rdfs:label>
@@ -326,6 +342,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000111 xml:lang="en">male</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">male</rdfs:label>
@@ -336,6 +353,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
+        <obo:IAO_0000111 xml:lang="en">sex</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">sex</rdfs:label>
@@ -347,6 +365,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">blood</obo:IAO_0000111>
         <obo:IAO_0000115>A fluid that is composed of blood plasma and erythrocytes.</obo:IAO_0000115>
         <obo:IAO_0000232>This class excludes blood analogues, such as the insect analog of blood. See UBERON:0000179 haemolymphatic fluid.</obo:IAO_0000232>
         <obo:UBPROP_0000001>A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]</obo:UBPROP_0000001>
@@ -457,6 +476,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000475">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">anatomical region</obo:IAO_0000111>
         <obo:IAO_0000115>Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">Structural regions within a metazoan organism.</obo:IAO_0000115>
         <obo:IAO_0000116>Reflects CARO2. todo - check the inclusion of FMA &apos;cardinal body part here&apos;, and check child terms for consistency</obo:IAO_0000116>
@@ -533,7 +553,7 @@
         <owl:annotatedTarget>Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-9114-8737"/>
         <oboInOwl:hasDbXref>CARO:0000032</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>CARO:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:DOS</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -542,6 +562,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">tissue</obo:IAO_0000111>
         <obo:IAO_0000115>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</obo:IAO_0000115>
         <obo:IAO_0000116>changed label and definition to reflect CARO2</obo:IAO_0000116>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0040300"/>
@@ -611,6 +632,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000912">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">mucus</obo:IAO_0000111>
         <obo:IAO_0000115>Mucus is a bodily fluid consisting of a slippery secretion of the lining of the mucous membranes in the body. It is a viscous colloid containing antiseptic enzymes (such as lysozyme) and immunoglobulins. Mucus is produced by goblet cells in the mucous membranes that cover the surfaces of the membranes. It is made up of mucins and inorganic salts suspended in water.</obo:IAO_0000115>
         <obo:UBPROP_0000007>mucoid</obo:UBPROP_0000007>
         <obo:UBPROP_0000007>mucous</obo:UBPROP_0000007>
@@ -651,6 +673,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000916">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">abdomen</obo:IAO_0000111>
         <obo:IAO_0000115>The subdivision of the vertebrate body between the thorax and pelvis. The ventral part of the abdomen contains the abdominal cavity and visceral organs. The dorsal part includes the abdominal section of the vertebral column.</obo:IAO_0000115>
         <obo:IAO_0000116>Vertebrate specific. In arthropods &apos;abdomen&apos; is the most distal section of the body which lies behind the thorax or cephalothorax. If need be we can introduce some grouping class</obo:IAO_0000116>
         <obo:UBPROP_0000007>abdominal</obo:UBPROP_0000007>
@@ -710,6 +733,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000974">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">neck</obo:IAO_0000111>
         <obo:IAO_0000115>An organism subdivision that extends from the head to the pectoral girdle, encompassing the cervical vertebral column.</obo:IAO_0000115>
         <obo:IAO_0000232>true necks are considered to be present when the pectoral girdle is separate from the skull - Tiktaalik is the earliest known fish to have a true neck.</obo:IAO_0000232>
         <obo:RO_0002174 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32443"/>
@@ -784,6 +808,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000975">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">sternum</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">sternum</rdfs:label>
@@ -795,6 +820,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">skin (epidermis)</obo:IAO_0000111>
         <obo:IAO_0000115>The outer epithelial layer of the skin that is superficial to the dermis.</obo:IAO_0000115>
         <obo:UBPROP_0000001>A cellular, multilayered epithelium derived from the ectoderm. Zebrafish epidermis consists only of living cells unlike terrestrial vertebrates in which dead, keratinized cells are present. Le Guellec et al, 2004.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001>The outer epithelial layer of the external integument of the body that is derived from the embryonic epiblast.[AAO]</obo:UBPROP_0000001>
@@ -893,6 +919,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">fat (adipose)</obo:IAO_0000111>
         <obo:IAO_0000115>Portion of connective tissue composed of adipocytes enmeshed in areolar tissue</obo:IAO_0000115>
         <obo:UBPROP_0000001>Connective tissue in which fat is stored.[TAO]</obo:UBPROP_0000001>
         <obo:UBPROP_0000001>Tissue that contains adipocytes, used for cushioning, thermal insulation, lubrication (primarily in the pericardium) and energy storage.[AAO]</obo:UBPROP_0000001>
@@ -1026,6 +1053,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">sweat</obo:IAO_0000111>
         <obo:IAO_0000115>Secretion produced by a sweat gland.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Sweat"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0038984"/>
@@ -1073,6 +1101,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">dorsal</obo:IAO_0000111>
         <obo:IAO_0000115>A major subdivision of an organism that is the entire part of the organism dorsal to a horizontal plane and bounded on one side by the same transverse plane. In vertebrares this includes the vertebral column..</obo:IAO_0000115>
         <obo:UBPROP_0000007>dorsal</obo:UBPROP_0000007>
         <obo:UBPROP_0000008>In humans, called the back, a large posterior area of the human body, rising from the top of the buttocks to the back of the neck and the shoulders. It is the surface opposite to the chest, its height being defined by the vertebral column (commonly referred to as the spine or backbone) and its breadth being supported by the ribcage and shoulders. The spinal canal runs through the spine and provides nerves to the rest of the body</obo:UBPROP_0000008>
@@ -1108,7 +1137,7 @@
         <owl:annotatedTarget>A major subdivision of an organism that is the entire part of the organism dorsal to a horizontal plane and bounded on one side by the same transverse plane. In vertebrares this includes the vertebral column..</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Dorsum_(anatomy)"/>
         <oboInOwl:hasDbXref>BSPO:0000063</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERONREF:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERONREF:0000006</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001137"/>
@@ -1135,6 +1164,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001690">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ear</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ear</rdfs:label>
@@ -1146,6 +1176,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001913">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">milk</obo:IAO_0000111>
         <obo:IAO_0000115>An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation.</obo:IAO_0000115>
         <obo:IAO_0000116>to axiomatize the different forms of mammary gland secretion an ontology of the phases of pregnancy/lactation is required. Using the existing GO def of lactation is circular.</obo:IAO_0000116>
         <obo:UBPROP_0000003>The detailed similarities of mammary glands in living monotremes, marsupials, and eutherians argue for a monophyletic origin of these glands, perhaps by the combination of parts of preexisting sebaceous and sweat glands.[well established][VHOG]</obo:UBPROP_0000003>
@@ -1198,7 +1229,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001913"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>ncit:Milk refers specifically to cow milk</owl:annotatedTarget>
-        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncit</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology>ncit</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001913"/>
@@ -1213,6 +1244,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001969">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">blood plasma</obo:IAO_0000111>
         <obo:IAO_0000115>The liquid component of blood, in which erythrocytes are suspended.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>plasma</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>portion of plasma</oboInOwl:hasBroadSynonym>
@@ -1274,6 +1306,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001970">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">bile</obo:IAO_0000111>
         <obo:IAO_0000115>vital aqueous secretion of the liver that is formed by hepatocytes and modified down stream by absorptive and secretory properties of the bile duct epithelium.</obo:IAO_0000115>
         <obo:UBPROP_0000008>In many species, bile is stored in the gallbladder and upon eating is discharged into the duodenum.</obo:UBPROP_0000008>
         <obo:UBPROP_0000009>aids the process of digestion of lipids in the small intestine</obo:UBPROP_0000009>
@@ -1338,6 +1371,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002355">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">pelvis</obo:IAO_0000111>
         <obo:IAO_0000115>The lower segment of the trunk, inferioposterior to the abdomen proper, in the transition area between the trunk and the lower limbs.</obo:IAO_0000115>
         <obo:UBPROP_0000007>pelvic</obo:UBPROP_0000007>
         <obo:UBPROP_0000012>MA and FMA differ in what they consider to be parts of the pelvis. MA includes ureter, urethra, urinary bladder, reproductive organs</obo:UBPROP_0000012>
@@ -1419,6 +1453,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002391">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">lymph</obo:IAO_0000111>
         <obo:IAO_0000115>Lymph is the fluid that is formed when interstitial fluid enters the conduits of the lymphatic system through lymph capillaries[WP].</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Lymph"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0024202"/>
@@ -1477,6 +1512,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004454">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ankle</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ankle</rdfs:label>
@@ -1488,6 +1524,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">muscle</obo:IAO_0000111>
         <obo:IAO_0000115>Muscle structures are contractile cells, tissues or organs that are found in multicellular organisms[GO].</obo:IAO_0000115>
         <obo:IAO_0000232>in some organisms such as drosophila, muscles can be single cells. This class groups together all discrete muscle elements, from multicellular muscle organs in vertebrates, to individual single-cell muscles in drisophila</obo:IAO_0000232>
         <oboInOwl:hasDbXref>EMAPA:32715</oboInOwl:hasDbXref>
@@ -1522,6 +1559,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">bodily fluid</obo:IAO_0000111>
         <obo:IAO_0000115>Liquid components of living organisms. includes fluids that are excreted or secreted from the body as well as body water that normally is not.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>fluid</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Body_fluid"/>
@@ -1566,6 +1604,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006378">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">whisker</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:comment xml:lang="en">UBERON has different label: strand of vibrissa hair</rdfs:comment>
@@ -1578,6 +1617,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009472">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">axilla (arm pit)</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">axilla (arm pit)</rdfs:label>
@@ -1589,6 +1629,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009754">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <obo:IAO_0000111 xml:lang="en">blubber</obo:IAO_0000111>
         <obo:IAO_0000115>A thick layer of vascularized adipose tissue found under the skin of all cetaceans, pinnipeds and sirenians.</obo:IAO_0000115>
         <obo:UBPROP_0000015>Lipid-rich, collagen fiber-laced blubber comprises the hypodermis and covers the whole body, except for parts of the appendages, strongly attached to the musculature and skeleton by highly organized, fan-shaped networks of tendons and ligaments. It can comprise up to 50% of the body mass of some marine mammals during some points in their lives, and can range from two inches (5 cm) thick in dolphins and smaller whales, to more than 12 inches (30 cm)thick in some bigger whales, such as right and bowhead whales</obo:UBPROP_0000015>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Blubber"/>
@@ -1613,6 +1654,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ventral</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ventral</rdfs:label>
@@ -1624,6 +1666,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013702">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">body</obo:IAO_0000111>
         <obo:IAO_0000115>The region of the organism associated with the visceral organs.</obo:IAO_0000115>
         <obo:UBPROP_0000001>Cardinal body part, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the vertebral column and ribcage. Examples: There is only one body proper[FMA:231424].</obo:UBPROP_0000001>
         <oboInOwl:hasDbXref>AEO:0000103</oboInOwl:hasDbXref>
