@@ -175,6 +175,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
         <obo:BFO_0000179>site</obo:BFO_0000179>
         <obo:BFO_0000180>Site</obo:BFO_0000180>
+        <obo:IAO_0000111 xml:lang="en">site</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a hole in the interior of a portion of cheese</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
@@ -215,6 +216,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">SRA Experiment</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">SRA Experiment</rdfs:label>
     </owl:Class>
@@ -224,6 +226,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400001">
+        <obo:IAO_0000111 xml:lang="en">filter fractionation size</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A size quality which inheres in an aquatic environmental material sample by virtue of such bearer being size fractioned via a filtration process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000168</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -236,6 +239,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400001"/>
+        <obo:IAO_0000111 xml:lang="en">maximum filter fractionation size</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A size quality which inheres in an aquatic environmental material sample by virtue of being the maximum particle size obtained when such bearer is subject to a size fractionating filtration process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000023</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -248,6 +252,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400001"/>
+        <obo:IAO_0000111 xml:lang="en">minimum filter fractionation size</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A size quality which inheres in an aquatic environmental material sample by virtue of being the minimum particle size obtained when such bearer is subject to a size fractionating filtration process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000022</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -260,6 +265,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001620"/>
+        <obo:IAO_0000111 xml:lang="en">latitude start</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the starting latitude coordinate of a site during a specimen collection process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000076</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -272,6 +278,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001620"/>
+        <obo:IAO_0000111 xml:lang="en">latitude stop</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the latitude coordinate of a site at the end of a specimen collection process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000079</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -284,6 +291,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001621"/>
+        <obo:IAO_0000111 xml:lang="en">longitude start</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the starting longitude coordinate of a site during a specimen collection process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000077</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -296,6 +304,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001621"/>
+        <obo:IAO_0000111 xml:lang="en">longitude stop</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the longitude coordinate of a site at the end of a specimen collection process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000078</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -308,6 +317,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
+        <obo:IAO_0000111 xml:lang="en">sample collection start time</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the start time when the specimens are collected.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000008</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -320,6 +330,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
+        <obo:IAO_0000111 xml:lang="en">sample collection end time</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the time when the specimens are finished being collected.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000009</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -331,6 +342,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400010">
+        <obo:IAO_0000111 xml:lang="en">sample collection date</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen occurred.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In OMIABIS should add to OBI?</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -344,6 +356,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400010"/>
+        <obo:IAO_0000111 xml:lang="en">sample collection date start</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen began.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample collection date start</rdfs:label>
@@ -355,6 +368,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400010"/>
+        <obo:IAO_0000111 xml:lang="en">sample collection date end</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen ended.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample collection date end</rdfs:label>
@@ -365,6 +379,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400013">
+        <obo:IAO_0000111 xml:lang="en">external repository</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">external repository</rdfs:label>
     </owl:Class>
@@ -375,6 +390,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <obo:IAO_0000111 xml:lang="en">omics repository</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">omics repository</rdfs:label>
     </owl:Class>
@@ -385,6 +401,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">BioProject</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">BioProject</rdfs:label>
         <skos:closeMatch rdf:resource="data:2786"/>
@@ -396,6 +413,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">BioSample</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">BioSample</rdfs:label>
         <skos:closeMatch rdf:resource="data:2786"/>
@@ -407,6 +425,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <obo:IAO_0000111 xml:lang="en">ENA</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">ENA</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002136"/>
@@ -418,6 +437,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <obo:IAO_0000111 xml:lang="en">Zenodo</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">Zenodo</rdfs:label>
     </owl:Class>
@@ -428,6 +448,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <obo:IAO_0000111 xml:lang="en">PANGEA</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">PANGEA</rdfs:label>
     </owl:Class>
@@ -438,6 +459,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400013"/>
+        <obo:IAO_0000111 xml:lang="en">Dryad</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">Dryad</rdfs:label>
     </owl:Class>
@@ -447,6 +469,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400022">
+        <obo:IAO_0000111 xml:lang="en">accession</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">identifier</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">accession</rdfs:label>
@@ -460,6 +483,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <obo:IAO_0000111 xml:lang="en">NCBI</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">NCBI</rdfs:label>
         <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45799"/>
@@ -471,6 +495,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">GEO</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">Gene Expression Omnibus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">GEO</rdfs:label>
@@ -483,6 +508,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400014"/>
+        <obo:IAO_0000111 xml:lang="en">PRIDE</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">PRIDE</rdfs:label>
         <skos:exactMatch rdf:resource="PRIDE:0000030"/>
@@ -493,6 +519,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <obo:IAO_0000111 xml:lang="en">data label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
@@ -531,6 +558,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140">
+        <obo:IAO_0000111 xml:lang="en">setting datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A settings datum is a datum that denotes some configuration of an instrument.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/3/2009 Feedback from OBI
@@ -550,6 +578,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000747">
         <obo:IAO_0000111>material sample</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">sample</obo:IAO_0000111>
         <obo:IAO_0000112>blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A material entity that has the material sample role</obo:IAO_0000115>
@@ -567,6 +596,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001614">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">GenBank</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">GenBank ID</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A CRID symbol uniquely indentifies the submitted GeneBank sequence record.</obo:IAO_0000115>
@@ -576,7 +606,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <oboInOwl:hasExactSynonym xml:lang="en">RefSeq</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:comment xml:lang="en">Technically GenBank &amp; RefSeq are different, but do not expect DMs to be able to identify the specific sub-databases within NCBI, including protein vs gene. However, distinction can be made for SRA.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Technically GenBank &amp; RefSeq are different, but do not expect DMs to identify the specific sub-databases within NCBI, including protein vs gene. However, distinction can be made for SRA.</rdfs:comment>
         <rdfs:label xml:lang="en">GenBank</rdfs:label>
         <rdfs:label xml:lang="en">GenBank ID</rdfs:label>
         <skos:exactMatch rdf:resource="data:1098"/>
@@ -589,6 +619,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001615">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001898"/>
         <obo:IAO_0000111 xml:lang="en">investigation description</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">study description</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that describes an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -606,6 +637,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0001619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001619">
+        <obo:IAO_0000111 xml:lang="en">sample collection time</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">specimen collection time measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the time when the specimens are collected.</obo:IAO_0000115>
@@ -624,6 +656,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0001620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001620">
+        <obo:IAO_0000111 xml:lang="en">latitude</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">latitude coordinate measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the latitude coordinate of a site.</obo:IAO_0000115>
@@ -642,6 +675,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0001621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001621">
+        <obo:IAO_0000111 xml:lang="en">longitude</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">longitude coordinate measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the measure of the longitude coordinate of a site.</obo:IAO_0000115>
@@ -662,6 +696,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001898"/>
         <obo:IAO_0000111 xml:lang="en">investigation title</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">study title</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that denotes an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -696,6 +731,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002464">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400023"/>
+        <obo:IAO_0000111 xml:lang="en">SRA Sample</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">SRS identifier</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">An accession number that applies to a database record for an individual sample object in an NCBI Sequence Read Archive (SRA) submission. These records are imported from the NCBI BioSample database.</obo:IAO_0000115>
