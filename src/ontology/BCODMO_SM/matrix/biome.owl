@@ -25,6 +25,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -63,13 +69,13 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000446 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000446">
+        <obo:IAO_0000111 xml:lang="en">terrestrial</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is  primarily or completely situated on a landmass.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>LTER:798</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SPIRE:Terrestrial</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym>terrestrial realm</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
-        <rdfs:label xml:lang="en">terrestrial</rdfs:label>
         <rdfs:label>terrestrial biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -84,6 +90,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000447 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000447">
+        <obo:IAO_0000111 xml:lang="en">marine</obo:IAO_0000111>
         <obo:IAO_0000115>An aquatic biome which is determined by a marine water body.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SPIRE:Marine</oboInOwl:hasDbXref>
         <oboInOwl:hasRelatedSynonym>marine realm</oboInOwl:hasRelatedSynonym>
@@ -91,7 +98,6 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>This biome includes open-ocean and unprotected coastal ecosystems, characterized by exposure to wave action, tidal fluctuation, and ocean currents as well as systems that largely resemble these. Water in the marine biome is generally within the salinity range of seawater: 30 to 38 ppt.</rdfs:comment>
-        <rdfs:label xml:lang="en">marine</rdfs:label>
         <rdfs:label>marine biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -109,12 +115,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002030">
+        <obo:IAO_0000111 xml:lang="en">aquatic</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is determined by a water body and which has ecological climax communities adapted to life in or on water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>LTER:41</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <rdfs:comment xml:lang="en">This can be thought of as any non-marine environment, including freshwater systems as well as saline water bodies.</rdfs:comment>
-        <rdfs:label xml:lang="en">aquatic</rdfs:label>
         <rdfs:label>aquatic biome</rdfs:label>
     </owl:Class>
 </rdf:RDF>
