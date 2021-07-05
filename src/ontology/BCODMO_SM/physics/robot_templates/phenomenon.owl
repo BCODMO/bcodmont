@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/physics/robot_templates/phenomenon.owl"/>
     
@@ -23,6 +24,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -35,9 +42,21 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     
 
 
@@ -55,11 +74,15 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0320001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0320001">
-        <obo:IAO_0000115 xml:lang="en">A region in a fluid in which the flow revolves around an axis line.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">vortex</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A region in a fluid in which the flow revolves around an axis line. Note also in matrix context</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Add to ENVO.</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:comment xml:lang="en">Add to ENVO.</rdfs:comment>
         <rdfs:label xml:lang="en">vortex</rdfs:label>
+        <skos:closeMatch rdf:resource="A region in a fluid in which the flow revolves around an axis line."/>
     </owl:Class>
     
 
@@ -67,6 +90,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">lake surface</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">lake surface</rdfs:label>
@@ -78,20 +104,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine neritic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine neritic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000207 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic zone</rdfs:label>
     </owl:Class>
     
 
@@ -100,6 +116,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000208">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine pelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine pelagic zone</rdfs:label>
@@ -111,6 +128,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000209">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine photic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine photic zone</rdfs:label>
@@ -122,6 +140,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000210">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine aphotic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine aphotic zone</rdfs:label>
@@ -132,7 +151,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000211 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000211">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000208"/>
+        <obo:IAO_0000111 xml:lang="en">marine bathypelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine bathypelagic zone</rdfs:label>
@@ -143,7 +163,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000212 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000212">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000208"/>
+        <obo:IAO_0000111 xml:lang="en">marine abyssalpelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine abyssalpelagic zone</rdfs:label>
@@ -154,7 +175,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000213 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000213">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000208"/>
+        <obo:IAO_0000111 xml:lang="en">marine mesopelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine mesopelagic zone</rdfs:label>
@@ -165,7 +187,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000208"/>
+        <obo:IAO_0000111 xml:lang="en">hadalpelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">hadalpelagic zone</rdfs:label>
@@ -176,6 +199,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000275 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">tornado</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tornado</rdfs:label>
@@ -186,6 +212,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000409 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">whirlpool</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">whirlpool</rdfs:label>
@@ -193,19 +221,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_00000442 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000442">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">maelstrom</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00002130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000283"/>
+        <obo:IAO_0000111 xml:lang="en">hypolimnion</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">hypolimnion</rdfs:label>
@@ -216,6 +236,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000283"/>
+        <obo:IAO_0000111 xml:lang="en">epilimnion</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">epilimnion</rdfs:label>
@@ -226,6 +248,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002269"/>
+        <obo:IAO_0000111 xml:lang="en">metalimnion</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">metalimnion</rdfs:label>
@@ -236,6 +260,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002269 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">thermocline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">thermocline</rdfs:label>
@@ -246,6 +272,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002270 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">chemocline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">chemocline</rdfs:label>
@@ -256,30 +284,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">upwelling</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">upwelling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000006">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">coastal upwelling</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine pelagic zone</rdfs:label>
     </owl:Class>
     
 
@@ -288,6 +297,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine benthic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine benthic zone</rdfs:label>
@@ -295,178 +305,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000024"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine neritic benthic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000024"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine bathyal zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000024"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine abyssal zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000028 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000024"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine hadal zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000032 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">neritic pelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic pelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic sea surface microlayer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000208"/>
+        <obo:IAO_0000111 xml:lang="en">marine epipelagic zone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic epipelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic mesopelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic bathypelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000038 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic abyssopelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000039 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic hadal pelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">oceanic benthopelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000041 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">neritic sea surface microlayer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000042 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">neritic epipelagic zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000043 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">neritic mesopelagic zone</rdfs:label>
+        <rdfs:label xml:lang="en">marine epipelagic zone</rdfs:label>
     </owl:Class>
     
 
@@ -475,6 +321,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">marine wind mixed layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine wind mixed layer</rdfs:label>
@@ -485,6 +332,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">marine benthic storm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine benthic storm</rdfs:label>
@@ -495,9 +344,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">downwelling</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine downwelling</rdfs:label>
+        <rdfs:label xml:lang="en">downwelling</rdfs:label>
     </owl:Class>
     
 
@@ -505,6 +356,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001607"/>
+        <obo:IAO_0000111 xml:lang="en">marine current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine current</rdfs:label>
@@ -515,6 +368,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">marine streamer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine streamer</rdfs:label>
@@ -525,9 +380,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">mesoscale marine eddy</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine eddy</rdfs:label>
+        <rdfs:label xml:lang="en">mesoscale marine eddy</rdfs:label>
     </owl:Class>
     
 
@@ -535,6 +392,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">oceanic front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">oceanic front</rdfs:label>
@@ -545,6 +404,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000299"/>
+        <obo:IAO_0000111 xml:lang="en">marine Taylor column</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine Taylor column</rdfs:label>
@@ -555,6 +416,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">oceanic gyre</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">oceanic gyre</rdfs:label>
@@ -562,49 +425,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000075 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000075">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine thermocline</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000076 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000076">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine chemocline</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000077">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine pycnocline</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000079 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000079">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine lysocline</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">pelagic isothermal surface</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">pelagic isothermal surface</rdfs:label>
@@ -615,6 +441,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">pelagic isohaline surface</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">pelagic isohaline surface</rdfs:label>
@@ -625,6 +454,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">pelagic isopycnal surface</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">pelagic isopycnal surface</rdfs:label>
@@ -635,6 +467,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">estuarine front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">estuarine front</rdfs:label>
@@ -645,6 +479,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">plume front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">plume front</rdfs:label>
@@ -655,6 +491,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000086 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">coastal buoyancy current front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">coastal buoyancy current front</rdfs:label>
@@ -665,6 +503,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">tidal mixing front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tidal mixing front</rdfs:label>
@@ -675,6 +515,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">mid-shelf fronts</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">mid-shelf fronts</rdfs:label>
@@ -685,6 +527,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">shelf-slope/shelf-break front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">shelf-slope/shelf-break front</rdfs:label>
@@ -695,6 +539,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">coastal upwelling front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">coastal upwelling front</rdfs:label>
@@ -705,6 +551,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">topographic upwelling front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">topographic upwelling front</rdfs:label>
@@ -715,6 +563,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">equatorial upwelling front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">equatorial upwelling front</rdfs:label>
@@ -725,6 +575,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">boundary current front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">boundary current front</rdfs:label>
@@ -735,6 +587,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">subtropical convergence front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">subtropical convergence front</rdfs:label>
@@ -745,6 +599,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000095 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">marginal ice zone front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marginal ice zone front</rdfs:label>
@@ -755,6 +611,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">water mass front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">water mass front</rdfs:label>
@@ -765,6 +623,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000071"/>
+        <obo:IAO_0000111 xml:lang="en">surface convergence</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">surface convergence</rdfs:label>
@@ -775,6 +635,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">deep ocean current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">deep ocean current</rdfs:label>
@@ -785,6 +647,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000099 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">marine surface current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine surface current</rdfs:label>
@@ -795,6 +659,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">along-front current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">along-front current</rdfs:label>
@@ -805,6 +671,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">warm surface current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">warm surface current</rdfs:label>
@@ -815,6 +683,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <obo:IAO_0000111 xml:lang="en">cold surface current</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">cold surface current</rdfs:label>
@@ -822,29 +692,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000103">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">western boundary current</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000104">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">eastern boundary current</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000258">
+        <obo:IAO_0000111 xml:lang="en">fluid cline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">fluid cline</rdfs:label>
@@ -855,6 +706,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000259 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">pycnocline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">pycnocline</rdfs:label>
@@ -865,6 +718,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000283">
+        <obo:IAO_0000111 xml:lang="en">lake layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">lake layer</rdfs:label>
@@ -875,6 +729,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000295 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000295">
+        <obo:IAO_0000111 xml:lang="en">marine layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine layer</rdfs:label>
@@ -885,6 +740,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000299">
+        <obo:IAO_0000111 xml:lang="en">Taylor column</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">Taylor column</rdfs:label>
@@ -895,6 +751,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000299"/>
+        <obo:IAO_0000111 xml:lang="en">atmospheric Taylor column</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">atmospheric Taylor column</rdfs:label>
@@ -906,6 +764,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000323">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">atmospheric boundary layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">atmospheric boundary layer</rdfs:label>
@@ -916,6 +775,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000326 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000326">
+        <obo:IAO_0000111 xml:lang="en">deep chlorophyll maximum layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">deep chlorophyll maximum layer</rdfs:label>
@@ -926,6 +786,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000353 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000353">
+        <obo:IAO_0000111 xml:lang="en">eddy field</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">eddy field</rdfs:label>
@@ -937,6 +798,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000538">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">stratosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">stratosphere</rdfs:label>
@@ -948,6 +810,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000539">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">mesosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">mesosphere</rdfs:label>
@@ -959,6 +822,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000540">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">troposphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">troposphere</rdfs:label>
@@ -970,6 +834,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000541">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">thermosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">thermosphere</rdfs:label>
@@ -981,6 +846,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000542">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">ozone layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ozone layer</rdfs:label>
@@ -992,6 +858,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000543">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000811"/>
+        <obo:IAO_0000111 xml:lang="en">atmospheric layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">atmospheric layer</rdfs:label>
@@ -1003,6 +870,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000545">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">ionosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ionosphere</rdfs:label>
@@ -1014,6 +882,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000546">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">exosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">exosphere</rdfs:label>
@@ -1025,6 +894,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000547">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001276"/>
+        <obo:IAO_0000111 xml:lang="en">glaze ice layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">glaze ice layer</rdfs:label>
@@ -1036,6 +906,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000675">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000811"/>
+        <obo:IAO_0000111 xml:lang="en">atmospheric column</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">atmospheric column</rdfs:label>
@@ -1046,6 +917,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
+        <obo:IAO_0000111 xml:lang="en">tsunami</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tsunami</rdfs:label>
@@ -1056,6 +929,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000715 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000689"/>
+        <obo:IAO_0000111 xml:lang="en">meteotsunami</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">meteotsunami</rdfs:label>
@@ -1066,6 +942,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000793">
+        <obo:IAO_0000111 xml:lang="en">wind</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">wind</rdfs:label>
@@ -1076,6 +954,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000811 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000811">
+        <obo:IAO_0000111 xml:lang="en">atmosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">atmosphere</rdfs:label>
@@ -1086,6 +965,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000862 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000862">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">turbulent aquatic surface layer</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">turbulent aquatic surface layer</rdfs:label>
@@ -1093,9 +975,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000876 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000876">
+        <obo:IAO_0000111 xml:lang="en">storm</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">storm</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000878 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000878">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001294"/>
+        <obo:IAO_0000111 xml:lang="en">thunderstorm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">thunderstorm</rdfs:label>
@@ -1106,6 +1001,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000879 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000879">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">rainstorm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">rainstorm</rdfs:label>
@@ -1113,19 +1010,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000880 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000880">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">hailstorm</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000881 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">snowstorm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">snowstorm</rdfs:label>
@@ -1136,6 +1025,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000882 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000882">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">icestorm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">icestorm</rdfs:label>
@@ -1146,6 +1037,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000903 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000903">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">blizzard</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">blizzard</rdfs:label>
@@ -1156,6 +1049,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000904 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000904">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">ground blizzard</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ground blizzard</rdfs:label>
@@ -1166,6 +1061,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000982 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000982">
+        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">water flow</rdfs:label>
@@ -1176,6 +1073,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001026">
+        <obo:IAO_0000111 xml:lang="en">electromagnetic radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">electromagnetic radiation</rdfs:label>
@@ -1186,6 +1084,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001097">
+        <obo:IAO_0000111 xml:lang="en">tectonic plate</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tectonic plate</rdfs:label>
@@ -1196,6 +1095,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001191 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001191">
+        <obo:IAO_0000111 xml:lang="en">water surface</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">water surface</rdfs:label>
@@ -1207,6 +1108,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001211">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">stellar radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">stellar radiation</rdfs:label>
@@ -1217,6 +1119,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001276 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001276">
+        <obo:IAO_0000111 xml:lang="en">ice layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ice layer</rdfs:label>
@@ -1227,6 +1130,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001294 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">convective storm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">convective storm</rdfs:label>
@@ -1234,19 +1139,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001295 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001295">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">extra-tropical cyclone</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001296 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">tropical storm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tropical storm</rdfs:label>
@@ -1257,6 +1154,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001297 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">cyclone</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">cyclone</rdfs:label>
@@ -1264,32 +1163,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001298 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001298">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">warm core cyclone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001301 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001301">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">estuary layer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001333 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001342"/>
+        <obo:IAO_0000111 xml:lang="en">tidal flow</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine tidal flow</rdfs:label>
     </owl:Class>
     
@@ -1298,6 +1177,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001336 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001342"/>
+        <obo:IAO_0000111 xml:lang="en">marine tidal flow</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">marine tidal flow</rdfs:label>
@@ -1309,6 +1191,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
+        <obo:IAO_0000111 xml:lang="en">tidal flow</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">tidal flow</rdfs:label>
@@ -1319,8 +1204,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001485 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001485">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">multiple vortex tornado</rdfs:label>
     </owl:Class>
     
@@ -1329,8 +1214,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001486 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001486">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">landspout</rdfs:label>
     </owl:Class>
     
@@ -1339,8 +1224,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001487 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001487">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">waterspout</rdfs:label>
     </owl:Class>
     
@@ -1350,6 +1235,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001543">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001276"/>
+        <obo:IAO_0000111 xml:lang="en">water ice surface layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">water ice surface layer</rdfs:label>
@@ -1360,6 +1246,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001551 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
+        <obo:IAO_0000111 xml:lang="en">ice lead</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ice lead</rdfs:label>
@@ -1371,6 +1260,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001581">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
+        <obo:IAO_0000111 xml:lang="en">sea surface layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">sea surface layer</rdfs:label>
@@ -1381,8 +1271,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001607">
+        <obo:IAO_0000111 xml:lang="en">current</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">current</rdfs:label>
         <rdfs:label xml:lang="en">water current</rdfs:label>
     </owl:Class>
     
@@ -1392,6 +1285,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001631">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
+        <obo:IAO_0000111 xml:lang="en">groundwater discharge</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">groundwater discharge</rdfs:label>
@@ -1403,6 +1299,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
+        <obo:IAO_0000111 xml:lang="en">groundwater flow</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">groundwater flow</rdfs:label>
@@ -1414,6 +1313,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001672">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">frontal surface of a weather front</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">frontal surface of a weather front</rdfs:label>
@@ -1424,6 +1324,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001674 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">lysocline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">lysocline</rdfs:label>
@@ -1434,6 +1336,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001675 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001675">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
+        <obo:IAO_0000111 xml:lang="en">nutricline</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">nutricline</rdfs:label>
@@ -1441,19 +1345,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001676 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001676">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">marine cline</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001681 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001681">
+        <obo:IAO_0000111 xml:lang="en">weather front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">weather front</rdfs:label>
@@ -1464,6 +1360,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001698 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">polar front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">polar front</rdfs:label>
@@ -1474,6 +1373,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001706 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">cold front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">cold front</rdfs:label>
@@ -1484,6 +1386,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001707 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001707">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">warm front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">warm front</rdfs:label>
@@ -1494,6 +1399,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001708 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">anafront</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">anafront</rdfs:label>
@@ -1504,6 +1412,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001709 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">katafront</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">katafront</rdfs:label>
@@ -1514,6 +1425,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">intertropical front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">intertropical front</rdfs:label>
@@ -1525,6 +1439,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001712">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <obo:IAO_0000111 xml:lang="en">free atmosphere</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">free atmosphere</rdfs:label>
@@ -1535,6 +1450,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001713 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001713">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">upper front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">upper front</rdfs:label>
@@ -1545,6 +1463,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001714 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001714">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">occluded front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">occluded front</rdfs:label>
@@ -1555,8 +1476,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001715 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001715">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">cold occluded front</rdfs:label>
     </owl:Class>
     
@@ -1565,8 +1486,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001716">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">warm occluded front</rdfs:label>
     </owl:Class>
     
@@ -1575,8 +1496,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001717 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001717">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">neutral occluded front</rdfs:label>
     </owl:Class>
     
@@ -1585,19 +1506,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001718 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001718">
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">secondary cold front</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001729 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001729">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:label xml:lang="en">nautical squall</rdfs:label>
     </owl:Class>
     
 
@@ -1605,6 +1516,9 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001745 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001745">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001681"/>
+        <obo:IAO_0000111 xml:lang="en">quasi-stationary front</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">quasi-stationary front</rdfs:label>
@@ -1615,6 +1529,8 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001749 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001749">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
+        <obo:IAO_0000111 xml:lang="en">wind storm</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">wind storm</rdfs:label>
@@ -1626,6 +1542,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000793"/>
+        <obo:IAO_0000111 xml:lang="en">wind</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">wind gust</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">wind gust</rdfs:label>
@@ -1637,6 +1556,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001861">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">shortwave radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">shortwave radiation</rdfs:label>
@@ -1648,6 +1568,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001864">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001211"/>
+        <obo:IAO_0000111 xml:lang="en">photosynthetically active radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">photosynthetically active radiation</rdfs:label>
@@ -1659,6 +1580,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001276"/>
+        <obo:IAO_0000111 xml:lang="en">grease ice layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">grease ice layer</rdfs:label>
@@ -1670,6 +1592,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001276"/>
+        <obo:IAO_0000111 xml:lang="en">slush ice layer</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">slush ice layer</rdfs:label>
@@ -1681,6 +1604,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001212">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">microwave radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">microwave radiation</rdfs:label>
@@ -1692,6 +1616,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001213">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">radio wave radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">radio wave radiation</rdfs:label>
@@ -1703,6 +1628,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">infrared radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">infrared radiation</rdfs:label>
@@ -1714,6 +1640,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001215">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">visible spectrum radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">visible spectrum radiation</rdfs:label>
@@ -1725,6 +1652,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">ultraviolet radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">ultraviolet radiation</rdfs:label>
@@ -1736,6 +1664,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001217">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">X-ray radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">X-ray radiation</rdfs:label>
@@ -1747,6 +1676,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001218">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000111 xml:lang="en">gamma-ray radiation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">gamma-ray radiation</rdfs:label>
@@ -1757,6 +1687,8 @@
     <!-- http://semanticscience.org/resource/SIO_000650 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000650">
+        <obo:IAO_0000111 xml:lang="en">wave</obo:IAO_0000111>
+        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">wave</rdfs:label>
