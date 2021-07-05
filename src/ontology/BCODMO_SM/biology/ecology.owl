@@ -26,6 +26,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -179,6 +185,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
+        <obo:IAO_0000111 xml:lang="en">coral reef</obo:IAO_0000111>
         <obo:IAO_0000115>Aragonite structures produced by living organisms, found in shallow, marine waters with little nutrients in the water.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:127</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>EcoLexicon:coral_reef</oboInOwl:hasDbXref>
