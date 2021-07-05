@@ -180,6 +180,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000111 xml:lang="en">gene name</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A unique gene name approved by an organism specific nomenclature committee.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">gene symbol</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -195,6 +196,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000111 xml:lang="en">gene description</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Brief description of gene function.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
@@ -208,6 +210,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">protein sequence</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A protein acid sequence is the character representation of the molecular structure of a protein.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
@@ -222,6 +225,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">peptide sequence</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">In mass spectrometery, peptides are shorter amino acid sequences found within a protein that are generated from enzymatic cleavage of a protein. The sequence describes the order of amino acids in the peptide.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
@@ -236,6 +240,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">Enzyme Commision</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A numerical classification scheme for enzymes, based on the chemical reactions they catalyze.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Definition source https://archive.org/details/enzymenomenclatu0000inte_d6c2</obo:IAO_0000116>
         <oboInOwl:hasExactSynonym xml:lang="en">Enzyme Commision number</oboInOwl:hasExactSynonym>
@@ -252,6 +257,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16670">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
         <obo:IAO_0000111>peptide</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">peptide</obo:IAO_0000111>
         <obo:IAO_0000115>Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <chebi:charge>0</chebi:charge>
@@ -312,6 +318,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16991">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111 xml:lang="en">DNA</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
         <rdfs:label xml:lang="en">DNA</rdfs:label>
@@ -323,6 +330,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33697">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111 xml:lang="en">RNA</obo:IAO_0000111>
         <obo:IAO_0000111>ribonucleic acid</obo:IAO_0000111>
         <obo:IAO_0000115>High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
@@ -337,6 +345,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <obo:IAO_0000111 xml:lang="en">protein</obo:IAO_0000111>
         <obo:IAO_0000115>A biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:13677</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:14911</oboInOwl:hasAlternativeId>
@@ -364,6 +373,7 @@
     <!-- http://purl.obolibrary.org/obo/MI_0447 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0447">
+        <obo:IAO_0000111 xml:lang="en">omics annotation</obo:IAO_0000111>
         <obo:IAO_0000115>A database describing a feature on a molecule.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">Descriptive annotations of omics data linking to externally controlled annotation resources.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>feature xref</oboInOwl:hasExactSynonym>
@@ -394,6 +404,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0451">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">PFam</obo:IAO_0000111>
         <obo:IAO_0000115>Pfam is a large collection of multiple sequence alignments and hidden Markov models covering many common protein domains.
 http://www.sanger.ac.uk/Software/Pfam</obo:IAO_0000115>
         <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
@@ -433,6 +444,7 @@ http://www.sanger.ac.uk/Software/Pfam</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">TIGRFam ID</obo:IAO_0000111>
         <obo:IAO_0000115>TIGRFAMs is a collection of protein families, featuring curated multiple sequence alignments, Hidden Markov Models (HMMs) and annotation.
 http://www.tigr.org/TIGRFAMs</obo:IAO_0000115>
         <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
@@ -472,6 +484,7 @@ http://www.tigr.org/TIGRFAMs</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0470">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">KEGG</obo:IAO_0000111>
         <obo:IAO_0000115>KEGG (Kyoto Encyclopedia of Genes and Genomes) is a knowledge base for systematic analysis of gene functions, linking genomic information with higher order functional information and also supplies information about chemical compounds, enzyme molecules and enzymatic reactions.
 http://www.genome.ad.jp/kegg/</obo:IAO_0000115>
         <oboInOwl:hasDbXref>id-validation-regexp:</oboInOwl:hasDbXref>
@@ -513,6 +526,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_1083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">COG</obo:IAO_0000111>
         <obo:IAO_0000115>Clusters of Orthologous Groups of proteins (COGs) were delineated by comparing protein sequences encoded in complete genomes, representing major phylogenetic lineages. Each COG consists of individual proteins or groups of paralogs from at least 3 lineages and thus corresponds to an ancient conserved domain.</obo:IAO_0000115>
         <oboInOwl:created_by>orchard</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-07-05T10:59:06Z</oboInOwl:creation_date>
@@ -548,6 +562,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_1097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0447"/>
+        <obo:IAO_0000111 xml:lang="en">UniProt</obo:IAO_0000111>
         <obo:IAO_0000115>UniProt is a centralized repository of protein sequences with comprehensive coverage and a systematic approach to protein annotation, incorporating, interpreting, integrating and standardizing data from numerous sources and is the most comprehensive catalog of protein sequences and functional annotation.</obo:IAO_0000115>
         <oboInOwl:created_by>orchard</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-07-06T08:14:40Z</oboInOwl:creation_date>
@@ -581,6 +596,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000883">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">protein symbol</obo:IAO_0000111>
         <obo:IAO_0000115>A short name or symbol of a protein (e.g., HSF 1 or HSF1_HUMAN).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -610,6 +626,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000886">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">protein description</obo:IAO_0000111>
         <obo:IAO_0000115>A long name describing the function of the protein.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -639,6 +656,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000933">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">protein modifications</obo:IAO_0000111>
         <obo:IAO_0000115>Encoding of modifications of the protein sequence from the specified accession, written in PEFF notation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -667,6 +685,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1001844">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">MS1 feature area</obo:IAO_0000111>
         <obo:IAO_0000115>Area of MS1 feature.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:double</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -696,6 +715,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1002015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">peptide spectal count</obo:IAO_0000111>
         <obo:IAO_0000115>Spectral count peptide level quantitation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:boolean</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -724,6 +744,7 @@ http://www.genome.ad.jp/kegg/</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1002016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <obo:IAO_0000111 xml:lang="en">protein spectral count</obo:IAO_0000111>
         <obo:IAO_0000115>Spectral count protein level quantitation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>value-type:xsd:boolean</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
@@ -770,6 +791,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000973">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111 xml:lang="en">genetic sequence</obo:IAO_0000111>
         <obo:IAO_0000111>sequence data</obo:IAO_0000111>
         <obo:IAO_0000112>example of usage: the representation of a nucleotide sequence in FASTA format used for a sequence similarity search.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -790,6 +812,7 @@ that has_part some material entity is a material entity. If we add as equivalent
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001868">
         <obo:IAO_0000111>genetic material</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">genetic material</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>A nucleic acid macromolecule that is part of a cell or virion and is inherited from an immediate ancestor, or incorporated in a manner that it has the disposition to be replicated and inherited by descendants.</obo:IAO_0000115>
         <obo:IAO_0000116>MHB 3-22-13: Discussions are ongoing about the label of this class, given consideration of a second class that covers nucleic acid parts of cells or virions that participate in gene expression processes as a template for expression or a direct effector of expression of some other genetic element (e.g. an siRNA), but are not necessarily heritable by progeny or inherited from ancestors.  So things like transiently transfected plasmids and siRNAs would qualify as instances of this second class, but not of &apos;genetic material&apos; as defined here.
@@ -816,6 +839,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002977">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000111 xml:lang="en">genetic sequence start location</obo:IAO_0000111>
         <obo:IAO_0000111>input gene sequence start site</obo:IAO_0000111>
         <obo:IAO_0000112>When a new genome is sequenced, the start sites of genes are identified by comparing the new sequence to that of a reference sequence in a database. The first nucelotide of a gene sequence being analyzed is the input gene sequence start site.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -837,6 +861,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002978">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000111 xml:lang="en">genetic sequence stop location</obo:IAO_0000111>
         <obo:IAO_0000111>input gene sequence stop site</obo:IAO_0000111>
         <obo:IAO_0000112>When a new genome is sequenced, the termination sites of genes are identified by comparing the new sequence to that of a reference sequence in a database. The last nucelotide of a gene sequence being analyzed is the input gene sequence stop site.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -857,6 +882,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001868"/>
+        <obo:IAO_0000111 xml:lang="en">gene</obo:IAO_0000111>
         <obo:IAO_0000115>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Gene</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>INSDC_feature:gene</oboInOwl:hasExactSynonym>
@@ -888,6 +914,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <obo:IAO_0000111 xml:lang="en">reverse sequence</obo:IAO_0000111>
         <obo:IAO_0000115>Reverse is an attribute of the feature, where the feature is in the 3&apos; to 5&apos; direction. Again could be applied to primer.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">complement, complementary sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
@@ -910,6 +937,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000111 xml:lang="en">ribosomal 18S gene</obo:IAO_0000111>
         <obo:IAO_0000115>A gene which codes for 18S_rRNA, which functions as the small subunit of the ribosome in eukaryotes.</obo:IAO_0000115>
         <oboInOwl:created_by>david</oboInOwl:created_by>
         <oboInOwl:creation_date>2020-05-07T16:12:30Z</oboInOwl:creation_date>
@@ -931,6 +959,7 @@ Non-qualifying examples include a transiently transfected plasmid or siRNA oligo
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002237">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <obo:IAO_0000111 xml:lang="en">ribosomal 16S gene</obo:IAO_0000111>
         <obo:IAO_0000115>A gene which codes for 16S_rRNA, which functions as the small subunit of the ribosome in prokaryotes.</obo:IAO_0000115>
         <oboInOwl:created_by>david</oboInOwl:created_by>
         <oboInOwl:creation_date>2020-05-07T16:12:30Z</oboInOwl:creation_date>
