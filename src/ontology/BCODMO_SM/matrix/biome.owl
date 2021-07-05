@@ -76,6 +76,7 @@
         <oboInOwl:hasRelatedSynonym>terrestrial realm</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">terrestrial</rdfs:label>
         <rdfs:label>terrestrial biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -98,6 +99,7 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>This biome includes open-ocean and unprotected coastal ecosystems, characterized by exposure to wave action, tidal fluctuation, and ocean currents as well as systems that largely resemble these. Water in the marine biome is generally within the salinity range of seawater: 30 to 38 ppt.</rdfs:comment>
+        <rdfs:label xml:lang="en">marine</rdfs:label>
         <rdfs:label>marine biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -121,6 +123,7 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <rdfs:comment xml:lang="en">This can be thought of as any non-marine environment, including freshwater systems as well as saline water bodies.</rdfs:comment>
+        <rdfs:label xml:lang="en">aquatic</rdfs:label>
         <rdfs:label>aquatic biome</rdfs:label>
     </owl:Class>
 </rdf:RDF>
