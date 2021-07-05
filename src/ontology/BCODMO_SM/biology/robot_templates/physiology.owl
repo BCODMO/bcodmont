@@ -24,6 +24,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -62,6 +68,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0020001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020001">
+        <obo:IAO_0000111 xml:lang="en">life stage</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">life stage</rdfs:label>
@@ -74,6 +81,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">copepod life stage</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">copepod life stage</rdfs:label>
@@ -85,6 +93,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C1</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C1</rdfs:label>
@@ -96,6 +105,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C2</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C2</rdfs:label>
@@ -107,6 +117,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C3</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C3</rdfs:label>
@@ -118,6 +129,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020002"/>
+        <obo:IAO_0000111 xml:lang="en">C4</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">C4</rdfs:label>
@@ -128,6 +140,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0020007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020007">
+        <obo:IAO_0000111 xml:lang="en">biochemical process</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">biochemical process</rdfs:label>
@@ -140,7 +153,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
-        <obo:IAO_0000115 xml:lang="en">Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis�Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">alpha</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Light-limited photosynthesis; Calculated by the initial slope of the line between light intensity (x-axis) and photosynthetic rate (y-axis) in a Photosynthesis-Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">alpha</rdfs:label>
@@ -152,6 +166,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
+        <obo:IAO_0000111 xml:lang="en">Fv/Fm</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Fv/Fm is a normalized ratio created by dividing variable fluorescence by maximum fluorescence. It is a measurement ratio that represents the maximum potential quantum efficiency of Photosystem II if all capable reaction centers were open.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -164,6 +179,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">production</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The synthesis of biomass; growth.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">growth</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
@@ -177,6 +193,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020010"/>
+        <obo:IAO_0000111 xml:lang="en">primary production</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The synthesis of organic compounds/biomass from inorganic carbon dioxide.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -188,6 +205,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
+        <obo:IAO_0000111 xml:lang="en">behavior</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">behavior</rdfs:label>
@@ -199,6 +217,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007629">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000111 xml:lang="en">flight</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">flight</rdfs:label>
@@ -210,7 +229,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0015979"/>
-        <obo:IAO_0000115 xml:lang="en">Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis�Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">photoinhibition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Photoinhibition, when light-intensity has a negative impact on photosynthethic production; calculated from Photosynthesis-Irradiance Response Curve (P versus E curve)</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">photoinhibition</rdfs:label>
@@ -222,6 +242,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0015979">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">photosynthesis</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">photosynthesis</rdfs:label>
@@ -233,6 +254,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0045333">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020007"/>
+        <obo:IAO_0000111 xml:lang="en">repsiration</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">repsiration</rdfs:label>
@@ -244,6 +266,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">adult</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">adult</rdfs:label>
@@ -255,6 +278,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">larvae</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">larval</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -267,6 +291,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0014406">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">nauplius</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">the first larval stage of many crustaceans, having an unsegmented body and a single eye.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">nauplii</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
@@ -280,6 +305,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0018241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000066"/>
+        <obo:IAO_0000111 xml:lang="en">reproductive</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">reproductive</rdfs:label>
@@ -291,6 +317,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0034919">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020001"/>
+        <obo:IAO_0000111 xml:lang="en">juvenile</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
         <rdfs:label xml:lang="en">juvenile</rdfs:label>
