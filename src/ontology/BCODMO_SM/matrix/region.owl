@@ -26,6 +26,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -64,6 +70,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000339">
+        <obo:IAO_0000111 xml:lang="en">polar</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to polar climatic conditions.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#region"/>
@@ -78,6 +85,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001830 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001830">
+        <obo:IAO_0000111 xml:lang="en">tropical</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to tropical climatic conditions.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-06T15:56:17Z</dc:date>
@@ -92,6 +100,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001831">
+        <obo:IAO_0000111 xml:lang="en">temperate</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to temperate climatic conditions.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-06T15:57:04Z</dc:date>
