@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/region.owl#"
      xml:base="http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/region.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -19,6 +20,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     
 
 
@@ -42,6 +49,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000339">
+        <obo:IAO_0000111 xml:lang="en">polar</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#region"/>
         <rdfs:label xml:lang="en">polar</rdfs:label>
@@ -52,6 +60,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001830 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001830">
+        <obo:IAO_0000111 xml:lang="en">tropical</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#region"/>
         <rdfs:label xml:lang="en">tropical</rdfs:label>
@@ -62,6 +71,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001831">
+        <obo:IAO_0000111 xml:lang="en">temperate</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#region"/>
         <rdfs:label xml:lang="en">temperate</rdfs:label>
