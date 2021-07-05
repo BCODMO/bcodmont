@@ -24,6 +24,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -74,6 +80,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0010002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010002">
+        <obo:IAO_0000111 xml:lang="en">anatomical structure</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structure components within a metazoan organism; body part.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -87,6 +94,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">lateral</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structural region referring to the side of a metazoan organism&apos;s body or body part.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This might be worth adding to UBERON perhaps as subclass to organism subdivision</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
@@ -100,6 +108,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">packed red blood cells</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Red blood cells that have been separated for blood transfusion.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Could be added to an appropriated OBO ontology see https://en.wikipedia.org/wiki/Packed_red_blood_cells.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
@@ -114,6 +123,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">hemoglobin</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">haemoglobin</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -126,6 +136,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">red blood cell</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">erythrocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -139,6 +150,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">cell</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -152,6 +164,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000111 xml:lang="en">female</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">female</rdfs:label>
@@ -163,6 +176,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000111 xml:lang="en">male</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">male</rdfs:label>
@@ -173,6 +187,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
+        <obo:IAO_0000111 xml:lang="en">sex</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">sex</rdfs:label>
@@ -184,6 +199,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">blood</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">blood</rdfs:label>
@@ -195,6 +211,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000475">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">anatomical region</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structural regions within a metazoan organism.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -208,6 +225,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">tissue</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">tissue</rdfs:label>
@@ -219,6 +237,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000912">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">mucus</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">mucus</rdfs:label>
@@ -230,6 +249,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000916">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">abdomen</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">abdomen</rdfs:label>
@@ -241,6 +261,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000974">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">neck</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">neck</rdfs:label>
@@ -252,6 +273,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000975">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">sternum</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">sternum</rdfs:label>
@@ -263,6 +285,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">skin (epidermis)</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">skin (epidermis)</rdfs:label>
@@ -274,6 +297,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">fat (adipose)</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">fat (adipose)</rdfs:label>
@@ -285,6 +309,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">sweat</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">sweat</rdfs:label>
@@ -296,6 +321,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">dorsal</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">dorsal</rdfs:label>
@@ -307,6 +333,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001690">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ear</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ear</rdfs:label>
@@ -318,6 +345,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001913">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">milk</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">milk</rdfs:label>
@@ -329,6 +357,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001969">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:IAO_0000111 xml:lang="en">blood plasma</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">blood plasma</rdfs:label>
@@ -340,6 +369,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001970">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">bile</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">bile</rdfs:label>
@@ -351,6 +381,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002355">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">pelvis</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:comment xml:lang="en">UBERON has different label: pelvic region of trunk</rdfs:comment>
@@ -363,6 +394,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002391">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0006314"/>
+        <obo:IAO_0000111 xml:lang="en">lymph</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">lymph</rdfs:label>
@@ -374,6 +406,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004454">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ankle</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ankle</rdfs:label>
@@ -385,6 +418,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111 xml:lang="en">muscle</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">muscle</rdfs:label>
@@ -396,6 +430,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010002"/>
+        <obo:IAO_0000111 xml:lang="en">bodily fluid</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">bodily fluid</rdfs:label>
@@ -407,6 +442,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006378">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">whisker</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:comment xml:lang="en">UBERON has different label: strand of vibrissa hair</rdfs:comment>
@@ -419,6 +455,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009472">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">axilla (arm pit)</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">axilla (arm pit)</rdfs:label>
@@ -430,6 +467,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0009754">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <obo:IAO_0000111 xml:lang="en">blubber</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">blubber</rdfs:label>
@@ -441,6 +479,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">ventral</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">ventral</rdfs:label>
@@ -452,6 +491,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013702">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <obo:IAO_0000111 xml:lang="en">body</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <rdfs:label xml:lang="en">body</rdfs:label>
