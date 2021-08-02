@@ -412,14 +412,24 @@ mirror/ecocore.owl: mirror/ecocore.trigger
 .PRECIOUS: mirror/%.owl
 
 
+# NCBITaxon Version 1 from PO makefile
 ## ONTOLOGY: ncbitaxon
 ## Copy of ncbitaxon is re-downloaded whenever source changes
 ## version modifed from PO makefile: https://github.com/Planteome/plant-ontology/blob/master/Makefile
 ## NOT currently working will need to figure this out.
-mirror/ncbitaxon.owl:
-	owltools $(URIBASE)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
-.PRECIOUS: mirror/ncbitaxon.owl
+# mirror/ncbitaxon.owl:
+# 	owltools $(URIBASE)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
+# .PRECIOUS: mirror/ncbitaxon.owl
 
+# NCBITaxon Version 2 from ENVO makefile
+
+ncbitaxon.obo:
+	wget $(URIBASE)/ncbitaxon.obo -O $@.tmp && mv $@.tmp $@
+.PRECIOUS: ncbitaxon.obo
+
+mirror/ncbitaxon.owl: ncbitaxon.obo
+	OWLTOOLS_MEMORY=12G owltools $< -l -s -d  --set-ontology-id $(URIBASE)/ncbitaxon.owl -o $@
+.PRECIOUS: mirror/ncbitaxon.owl
 
 # # ENVO Makefile's verion of CHEBI import
 # # chebi.owl is large and the owlapi often times out when reading it; use the obo instead
