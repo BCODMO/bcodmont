@@ -421,14 +421,14 @@ mirror/ecocore.owl: mirror/ecocore.trigger
 # 	owltools $(URIBASE)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
 # .PRECIOUS: mirror/ncbitaxon.owl
 
-# NCBITaxon Version 2 from ENVO makefile
+# NCBITaxon Import modified from ENVO makefile without remove annotation assertions
 
 ncbitaxon.obo:
 	wget $(URIBASE)/ncbitaxon.obo -O $@.tmp && mv $@.tmp $@
 .PRECIOUS: ncbitaxon.obo
 
 mirror/ncbitaxon.owl: ncbitaxon.obo
-	OWLTOOLS_MEMORY=12G owltools $< -l -s -d  --set-ontology-id $(URIBASE)/ncbitaxon.owl -o $@
+	OWLTOOLS_MEMORY=24G owltools $< --set-ontology-id $(URIBASE)/ncbitaxon.owl -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
 
 # # ENVO Makefile's verion of CHEBI import
