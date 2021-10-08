@@ -9,3 +9,278 @@ NCBITaxon:order	#order
 NCBITaxon:phylum	#phylum
 NCBITaxon:species	#species
 NCBITaxon:superkingdom	#domain
+###
+NCBITaxon:198241	#Acartia hudsonica
+NCBITaxon:278013	#Acrocirridae
+NCBITaxon:6130	#Acropora cervicornis
+NCBITaxon:45264	#Acropora millepora
+NCBITaxon:6131	#Acropora palmata
+NCBITaxon:127871	#Acropora prolifera
+NCBITaxon:140239	#Acropora pulchra
+NCBITaxon:6126	#Acroporidae
+NCBITaxon:262285	#Agaricia tenuifolia
+NCBITaxon:46724	#Agariciidae
+NCBITaxon:295242	#Agelas conifera
+NCBITaxon:2924	#Alexandrium
+NCBITaxon:600435	#Allodapula melanopus
+NCBITaxon:1266862	#Ammodytes dubius
+NCBITaxon:6374	#Ampharetidae
+NCBITaxon:8292	#Amphibia
+NCBITaxon:6821	#Amphipoda
+NCBITaxon:80970	#Amphiprion clarkii
+NCBITaxon:80972	#Amphiprion ocellaris
+NCBITaxon:80973	#Amphiprion perideraion
+NCBITaxon:96882	#Amphiprion polymnus
+NCBITaxon:96883	#Amphiprion sandaracinos
+NCBITaxon:6340	#Annelida
+NCBITaxon:323581	#Anolis frenatus
+NCBITaxon:6101	#Anthozoa
+NCBITaxon:1306264	#Antillogorgia
+NCBITaxon:204378	#Antillogorgia americana
+NCBITaxon:202113	#Aplysina fistularis
+NCBITaxon:257503	#Appendicularia
+NCBITaxon:6656	#Arthropoda
+NCBITaxon:7713	#Ascidiacea
+NCBITaxon:7588	#Asteroidea
+NCBITaxon:165417	#Astrangia
+NCBITaxon:8782	#Aves
+NCBITaxon:33849	#Bacillariophyceae
+NCBITaxon:2	#bacteria
+NCBITaxon:35079	#Balanoglossus
+NCBITaxon:6544	#Bivalvia
+NCBITaxon:581057	#Botrylloides violaceus
+NCBITaxon:7568	#Brachiopoda
+NCBITaxon:2499525	#Breviolum minutum
+NCBITaxon:37796	#Buccinidae
+NCBITaxon:6836	#Calanus
+NCBITaxon:6837	#Calanus finmarchicus
+NCBITaxon:6763	#Callinectes sapidus
+NCBITaxon:6694	#Caridea
+NCBITaxon:136182	#Centropages
+NCBITaxon:160704	#Cephalopholis cruentatus
+NCBITaxon:1522080	#Ceraesignum maximum
+NCBITaxon:2915	#Ceratium
+NCBITaxon:9721	#Cetacea
+NCBITaxon:49237	#Chaetoceros
+NCBITaxon:163503	#Chaetoceros socialis
+NCBITaxon:10229	#Chaetognath
+NCBITaxon:6378	#Chaetopteridae
+NCBITaxon:7711	#Chordata
+NCBITaxon:5878	#Ciliophora
+NCBITaxon:46590	#Cirratulidae
+NCBITaxon:6675	#Cirripedia
+NCBITaxon:34125	#Cladophora
+NCBITaxon:48606	#Clathromorphum compactum
+NCBITaxon:1282265	#Clathromorphum nereostratum
+NCBITaxon:6073	#Cnidaria
+NCBITaxon:418917	#coccolithales
+NCBITaxon:6830	#copepoda
+NCBITaxon:151721	#Coryphopterus glaucofraenum
+NCBITaxon:263511	#Crocosphaera watsonii
+NCBITaxon:6657	#Crustacea
+NCBITaxon:1912852	#Cryptophyta
+NCBITaxon:31486	#Cumagloia andersonii
+NCBITaxon:102234	#cyanobacterium
+NCBITaxon:84308	#Cyclopoida
+NCBITaxon:1708515	#Cypris
+NCBITaxon:215450	#Decapodiformes
+NCBITaxon:6684	#Dendrobranchiata
+NCBITaxon:1028812	#Dendropoma platypus
+NCBITaxon:31174	#Diadema
+NCBITaxon:2864	#Dinophyceae
+NCBITaxon:89253	#Diploria
+NCBITaxon:242715	#Diploria labyrinthiformis
+NCBITaxon:1206794	#Ecdysozoa
+NCBITaxon:527035	#Echinocrepis
+NCBITaxon:527038	#Echinocrepis rostrata
+NCBITaxon:7586	#Echinodermata
+NCBITaxon:7625	#Echinoidea
+NCBITaxon:31177	#Echinometra
+NCBITaxon:203293	#Elacatinus genie
+NCBITaxon:2903	#Emiliania huxleyi
+NCBITaxon:6388	#Enchytraeidae
+NCBITaxon:31421	#Endocladia muricata
+NCBITaxon:6118	#Entacmaea quadricolor
+NCBITaxon:43120	#Entoprocta
+NCBITaxon:160727	#Epinephelus striatus
+NCBITaxon:27606	#Eubalaena glacialis
+NCBITaxon:2759	#Eukaryota
+NCBITaxon:34886	#Eumetopias jubatus
+NCBITaxon:86557	#Eunicea
+NCBITaxon:287897	#Eunicea laxispica
+NCBITaxon:437161	#Eunicea mammosa
+NCBITaxon:287898	#Eunicea succinea
+NCBITaxon:6818	#Euphausia
+NCBITaxon:6816	#euphausiacea
+NCBITaxon:6817	#Euphausiidae
+NCBITaxon:2339889	#Eurytemora herdmani
+NCBITaxon:1328294	#Faviinae
+NCBITaxon:279648	#Flabelligeridae
+NCBITaxon:29178	#Foraminifera
+NCBITaxon:8049	#Gadus morhua
+NCBITaxon:305681	#Galaxaura filamentosa
+NCBITaxon:6448	#Gastropoda
+NCBITaxon:33313	#Gastrotricha
+NCBITaxon:1154736	#Glaucus
+NCBITaxon:69025	#Globigerina bulloides
+NCBITaxon:69041	#Globigerinita glutinata
+NCBITaxon:69027	#Globorotalia hirsuta
+NCBITaxon:69028	#Globorotalia inflata
+NCBITaxon:69029	#Globorotalia truncatulinoides
+NCBITaxon:34514	#Glottidia
+NCBITaxon:8249	#Gomphosus varius
+NCBITaxon:204383	#Gorgonia
+NCBITaxon:586823	#Gramma melacara
+NCBITaxon:274798	#Grammatidae
+NCBITaxon:6512	#Gymnosomata
+NCBITaxon:478399	#Heteractis aurora
+NCBITaxon:175771	#Heteractis crispa
+NCBITaxon:38281	#Heteractis magnifica
+NCBITaxon:2293252	#Heteractis malu
+NCBITaxon:89963	#Heterocapsa rotundata
+NCBITaxon:31479	#Hildenbrandia
+NCBITaxon:7705	#Holothuroidea
+NCBITaxon:390339	#Howellidae
+NCBITaxon:61326	#hydromedusa
+NCBITaxon:29086	#Hydrurga leptonyx
+NCBITaxon:29979	#Isopoda
+NCBITaxon:51516	#Kinorhyncha
+NCBITaxon:50351	#lagodon rhomboides
+NCBITaxon:9713	#Leptonychotes weddellii
+NCBITaxon:160621	#Lingulodinium polyedra
+NCBITaxon:31213	#Littorina
+NCBITaxon:101849	#Lobodon carcinophaga
+NCBITaxon:1206795	#Lophotrochozoa
+NCBITaxon:310840	#Loricifera
+NCBITaxon:72691	#Lottia
+NCBITaxon:225159	#Lottia digitalis
+NCBITaxon:225169	#Lottia scabra
+NCBITaxon:244865	#Macrodactyla doreensis
+NCBITaxon:40674	#Mammalia
+NCBITaxon:31436	#Mastocarpus papillatus
+NCBITaxon:8056	#Melanogrammus aeglefinus
+NCBITaxon:238744	#Menidia menidia
+NCBITaxon:544504	#Millepora platyphylla
+NCBITaxon:9716	#Mirounga angustirostris
+NCBITaxon:9715	#Mirounga leonina
+NCBITaxon:48826	#Mitraria
+NCBITaxon:30281	#Molgula manhattensis
+NCBITaxon:6447	#Mollusca
+NCBITaxon:46703	#Montipora
+NCBITaxon:48193	#Mugil cephalus
+NCBITaxon:6604	#Mya arenaria
+NCBITaxon:6550	#Mytilus edulis
+NCBITaxon:2109251	#Naididae
+NCBITaxon:6231	#Nematoda
+NCBITaxon:627511	#Neogloboquadrina incompta
+NCBITaxon:125957	#Neogloboquadrina pachyderma
+NCBITaxon:182771	#Neoporphyra perforata
+NCBITaxon:36119	#Nephtyidae
+NCBITaxon:51627	#Nucella canaliculata
+NCBITaxon:51627	#Nucella canaliculata
+NCBITaxon:79024	#Nucella ostrina
+NCBITaxon:79024	#Nucella ostrina
+NCBITaxon:2985	#Ochromonas
+NCBITaxon:6132	#Octocorallia
+NCBITaxon:9705	#Odobenidae
+NCBITaxon:315489	#Odontasteridae
+NCBITaxon:136190	#Oithona
+NCBITaxon:8017	#Oncorhynchus gorbuscha
+NCBITaxon:8018	#Oncorhynchus keta
+NCBITaxon:8023	#Oncorhynchus nerka
+NCBITaxon:1902866	#Oneirophanta
+NCBITaxon:7618	#Ophiuroidea
+NCBITaxon:270589	#Opistognathidae
+NCBITaxon:48500	#Orbicella annularis
+NCBITaxon:48498	#Orbicella faveolata
+NCBITaxon:48499	#Orbicella franksi
+NCBITaxon:46134	#Orbulina universa
+NCBITaxon:6670	#Ostracoda
+NCBITaxon:9702	#Otariidae
+NCBITaxon:39832	#Oweniidae
+NCBITaxon:1684132	#Palaeonemertea
+NCBITaxon:373319	#Pantopoda
+NCBITaxon:251440	#Paraonidae
+NCBITaxon:87159	#Pelvetiopsis limitata
+NCBITaxon:1028814	#Petaloconchus keenae
+NCBITaxon:33656	#Phaeocystis
+NCBITaxon:9720	#Phoca vitulina
+NCBITaxon:9709	#Phocidae
+NCBITaxon:67897	#Phoronis psammophila
+NCBITaxon:2593424	#Phyllangia americana
+NCBITaxon:6218	#Pilidiophora
+NCBITaxon:204334	#Plexaurella dichotoma
+NCBITaxon:204335	#Plexaurella nutans
+NCBITaxon:46730	#Pocillopora
+NCBITaxon:46731	#Pocillopora damicornis
+NCBITaxon:46732	#Pocillopora meandrina
+NCBITaxon:203993	#Pocillopora verrucosa
+NCBITaxon:46729	#Pocilloporidae
+NCBITaxon:6341	#Polychaeta
+NCBITaxon:271679	#Polykrikos kofoidii
+NCBITaxon:6040	#Porifera
+NCBITaxon:46719	#Porites
+NCBITaxon:104758	#Porites astreoides
+NCBITaxon:104758	#Porites astreoides
+NCBITaxon:126659	#Porites cylindrica
+NCBITaxon:104759	#Porites lobata
+NCBITaxon:262591	#Porites rus
+NCBITaxon:46718	#Poritidae
+NCBITaxon:80991	#Premnas biaculeatus
+NCBITaxon:1218	#Prochlorococcus
+NCBITaxon:2608131	#Prymnesiophyceae
+NCBITaxon:371655	#Psammocora digitata
+NCBITaxon:428427	#Pseudanthias pleurotaenia
+NCBITaxon:41953	#Pseudo-nitzschia
+NCBITaxon:119371	#Pseudocalanus
+NCBITaxon:1428006	#Pseudodiploria strigosa
+NCBITaxon:1428006	#Pseudodiploria strigosa
+NCBITaxon:287903	#Pseudoplexaura flagellosa
+NCBITaxon:287902	#Pseudoplexaura wagenaari
+NCBITaxon:6545	#Pteriomorphia
+NCBITaxon:185881	#Pterois
+NCBITaxon:185886	#Pterois volitans
+NCBITaxon:977783	#Pteropoda
+NCBITaxon:2611279	#Radiolaria
+NCBITaxon:29652	#Ruppia maritima
+NCBITaxon:127578	#Sargassum polycystum
+NCBITaxon:8247	#Scaridae
+NCBITaxon:6125	#Scleractinia
+NCBITaxon:183654	#Scophthalmus aquosus
+NCBITaxon:1979180	#Scotoplanes
+NCBITaxon:2665651	#Scotoplanes globosa
+NCBITaxon:119203	#Selachimorpha
+NCBITaxon:30871	#Serranidae
+NCBITaxon:130672	#Siderastrea siderea
+NCBITaxon:130672	#Siderastrea siderea
+NCBITaxon:46706	#Siderastreidae
+NCBITaxon:6433	#Sipuncula
+NCBITaxon:6440	#Sipunculidae
+NCBITaxon:9231	#Spheniscidae
+NCBITaxon:29706	#Sporobolus alterniflorus
+NCBITaxon:35579	#Stenotomus chrysops
+NCBITaxon:230562	#Stichodactyla gigantea
+NCBITaxon:475174	#Stichodactyla haddoni
+NCBITaxon:645706	#Stichodactyla mertensii
+NCBITaxon:1328066	#Strongylocentrotus franciscanus
+NCBITaxon:7668	#Strongylocentrotus purpuratus
+NCBITaxon:122238	#Syllidae
+NCBITaxon:2949	#Symbiodinium
+NCBITaxon:430912	#Symbiodinium sp. A4
+NCBITaxon:1129	#Synechococcus
+NCBITaxon:42241	#Tardigrada
+NCBITaxon:32261	#Terebellidae
+NCBITaxon:1078545	#Thaisella kiosquiformis
+NCBITaxon:219283	#Thalassoma hardwicke
+NCBITaxon:219412	#Thallasoma quinquevittatum
+NCBITaxon:1028815	#Thylacodes variabilis
+NCBITaxon:693140	#Tiarina fusus
+NCBITaxon:1205	#Trichodesmium
+NCBITaxon:1206	#Trichodesmium erythraeum
+NCBITaxon:1934733	#Tritia obsoleta
+NCBITaxon:2202329	#Tritia trivittata
+NCBITaxon:125971	#Turborotalita quinqueloba
+NCBITaxon:33090	#Viridiplantae
+NCBITaxon:10239	#virus
+NCBITaxon:44927	#Zoantharia
+
