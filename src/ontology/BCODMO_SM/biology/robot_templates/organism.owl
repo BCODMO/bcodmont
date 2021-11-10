@@ -557,7 +557,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_class -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_class">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">class</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above order and below phylum.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -570,7 +570,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_family -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_family">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">family</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above genus and below order.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -583,7 +583,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_genus -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_genus">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">genus</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above species and below family.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -596,7 +596,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_kingdom -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_kingdom">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">kingdom</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above phylum and below domain.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -609,7 +609,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_phylum -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_phylum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">phylum</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is classified above class and below kingdom.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -622,7 +622,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_species -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_species">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">species</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is most basic or specific unit of classification.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -635,7 +635,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_superkingdom -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_superkingdom">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank"/>
         <obo:IAO_0000111 xml:lang="en">domain</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A taxonomic rank which is the broadest unit of classification.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">empire</oboInOwl:hasExactSynonym>
@@ -694,9 +694,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon__taxonomic:rank">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon#_taxonomic_rank">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
         <obo:IAO_0000111 xml:lang="en">taxonomic rank</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The relative level of a group of organisms in a taxonomic hierarchy.</obo:IAO_0000115>
