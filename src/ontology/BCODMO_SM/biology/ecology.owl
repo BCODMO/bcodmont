@@ -115,6 +115,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0030000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030000">
+        <obo:IAO_0000111 xml:lang="en">ecology</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for ecology module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
+        <rdfs:label xml:lang="en">ecology</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0030001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0030001">
@@ -136,7 +148,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030001"/>
         <obo:IAO_0000111 xml:lang="en">chain</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Two or more conspecific individuals connected together in a linear fashion.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Perhaps something to add to ENVO or PCO.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Perhaps something to add to ENVO or PCO. Put a space after the label &quot;chain &quot; to get the robot template to complie without error.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#ecology"/>
         <rdfs:label xml:lang="en">chain</rdfs:label>
@@ -285,6 +297,7 @@
     <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030000"/>
         <obo:IAO_0000111 xml:lang="en">collection of organisms</obo:IAO_0000111>
         <obo:IAO_0000112>Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -302,6 +315,7 @@
     <!-- http://purl.obolibrary.org/obo/PCO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030000"/>
         <obo:IAO_0000111 xml:lang="en">population</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">This a general term that can include every organism of a species living in an area or any subset of them.  Subclasses can be more specific as needed.</obo:IAO_0000112>
@@ -322,6 +336,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/PCO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0030000"/>
         <obo:IAO_0000111 xml:lang="en">community</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A multi-species collection of organisms of at least two different species, living in a particular area. Must have at least two populations of different species as members.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">multispecies community</obo:IAO_0000118>
