@@ -164,9 +164,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020000">
+        <obo:IAO_0000111 xml:lang="en">physiology</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for physiology module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
+        <rdfs:label xml:lang="en">physiology</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0020001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020000"/>
         <obo:IAO_0000111 xml:lang="en">life stage</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -239,6 +252,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0020007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0020007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020000"/>
         <obo:IAO_0000111 xml:lang="en">biochemical process</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biological"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physiology"/>
@@ -304,6 +318,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0020000"/>
         <obo:IAO_0000111 xml:lang="en">behavior</obo:IAO_0000111>
         <obo:IAO_0000115>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
