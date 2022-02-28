@@ -77,6 +77,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0040000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040000">
+        <obo:IAO_0000111 xml:lang="en">biomolecules</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for biomolecules module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
+        <rdfs:label xml:lang="en">biomolecules</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0040001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0040001">
@@ -193,6 +205,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0040000"/>
         <obo:IAO_0000111 xml:lang="en">protein</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
@@ -204,6 +217,7 @@
     <!-- http://purl.obolibrary.org/obo/MI_0447 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0040000"/>
         <obo:IAO_0000111 xml:lang="en">omics annotation</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Descriptive annotations of omics data linking to externally controlled annotation resources.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -360,6 +374,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000427 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0040000"/>
         <obo:IAO_0000111 xml:lang="en">enzyme</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
@@ -384,6 +399,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001868 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001868">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0040000"/>
         <obo:IAO_0000111 xml:lang="en">genetic material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biomolecules"/>
