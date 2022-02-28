@@ -77,9 +77,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010000">
+        <obo:IAO_0000111 xml:lang="en">anatomy</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for anatomy module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <rdfs:label xml:lang="en">anatomy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0010002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0010002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010000"/>
         <obo:IAO_0000111 xml:lang="en">anatomical structure</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Structure components within a metazoan organism; body part.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
@@ -187,6 +200,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0010000"/>
         <obo:IAO_0000111 xml:lang="en">sex</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#anatomy"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
