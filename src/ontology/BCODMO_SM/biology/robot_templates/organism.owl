@@ -89,9 +89,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0050000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050000">
+        <obo:IAO_0000111 xml:lang="en">organismal</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for organismal module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">organismal</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0050001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">trophic class</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An organismal grouping baised on how a living entity acquires or generates food and energy from a living, dead, or non-living entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In ECOCORE these are direct subclasses to organism OBI:0100026, we could do that here if desired.</obo:IAO_0000116>
@@ -105,6 +118,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0050002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">informal classification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The classification groups of biological organisms based on shared characteristics that are not part of a rigorous taxonomic framework.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -318,6 +332,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0050018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">taxonomy</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The classification groups of biological organisms based on shared characteristics.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -357,9 +372,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0050021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0050021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
+        <obo:IAO_0000111 xml:lang="en">NCBI taxonomy ID</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the National Center for Biotechnology Information (NCBI) taxonomy database.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Cross listed in external repositories? Perhaps better to import relevant NCBITaxon subclasses and add them here.</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
+        <rdfs:label xml:lang="en">NCBI taxonomy ID</rdfs:label>
+        <skos:closeMatch rdf:resource="data:1179"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">cell</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
@@ -543,13 +574,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050018"/>
-        <obo:IAO_0000111 xml:lang="en">NCBI taxonomy ID</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">Taxonomic classification of organisms as described by unique identifiers within the National Center for Biotechnology Information (NCBI) taxonomy database.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Cross listed in external repositories? Perhaps better to import relevant NCBITaxon subclasses and add them here.</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">taxonomic lineage</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The root of the combined NCBI and WoRMS taxonomic hierarchy.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
-        <rdfs:label xml:lang="en">NCBI taxonomy ID</rdfs:label>
-        <skos:closeMatch rdf:resource="data:1179"/>
+        <rdfs:label xml:lang="en">taxonomic lineage</rdfs:label>
     </owl:Class>
     
 
@@ -675,6 +704,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
@@ -686,6 +716,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0050000"/>
         <obo:IAO_0000111 xml:lang="en">specimen</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biology"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#organism"/>
