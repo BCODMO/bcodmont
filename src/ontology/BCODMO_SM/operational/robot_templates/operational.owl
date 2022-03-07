@@ -201,32 +201,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0400008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection start time</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the start time when the specimens are collected.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000008</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection start time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0400009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection end time</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the time when the specimens are finished being collected.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000009</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection end time</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BSM_0400010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400010">
@@ -472,17 +446,6 @@
         <obo:IAO_0000111 xml:lang="en">study description</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">study description</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001619 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001619">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection time</obo:IAO_0000111>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection time</rdfs:label>
     </owl:Class>
     
 
