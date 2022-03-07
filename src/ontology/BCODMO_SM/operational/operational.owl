@@ -326,32 +326,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0400008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection start time</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the start time when the specimens are collected.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000008</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection start time</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0400009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001619"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection end time</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the time when the specimens are finished being collected.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">See PMO_00000009</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection end time</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BSM_0400010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400010">
@@ -650,26 +624,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">investigation description</rdfs:label>
         <rdfs:label xml:lang="en">study description</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001619 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001619">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
-        <obo:IAO_0000111 xml:lang="en">sample collection time</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">specimen collection time measurement datum</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the measure of the time when the specimens are collected.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">collection date</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
-        <obo:OBI_0001886>Specimen Collection Date</obo:OBI_0001886>
-        <dc:source>NIAID GSCID-BRC</dc:source>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
-        <rdfs:label xml:lang="en">sample collection time</rdfs:label>
-        <rdfs:label xml:lang="en">specimen collection time measurement datum</rdfs:label>
     </owl:Class>
     
 
