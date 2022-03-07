@@ -83,6 +83,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000000">
+        <obo:IAO_0000111 xml:lang="en">quantifiers</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for quantifiers module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">quantifiers</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000001">
@@ -109,6 +120,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">abundance</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The degree of quantity of an entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">plentifulness</oboInOwl:hasExactSynonym>
@@ -155,6 +167,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">content</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A single physical entity inhering in an bearer by virtue of the bearer&apos;s quantities or qualities.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">composition</oboInOwl:hasExactSynonym>
@@ -168,6 +181,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">absorption</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">absorption</rdfs:label>
@@ -180,6 +194,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">optical density</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">optical density</rdfs:label>
@@ -227,6 +242,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">gross</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Gains prior to deduction of losses; pre-deducted value (gross), post-deducted value (net).</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
@@ -238,6 +254,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">relative</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">relative</rdfs:label>
@@ -249,6 +266,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">estimated</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">estimate</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">estimation</oboInOwl:hasExactSynonym>
@@ -262,6 +280,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">calculated</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">calculate</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">calculation</oboInOwl:hasExactSynonym>
@@ -275,6 +294,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">predicted</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">predict</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">prediction</oboInOwl:hasExactSynonym>
@@ -288,6 +308,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">net</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">net</rdfs:label>
@@ -311,6 +332,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0310002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">fugacity</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">TO ADD TO PATO</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
@@ -348,6 +370,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0310005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">turbidity</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">TO ADD TO PATO High priority.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
@@ -371,6 +394,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">speed</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">speed</rdfs:label>
@@ -381,6 +405,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">age</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">age</rdfs:label>
@@ -391,6 +416,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">fluorescence</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">fluorescence</rdfs:label>
@@ -412,6 +438,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">size</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">size</rdfs:label>
@@ -466,6 +493,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">temperature</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">temperature</rdfs:label>
@@ -487,6 +515,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000973 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">porosity</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">porosity</rdfs:label>
@@ -497,6 +526,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">density</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">density</rdfs:label>
@@ -507,6 +537,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">pressure</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">pressure</rdfs:label>
@@ -517,6 +548,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">flux</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">flux</rdfs:label>
@@ -549,6 +581,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001430 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">alkalinity</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">alkalinity</rdfs:label>
@@ -559,6 +592,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001585 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">conductivity</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">conductivity</rdfs:label>
@@ -569,6 +603,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001595 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">depth</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">depth</rdfs:label>
@@ -579,6 +614,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001757 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001757">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">electrical conductivity</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">electrical conductivity</rdfs:label>
@@ -589,6 +625,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001842 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">acidity</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">pH</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
@@ -611,6 +648,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0085001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0085001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">salinity</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">salinity</rdfs:label>
@@ -621,6 +659,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">binary</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">binary</rdfs:label>
@@ -656,6 +695,7 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">statistic</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">statistic</rdfs:label>
