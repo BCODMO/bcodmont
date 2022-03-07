@@ -1,17 +1,18 @@
-Sub category 1:	sub category 2:	ontology ID	label	prefered label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master parameter	Entity subset	category subset
-		ID	AL rdfs:label@en	AL IAO:0000111@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
-color		PATO:0000014	color	color												http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	black	PATO:0000317	black	black	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	blue	PATO:0000318	blue	blue	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	brown	PATO:0000952	brown	brown	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	cyan	PATO:0000319	cyan	cyan	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	green	PATO:0000320	green	green	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	grey	PATO:0000950	grey	grey	color	gray										http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	magenta	PATO:0000321	magenta	magenta	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	maroon	PATO:0001426	maroon	maroon	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	orange	PATO:0000953	orange	orange	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	purple	PATO:0000951	purple	purple	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	red	PATO:0000322	red	red	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	violet	PATO:0001424	violet	violet	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	white	PATO:0000323	white	white	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
-color	yellow	PATO:0000324	yellow	yellow	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+module	Sub category 1:	sub category 2:	has descriptor	ontology ID	label	prefered label	parent class	exact synonym	exact match	close match	definition	comment	editors note	broad synonym	narrow synonym	cross refference	BCODMO master parameter	Entity subset	category subset
+				ID	AL rdfs:label@en	AL IAO:0000111@en	SC %	AL oboInOwl:hasExactSynonym@en SPLIT=|	AI skos:exactMatch SPLIT=|	AI skos:closeMatch SPLIT=|	AL IAO:0000115@en	AL rdfs:comment@en	AL IAO:0000116@en	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:hasDbXref SPLIT=|	AI oboInOwl:inSubset	AI oboInOwl:inSubset
+characteristic				BSM:0310000	characteristic	characteristic			PATO:0001018	PATO:0000001	Root node for characteristic module.							http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color			PATO:0000014	color	color	characteristic											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	black		PATO:0000317	black	black	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	blue		PATO:0000318	blue	blue	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	brown		PATO:0000952	brown	brown	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	cyan		PATO:0000319	cyan	cyan	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	green		PATO:0000320	green	green	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	grey		PATO:0000950	grey	grey	color	gray										http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	magenta		PATO:0000321	magenta	magenta	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	maroon		PATO:0001426	maroon	maroon	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	orange		PATO:0000953	orange	orange	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	purple		PATO:0000951	purple	purple	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	red		PATO:0000322	red	red	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	violet		PATO:0001424	violet	violet	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	white		PATO:0000323	white	white	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
+characteristic	color	yellow		PATO:0000324	yellow	yellow	color											http://bcodmo/sm#physics	http://bcodmo/sm#characteristic
