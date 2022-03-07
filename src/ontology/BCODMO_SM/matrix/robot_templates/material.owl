@@ -30,6 +30,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -53,6 +59,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0100000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100000">
+        <obo:IAO_0000111 xml:lang="en">material</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for matrix material module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">material</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0100001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100001">
@@ -68,6 +86,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">radioactive material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -80,6 +99,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">resin</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -92,6 +112,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">incubation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -103,6 +124,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">permafrost</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -126,6 +148,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00001995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">rock</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -137,6 +160,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00001998 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001998">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">soil</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -173,6 +197,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">water</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -184,6 +209,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">sediment</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -268,6 +294,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">wood</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -315,6 +342,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">fossil</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -386,6 +414,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002264 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">waste material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -397,6 +426,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002982 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002982">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">clay</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -432,6 +462,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002985 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002985">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">oil</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -467,6 +498,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00005738 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00005738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">foam</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -490,6 +522,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00010505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">aerosol</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -501,6 +534,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00010506 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">emulsion</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -512,6 +546,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">mud</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -523,6 +558,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">sand</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -534,6 +570,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">particulate matter</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -557,7 +594,10 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">manganese nodule</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
         <rdfs:label xml:lang="en">manganese nodule</rdfs:label>
     </owl:Class>
     
@@ -578,6 +618,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">organic material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -625,6 +666,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">lava</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -636,6 +678,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000256 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">mineral</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -659,6 +702,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000277 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">ice</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -682,6 +726,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000404 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">plastic</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -693,6 +738,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">snow</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -704,6 +750,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000480 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">glass</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -799,6 +846,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000575 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">wax</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -846,6 +894,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000797 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000797">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">gas</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -881,6 +930,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000851 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000851">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">methane clathrate</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -1144,6 +1194,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001850 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001850">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">frost</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -1167,6 +1218,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_02000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">ash</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -1454,6 +1506,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_2000045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_2000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">hydrocarbon material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
