@@ -643,7 +643,17 @@ robot convert --input units/units.ttl --output units/units.owl
 
 ### Managing Imports
 
-In order to re-use ontology terms from existing OBO ontologies we need to import them into our repository. Currently BCO-SM makes use of various OBO ontologies, see the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section.
+Ontology imports are subsets of other ontologies that are created for reuse within another project. In order to re-use ontology terms from existing OBO ontologies we need to import them into our repository. Currently BCO-SM makes use of various OBO ontologies, see the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section.
+
+Ontology imports in BCO-SM are located in the path: `bcodmont/src/ontology/`**`imports`**`/` within the bcodmont github repository. Within that directory  are all the files associated with  ontology imports. Specifically, for each imported ontology there are two files the `terms.txt` file and the `import.owl` file. The former is a simple line sperated text file with the desired ontology term ID's (in CURIE format) to be imported. The latter are the owl files generated from importing the designated terms in the terms files.&#x20;
+
+An example of a terms file, the `envo_terms.txt` file looks like the following:
+
+```
+ENVO:00010505	#aerosol
+ENVO:00002005	#air
+ENVO:01001189	#algal material
+```
 
 #### Add new terms to import
 
@@ -682,6 +692,14 @@ To re-run an individual ontology (instead of all imported ontologies) one can ru
 ```
 ./run.sh make imports/go_import.owl
 ```
+
+#### NCBITaxon import
+
+Note that the **biology organism** module is a special cause in that it is not only generated from the robot template but that additionally, the [ncbitaxon\_import.owl](../src/ontology/imports/ncbitaxon\_import.owl) is directly merged in with the final version of the **biology organism** owl file. **** This  is done in order to directly populate the **organism** module from the NCBITaxon terms imported in the  [ncbitaxon\_terms.txt](../src/ontology/imports/ncbitaxon\_terms.txt). That is to say any imported taxa will get directly merged into the **organism** module when running the filter command. This is noted in the organism filter commands description explaining how in addition to filtering the final version organism robot template, the command also merges the NCBITaxon import owl file.&#x20;
+
+#### Running the CHEBI & NCBITaxon imports
+
+It should be noted that while the majority of ontology imports are from relatively small project and can be run on most average computers, the CHEBI and NCBITaxon imports are quite a bit larger and therefore require more memory to run. CHEBI requires \~8GB of ram and NCBITaxon 12GB ram. Thus, a slightly more powerfull than average laptop computer, desktop, or virtual machine with at least 12GB of ram will be required to maintain BCO-SM. For more information see the obo academy page on the subject. [https://oboacademy.github.io/obook//howto/deal-with-large-ontologies/](https://oboacademy.github.io/obook/howto/deal-with-large-ontologies/).&#x20;
 
 ### Importing A New Ontology
 
