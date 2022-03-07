@@ -80,6 +80,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">site</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">site</rdfs:label>
@@ -98,9 +99,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0400000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400000">
+        <obo:IAO_0000111 xml:lang="en">operational</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for operational module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
+        <rdfs:label xml:lang="en">operational</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0400001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">filter fractionation size</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A size quality which inheres in an aquatic environmental material sample by virtue of such bearer being size fractioned via a filtration process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See PMO_00000168</obo:IAO_0000116>
@@ -217,6 +230,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">sample collection date</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A data item that indicates the time when the collection of a specimen occurred.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In OMIABIS should add to OBI?</obo:IAO_0000116>
@@ -254,6 +268,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">external repository</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">external repository</rdfs:label>
@@ -344,6 +359,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0400022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0400022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">accession</obo:IAO_0000111>
         <oboInOwl:hasExactSynonym xml:lang="en">identifier</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
@@ -394,6 +410,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">data label</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">data label</rdfs:label>
@@ -404,6 +421,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">data set</rdfs:label>
@@ -414,6 +432,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">setting datum</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">setting datum</rdfs:label>
@@ -424,6 +443,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000747 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">sample</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample</rdfs:label>
@@ -459,6 +479,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">sample collection time</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">sample collection time</rdfs:label>
@@ -469,6 +490,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">latitude</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
@@ -479,6 +501,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">longitude</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
@@ -500,6 +523,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001898 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0400000"/>
         <obo:IAO_0000111 xml:lang="en">comment on investigation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#operational"/>
         <rdfs:label xml:lang="en">comment on investigation</rdfs:label>
