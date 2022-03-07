@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/physics/characteristic.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/physics/characteristic.owl"/>
@@ -79,6 +80,18 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -90,9 +103,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0310000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310000">
+        <obo:IAO_0000111 xml:lang="en">characteristic</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for characteristic module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#characteristic"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0310000"/>
         <obo:IAO_0000111 xml:lang="en">color</obo:IAO_0000111>
         <obo:IAO_0000115>A composite chromatic quality composed of hue, saturation and intensity parts.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>PATO:0000020</oboInOwl:hasAlternativeId>
