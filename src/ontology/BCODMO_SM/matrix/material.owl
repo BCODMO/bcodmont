@@ -140,6 +140,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0100000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100000">
+        <obo:IAO_0000111 xml:lang="en">material</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for matrix material module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">material</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0100001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100001">
@@ -155,6 +167,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">radioactive material</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -167,6 +180,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">resin</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -179,6 +193,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0100004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">incubation</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -190,6 +205,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">permafrost</obo:IAO_0000111>
         <obo:IAO_0000115>Soil or rock and included ice or organic material at or below the freezing point of water (0 degrees Celsius or 32 degrees Fahrenheit) for two or more years.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/realmSoil/Permafrost"/>
@@ -250,6 +266,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00001995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">rock</obo:IAO_0000111>
         <obo:IAO_0000115>A rock is a naturally occurring solid aggregate of one or more minerals or mineraloids.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:rock</oboInOwl:hasDbXref>
@@ -279,6 +296,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00001998 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001998">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">soil</obo:IAO_0000111>
         <obo:IAO_0000115>Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms.</obo:IAO_0000115>
         <obo:IAO_0000116>The various &apos;has part&apos; and &apos;has quality&apos; relations may not hold true for all soils; however, I have yet to find counter examples. Require input from a pedologist or similar. [pbuttigieg]</obo:IAO_0000116>
@@ -363,6 +381,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">water</obo:IAO_0000111>
         <obo:IAO_0000115>An environmental material primarily composed of dihydrogen oxide in its liquid form.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>water</oboInOwl:hasBroadSynonym>
@@ -386,6 +405,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">sediment</obo:IAO_0000111>
         <obo:IAO_0000115>Sediment is an environmental substance comprised of any particulate matter that can be transported by fluid flow and which eventually is deposited as a layer of solid particles on the bedor bottom of a body of water or other liquid.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:sediment</oboInOwl:hasDbXref>
@@ -548,6 +568,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">wood</obo:IAO_0000111>
         <oboInOwl:hasDbXref>EcoLexicon:wood</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:637</oboInOwl:hasDbXref>
@@ -631,6 +652,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">fossil</obo:IAO_0000111>
         <obo:IAO_0000115>A solid environmental material which is formed by the replacement of organic substances (including those in soils and sediments) with mineral material.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SWEETRealm:Fossil</oboInOwl:hasDbXref>
@@ -760,6 +782,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002264 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">waste material</obo:IAO_0000111>
         <obo:IAO_0000115>A material which is not the desired output of a process and which is typically the input of a process which removes it from its producer (e.g. a disposal process).</obo:IAO_0000115>
         <obo:IAO_0000116>This seems more like a role than a material. Anything can be waste. Thus, a &quot;waste&quot; role or disposition will be created and this class can then be populated by inference: any environmental material which has [role,disposition] waste will be considered a waste material.</obo:IAO_0000116>
@@ -779,6 +802,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002982 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002982">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">clay</obo:IAO_0000111>
         <obo:IAO_0000115>A group of hydrous aluminium phyllosilicate (phyllosilicates being a subgroup of silicate minerals) minerals (see clay minerals), that are typically less than 2 micrometres in diameter. Clay consists of a variety of phyllosilicate minerals rich in silicon and aluminium oxides and hydroxides which include variable amounts of structural water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:clay</oboInOwl:hasDbXref>
@@ -853,6 +877,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002985 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002985">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">oil</obo:IAO_0000111>
         <obo:IAO_0000115>A nonpolar, hydrophobic, and lipophilic material which is a viscous liquid at ambient temperatures (about 20 degrees Celsius) or slightly warmer.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:oil</oboInOwl:hasDbXref>
@@ -918,6 +943,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00005738 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00005738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">foam</obo:IAO_0000111>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Foam</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
@@ -946,6 +972,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00010505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">aerosol</obo:IAO_0000111>
         <obo:IAO_0000115>Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
@@ -970,6 +997,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_00010506 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">emulsion</obo:IAO_0000111>
         <obo:IAO_0000115>A mixture of two immiscible (unblendable) substances. One substance (the dispersed phase) is dispersed in the other (the continuous phase).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Emulsion</oboInOwl:hasDbXref>
@@ -990,6 +1018,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">mud</obo:IAO_0000111>
         <obo:IAO_0000115>A liquid or semi-liquid mixture of water and some combination of soil, silt, and clay.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:mud</oboInOwl:hasDbXref>
@@ -1013,6 +1042,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">sand</obo:IAO_0000111>
         <obo:IAO_0000115>A naturally occurring granular material composed of finely divided rock and mineral particles.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:sand</oboInOwl:hasDbXref>
@@ -1038,6 +1068,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">particulate matter</obo:IAO_0000111>
         <obo:IAO_0000115>Particulate material is an environmental material which is composed of microscopic portions of solid or liquid material suspended in another environmental material.</obo:IAO_0000115>
         <obo:IAO_0000116>Subclasses should be assigned by inference.</obo:IAO_0000116>
@@ -1063,6 +1094,37 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <rdfs:label xml:lang="en">plankton</rdfs:label>
         <rdfs:label xml:lang="en">planktonic material</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
+        <obo:IAO_0000111 xml:lang="en">manganese nodule</obo:IAO_0000111>
+        <obo:IAO_0000115>Polymetallic nodules, also called manganese nodules, are rock concretions on the sea bottom formed of concentric layers of iron and manganese hydroxides around a core. Nodules vary in size from tiny particles visible only under a microscope to large pellets more than 20 centimetres (8 in) across. However, most nodules are between 5 and 10 cm in diameter.</obo:IAO_0000115>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T01:14:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>manganese nodule</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:01000112</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">manganese nodule</rdfs:label>
+        <rdfs:label>polymetallic nodule</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000112"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Polymetallic nodules, also called manganese nodules, are rock concretions on the sea bottom formed of concentric layers of iron and manganese hydroxides around a core. Nodules vary in size from tiny particles visible only under a microscope to large pellets more than 20 centimetres (8 in) across. However, most nodules are between 5 and 10 cm in diameter.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Manganese_nodule</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>manganese nodule</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Manganese_nodule</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1092,6 +1154,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">organic material</obo:IAO_0000111>
         <obo:IAO_0000115>Environmental material derived from living organisms and composed primarily of one or more biomacromolecules.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1192,6 +1255,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">lava</obo:IAO_0000111>
         <obo:IAO_0000115>Lava is a mixture of molten or semi-molten rock, volatiles, and solids which has extruded beyond a planetary crust.</obo:IAO_0000115>
         <oboInOwl:created_by>PLB</oboInOwl:created_by>
@@ -1216,6 +1280,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
     <!-- http://purl.obolibrary.org/obo/ENVO_01000256 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">mineral</obo:IAO_0000111>
         <obo:IAO_0000115>A mineral material is an environmental material which is primarily composed of some substance that is naturally occurring, solid and stable at room temperature, representable by a chemical formula, usually abiogenic, and that has an ordered atomic structure.</obo:IAO_0000115>
         <obo:IAO_0000116>Look for &quot;mineral&quot; in a chemical or geochemical ontology to formalise the composed primarily of link.
@@ -1284,6 +1349,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000277 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">ice</obo:IAO_0000111>
         <obo:IAO_0000115>Ice is water frozen into a solid state. It can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter its appearance.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1338,6 +1404,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000404 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">plastic</obo:IAO_0000111>
         <obo:IAO_0000115>A (portion of) plastic is an (portion of) anthropogenic environmental material including any of numerous organic synthetic or processed materials which are primarily composed of thermoplastic or thermosetting polymers of high molecular weight.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>URL:http://aims.fao.org/aos/agrovoc/c_5998</oboInOwl:hasDbXref>
@@ -1360,6 +1427,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">snow</obo:IAO_0000111>
         <obo:IAO_0000115>Snow is an environmental material which is primarily composed of flakes of crystalline water ice.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
@@ -1381,6 +1449,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000480 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">glass</obo:IAO_0000111>
         <obo:IAO_0000115>Glass is an amorphous (non-crystalline) solid which is often transparent.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1534,6 +1603,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000575 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">wax</obo:IAO_0000111>
         <obo:IAO_0000115>A wax is an environmental material which is primarily composed of lipids or other organic compounds that consist of long alkyl chains. Waxes are are malleable near ambient temperatures and melt at approximately 45 degrees Celsius.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
@@ -1602,6 +1672,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000797 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000797">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">gas</obo:IAO_0000111>
         <obo:IAO_0000115>A material entity which is composed of one or more chemical entities and has neither independent shape nor volume but tends to expand indefinitely.</obo:IAO_0000115>
         <obo:IAO_0000116>This class is to be populated by inference.</obo:IAO_0000116>
@@ -1663,6 +1734,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
     <!-- http://purl.obolibrary.org/obo/ENVO_01000851 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000851">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">methane clathrate</obo:IAO_0000111>
         <obo:IAO_0000115>A clathrate material in which a large amount of methane is trapped within a crystal structure of water, forming a solid similar to ice.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>fire ice</oboInOwl:hasExactSynonym>
@@ -2133,6 +2205,7 @@ Currently the new ice classes are not specific to sea water as they may form in 
     <!-- http://purl.obolibrary.org/obo/ENVO_01001850 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001850">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">frost</obo:IAO_0000111>
         <obo:IAO_0000115>An environmental material which is primarily composed of minute ice crystals covering a cold surface.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -2174,6 +2247,7 @@ Currently the new ice classes are not specific to sea water as they may form in 
     <!-- http://purl.obolibrary.org/obo/ENVO_02000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">ash</obo:IAO_0000111>
         <obo:IAO_0000115>An environmental material that is the non-aqueous, non-gaseous residues that remain after something is burned.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
@@ -2546,6 +2620,12 @@ Floe vast: 2-10 km across. Floe big: 500-2000 m across. Floe medium: 100-500 m a
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000071"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Sea ice develops from young ice; thickness from 0.3 to 2 meters (1 to 6.6 feet).  Sea ice be subdivided into thin first-year ice (white ice), medium first-year ice, and thick first-year ice.  First-year ice is distinguished from older ice primarily by having a higher salinity. Undeformed first-year ice differs from older ice in that it is smoother and lacks refrozen melt ponds. Characteristically level where undisturbed by pressure, but where ridges occur, they  distinguished by being larger, more angular, and more porous than multiyear ridges.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4808-4736</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000071"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Sea ice which has formed over a single freezing season.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>http://nsidc.org/arcticseaicenews/tag/first-year-ice/</oboInOwl:hasDbXref>
@@ -2557,12 +2637,6 @@ Floe vast: 2-10 km across. Floe big: 500-2000 m across. Floe medium: 100-500 m a
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>seasonal ice</owl:annotatedTarget>
         <rdfs:comment>First year ice which melts before the next freezing season is often referred to as seasonal ice. By definition, seasonal ice cannot become second year ice.</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000071"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget>Sea ice develops from young ice; thickness from 0.3 to 2 meters (1 to 6.6 feet).  Sea ice be subdivided into thin first-year ice (white ice), medium first-year ice, and thick first-year ice.  First-year ice is distinguished from older ice primarily by having a higher salinity. Undeformed first-year ice differs from older ice in that it is smoother and lacks refrozen melt ponds. Characteristically level where undisturbed by pressure, but where ridges occur, they  distinguished by being larger, more angular, and more porous than multiyear ridges.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://orcid.org/0000-0003-4808-4736</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2748,6 +2822,7 @@ This class is complex as marine mucilage is quite complex. It will also requre n
     <!-- http://purl.obolibrary.org/obo/ENVO_2000045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_2000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0100000"/>
         <obo:IAO_0000111 xml:lang="en">hydrocarbon material</obo:IAO_0000111>
         <oboInOwl:created_by>cjm</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-03T21:35:24Z</oboInOwl:creation_date>
