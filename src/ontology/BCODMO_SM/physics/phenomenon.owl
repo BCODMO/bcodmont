@@ -8,7 +8,6 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/physics/phenomenon.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/physics/phenomenon.owl"/>
@@ -147,12 +146,6 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -164,18 +157,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0320000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0320000">
+        <obo:IAO_0000111 xml:lang="en">phenomenon</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for phenomenon module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
+        <rdfs:label xml:lang="en">phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0320001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0320001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">vortex</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A region in a fluid in which the flow revolves around an axis line. Note also in matrix context</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Add to ENVO.</obo:IAO_0000116>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
-        <rdfs:comment xml:lang="en">Add to ENVO.</rdfs:comment>
         <rdfs:label xml:lang="en">vortex</rdfs:label>
-        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/BCODMO_SM/physics/robot_templates/A%20region%20in%20a%20fluid%20in%20which%20the%20flow%20revolves%20around%20an%20axis%20line."/>
     </owl:Class>
     
 
@@ -185,7 +188,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
         <obo:IAO_0000111 xml:lang="en">lake surface</obo:IAO_0000111>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label>lake surface</rdfs:label>
@@ -412,7 +414,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
         <obo:IAO_0000111 xml:lang="en">tornado</obo:IAO_0000111>
         <obo:IAO_0000115>Hemispheric-scale long but narrow topographic depressions of the sea floor. They are the deepest parts of the ocean floor.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasDbXref>EcoLexicon:deep_sea_trench</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:1021</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:609</oboInOwl:hasDbXref>
@@ -439,7 +440,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000275"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Hemispheric-scale long but narrow topographic depressions of the sea floor. They are the deepest parts of the ocean floor.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Oceanic_trench</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Oceanic_trench</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000275"/>
@@ -478,7 +479,7 @@
         <oboInOwl:hasDbXref>FTT:131</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FTT:829</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21183</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Whirlpool</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Whirlpool</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>WHRL</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -489,7 +490,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000409"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A large, swirling body of water produced by ocean tides.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Whirlpool</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Whirlpool</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000409"/>
@@ -522,7 +523,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The dense, bottom layer of water in a thermally-stratified lake. It is the layer that lies below the thermocline.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hypolimnion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Hypolimnion</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -534,7 +535,7 @@
         <obo:IAO_0000111 xml:lang="en">epilimnion</obo:IAO_0000111>
         <obo:IAO_0000115>The top-most layer in a thermally stratified lake, occurring above the deeper hypolimnion. It is warmer and typically has a higher pH and dissolved oxygen concentration than the hypolimnion.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:epilimnion_</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Epilimnion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Epilimnion</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label>epilimnion</rdfs:label>
@@ -544,7 +545,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The top-most layer in a thermally stratified lake, occurring above the deeper hypolimnion. It is warmer and typically has a higher pH and dissolved oxygen concentration than the hypolimnion.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Epilimnion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Epilimnion</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -555,7 +556,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002269"/>
         <obo:IAO_0000111 xml:lang="en">metalimnion</obo:IAO_0000111>
         <obo:IAO_0000115>A cline which is part of a lake and across which temperature changes rapidly with depth.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Metalimnion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Metalimnion</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:comment>Especially used in connection with meromictic lakes.</rdfs:comment>
@@ -566,7 +567,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002132"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cline which is part of a lake and across which temperature changes rapidly with depth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Metalimnion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Metalimnion</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -925,7 +926,6 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
         <obo:IAO_0000115>A roughly planar, pelagic region characterised by equal water temperature.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-03-16T12:16:11Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
@@ -949,7 +949,6 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
         <obo:IAO_0000115>A roughly planar, pelagic region characterised by equal salinity.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-03-16T12:16:11Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
@@ -973,7 +972,6 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
         <obo:IAO_0000115>A roughly planar, pelagic region characterised by equal water density.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-03-16T12:16:11Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
@@ -1337,6 +1335,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">fluid cline</obo:IAO_0000111>
         <obo:IAO_0000115>A fluid front which is 1) thin in comparison to the fluid mass it is a part of and 2) across which a property of that fluid mass varies greatly over short vertical distance, relative to variation across the entire fluid mass.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1353,7 +1352,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000258"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A fluid front which is 1) thin in comparison to the fluid mass it is a part of and 2) across which a property of that fluid mass varies greatly over short vertical distance, relative to variation across the entire fluid mass.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cline_(hydrology)</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Cline_(hydrology)</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1390,6 +1389,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">lake layer</obo:IAO_0000111>
         <obo:IAO_0000115>A layer which is part of a lake.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1409,6 +1409,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000295 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">marine layer</obo:IAO_0000111>
         <obo:IAO_0000115>A layer that is part of a marine water body.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1431,6 +1432,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">Taylor column</obo:IAO_0000111>
         <obo:IAO_0000115>A Taylor column is a column of deflected fluid flow which is formed in a perturbed, rotating fluid, is parallel to the axis of rotation, and extends above the obstacle perturbing the fluid in a rigid manner.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1480,7 +1482,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000300"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>vortex street</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Kármán_vortex_street</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Kármán_vortex_street</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1504,6 +1506,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000326 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">deep chlorophyll maximum layer</obo:IAO_0000111>
         <obo:IAO_0000115>A subsurface layer in a water body, typically an ocean or lake, in which chlorophyll concentrations reach their maximum.</obo:IAO_0000115>
         <obo:IAO_0000116>Logical def is incomplete. Need to express the idea of maximum chlorophyll. This could follow a pattern like:
@@ -1541,6 +1544,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000353 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">eddy field</obo:IAO_0000111>
         <obo:IAO_0000115>A mesoscale eddy field is an expanse of marine water which includes coherent vortices, as well as a rich cascade of other structures such as filaments, squirts and spirals and is characterized by temperature and salinity anomalies with associated flow anomalies that are nearly in geostrophic balance. Although only the surface expression of mesoscale eddies is visible in satellite images of sea surface height or temperature, they are in fact three dimensional structures that reach down into the pycnocline.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -1800,9 +1804,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">tsunami</obo:IAO_0000111>
         <obo:IAO_0000115>A tsunami is a process during which a series of waves is generated in a water body, typically an ocean or large lake, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasExactSynonym>seismic sea wave</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tidal wave</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
@@ -1826,7 +1830,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">meteotsunami</obo:IAO_0000111>
         <obo:IAO_0000115>A meteotsunami is a tsunami caused by atmospheric processes and differences in air pressure.</obo:IAO_0000115>
         <obo:IAO_0000116>Ambiguity as to whether this label refers to the process or the material entities (the waves). The material entities are a type of severe storm surge.</obo:IAO_0000116>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasExactSynonym>rissaga</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -1851,9 +1854,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000793">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">wind</obo:IAO_0000111>
         <oboInOwl:hasBroadSynonym>wind</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasRelatedSynonym>A mass gaseous flow which occurrs in a planet&apos;s atmosphere due to internal pressure disequilibria.</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -1874,6 +1877,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000811 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">atmosphere</obo:IAO_0000111>
         <obo:IAO_0000115>A planetary atmosphere which is composted primarily of dinitrogen and dioxygen gas.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
@@ -1894,7 +1898,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115>A turbulent surface layer of a water body maintained by strong currents setting over submerged ridges or shoals or by winds opposing a current.</obo:IAO_0000115>
         <obo:IAO_0000116>This should likely be a part of the surface layer rather than a subclass.</obo:IAO_0000116>
         <oboInOwl:hasBroadSynonym>overfall</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">turbulent aquatic surface layer</rdfs:label>
@@ -1911,6 +1914,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000876 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000876">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">storm</obo:IAO_0000111>
         <obo:IAO_0000115>A storm is an environmental process in which an environmental system and the processes it participates in are strongly perturbed by external forcings. These forcings typically increase the rates of processes unfolding in the system, relative to their normal rates.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
@@ -2008,19 +2012,29 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000876"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000881"/>
         <obo:IAO_0000111 xml:lang="en">blizzard</obo:IAO_0000111>
-        <obo:IAO_0000115>A blizzard is a severe snowstorm during which snowfall is transported by strong winds, sustained for several hours.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A blizzard is a severe snowstorm during which snowfall is transported by strong winds, sustained for several hours.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/phenAtmoPrecipitation/Blizzard"/>
+        <oboInOwl:hasNarrowSynonym xml:lang="en">boulbie</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en">buran</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en">purga</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>environmental_hazards</oboInOwl:inSubset>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">The U.S. National Weather Service specifies sustained wind or frequent gusts of 16 m per second (30 kt or 35 mi per hour) or greater, accompanied by falling and/or blowing snow, frequently reducing visibility to less than 400 m (0.25 mi or 0.4 km) for 3 hours or longer. Earlier definitions also included a condition of low temperatures, on the order of -7C (20F) or lower, or -12C (10F) or lower (severe blizzard). The name originated in the United States but it is also used in other countries. In the Antarctic the name is given to violent autumnal winds off the ice cap. In southeastern France, the cold north wind with snow is termed blizzard (see also boulbie). Similar storms in Russian Asia are the buran and purga. In popular usage in the United States and in England, the term is often used for any heavy snowstorm accompanied by strong winds.</rdfs:comment>
         <rdfs:comment>To qualify a snowstorm as a blizzard, some sources require the windspeed to be at least 56 km/h and the duration of the storm to be at least three hours. We set no such hard boundaries in this definition, as this should be done with reference to local standards.</rdfs:comment>
         <rdfs:label xml:lang="en">blizzard</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000903"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A blizzard is a severe snowstorm during which snowfall is transported by strong winds, sustained for several hours.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A blizzard is a severe snowstorm during which snowfall is transported by strong winds, sustained for several hours.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Main_Page"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.bom.gov.au/lam/glossary/"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.physicalgeography.net/glossary.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&amp;n=B8CD636F-1&amp;def=allShow"/>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Blizzard</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -2063,9 +2077,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000982 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000982">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
         <obo:IAO_0000115>A process during which a volume of water is transported due to a disequilibria in physical forces.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>environmental_hazards</oboInOwl:inSubset>
@@ -2078,6 +2092,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">electromagnetic radiation</obo:IAO_0000111>
         <obo:IAO_0000115>A radiation process during which waves (or their quanta, photons) of the electromagnetic field propagate (radiate) through space carrying electromagnetic energy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>EM radiation</oboInOwl:hasExactSynonym>
@@ -2100,6 +2115,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">tectonic plate</obo:IAO_0000111>
         <obo:IAO_0000115>A part of a lithosphere which is separated by other such parts by geographic faults or similar geomorphological discontinuities.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
@@ -2118,9 +2134,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001191 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">water surface</obo:IAO_0000111>
         <obo:IAO_0000115>The surface layer of a volume of water.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasDbXref>EcoLexicon:surface_water</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:SurfaceWater</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Surface_water</oboInOwl:hasDbXref>
@@ -2166,6 +2182,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001276 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">ice layer</obo:IAO_0000111>
         <obo:IAO_0000115>A solid layer which is primarily composed of some water-based ice.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
@@ -2246,26 +2263,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001333 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001342"/>
-        <obo:IAO_0000111 xml:lang="en">tidal flow</obo:IAO_0000111>
-        <obo:IAO_0000115>A tidal flow process which occurs in an ocean or sea and during which tidal movements generate advective flows, often amplified in velocity when moving through an inlet, pass or channel.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>CMECS:643</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:hasDbXref>https://cmecscatalog.org/cmecs/classification/unit/643.html</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>tidal flow</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset>envoCmecs</oboInOwl:inSubset>
-        <oboInOwl:inSubset>envoMarine</oboInOwl:inSubset>
-        <rdfs:comment>This class aligns to the Coastal and Marine Ecological Classification Standard (CMECS). In ENVO, we may adapt the definition for consistency, but the semantics (meaning) of the term should be unaffected. Please consult the CMECS catalogue (https://cmecscatalog.org/) for authoritative and semantically unconstrained definitions.</rdfs:comment>
-        <rdfs:label xml:lang="en">marine tidal flow</rdfs:label>
-        <rdfs:label xml:lang="en">marine tidal flow process</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001336 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001336">
@@ -2289,10 +2286,8 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
         <obo:IAO_0000111 xml:lang="en">tidal flow</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
         <obo:IAO_0000115>A water flow process during which movements of water masses caused by varying gravitational and rotational forces from astronomical bodies, combined with the rotation of the astronomical body containing the water mass, cause waters to undergo periodic depth oscillations (tides).</obo:IAO_0000115>
         <obo:IAO_0000118>tidal flow</obo:IAO_0000118>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoCmecs</oboInOwl:inSubset>
@@ -2300,68 +2295,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">tidal flow</rdfs:label>
         <rdfs:label xml:lang="en">tidal flow process</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001485 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001485">
-        <obo:IAO_0000115 xml:lang="en">A tornado which comprises two or more columns of spinning air rotating about their own axis and at the same time around a common center.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:00:49Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <rdfs:label xml:lang="en">multiple vortex tornado</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001485"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A tornado which comprises two or more columns of spinning air rotating about their own axis and at the same time around a common center.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Tornado</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001486 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001486">
-        <obo:IAO_0000115 xml:lang="en">A tornado which a) is not associated with a mesocyclone and is thus relatively weak and short-lived, b) is centred on a small, smooth condensation funnel which often does not reach the planetary surface, and c) forms a distinctively laminar cloud of dust when it makes contact with the land.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:01:01Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:hasExactSynonym xml:lang="en">dust-tube tornado</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">fair weather waterspout on land</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">land spout</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <rdfs:label xml:lang="en">landspout</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001486"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A tornado which a) is not associated with a mesocyclone and is thus relatively weak and short-lived, b) is centred on a small, smooth condensation funnel which often does not reach the planetary surface, and c) forms a distinctively laminar cloud of dust when it makes contact with the land.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Tornado</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001487 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001487">
-        <obo:IAO_0000115 xml:lang="en">A tornado which connects a cumulus or cumulonimbus cloud to a body of water, often transporting water from that water body along the spiraling winds constituting  its vortex.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:01:17Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:hasExactSynonym xml:lang="en">water spout</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <rdfs:comment xml:lang="en">Wikipedia notes that there is disagreement over whether to classify waterspouts as true tornadoes.</rdfs:comment>
-        <rdfs:label xml:lang="en">waterspout</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001487"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A tornado which connects a cumulus or cumulonimbus cloud to a body of water, often transporting water from that water body along the spiraling winds constituting  its vortex.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Tornado</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2389,7 +2322,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-27T19:26:14Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>lead</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasDbXref>http://sweetontology.net/realmCryo/Lead</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -2418,13 +2350,18 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000295"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001191"/>
         <obo:IAO_0000111 xml:lang="en">sea surface layer</obo:IAO_0000111>
-        <obo:IAO_0000115>A surface layer of a water body which is part of an ocean or sea.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A surface layer which is part of an ocean or sea.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-2996-719X"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-8166-0486"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0003-1072-8081"/>
         <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-06T01:22:01Z</oboInOwl:creation_date>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoMarine</oboInOwl:inSubset>
-        <rdfs:comment>At this level, the depth of this layer is ambiguous. Some methods (telemetry) measure only the first few centimeters of the sea or ocean surface. In situ methods often sample the first few meters. Subclasses can be created for such cases.</rdfs:comment>
+        <oboInOwl:inSubset xml:lang="en">envoPlastics</oboInOwl:inSubset>
+        <rdfs:comment xml:lang="en">At this level, the depth of this layer is ambiguous. Some methods (telemetry) measure only the first few centimeters of the sea or ocean surface. In situ methods often sample the first few meters. Subclasses can be created for such cases.
+Sea surface layer is also used to refer to the surfaces of oceans.</rdfs:comment>
         <rdfs:label xml:lang="en">sea surface layer</rdfs:label>
     </owl:Class>
     
@@ -2433,11 +2370,11 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">current</obo:IAO_0000111>
         <obo:IAO_0000115>A hydroform which is maintained by a continuous, directed movement of water, generated by disequilibria in a water mass.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-19T16:31:41Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:comment>Depth contours, shoreline configurations and interaction with other currents influence a current&apos;s direction and strength.</rdfs:comment>
@@ -2452,11 +2389,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001631">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
         <obo:IAO_0000111 xml:lang="en">groundwater discharge</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
         <obo:IAO_0000115>A water flow process during which water flows out of an aquifer.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-22T14:18:15Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">groundwater discharge</rdfs:label>
@@ -2476,11 +2411,9 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001632">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000982"/>
         <obo:IAO_0000111 xml:lang="en">groundwater flow</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">water flow</obo:IAO_0000111>
         <obo:IAO_0000115>A water flow process during which water is transported through an aquifer.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-22T14:22:43Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">groundwater flow</rdfs:label>
@@ -2551,12 +2484,12 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001681 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
         <obo:IAO_0000111 xml:lang="en">weather front</obo:IAO_0000111>
         <obo:IAO_0000115>A gaseous front which separates two masses of air with different densities and is a principal cause of meteorological phenomena.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-22T17:57:21Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasExactSynonym>meteorological front</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -2588,7 +2521,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front which separates air masses of tropical and polar origin.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-20T13:46:42Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset xml:lang="en">envoAtmo</oboInOwl:inSubset>
@@ -2612,7 +2544,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front which is nonoccluded and  which moves in the direction of the warmer air mass it is adjacent to, such that colder air will occupy the site where warmer air was previously present.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-20T16:53:00Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2636,7 +2567,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front which is nonoccluded and which moves in the direction of the colder air mass it is adjacent to, such that warmer air will occupy the site where colder air was previously present.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T09:56:51Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2660,7 +2590,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front at which warm air is ascending to high altitudes along the frontal surface.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T10:00:40Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2683,7 +2612,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front at which warm air is descending to lower altitudes along the frontal surface.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T10:02:08Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2706,7 +2634,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A weather front which exists in an equatorial trough separating the air of the Northern and Southern Hemispheres of an astronomical body.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T10:05:03Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasExactSynonym xml:lang="en">tropical front</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -2759,7 +2686,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <obo:IAO_0000115>A weather front which is part of a mass of upper air.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T16:44:42Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2777,7 +2703,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-21T16:49:11Z</dc:date>
         <oboInOwl:hasBroadSynonym>occlusion</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
@@ -2792,94 +2717,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001715 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001715">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001714"/>
-        <obo:IAO_0000115>An occluded front which is adjacent to a cold front 1) that is moving away from the coldest air in the vicinity,  2) where the neighbouring cold front undercuts the neighbouring warm front in the occulsion zone, and 3) where the coldest air in the vicinity replaces less cold air towards the surface of the astronomical body.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-22T08:55:43Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">cold occluded front</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001715"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An occluded front which is adjacent to a cold front 1) that is moving away from the coldest air in the vicinity,  2) where the neighbouring cold front undercuts the neighbouring warm front in the occulsion zone, and 3) where the coldest air in the vicinity replaces less cold air towards the surface of the astronomical body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Cold_occlusion"/>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Occluded_front"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001716 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001716">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001714"/>
-        <obo:IAO_0000115>An occluded front which is adjacent to a warm front 1) that is moving in the direction of the coldest air in the vicinity, 2) where the original cold front is forced aloft at the warm front surface, and 3) where the coldest air is replaced by less cold air at the surface of the astronomical body.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-22T08:56:14Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">warm occluded front</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001716"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An occluded front which is adjacent to a warm front 1) that is moving in the direction of the coldest air in the vicinity, 2) where the original cold front is forced aloft at the warm front surface, and 3) where the coldest air is replaced by less cold air at the surface of the astronomical body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Occluded_front"/>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Warm_occlusion"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001717 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001717">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001714"/>
-        <obo:IAO_0000115>An occluded front which is 1) adjacent to a cold and a warm front with no appreciable difference between the temperatures of their bordering air masses and 2) which creates a pressure trough, a wind-shift line, a band of cloudiness, and precipitation at the surface of the astronomical body.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-22T08:56:31Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">neutral occluded front</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001717"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An occluded front which is 1) adjacent to a cold and a warm front with no appreciable difference between the temperatures of their bordering air masses and 2) which creates a pressure trough, a wind-shift line, a band of cloudiness, and precipitation at the surface of the astronomical body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Occluded_front"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001718 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001718">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001706"/>
-        <obo:IAO_0000115>A cold front which forms behind a frontal cyclone and within a cold air mass with an appreciable horizontal temperature gradient.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T10:00:19Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
-        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
-        <rdfs:comment>The direction of motion determines whether fronts are &quot;cold&quot;, &quot;warm&quot;, etc. A front is said to be cold if it&apos;s moving in the direction of the warmer air mass it is adjacent to. From the perspective of an observer on the ground, this appears as though the colder air &quot;replaces&quot; the warmer air mass.</rdfs:comment>
-        <rdfs:label xml:lang="en">secondary cold front</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001718"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cold front which forms behind a frontal cyclone and within a cold air mass with an appreciable horizontal temperature gradient.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Secondary_cold_front"/>
-        <oboInOwl:hasDbXref rdf:resource="http://glossary.ametsoc.org/wiki/Secondary_front"/>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001745 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001745">
@@ -2889,7 +2726,6 @@ Further discussion in Issue #126.</obo:IAO_0000116>
         <dc:contributor rdf:resource="http://orcid.org/0000-0002-2952-2828"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-05T03:38:33Z</dc:date>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:hasExactSynonym>stationary front</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
@@ -2932,13 +2768,11 @@ Further discussion in Issue #126.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000793"/>
-        <obo:IAO_0000111 xml:lang="en">wind</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">wind gust</obo:IAO_0000111>
         <obo:IAO_0000115>An atmospheric wind which 1) has an increased rate relative to other winds in the same region and 2) is followed by a lull.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-19T21:47:51Z</dc:date>
         <oboInOwl:hasBroadSynonym>gust</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:comment>According to U.S. weather observing practice, gusts are reported when the peak wind speed reaches at least 16 knots and the variation in wind speed between the peaks and lulls is at least 9 knots. The duration of a gust is usually less than 20 seconds.</rdfs:comment>
@@ -3241,8 +3075,8 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://semanticscience.org/resource/SIO_000650 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0320000"/>
         <obo:IAO_0000111 xml:lang="en">wave</obo:IAO_0000111>
-        <oboInOwl:hasDbXref rdf:resource="http://bcodmo/sm#physics"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#phenomenon"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#physics"/>
         <rdfs:label xml:lang="en">wave</rdfs:label>
