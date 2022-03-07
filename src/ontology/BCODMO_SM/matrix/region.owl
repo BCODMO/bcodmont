@@ -67,9 +67,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0130000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0130000">
+        <obo:IAO_0000111 xml:lang="en">region</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for matrix region module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#region"/>
+        <rdfs:label xml:lang="en">region</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0130000"/>
         <obo:IAO_0000111 xml:lang="en">polar</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to polar climatic conditions.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -85,6 +98,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001830 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0130000"/>
         <obo:IAO_0000111 xml:lang="en">tropical</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to tropical climatic conditions.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -100,6 +114,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0130000"/>
         <obo:IAO_0000111 xml:lang="en">temperate</obo:IAO_0000111>
         <obo:IAO_0000115>A biome which is subject to temperate climatic conditions.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
