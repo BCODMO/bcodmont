@@ -151,9 +151,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0110000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0110000">
+        <obo:IAO_0000111 xml:lang="en">context</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for matrix context module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">context</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0110001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0110001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">bloom</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -165,6 +178,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0110002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0110002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">pool</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -176,6 +190,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0110003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0110003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">reef</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -187,6 +202,7 @@
     <!-- http://purl.obolibrary.org/obo/BSM_0320001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0320001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">vortex</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A region in a fluid in which the flow revolves around an axis line. Note also in physics phenomenon</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -200,6 +216,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">ocean</obo:IAO_0000111>
         <obo:IAO_0000115>A marine water body which is constitutes the majority of an astronomical body&apos;s hydrosphere.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:695</oboInOwl:hasAlternativeId>
@@ -250,6 +267,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">sea</obo:IAO_0000111>
         <obo:IAO_0000115>A large expanse of saline water usually connected with an ocean.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:sea</oboInOwl:hasDbXref>
@@ -374,6 +392,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">lake</obo:IAO_0000111>
         <obo:IAO_0000115>A body of water or other liquid of considerable size contained in a depression on a landmass.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:278</oboInOwl:hasAlternativeId>
@@ -549,6 +568,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">stream</obo:IAO_0000111>
         <obo:IAO_0000115>A watercourse which is linear and flows across the solid portion of a planetary surface.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:562</oboInOwl:hasAlternativeId>
@@ -715,6 +735,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">spring</obo:IAO_0000111>
         <obo:IAO_0000115>A point where groundwater or steam flows out of the ground, and is thus where the aquifer surface meets the ground surface or where there is a fissure.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:spring</oboInOwl:hasDbXref>
@@ -818,6 +839,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">pond</obo:IAO_0000111>
         <obo:IAO_0000115>A body of water, usually of smaller size than a lake.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:975</oboInOwl:hasAlternativeId>
@@ -1014,6 +1036,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">lagoon</obo:IAO_0000111>
         <obo:IAO_0000115>A sheet of saline water separated from the open sea by sand or shingle banks. The sheet of water between an offshore reef, especially of coral and mainland. The sheet of water within a ring or horseshoe shaped atoll.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:lagoon</oboInOwl:hasDbXref>
@@ -1121,6 +1144,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">waterfall</obo:IAO_0000111>
         <obo:IAO_0000115>A sudden descent of water over a step or ledge in the bed of a river.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:force</oboInOwl:hasDbXref>
@@ -1207,6 +1231,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">tidal creek</obo:IAO_0000111>
         <obo:IAO_0000115>A tidal water channel. Creeks may often dry to a muddy channel with little or no flow at low tide, but often with significant depth of water at high tide.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>stream</oboInOwl:hasBroadSynonym>
@@ -1338,6 +1363,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">estuary</obo:IAO_0000111>
         <obo:IAO_0000115>A semi-enclosed coastal body of water with one or more rivers or streams flowing into it, and with a free connection to the open sea.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>LTER:182</oboInOwl:hasAlternativeId>
@@ -1552,6 +1578,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">underground water body</obo:IAO_0000111>
         <obo:IAO_0000115>A geographical feature associated with water that is under the surface of the earth.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
@@ -1574,6 +1601,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">cave</obo:IAO_0000111>
         <obo:IAO_0000115>Naturally formed, subterranean open area or chamber.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FTT:1071</oboInOwl:hasDbXref>
@@ -1630,6 +1658,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000086 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">plain</obo:IAO_0000111>
         <obo:IAO_0000115>A region of general uniform slope, comparatively level, and of considerable extent.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:plain</oboInOwl:hasDbXref>
@@ -1852,6 +1881,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000091 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">beach</obo:IAO_0000111>
         <obo:IAO_0000115>A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:beach</oboInOwl:hasDbXref>
@@ -1942,6 +1972,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">island</obo:IAO_0000111>
         <obo:IAO_0000115>Area of dry or relatively dry land surrounded by water or low wetland.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:island</oboInOwl:hasDbXref>
@@ -2184,6 +2215,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">glacier</obo:IAO_0000111>
         <obo:IAO_0000115>An ice mass which is of sufficient mass that the action of gravity upon it overcomes the frictional forces holding it in place, causing it to deform and flow towards lower elevation.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -2445,6 +2477,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">bar</obo:IAO_0000111>
         <obo:IAO_0000115>A linear shoaling landform feature within a body of water. Bars tend to be long and narrow (linear) and develop where a current (or waves) promote deposition of granular material, resulting in localized shallowing (shoaling) of the water. Bars can appear in the sea, in a lake, or in a river. They are typically composed of sand, although could be of any granular matter that the moving water has access to and is capable of shifting around (for example, soil, silt, gravel, cobble, shingle, or even boulders). The grain size of the material comprising a bar is related: to the size of the waves or the strength of the currents moving the material, but the availability of material to be worked by waves and currents is also important.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>seafloor feature</oboInOwl:hasBroadSynonym>
@@ -2716,6 +2749,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000174 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">isthmus</obo:IAO_0000111>
         <obo:IAO_0000115>Narrow section of land in a body of water connecting two larger land areas.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:isthmus</oboInOwl:hasDbXref>
@@ -3420,6 +3454,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000247 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">volcano</obo:IAO_0000111>
         <obo:IAO_0000115>An opening, or rupture, in the Earth&apos;s surface or crust, which allows hot, molten rock, ash and gases to escape from deep below the surface.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>mount</oboInOwl:hasBroadSynonym>
@@ -3465,6 +3500,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">confluence</obo:IAO_0000111>
         <obo:IAO_0000115>The point where a tributary joins a more major river.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>stream</oboInOwl:hasBroadSynonym>
@@ -3637,6 +3673,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">ridge</obo:IAO_0000111>
         <obo:IAO_0000115>A long and narrow elevation with steep sides.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:beach_cusp</oboInOwl:hasDbXref>
@@ -3780,6 +3817,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000292 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">watershed</obo:IAO_0000111>
         <obo:IAO_0000115>The separation between neighbouring drainage basins (catchments). In hilly country, the divide lies along topographical peaks and ridges, but in flat country or on a high plateau (especially where the ground is marshy) the divide may be invisible - just a more or less notional line on the ground on either side of which falling raindrops will start a journey to different rivers, and even to different sides of a country or continent.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FTT:220</oboInOwl:hasDbXref>
@@ -3837,6 +3875,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">ice field</obo:IAO_0000111>
         <obo:IAO_0000115>A field of ice, formed in regions of perennial frost.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FTT:758</oboInOwl:hasDbXref>
@@ -3918,6 +3957,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000304 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">shore</obo:IAO_0000111>
         <obo:IAO_0000115>That part of the land in immediate contact with a body of water including the area between high and low water lines.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>coastal zone</oboInOwl:hasBroadSynonym>
@@ -4434,6 +4474,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">harbor</obo:IAO_0000111>
         <obo:IAO_0000115>A place where ships may shelter from the weather or are stored.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SWEETRealm:Harbor</oboInOwl:hasDbXref>
@@ -4456,6 +4497,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">inlet</obo:IAO_0000111>
         <obo:IAO_0000115>An opening of the sea into the land, or of a lake into its shore.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:inlet</oboInOwl:hasDbXref>
@@ -4512,6 +4554,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">mouth</obo:IAO_0000111>
         <obo:IAO_0000115>The exit or point of discharge of a stream into another stream, lake or sea.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:outlet</oboInOwl:hasDbXref>
@@ -4548,6 +4591,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000484 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">polynya</obo:IAO_0000111>
         <obo:IAO_0000115>Any enclosed water area in pack ice other than a lead, not large enough to be called open water. When frozen over, a polyna becomes an ice skylight from the point of view of the submariner.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:polynya</oboInOwl:hasDbXref>
@@ -4654,6 +4698,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000499 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">trough</obo:IAO_0000111>
         <obo:IAO_0000115>A linear structural depression that extends laterally over a distance, while being less steep than a trench. A trough can be a narrow basin or a geologic rift. There are various oceanic troughs, troughs found under oceans; examples include the rift along the mid-oceanic ridge and the Cayman Trough.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SWEETRealm:Trough</oboInOwl:hasDbXref>
@@ -4682,6 +4727,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">bed</obo:IAO_0000111>
         <obo:IAO_0000115>The portion of the ground surface which lies below water.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>BOTTOM</oboInOwl:hasBroadSynonym>
@@ -4712,6 +4758,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00000514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">crater</obo:IAO_0000111>
         <obo:IAO_0000115>A generally circular saucer or bowl-shaped depression caused by explosive action.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FTT:219</oboInOwl:hasDbXref>
@@ -4775,6 +4822,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00001996 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00001996">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">mine drainage</obo:IAO_0000111>
         <obo:IAO_0000115>The outflow of water from a mine.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Acid_mine_drainage"/>
@@ -4811,6 +4859,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">slope</obo:IAO_0000111>
         <obo:IAO_0000115>A solid astronomical body part which is part of the planetary surface between the peak of an elevation or the bottom of a depression and  relatively flat surrounding land.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:slope</oboInOwl:hasDbXref>
@@ -4835,6 +4884,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">oil seep</obo:IAO_0000111>
         <obo:IAO_0000115>The result of the release of natural hydrocarbons to the surface of the earth, including beneath the sea, by natural geological processes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Oil_seep</oboInOwl:hasDbXref>
@@ -4922,6 +4972,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">oil reservoir</obo:IAO_0000111>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Oil_reservoir</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
@@ -4937,6 +4988,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00002226 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">borehole</obo:IAO_0000111>
         <obo:IAO_0000115>A channel which is constructed by removing materials from land or submerged beds.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SWEETRealm:Borehole</oboInOwl:hasDbXref>
@@ -5013,6 +5065,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <!-- http://purl.obolibrary.org/obo/ENVO_00012408 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00012408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">aquifer</obo:IAO_0000111>
         <obo:IAO_0000115>An underground layer of water-bearing permeable rock or unconsolidated materials (gravel, sand, silt, or clay) from which groundwater can be usefully extracted using a water well.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:aquifer</oboInOwl:hasDbXref>
@@ -5119,6 +5172,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">kelp forest</obo:IAO_0000111>
         <obo:IAO_0000115>Kelp forests are underwater areas with a high density of kelp. They are recognized as one of the most productive and dynamic ecosystems on Earth. Smaller areas of anchored kelp are called kelp beds.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -5251,6 +5305,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">marine current</obo:IAO_0000111>
         <obo:IAO_0000115>A water current which is maintained by a continuous, directed movement of marine water, generated by forces caused by breaking waves, wind, Coriolis force, temperature and salinity differences, and tides caused by the gravitational pull of astronomical bodies. Depth contours, shoreline configurations and interaction with other currents influence a current&apos;s direction and strength.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -5710,6 +5765,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000686"/>
         <obo:IAO_0000111 xml:lang="en">canal</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">marine cold water mass</obo:IAO_0000111>
@@ -5738,6 +5794,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000686"/>
         <obo:IAO_0000111 xml:lang="en">brackish water body</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">marine warm water mass</obo:IAO_0000111>
@@ -5850,6 +5907,7 @@ SOURCE DEFINITION: A marine upwelling is a net flow of marine water to the surfa
     <!-- http://purl.obolibrary.org/obo/ENVO_01000258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">fluid cline</obo:IAO_0000111>
         <obo:IAO_0000115>A fluid front which is 1) thin in comparison to the fluid mass it is a part of and 2) across which a property of that fluid mass varies greatly over short vertical distance, relative to variation across the entire fluid mass.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -5985,6 +6043,7 @@ SOURCE DEFINITION: An area of the ocean floor where hydrogen sulfide, methane an
     <!-- http://purl.obolibrary.org/obo/ENVO_01000275 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">basin</obo:IAO_0000111>
         <obo:IAO_0000115>A structural basin is a geological depression formed by tectonic warping of previously flat lying rock strata.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -6006,6 +6065,7 @@ SOURCE DEFINITION: An area of the ocean floor where hydrogen sulfide, methane an
     <!-- http://purl.obolibrary.org/obo/ENVO_01000283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">lake layer</obo:IAO_0000111>
         <obo:IAO_0000115>A layer which is part of a lake.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -6058,6 +6118,7 @@ SOURCE DEFINITION: An area of the ocean floor where hydrogen sulfide, methane an
     <!-- http://purl.obolibrary.org/obo/ENVO_01000295 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">marine layer</obo:IAO_0000111>
         <obo:IAO_0000115>A layer that is part of a marine water body.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -6106,6 +6167,7 @@ SOURCE DEFINITION: An area of the ocean floor where hydrogen sulfide, methane an
     <!-- http://purl.obolibrary.org/obo/ENVO_01000299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">Taylor column</obo:IAO_0000111>
         <obo:IAO_0000115>A Taylor column is a column of deflected fluid flow which is formed in a perturbed, rotating fluid, is parallel to the axis of rotation, and extends above the obstacle perturbing the fluid in a rigid manner.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -6146,6 +6208,7 @@ SOURCE DEFINITION: An area of the ocean floor where hydrogen sulfide, methane an
     <!-- http://purl.obolibrary.org/obo/ENVO_01000326 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">deep chlorophyll maximum layer</obo:IAO_0000111>
         <obo:IAO_0000115>A subsurface layer in a water body, typically an ocean or lake, in which chlorophyll concentrations reach their maximum.</obo:IAO_0000115>
         <obo:IAO_0000116>Logical def is incomplete. Need to express the idea of maximum chlorophyll. This could follow a pattern like:
@@ -6183,6 +6246,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000353 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">eddy field</obo:IAO_0000111>
         <obo:IAO_0000115>A mesoscale eddy field is an expanse of marine water which includes coherent vortices, as well as a rich cascade of other structures such as filaments, squirts and spirals and is characterized by temperature and salinity anomalies with associated flow anomalies that are nearly in geostrophic balance. Although only the surface expression of mesoscale eddies is visible in satellite images of sea surface height or temperature, they are in fact three dimensional structures that reach down into the pycnocline.</obo:IAO_0000115>
         <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
@@ -6469,6 +6533,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000639 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">planetary layer</obo:IAO_0000111>
         <obo:IAO_0000115>A planetary structural layer is laminar part of a terrestrial planet or other rocky body large enough to have differentiation by density. Planetary layers have differing physicochemical properties and composition.</obo:IAO_0000115>
         <obo:IAO_0000116>Label should be improved to match definition.</obo:IAO_0000116>
@@ -6565,6 +6630,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000649 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">trench</obo:IAO_0000111>
         <obo:IAO_0000115>A trench is a type of excavation or depression in the ground that is generally deeper than it is wide (as opposed to a wider gully or ditch), and narrow compared to its length (as opposed to a simple hole).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:trench</oboInOwl:hasDbXref>
@@ -6606,6 +6672,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000686 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">marine water mass</obo:IAO_0000111>
         <obo:IAO_0000115>A mass of marine water.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -6619,6 +6686,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000687 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">coast</obo:IAO_0000111>
         <obo:IAO_0000115>A coast is the area where land meets the sea, ocean, or lake.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -6638,6 +6706,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">tsunami</obo:IAO_0000111>
         <obo:IAO_0000115>A tsunami is a process during which a series of waves is generated in a water body, typically an ocean or large lake, by the displacement of a large volume of water. Earthquakes, volcanic eruptions and other underwater explosions (including detonations of underwater nuclear devices), landslides, glacier calvings, meteorite impacts and other disturbances above or below water all have the potential to generate a tsunami.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>seismic sea wave</oboInOwl:hasExactSynonym>
@@ -6659,6 +6728,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">flood</obo:IAO_0000111>
         <obo:IAO_0000115>An unusual accumulation of water above the ground caused by high tide, heavy rain, melting snow or rapid runoff from paved areas.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -6761,6 +6831,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000793">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">wind</obo:IAO_0000111>
         <oboInOwl:hasBroadSynonym>wind</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasRelatedSynonym>A mass gaseous flow which occurrs in a planet&apos;s atmosphere due to internal pressure disequilibria.</oboInOwl:hasRelatedSynonym>
@@ -6783,6 +6854,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000811 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">atmosphere</obo:IAO_0000111>
         <obo:IAO_0000115>A planetary atmosphere which is composted primarily of dinitrogen and dioxygen gas.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -6798,6 +6870,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000871 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000871">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">puddle of water</obo:IAO_0000111>
         <obo:IAO_0000115>A puddle is a small accumulation of water, on a surface. It can form either by pooling in a depression on the surface, or by surface tension upon a flat surface.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -6817,6 +6890,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01000876 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000876">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">storm</obo:IAO_0000111>
         <obo:IAO_0000115>A storm is an environmental process in which an environmental system and the processes it participates in are strongly perturbed by external forcings. These forcings typically increase the rates of processes unfolding in the system, relative to their normal rates.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -7012,6 +7086,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">tectonic plate</obo:IAO_0000111>
         <obo:IAO_0000115>A part of a lithosphere which is separated by other such parts by geographic faults or similar geomorphological discontinuities.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -7030,6 +7105,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001191 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">water surface</obo:IAO_0000111>
         <obo:IAO_0000115>The surface layer of a volume of water.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:surface_water</oboInOwl:hasDbXref>
@@ -7047,6 +7123,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001209 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">wetland</obo:IAO_0000111>
         <obo:IAO_0000115>A terrestrial ecosystem which is inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances does support, a prevalence of vegetation typically adapted for life in saturated soil conditions.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:wetland</oboInOwl:hasDbXref>
@@ -7369,6 +7446,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001276 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">ice layer</obo:IAO_0000111>
         <obo:IAO_0000115>A solid layer which is primarily composed of some water-based ice.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#context"/>
@@ -7553,6 +7631,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001681 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">weather front</obo:IAO_0000111>
         <obo:IAO_0000115>A gaseous front which separates two masses of air with different densities and is a principal cause of meteorological phenomena.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -7806,6 +7885,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_01001781 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001781">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">landmass</obo:IAO_0000111>
         <obo:IAO_0000115>A solid astronomical body part which is part of the landmass of that body.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -7892,6 +7972,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_03000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">thermokarst</obo:IAO_0000111>
         <obo:IAO_0000115>An irregular land surface which consists of marshy hollows, hummocks, thermokarst depressions and thermokarst lakes formed from the erosion of ice-rich thawing permafrost areas.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -7914,6 +7995,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_03000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">snow mass</obo:IAO_0000111>
         <obo:IAO_0000115>A mass of snow.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
@@ -7932,6 +8014,7 @@ Further discussion in Issue #126.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/ENVO_03000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0110000"/>
         <obo:IAO_0000111 xml:lang="en">channel</obo:IAO_0000111>
         <obo:IAO_0000115>A structure which traverses a mass of one or more environmental materials, and encloses a roughly tubular site.</obo:IAO_0000115>
         <obo:IAO_0000116>Intended to be a top level class for wide variety of channel-like entities. It’s particulars may change once more subclasses are accumulated. This is distinct from &apos;channel of a watercourse&apos;, which is a depression.</obo:IAO_0000116>
