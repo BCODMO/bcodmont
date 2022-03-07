@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/matrix/robot_templates/biome.owl"/>
     
@@ -29,9 +30,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     
 
 
@@ -46,9 +59,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0120000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0120000">
+        <obo:IAO_0000111 xml:lang="en">biome</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for matrix biome module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">biome</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00000446 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000446">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0120000"/>
         <obo:IAO_0000111 xml:lang="en">terrestrial</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -60,6 +87,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000447 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0120000"/>
         <obo:IAO_0000111 xml:lang="en">marine</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
@@ -71,6 +99,7 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0120000"/>
         <obo:IAO_0000111 xml:lang="en">aquatic</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#biome"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
