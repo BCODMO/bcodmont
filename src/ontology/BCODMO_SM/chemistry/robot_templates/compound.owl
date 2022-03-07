@@ -30,6 +30,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -62,6 +68,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210000">
+        <obo:IAO_0000111 xml:lang="en">compound</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for chemistry compound module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">compound</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1433,6 +1451,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_22632 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">arsenic compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1516,6 +1535,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_22916 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">boron compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1551,6 +1571,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_22928 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22928">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">bromine compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1562,6 +1583,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_22985 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22985">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">calcium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1634,6 +1656,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_23117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">chlorine compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1645,6 +1668,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_23237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">chromium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1656,6 +1680,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_23377 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">copper compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1703,6 +1728,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">fluorine compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1823,6 +1849,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24860 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">iodine compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1834,6 +1861,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24873 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24873">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">iron compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1882,6 +1910,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">magnesium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1905,6 +1934,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25154 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">manganese compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1916,6 +1946,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25196 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">mercury compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1927,6 +1958,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25370 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">molybdenum compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -1998,6 +2030,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25806 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25806">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">oxygen compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2069,6 +2102,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">phosphorus compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2104,6 +2138,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">potassium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2151,6 +2186,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26628 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">selenium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2188,6 +2224,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26677 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">silicon compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2223,6 +2260,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26712 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26712">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">sodium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2246,6 +2284,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_26835 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">sulfur compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2293,6 +2332,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_27008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">tin compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -2316,6 +2356,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_27275 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">vanadium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -6447,6 +6488,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33298 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33298">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">lithium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -6818,6 +6860,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33499 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">uranium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -6937,6 +6980,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33582 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">carbon compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -6948,6 +6992,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33585 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">lead compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -7031,6 +7076,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33608 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">hydrogen compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -7054,6 +7100,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">aluminium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -7090,6 +7137,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_33780 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">beryllium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8025,6 +8073,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_36919 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">antimony compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8108,6 +8157,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_37126 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">rubidium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8119,6 +8169,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_37128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">caesium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8130,6 +8181,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_37131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">strontium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8141,6 +8193,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_37133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">barium compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -8224,6 +8277,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_37196 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">bismuth compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
@@ -10102,6 +10156,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_51143 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
         <obo:IAO_0000111 xml:lang="en">nitrogen compound</obo:IAO_0000111>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
