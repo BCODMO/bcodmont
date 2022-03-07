@@ -645,6 +645,16 @@ robot convert --input units/units.ttl --output units/units.owl
 
 Ontology imports are subsets of other ontologies that are created for reuse within another project. In order to re-use ontology terms from existing OBO ontologies we need to import them into our repository. Currently BCO-SM makes use of various OBO ontologies, see the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section.
 
+Ontology imports in BCO-SM are located in the path: `bcodmont/src/ontology/`**`imports`**`/` within the bcodmont github repository. Within that directory  are all the files associated with  ontology imports. Specifically, for each imported ontology there are two files the `terms.txt` file and the `import.owl` file. The former is a simple line sperated text file with the desired ontology term ID's (in CURIE format) to be imported. The latter are the owl files generated from importing the designated terms in the terms files.&#x20;
+
+An example of a terms file, the `envo_terms.txt` file looks like the following:
+
+```
+ENVO:00010505	#aerosol
+ENVO:00002005	#air
+ENVO:01001189	#algal material
+```
+
 #### Add new terms to import
 
 In order to import new terms from ontologies already incorporated into BCO-SM, we need to do the following. Note this step is the same as that descirbed in **step 4)** of [Importing A New Ontology](technical-documentation.md#importing-a-new-ontology).
@@ -666,16 +676,6 @@ git commit chebi_terms.txt -m 'Add CHEBI:63299, CHEBI:16493 and CHEBI:28681 to b
 ```
 
 #### Running all imports
-
-Ontology imports in BCO-SM are located in the path: `bcodmont/src/ontology/`**`imports`**`/` within the bcodmont github repository. Within that directory  are all the files associated with  ontology imports. Specifically, for each imported ontology there are two files the `terms.txt` file and the `import.owl` file. The former is a simple line sperated text file with the desired ontology term ID's (in CURIE format) to be imported. The latter are the owl files generated from importing the designated terms in the terms files.&#x20;
-
-An example of a terms file, the `envo_terms.txt` file looks like the following:
-
-```
-ENVO:00010505	#aerosol
-ENVO:00002005	#air
-ENVO:01001189	#algal material
-```
 
 We can run all existing imports from `bcodmont/src/ontology` with the following command:
 
