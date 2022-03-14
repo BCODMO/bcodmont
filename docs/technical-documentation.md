@@ -411,7 +411,7 @@ As before we can run these commands from `bcodmont/src/ontology/BCODMO_SM/`
 
 #### Merge Imports and Preliminary Robot Templates
 
-The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version of the merge command is used for the physics and operational modules. Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. Run this command after modifying the following  modules:
+The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version of the merge command is used for the **physics** and **operational** modules. Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. Run this command after modifying the following  modules:
 
 > **Physics:** characteristic, phenomenon
 >
@@ -423,8 +423,7 @@ robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.ow
 
 #### Make Object Property (OP) Free Versions of Select Import Ontologies
 
-These steps will create more intermediate products consisting of the import ontologies without object properties (e.g. subclass relations). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify existing hierarchies within certain OBO ontologies (e.g, CHEBI). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies. \
-
+These steps will create more intermediate products consisting of the import ontologies without object properties (e.g. subclass relations). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify existing hierarchies within certain OBO ontologies (e.g, CHEBI). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies.
 
 Only run these commands after modifying the imports (see the [Managing Imports](technical-documentation.md#managing-imports) section).&#x20;
 
