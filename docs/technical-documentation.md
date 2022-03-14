@@ -247,15 +247,9 @@ Any columns with `SPLIT=|` at the end of the string in the template (second) row
 
 **//TODO perhaps add** something about when to commit i.e, with a set of new terms to a module. Original commands can be found in the `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file.
 
-### 1) Download working copy of Robot Templates
+### 1) Modify Robot Templates
 
-This step is temporary as it draws from the google drive sheets. Later once the model is more settled, this can be changed to simply modify the `.tsv` files in the github repository. Perhaps we could also use additional/fancier tools such as [COGS](https://github.com/ontodev/cogs) to work with the source files in google sheets but have their working versions stored in github (TBD).
-
-Once the new additions have been made to the Robot templates (following the steps described in the [Preparing new BCO-SM terms](technical-documentation.md#preparing-new-bco-sm-terms) section, the working google sheet versions of the templates can be pulled down to the github working `.tsv` files.
-
-To download the working google sheet versions of the vocabularies on the google sheet click `File` Then `Download`, then select `Tab-seperated valuse` makeing sure you're on the correct sheet for the module you intend to be on. See the following image below:
-
-Once downloaded save the file in excel or move it on the command line to replace the appropriate Robot Template module `.tsv`file. For example for the `Chemistry compound` tsv sheet, save or move it to be the file at the location `bcodmont/src/ontology/BCODMO_SM/chemistry/robot_templates/compound.tsv`. It should possible to run this step via the command line `wget` or `rsync` TBD.
+BCO-SM's modules are matained as [Robot Template](https://robot.obolibrary.org/template) `.tsv` files, which are stored in the bcodmont [github repo](https://github.com/BCODMO/bcodmont). To add or modify  BCO-SM terms, follow the steps described in the [Preparing new BCO-SM terms](technical-documentation.md#preparing-new-bco-sm-terms) section and edit the  Robot templates files accordingly. The paths for each module are as follows:
 
 **Biology**:
 
@@ -710,7 +704,7 @@ In order to import a new OBO ontology we will need to do the following steps. Th
 In the following directory `bcodmont/src/ontology`is the ontology `Makefile`. The `Makefile` is the heart of the BCODMONT application ontology created by the Ontology Development Kit (ODK) in the initial release. The `Makefile` contains instructions for managing a variety of tasks including managing ontology imports, and releases. Within the `Makefile` (on approximately line 75 at the time of creating these docs), there will be the `IMPORTS` code-block which will resemble the following:
 
 ```
-IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco chebi
+IMPORTS = ro pato envo iao obi uo uberon go stato ms bfo cl cob pco so mi ecocore chebi ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
