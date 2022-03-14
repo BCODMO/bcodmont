@@ -423,7 +423,10 @@ robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.ow
 
 #### Make Object Property (OP) Free Versions of Select Import Ontologies
 
-These steps will create more intermediate products consisting of the import ontologies without object properties (e.g. subclass relations). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify existing hierarchies within certain OBO ontologies (e.g, CHEBI). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies.
+These steps will create more intermediate products consisting of the import ontologies without object properties (e.g. subclass relations). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify existing hierarchies within certain OBO ontologies (e.g, CHEBI). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies. \
+
+
+Only run these commands after modifying the imports (see the [Managing Imports](technical-documentation.md#managing-imports) section).&#x20;
 
 **Make OP free version of CHEBI import**. Only need to run after adding to CHEBI import.
 
@@ -495,7 +498,7 @@ robot remove --input ../imports/pato_import.owl --axioms logical annotate --onto
 
 This step will merge the axiom free import ontologies (CHEBI, ENVO, UBERON, GO etc) generated in the above steps with select modules that we are electing not to use the original hierarchies from.&#x20;
 
-Make sure to run  this command after modifying any of the **Biology**, **Chemistry**, **matrix** modules.&#x20;
+Make sure to run  this command after modifying any of the **Biology**, **Chemistry**, or **matrix** modules.&#x20;
 
 ```
 robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input intermediate/obi_import_axioms_removed.owl --input intermediate/so_import_axioms_removed.owl --input intermediate/mi_import_axioms_removed.owl --input intermediate/ms_import_axioms_removed.owl --input intermediate/ecocore_import_axioms_removed.owl --input intermediate/pato_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input biology/robot_templates/biomolecules.owl --input biology/robot_templates/organism.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl --input quantifiers/robot_templates/quantifiers.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
