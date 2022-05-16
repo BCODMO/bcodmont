@@ -641,6 +641,14 @@ uom -h
 
 Run the following steps in the directory `bcodmont/src/ontology/BCODMO_SM`
 
+The `units/input_unit_codes.csv` file is the main list of input UCUM codes used to prepare the units.ttl file. New unit requests can simply be added as input lines (return deliminted) to this file. For example to add the new unit `decilter per mole per year` one would add a UCUM code such as the following or one equivalent to it such as one of:
+
+* dL/mol/a
+* dL.mol-1.a-1
+* dL.a-1.mol-1
+
+These input codes must follow the UCUM sepecification for more information see the UCUM spec available from [https://ucum.org/ucum.html](https://ucum.org/ucum.html) as well as the UCUM code validation service [https://ucum.nlm.nih.gov/ucum-lhc/demo.html](https://ucum.nlm.nih.gov/ucum-lhc/demo.html).&#x20;
+
 Complie the units.ttl file:
 
 ```
