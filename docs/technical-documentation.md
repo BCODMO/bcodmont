@@ -18,7 +18,7 @@ BCODMONT is an OBO style application ontology created using the [Ontology Develo
 
 The **BCO**DMO **S**emantic **M**odel (**BCO-SM**) is created within BCODMONT and acts as a controlled vocabulary for the BCODMO data managers to annotate dataset metadata within a semantic layer to be incorporated into the BCO-DMO Knowledge Graph.
 
-The BCO-SM is loosely based on the [NERC Vocabulary Server (NERC-VS)](https://www.bodc.ac.uk/resources/products/web\_services/vocab/) model, but draws from terminology from various ontologies within the [Open Biological and Biomedical Ontology (OBO) Foundry](http://www.obofoundry.org). It is based on the clarity of the NERC semantic model structure for describing marine data, while leveraging the diversity, richness, and semantic maturity of the OBO collection.
+The BCO-SM is loosely based on the [NERC Vocabulary Server (NERC-VS)](https://www.bodc.ac.uk/resources/products/web\_services/vocab/) model, but draws from terminology from various ontologies within the [Open Biological and Biomedical Ontology (OBO) Foundry](http://www.obofoundry.org/). It is based on the clarity of the NERC semantic model structure for describing marine data, while leveraging the diversity, richness, and semantic maturity of the OBO collection.
 
 ### Modules:
 
@@ -60,7 +60,7 @@ The [Quantifiers](../src/ontology/BCODMO\_SM/quantifiers/quantifiers.owl) module
 
 ### OBO Ontologies Used
 
-BCODMONT incorporates terms from pre-existing terms within OBO ontologies in an effort to facilitate linkage with outside data repositories as well as to minimize the burden for creation of new richly defined terms. Cross reference the [OBO Foundry hompage](http://www.obofoundry.org).
+BCODMONT incorporates terms from pre-existing terms within OBO ontologies in an effort to facilitate linkage with outside data repositories as well as to minimize the burden for creation of new richly defined terms. Cross reference the [OBO Foundry hompage](http://www.obofoundry.org/).
 
 This section is split into two subsections the first consists of OBO foundry ontologies which 1) are guarantied to be imported using the standard Robot import workflow (from the ODK), 2) which contain standardized annotation properties and axioms (so we know we can reuse them without writing extra conditions in our search or GUI visualization workflows) and 3) Have been vetted as following the OBO principal of orthogonality, that is describing a specific domain or set of domains but not overlapping with the information represented by another ontology. The second section describes other ontologies which are referenced but not directly used as imports. There are several reasons for not directly using some ontologies as imports and optionally mapping to others. Non OBO ontologies are not hosted in the same way as OBO ones and aren't guarantied to work with the import workflow, they are also not guarantied to use the same annotation properties (e.g., definitions). Some OBO projects maybe deprecated or are not themselves examples of best practices or good sources to draw from. Some non OBO projects, (e.g. SIO) are well made and although not guarantied to have the required properties, they are used by other systems. hence mapping to them helps to bolster overall inter-project interoperability, and future efforts to harmonize them with OBO projects.
 
@@ -106,7 +106,7 @@ This section is split into two subsections the first consists of OBO foundry ont
 
 **The Genomic Epidemiology Ontology (GENEPIO)**: covers concepts relevant to foodborne pathogens and associated outbreaks. A few GENEPIO terms maybe relevant to BCO-SM however, it's TBD if it will be included.
 
-**The NCI Thesaurus OBO Edition (NCIT)**: is an ontology style (owl) representation of the National Cancer Institute ([NCI](https://ncicb.nci.nih.gov)) thesaurus. NCIT includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIT is not an ontology of concepts merely a representation of a thesaurus as an ontology. Although, NCIT has a broad coverage of terminology and is reasonable to cross-reference, it should not be considered as an an ontological framework and hence is not imported into BCO-SM. Importing NCIT is probably not worth the effort to maintain it as a commutable structure if it's not organized to be such a product.
+**The NCI Thesaurus OBO Edition (NCIT)**: is an ontology style (owl) representation of the National Cancer Institute ([NCI](https://ncicb.nci.nih.gov/)) thesaurus. NCIT includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIT is not an ontology of concepts merely a representation of a thesaurus as an ontology. Although, NCIT has a broad coverage of terminology and is reasonable to cross-reference, it should not be considered as an an ontological framework and hence is not imported into BCO-SM. Importing NCIT is probably not worth the effort to maintain it as a commutable structure if it's not organized to be such a product.
 
 **The NMR-instrument specific component of metabolomics investigations Ontology (NMR)**: was previously used to describe experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation. However it is now **deprecated** by the OBO foundry. Hence BCO-SM shouldn't use it.
 
@@ -611,17 +611,45 @@ robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bc
 
 ### 5) Units
 
-The units system used in BCO-SM is a new units system based on the [The Unified Code for Units of Measure](https://ucum.org/ucum.html) (UCUM), an existing standard in healthcare data interoperability. It’s not an ontology but instead makes use of codes e.g. meter per second is `m.s-1`. The long term plan would be for the new unit system to be hosted by my collaborator Dr. James Overton’s company Knocean, which would host the web server making the system free for use for anyone, and would enable people to dynamically add new units and get back an IRI right away. In the mean time prior to him setting up a server for all to use, we can just use a local implementation of the [units generating script](https://github.com/kaiiam/UO\_revamp/blob/main/nc\_name\_script/nc\_name.py) that can be used to manage new term requests.
+The units system used in BCO-SM is the [Units of Measurement](https://units-of-measurement.org/) (UOM) is a new units system based on the [The Unified Code for Units of Measure](https://ucum.org/ucum.html) (UCUM), which is itself an important standard in healthcare data interoperability.  It is a free service in which one can dynamically generate annotations for units including labels definitions and IRI's, based on input UCUM codes. For example the code `m.s-1` will create a unit entity for `meter per second`.&#x20;
 
-#### **Temporary steps for getting the units system:**
+In future release we will make the [source code for UOM](https://github.com/units-of-measurement/units-of-measurement) into a python package, which will be downloadable from PyPI. For now the souce code from repository can be builed and used to generate the BCO-SM units module.
+
+#### UOM Setup Instructions:
+
+Clone the UOM repository, in a new directory, (not within the bcodmont repository)
+
+```
+git clone https://github.com/units-of-measurement/units-of-measurement.git
+```
+
+Install the requirment and complie the python code: requires python 3.&#x20;
+
+```
+cd units-of-measurement/
+python3 -m pip install -r requirements.txt
+python3 -m pip install .
+```
+
+Confirm the software is working:
+
+```
+uom -h
+```
+
+#### Using UOM
 
 Run the following steps in the directory `bcodmont/src/ontology/BCODMO_SM`
 
-Download the lastest version of the output file.
+Complie the units.ttl file:
 
 ```
-wget https://raw.githubusercontent.com/kaiiam/UO_revamp/main/nc_name_script/output/production/working_output.ttl -O units/units.ttl
+uom units/input_unit_codes.csv > units.ttl
 ```
+
+
+
+\*\*The following steps can be kept if needed by the UI script.\*\*
 
 Export the ttl file to a tsv file for the UI script to process:
 
@@ -697,7 +725,7 @@ To re-run an individual ontology (instead of all imported ontologies) one can ru
 
 #### NCBITaxon import
 
-Note that the **biology organism** module is a special cause in that it is not only generated from the robot template but that additionally, the [ncbitaxon\_import.owl](../src/ontology/imports/ncbitaxon\_import.owl) is directly merged in with the final version of the **biology organism** owl file. **** This  is done in order to directly populate the **organism** module from the NCBITaxon terms imported in the  [ncbitaxon\_terms.txt](../src/ontology/imports/ncbitaxon\_terms.txt). That is to say any imported taxa will get directly merged into the **organism** module when running the filter command. This is noted in the organism filter commands description explaining how in addition to filtering the final version organism robot template, the command also merges the NCBITaxon import owl file.&#x20;
+Note that the **biology organism** module is a special cause in that it is not only generated from the robot template but that additionally, the [ncbitaxon\_import.owl](../src/ontology/imports/ncbitaxon\_import.owl) is directly merged in with the final version of the **biology organism** owl file. **** This is done in order to directly populate the **organism** module from the NCBITaxon terms imported in the  [ncbitaxon\_terms.txt](../src/ontology/imports/ncbitaxon\_terms.txt). That is to say any imported taxa will get directly merged into the **organism** module when running the filter command. This is noted in the organism filter commands description explaining how in addition to filtering the final version organism robot template, the command also merges the NCBITaxon import owl file.&#x20;
 
 #### Running the CHEBI & NCBITaxon imports
 
@@ -920,7 +948,7 @@ In either case it's important to update the `--select "oboInOwl:inSubset=bsm:eco
 
 ### Setting up BCODMONT on a new computer
 
-BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com).
+BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/).
 
 **Step 1)** On the new system install docker (if not already installed), See the [https://www.docker.com/get-started](https://www.docker.com/get-started). Docker desktop on a personal computer, (docker hub for a cloud image?).
 
