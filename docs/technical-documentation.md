@@ -411,7 +411,11 @@ As before we can run these commands from `bcodmont/src/ontology/BCODMO_SM/`
 
 #### Merge Imports and Preliminary Robot Templates
 
-The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version is used for **The following modules TBD.** Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. //TODO "Run this step after modifying any of the following ... imports or ... modules.". Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. The commands in later steps clarify which merge product is used for what modules.&#x20;
+The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version of the merge command is used for the **physics** and **operational** modules. Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. Run this command after modifying the following  modules:
+
+> **Physics:** characteristic, phenomenon
+>
+> **Operational**
 
 ```
 robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.owl --input ../imports/uberon_import.owl --input ../imports/go_import.owl --input ../imports/iao_import.owl --input ../imports/obi_import.owl --input ../imports/uo_import.owl --input ../imports/chebi_import.owl --input ../imports/stato_import.owl --input ../imports/ms_import.owl --input ../imports/bfo_import.owl --input ../imports/cl_import.owl --input biology/robot_templates/physiology.owl --input physics/robot_templates/characteristic.owl --input physics/robot_templates/phenomenon.owl --input quantifiers/robot_templates/quantifiers.owl --input operational/robot_templates/operational.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_merged.owl" --output merge_products/BCODMO_SM_merged.owl
@@ -420,6 +424,8 @@ robot merge --input ../imports/envo_import.owl --input ../imports/pato_import.ow
 #### Make Object Property (OP) Free Versions of Select Import Ontologies
 
 These steps will create more intermediate products consisting of the import ontologies without object properties (e.g. subclass relations). These axiom-free versions of the import ontologies will be merged together in the next step to create an axiom free merged product which is used for several modules. This is done as certain BCO-SM modules simplify existing hierarchies within certain OBO ontologies (e.g, CHEBI). Doing this allows for a simpler hierarchy to be shown in the final output files. If needed, we can add more with more input ontologies.
+
+Only run these commands after modifying the imports (see the [Managing Imports](technical-documentation.md#managing-imports) section).&#x20;
 
 **Make OP free version of CHEBI import**. Only need to run after adding to CHEBI import.
 
@@ -489,7 +495,9 @@ robot remove --input ../imports/pato_import.owl --axioms logical annotate --onto
 
 #### Merge Modules with Axiom free Import Ontologies
 
-This step will merge the axiom free import ontologies (CHEBI, ENVO, UBERON, GO etc) generated in the above steps with select modules in which we are electing not to use the original hierarchies from. These modules include: both Chemistry modules (**compound** and **element**), all four **matrix** modules (region, biome, context and material), and all current Biology modules.
+This step will merge the axiom free import ontologies (CHEBI, ENVO, UBERON, GO etc) generated in the above steps with select modules that we are electing not to use the original hierarchies from.&#x20;
+
+Make sure to run  this command after modifying any of the **Biology**, **Chemistry**, or **matrix** modules.&#x20;
 
 ```
 robot merge --input intermediate/chebi_import_axioms_removed.owl --input intermediate/envo_import_axioms_removed.owl --input intermediate/uberon_import_axioms_removed.owl --input intermediate/go_import_axioms_removed.owl --input ../imports/iao_import.owl --input ../imports/cl_import.owl --input intermediate/pco_import_axioms_removed.owl --input intermediate/obi_import_axioms_removed.owl --input intermediate/so_import_axioms_removed.owl --input intermediate/mi_import_axioms_removed.owl --input intermediate/ms_import_axioms_removed.owl --input intermediate/ecocore_import_axioms_removed.owl --input intermediate/pato_import_axioms_removed.owl --input biology/robot_templates/anatomy.owl --input biology/robot_templates/physiology.owl --input biology/robot_templates/ecology.owl --input biology/robot_templates/biomolecules.owl --input biology/robot_templates/organism.owl --input chemistry/robot_templates/element.owl --input chemistry/robot_templates/compound.owl --input matrix/robot_templates/material.owl --input matrix/robot_templates/context.owl --input matrix/robot_templates/biome.owl --input matrix/robot_templates/region.owl --input quantifiers/robot_templates/quantifiers.owl annotate --ontology-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --version-iri "http://purl.obolibrary.org/BCODMO_SM/merge_products/BCODMO_SM_axioms_removed_merged.owl" --output merge_products/BCODMO_SM_axioms_removed_merged.owl
