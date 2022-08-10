@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/BCODMO_SM/chemistry/temp.owl#"
+     xml:base="http://purl.obolibrary.org/BCODMO_SM/chemistry/temp.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/BCODMO_SM/chemistry/temp.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/BCODMO_SM/chemistry/temp.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!--   BSM:0220001 -->
+
+    <owl:Class rdf:about="  BSM:0220001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved organic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Organic matter that is dissolved.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DOM</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved organic matter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220002 -->
+
+    <owl:Class rdf:about="  BSM:0220002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved inorganic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Inorganic matter that is dissolved.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved inorganic matter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220003 -->
+
+    <owl:Class rdf:about="  BSM:0220003">
+        <rdfs:subClassOf rdf:resource="  BSM:0220001"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved organic carbon</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of dissolved organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DOC</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved organic carbon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220004 -->
+
+    <owl:Class rdf:about="  BSM:0220004">
+        <rdfs:subClassOf rdf:resource="  BSM:0220002"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved inorganic carbon</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">See https://en.wikipedia.org/wiki/Dissolved_inorganic_carbon</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym xml:lang="en">DIC</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved inorganic carbon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220005 -->
+
+    <owl:Class rdf:about="  BSM:0220005">
+        <rdfs:subClassOf rdf:resource="  BSM:0220001"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved organic nitrogen</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of dissolved organic matter.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Dissolved organic nitrogen (DON) is that subset of the dissolved organic carbon (DOC) pool that also contains N.</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym xml:lang="en">DON</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved organic nitrogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220006 -->
+
+    <owl:Class rdf:about="  BSM:0220006">
+        <rdfs:subClassOf rdf:resource="  BSM:0220002"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved inorganic nitrogen</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DIN</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved inorganic nitrogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220007 -->
+
+    <owl:Class rdf:about="  BSM:0220007">
+        <rdfs:subClassOf rdf:resource="  BSM:0220001"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved organic phosphorus</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of dissolved organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DOP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved organic phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220008 -->
+
+    <owl:Class rdf:about="  BSM:0220008">
+        <rdfs:subClassOf rdf:resource="  BSM:0220002"/>
+        <obo:IAO_0000111 xml:lang="en">dissolved inorganic phosphorus</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">DIP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">dissolved inorganic phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220009 -->
+
+    <owl:Class rdf:about="  BSM:0220009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <obo:IAO_0000111 xml:lang="en">particulate organic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Organic matter that is particulate.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">See https://en.wikipedia.org/wiki/Particulate_organic_matter</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym xml:lang="en">POM</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:comment xml:lang="en">A fraction of total organic matter operationally defined as that which does not pass through a filter pore size that typically ranges in size from 0.053 to 2 millimeters.</rdfs:comment>
+        <rdfs:label xml:lang="en">particulate organic matter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220010 -->
+
+    <owl:Class rdf:about="  BSM:0220010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <obo:IAO_0000111 xml:lang="en">particulate inorganic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Inorganic matter that is particulate.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">PIM</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate inorganic matter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220011 -->
+
+    <owl:Class rdf:about="  BSM:0220011">
+        <rdfs:subClassOf rdf:resource="  BSM:0220009"/>
+        <obo:IAO_0000111 xml:lang="en">particulate organic carbon</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of particulate organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">POC</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:comment xml:lang="en">The mass of carbon in the particulate organic material</rdfs:comment>
+        <rdfs:label xml:lang="en">particulate organic carbon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220012 -->
+
+    <owl:Class rdf:about="  BSM:0220012">
+        <rdfs:subClassOf rdf:resource="  BSM:0220010"/>
+        <obo:IAO_0000111 xml:lang="en">particulate inorganic carbon</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of particulate inorganic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">PIC</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate inorganic carbon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220013 -->
+
+    <owl:Class rdf:about="  BSM:0220013">
+        <rdfs:subClassOf rdf:resource="  BSM:0220009"/>
+        <obo:IAO_0000111 xml:lang="en">particulate organic nitrogen</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of particulate organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">PON</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate organic nitrogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220014 -->
+
+    <owl:Class rdf:about="  BSM:0220014">
+        <rdfs:subClassOf rdf:resource="  BSM:0220010"/>
+        <obo:IAO_0000111 xml:lang="en">particulate inorganic nitrogen</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of particulate inorganic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">PIN</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate inorganic nitrogen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220015 -->
+
+    <owl:Class rdf:about="  BSM:0220015">
+        <rdfs:subClassOf rdf:resource="  BSM:0220009"/>
+        <obo:IAO_0000111 xml:lang="en">particulate organic phosphorus</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of particulate organic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">POP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate organic phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!--   BSM:0220016 -->
+
+    <owl:Class rdf:about="  BSM:0220016">
+        <rdfs:subClassOf rdf:resource="  BSM:0220010"/>
+        <obo:IAO_0000111 xml:lang="en">particulate inorganic phosphorus</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of particulate inorganic matter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">PIP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">particulate inorganic phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210000">
+        <obo:IAO_0000111 xml:lang="en">compound</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Root node for chemistry compound module.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <rdfs:label xml:lang="en">compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24835 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+        <obo:IAO_0000111 xml:lang="en">inorganic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A chemical compound that lacks carbon�hydrogen bonds and is therefore not an organic compound.</obo:IAO_0000115>
+        <obo:IAO_0000115>A molecular entity that contains no carbon.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Root is chemistry compound upper level term.  See https://en.wikipedia.org/wiki/Inorganic_compound</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym xml:lang="en">inorganic compound</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>anorganische Verbindungen</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inorganic compounds</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inorganic entity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inorganic molecular entities</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inorganics</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:24835</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:comment xml:lang="en">There are a few notable exception e.g., carbon monoxide, carbon dioxide, carbides, as well as various salts.</rdfs:comment>
+        <rdfs:label xml:lang="en">inorganic matter</rdfs:label>
+        <rdfs:label>inorganic molecular entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>anorganische Verbindungen</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>inorganic compounds</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>inorganic entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>inorganic molecular entities</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>inorganics</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+        <obo:IAO_0000111 xml:lang="en">organic compound</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">organic matter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A chemical compound that contain carbon-hydrogen or carbon-carbon bonds.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any molecular entity that contains carbon.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Root is chemistry compound upper level term. See https://en.wikipedia.org/wiki/Organic_compound</obo:IAO_0000116>
+        <oboInOwl:hasAlternativeId>CHEBI:25700</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:33244</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym xml:lang="en">organic compound</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>organic compounds</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>organic entity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>organic molecular entities</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:50860</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label xml:lang="en">organic compound</rdfs:label>
+        <rdfs:label xml:lang="en">organic matter</rdfs:label>
+        <rdfs:label>organic molecular entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>organic compounds</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>organic entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>organic molecular entities</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
