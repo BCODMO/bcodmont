@@ -56,6 +56,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSM_0220021">
+        <obo:IAO_0000116 xml:lang="en">Temporarliy here we should standardize these OPs with the RDF model and have them somewhere else</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">hasQuantifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSM_0220022">
+        <obo:IAO_0000116 xml:lang="en">Temporarliy here we should standardize these OPs with the RDF model and have them somewhere else</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">hasEntity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -64,10 +93,36 @@
     
 
 
-    <!--  	BSM:0220001 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0210000 -->
 
-    <owl:Class rdf:about=" 	BSM:0220001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210000">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved organic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Organic matter that is dissolved.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DOM</oboInOwl:hasExactSynonym>
@@ -78,10 +133,28 @@
     
 
 
-    <!--  	BSM:0220002 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220002 -->
 
-    <owl:Class rdf:about=" 	BSM:0220002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved inorganic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Inorganic matter that is dissolved.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DIM</oboInOwl:hasExactSynonym>
@@ -92,10 +165,28 @@
     
 
 
-    <!--  	BSM:0220003 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220003 -->
 
-    <owl:Class rdf:about=" 	BSM:0220003">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved organic carbon</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of dissolved organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DOC</oboInOwl:hasExactSynonym>
@@ -106,10 +197,28 @@
     
 
 
-    <!--  	BSM:0220004 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220004 -->
 
-    <owl:Class rdf:about=" 	BSM:0220004">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved inorganic carbon</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See https://en.wikipedia.org/wiki/Dissolved_inorganic_carbon</obo:IAO_0000116>
@@ -121,10 +230,28 @@
     
 
 
-    <!--  	BSM:0220005 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220005 -->
 
-    <owl:Class rdf:about=" 	BSM:0220005">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved organic nitrogen</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of dissolved organic matter.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Dissolved organic nitrogen (DON) is that subset of the dissolved organic carbon (DOC) pool that also contains N.</obo:IAO_0000116>
@@ -136,10 +263,28 @@
     
 
 
-    <!--  	BSM:0220006 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220006 -->
 
-    <owl:Class rdf:about=" 	BSM:0220006">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved inorganic nitrogen</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DIN</oboInOwl:hasExactSynonym>
@@ -150,10 +295,28 @@
     
 
 
-    <!--  	BSM:0220007 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220007 -->
 
-    <owl:Class rdf:about=" 	BSM:0220007">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved organic phosphorus</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of dissolved organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DOP</oboInOwl:hasExactSynonym>
@@ -164,10 +327,28 @@
     
 
 
-    <!--  	BSM:0220008 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220008 -->
 
-    <owl:Class rdf:about=" 	BSM:0220008">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">dissolved inorganic phosphorus</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of dissolved inorganic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">DIP</oboInOwl:hasExactSynonym>
@@ -178,10 +359,28 @@
     
 
 
-    <!--  	BSM:0220009 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220009 -->
 
-    <owl:Class rdf:about=" 	BSM:0220009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate organic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Organic matter that is particulate.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">See https://en.wikipedia.org/wiki/Particulate_organic_matter</obo:IAO_0000116>
@@ -194,10 +393,28 @@
     
 
 
-    <!--  	BSM:0220010 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220010 -->
 
-    <owl:Class rdf:about=" 	BSM:0220010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate inorganic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Inorganic matter that is particulate.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">PIM</oboInOwl:hasExactSynonym>
@@ -208,10 +425,28 @@
     
 
 
-    <!--  	BSM:0220011 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220011 -->
 
-    <owl:Class rdf:about=" 	BSM:0220011">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate organic carbon</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of particulate organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">POC</oboInOwl:hasExactSynonym>
@@ -223,10 +458,28 @@
     
 
 
-    <!--  	BSM:0220012 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220012 -->
 
-    <owl:Class rdf:about=" 	BSM:0220012">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220010"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate inorganic carbon</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The carbon compound fraction of particulate inorganic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">PIC</oboInOwl:hasExactSynonym>
@@ -237,10 +490,28 @@
     
 
 
-    <!--  	BSM:0220013 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220013 -->
 
-    <owl:Class rdf:about=" 	BSM:0220013">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate organic nitrogen</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of particulate organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">PON</oboInOwl:hasExactSynonym>
@@ -251,10 +522,28 @@
     
 
 
-    <!--  	BSM:0220014 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220014 -->
 
-    <owl:Class rdf:about=" 	BSM:0220014">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220010"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate inorganic nitrogen</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The nitrogen compound fraction of particulate inorganic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">PIN</oboInOwl:hasExactSynonym>
@@ -265,10 +554,28 @@
     
 
 
-    <!--  	BSM:0220015 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220015 -->
 
-    <owl:Class rdf:about=" 	BSM:0220015">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220009"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate organic phosphorus</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of particulate organic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">POP</oboInOwl:hasExactSynonym>
@@ -279,10 +586,28 @@
     
 
 
-    <!--  	BSM:0220016 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220016 -->
 
-    <owl:Class rdf:about=" 	BSM:0220016">
-        <rdfs:subClassOf rdf:resource=" 	BSM:0220010"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0220010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">particulate inorganic phosphorus</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The phosphorus compound fraction of particulate inorganic matter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">PIP</oboInOwl:hasExactSynonym>
@@ -293,10 +618,38 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0210000 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0220017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210000">
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220017">
+        <obo:IAO_0000111 xml:lang="en">dissolved</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Temporarliy here to add to quanitifier</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">dissolved</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220018">
+        <obo:IAO_0000111 xml:lang="en">particulate</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Temporarliy here to add to quanitifier</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">particulate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220019">
+        <rdfs:label xml:lang="en">organic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0220020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0220020">
+        <rdfs:label xml:lang="en">inorganic</rdfs:label>
     </owl:Class>
     
 
@@ -305,6 +658,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24835">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">inorganic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A chemical compound that lacks carbon�hydrogen bonds and is therefore not an organic compound.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Root is chemistry compound upper level term.  See https://en.wikipedia.org/wiki/Inorganic_compound</obo:IAO_0000116>
@@ -317,10 +676,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_50860 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSM_0220021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSM_0220019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">organic matter</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A chemical compound that contain carbon-hydrogen or carbon-carbon bonds.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Root is chemistry compound upper level term. See https://en.wikipedia.org/wiki/Organic_compound</obo:IAO_0000116>
@@ -329,6 +706,12 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#temp"/>
         <rdfs:label xml:lang="en">organic matter</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51143"/>
 </rdf:RDF>
 
 
