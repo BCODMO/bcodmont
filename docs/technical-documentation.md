@@ -679,6 +679,29 @@ robot convert --input units/units.ttl --output units/units.owl
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
 
+****
+
+### Setting up BCODMONT on a new computer
+
+BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/).
+
+**Step 1)** On the new system install docker (if not already installed), See the [https://www.docker.com/get-started](https://www.docker.com/get-started).&#x20;
+
+**Step 2)** Following the instructions described in the [ODK](https://github.com/INCATools/ontology-development-kit), pull the ODK docker image
+
+```
+docker pull obolibrary/odkfull
+```
+
+**Step 3)** Clone BCODMONT repository\
+We suggested to do this ssh instead of HTTPS and using ssh keys as github is deprecated passwords as of the summer 2021. See this page on [adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). One could alternatively use github autentication tokins.&#x20;
+
+```
+git clone https://github.com/BCODMO/bcodmont.git
+```
+
+****
+
 ### Github Branch and Merge Workflow
 
 To make changes to github repository via pull requests [protocol based on GO Daily workflow](https://go-ontology.readthedocs.io/en/latest/DailyWorkflow.html)
@@ -1017,26 +1040,3 @@ robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix
 ```
 
 In either case it's important to update the `--select "oboInOwl:inSubset=bsm:ecology"` to be the name of the new module and the same url as added in **step 4**. These steps will generate the final version of the newly added module. In the case of `ecology`, `biology/ecology.owl`.
-
-
-
-### Setting up BCODMONT on a new computer
-
-BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/).
-
-**Step 1)** On the new system install docker (if not already installed), See the [https://www.docker.com/get-started](https://www.docker.com/get-started).&#x20;
-
-**Step 2)** Following the instructions described in the [ODK](https://github.com/INCATools/ontology-development-kit), pull the ODK docker image
-
-```
-docker pull obolibrary/odkfull
-```
-
-**Step 3)** Clone BCODMONT repository\
-We suggested to do this ssh instead of HTTPS and using ssh keys as github is deprecated passwords as of the summer 2021. See this page on [adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). One could alternatively use github autentication tokins.&#x20;
-
-```
-git clone https://github.com/BCODMO/bcodmont.git
-```
-
-****
