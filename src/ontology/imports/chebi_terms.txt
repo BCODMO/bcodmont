@@ -1,3 +1,9 @@
+### BCODMO_SM Biology biomolecules terms:
+CHEBI:16670	#peptide
+CHEBI:16991	#DNA
+CHEBI:33697	#RNA
+CHEBI:36080	#protein
+
 ### BCODMO_SM element terms:
 CHEBI:30151	#aluminide(1-)
 CHEBI:37969	#aluminium-26 atom
@@ -461,8 +467,6 @@ CHEBI:37255	#zinc(1+)
 CHEBI:29105	#zinc(2+)
 CHEBI:37254	#zincide
 CHEBI:33342	#zirconium atom
-
-
 
 ### BCODMO_SM compound terms:
 CHEBI:32617	#(+)-aplasmomycin
@@ -1473,9 +1477,5 @@ CHEBI:65244	#zeinoxanthin
 CHEBI:27362	#zeta-carotene
 CHEBI:49976	#zinc dichloride
 CHEBI:35176	#zinc sulfate
-
-### BCODMO_SM Biology biomolecules terms:
-CHEBI:16670	#peptide
-CHEBI:16991	#DNA
-CHEBI:33697	#RNA
-CHEBI:36080	#protein
+CHEBI:177613 #Diadinoxanthin
+CHEBI:181837 #Diatoxanthin
