@@ -202,6 +202,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0100005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0100005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
+        <obo:IAO_0000111 xml:lang="en">porewater</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Water which resides within the interstitial spaces between grains of sediment.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Term requested within ENVO</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#material"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#matrix"/>
+        <rdfs:label xml:lang="en">porewater</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000134">
