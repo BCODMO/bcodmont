@@ -243,6 +243,8 @@ Any columns with `SPLIT=|` at the end of the string in the template (second) row
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
 
+Depending on the workflow chose by the BCODMO vocabulary manager(s) condider using the Github Branch and Merge Workflow to make changes to a branch on a pull request rather than directly to the main branch in order to implement the changes described in the following sections.&#x20;
+
 ### 1) Modify Robot Templates
 
 BCO-SM's modules are maintained as [Robot Template](https://robot.obolibrary.org/template) `.tsv` files, which are stored in the bcodmont [github repo](https://github.com/BCODMO/bcodmont). To add or modify  BCO-SM terms, follow the steps described in the [Preparing new BCO-SM terms](technical-documentation.md#preparing-new-bco-sm-terms) section and edit the  Robot templates files accordingly. The paths for each module are as follows:
@@ -676,6 +678,68 @@ robot convert --input units/units.ttl --output units/units.owl
 ## Maintaining BCO-SM
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
+
+### Github Branch and Merge Workflow
+
+To make changes to github repository via pull requests [protocol based on GO Daily workflow](https://go-ontology.readthedocs.io/en/latest/DailyWorkflow.html)
+
+1. Make sure you're up to date:
+
+`git pull`
+
+2\. Start or address an issue on the [BCODMONT github repo issue page](https://github.com/BCODMO/bcodmont/issues):
+
+e.g. `issue 23`&#x20;
+
+3\. checkout a branch corresponding to that issue.
+
+`git checkout -b issue-23`
+
+**3. Make changes**
+
+These could include any changes made while following the steps in the [**Compiling BCO-SM**](technical-documentation.md#compiling-bco-sm-1) **** or [**Maintaining BCO-SM**](technical-documentation.md#maintaining-bco-sm-1) **** sections.&#x20;
+
+4\. Add/commit changes with a message:
+
+`git commit -m 'Add speed address #23'` Best to have one commit message per new class added or changed.
+
+5\. Push your branch to origin to create a pull request
+
+For example the command would be something like `git push origin issue-23`. However you can just run `git push` and it should prompt you with the line to run.
+
+6\. On the [BCODMONT pull requests page](https://github.com/BCODMO/bcodmont/pulls):
+
+click on `Compare and Create Pull Request`
+
+View the pull request and accompanying files and conversation and make sure the changes are as expected.
+
+7\. Switch from branch back to the main branch in terminal:
+
+`git checkout main`
+
+8\. Review the pull request and or make changes as necessary:
+
+Finally when ready, click `Merge Pull Request`
+
+9\. Delete the branch after the changes are merged:
+
+`git pull` To get the new origin with the merged branch.
+
+`git branch -d issue-23`
+
+**Update Pull Request**
+
+If you need to make changes to a branch, which has not yet been merged or deleted you can do the following:
+
+`git checkout issue-23`
+
+**Make your changes**
+
+`git commit -m 'Fix velocity definition address #23'`
+
+`git push --set-upstream origin issue-23`
+
+
 
 ### Managing Imports
 
