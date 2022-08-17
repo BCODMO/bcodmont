@@ -36,6 +36,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -182,6 +188,64 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
         <rdfs:label xml:lang="en">copper mineral</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46714"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5186"/>
+        <obo:IAO_0000111 xml:lang="en">(19&apos;)-Butanoyloxyfucoxanthin</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Add to CHEBI</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://pubchem.ncbi.nlm.nih.gov/compound/19_-Butanoyloxyfucoxanthin"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">(19&apos;)-Butanoyloxyfucoxanthin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5186"/>
+        <obo:IAO_0000111 xml:lang="en">(19&apos;)-Hexanoyloxyfucoxanthin</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Add to CHEBI</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://pubchem.ncbi.nlm.nih.gov/compound/19_-Hexanoyloxyfucoxanthin"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">(19&apos;)-Hexanoyloxyfucoxanthin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0210007"/>
+        <obo:IAO_0000111 xml:lang="en">phycoerythrin</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Add to CHEBI</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://meshb.nlm.nih.gov/record/ui?name=Phycoerythrin"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">phycoerythrin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0210012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0210012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23044"/>
+        <obo:IAO_0000111 xml:lang="en">prasinoxanthin</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">Add to CHEBI. According to the paper linked xanthophyll K is a synonym.</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://pubchem.ncbi.nlm.nih.gov/compound/Prasinoxanthin"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.sciencedirect.com/science/article/abs/pii/S003194220083455X#!"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">xanthophyll K</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">prasinoxanthin</rdfs:label>
     </owl:Class>
     
 
@@ -1242,6 +1306,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_177613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_177613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23044"/>
+        <obo:IAO_0000111 xml:lang="en">Diadinoxanthin</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">Diadinoxanthin</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_17822 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17822">
@@ -1310,6 +1386,18 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
         <rdfs:label xml:lang="en">selenic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_181837 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_181837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23044"/>
+        <obo:IAO_0000111 xml:lang="en">Diatoxanthin</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#chemistry"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#compound"/>
+        <rdfs:label xml:lang="en">Diatoxanthin</rdfs:label>
     </owl:Class>
     
 
