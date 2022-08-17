@@ -735,7 +735,9 @@ Note that the **biology organism** module is a special cause in that it is not o
 
 #### Running the CHEBI & NCBITaxon imports
 
-It should be noted that while the majority of ontology imports are from relatively small project and can be run on most average computers, the CHEBI and NCBITaxon imports are quite a bit larger and therefore require more memory to run. CHEBI requires \~8GB of ram and NCBITaxon 12GB ram. Thus, a slightly more powerfull than average laptop computer, desktop, or virtual machine with at least 12GB of ram will be required to maintain BCO-SM. For more information see the obo academy page on the subject. [https://oboacademy.github.io/obook//howto/deal-with-large-ontologies/](https://oboacademy.github.io/obook/howto/deal-with-large-ontologies/).&#x20;
+It should be noted that while the majority of ontology imports are from relatively small project and can be run on most average computers, the CHEBI and NCBITaxon imports are quite a bit larger and therefore require more memory to run. CHEBI requires \~8GB of ram and NCBITaxon 12GB ram. Thus, a slightly more powerfull than average laptop computer, desktop, or virtual machine with at least 12GB of ram will be required to maintain BCO-SM. **As such the BCODMO vocabulary manager(s) will need access to a Linux or OSX compute environment with least 12GB of ram. This could be provided with an amazon cloud VM or similar.**&#x20;
+
+For more information see the obo academy page on the subject. [https://oboacademy.github.io/obook//howto/deal-with-large-ontologies/](https://oboacademy.github.io/obook/howto/deal-with-large-ontologies/).&#x20;
 
 ### Importing A New Ontology
 
