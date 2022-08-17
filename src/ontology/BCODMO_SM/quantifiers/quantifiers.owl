@@ -34,6 +34,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -43,6 +55,30 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000032 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000032"/>
     
 
 
@@ -505,13 +541,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">attenuation</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some gradual loss of flux intensity through a medium.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Attenuation"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">attenuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">backscatter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some reflection of waves, particles, or signals back to the direction from which they came.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Backscatter"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">backscatter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">suspended</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some substance within a heterogeneous mixture have the ability to settle down to form separate layers over time or from gravitational forces.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Could add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://study.com/academy/lesson/what-is-suspension-in-science-definition-types-examples.html"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">suspended</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MS_1000224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000224">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
         <obo:IAO_0000111 xml:lang="en">molecular mass</obo:IAO_0000111>
         <obo:IAO_0000115>Mass of a molecule measured in unified atomic mass units (u or Da).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>value-type:xsd:float</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">molecular weight</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>MS</oboInOwl:hasOBONamespace>
         <oboInOwl:id>MS:1000224</oboInOwl:id>
@@ -523,13 +600,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000224"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Mass of a molecule measured in unified atomic mass units (u or Da).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Molecular_mass</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MS_1000224"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>value-type:xsd:float</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The allowed value-type for this CV term.</rdfs:label>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Molecular_mass</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -576,7 +647,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A time quality inhering in a bearer by virtue of how long the bearer has existed.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -598,7 +669,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A luminous flux quality inhering in a bearer by virtue of the bearer&apos;s emitting longer wavelength light following the absorption of shorter wavelength radiation; fluorescence is common with aromatic compounds with several rings joined together.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -646,7 +717,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -669,7 +740,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -695,33 +766,14 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A 1-D extent quality which is equal to the distance between two points.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000003"/>
-        <obo:IAO_0000111 xml:lang="en">mass</obo:IAO_0000111>
-        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000125</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:comment>For any biological use of PATO, the concept that should be used is &apos;mass&apos; and not &apos;weight&apos;. For example, increased weight of an organism.</rdfs:comment>
-        <rdfs:label>mass</rdfs:label>
-        <rdfs:label xml:lang="en">mass</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
     
 
 
@@ -730,7 +782,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000003"/>
         <obo:IAO_0000111 xml:lang="en">weight</obo:IAO_0000111>
-        <obo:IAO_0000115>A physical quality inhering in a bearer that has mass near a gravitational body.</obo:IAO_0000115>
         <obo:IAO_0000115>A physical quality inhering in a bearer that has mass near a gravitational body. Important usage note: Note that this ontology has a class for a similar concept, mass (PATO:0000125). Mass and weight are not equivalent. For most use cases, the class mass is strongly preferred over weight.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000128</oboInOwl:id>
@@ -744,14 +795,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000128"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical quality inhering in a bearer that has mass near a gravitational body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Weight</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000128"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality inhering in a bearer that has mass near a gravitational body. Important usage note: Note that this ontology has a class for a similar concept, mass (PATO:0000125). Mass and weight are not equivalent. For most use cases, the class mass is strongly preferred over weight.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Weight</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Weight</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Mass#Weight_vs._mass</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -775,7 +820,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality of the thermal energy of a system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -799,7 +844,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A 3-D extent quality inhering in a bearer by virtue of the bearer&apos;s amount of 3-dimensional space it occupies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -823,7 +868,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000973"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A structure quality inhering in a bearer by virtue of the bearer&apos;s disposition to admit the passage of gas or liquid through pores or interstices.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -847,7 +892,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer&apos;s mass per unit size.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -869,7 +914,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001025"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality that inheres in a bearer by virtue of the bearer&apos;s amount of force per unit area it exerts.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -892,7 +937,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality that exists by virtue of the rate of flow of the bearer across a given surface.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -974,7 +1019,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001585"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality inhering in a bearer by virtue of the bearer&apos;s disposition to transmit of an entity through a medium.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -997,7 +1042,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001595"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s downward or backward or inward dimension.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WordNet:WordNet</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WordNet:WordNet</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1111,6 +1156,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <obo:IAO_0000111 xml:lang="en">range</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">range</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000037">
@@ -1130,6 +1186,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">statistic</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic).</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">statistic</obo:STATO_0000032>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">statistic</rdfs:label>
     </owl:Class>
@@ -1220,6 +1284,36 @@
         <rdfs:comment xml:lang="en">In STATO has a different name: center value</rdfs:comment>
         <rdfs:label xml:lang="en">median</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
+        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
+        <oboInOwl:id>PATO:0000125</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>mass</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:comment>For any biological use of PATO, the concept that should be used is &apos;mass&apos; and not &apos;weight&apos;. For example, increased weight of an organism.</rdfs:comment>
+        <rdfs:label xml:lang="en">mass</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">mass</obo:IAO_0000111>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 
