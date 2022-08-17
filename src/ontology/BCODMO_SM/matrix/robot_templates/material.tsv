@@ -99,6 +99,7 @@ material	water	fresh water		ENVO:00002011	fresh water	fresh water	water									
 material	water	fresh water	drinking water	ENVO:00003064	drinking water	drinking water	fresh water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
 material	water	fresh water	rainwater	ENVO:01000600	rainwater	rainwater	fresh water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
 material	water	groundwater		ENVO:01001004	groundwater	groundwater	water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
+material	water	porewater		BSM:0100005	porewater	porewater	water				Water which resides within the interstitial spaces between grains of sediment.		Term requested within ENVO					http://bcodmo/sm#matrix	http://bcodmo/sm#material
 material	water	hypersaline water		ENVO:00002012	hypersaline water	hypersaline water	water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
 material	water	hypersaline water	brine	ENVO:00003044	brine	brine	hypersaline water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
 material	water	hypoxic water		ENVO:01001064	hypoxic water	hypoxic water	water											http://bcodmo/sm#matrix	http://bcodmo/sm#material
