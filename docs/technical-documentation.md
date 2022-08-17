@@ -808,7 +808,7 @@ We can run all existing imports from `bcodmont/src/ontology` with the following 
 ./run.sh make all_imports
 ```
 
-Note when running on linux systems depending on permissions one may need to add `sudo` in front of the above command.
+Note when running on linux systems depending on permissions one may need to add `sudo` in front of the above command. Note that this command is setup in the makefile to run all imports except for the CHEBI and NCBITAXON. This is due to the fact that those ontologies are quite large and require more ram to be imported. See next section for the commands to run those imports.
 
 #### Running individual imports
 
@@ -824,7 +824,12 @@ Note that the **biology organism** module is a special cause in that it is not o
 
 #### Running the CHEBI & NCBITaxon imports
 
-It should be noted that while the majority of ontology imports are from relatively small project and can be run on most average computers, the CHEBI and NCBITaxon imports are quite a bit larger and therefore require more memory to run. CHEBI requires \~8GB of ram and NCBITaxon 12GB ram. Thus, a slightly more powerfull than average laptop computer, desktop, or virtual machine with at least 12GB of ram will be required to maintain BCO-SM. **As such the BCODMO vocabulary manager(s) will need access to a Linux or OSX compute environment with least 12GB of ram. This could be provided with an amazon cloud VM or similar.**&#x20;
+It should be noted that while the majority of ontology imports are from relatively small project and can be run on most average computers, the CHEBI and NCBITaxon imports are quite a bit larger and therefore require more memory to run. CHEBI requires \~8GB of ram and NCBITaxon 12GB ram. Thus, a slightly more powerfull than average laptop computer, desktop, or virtual machine with at least 12GB of ram will be required to maintain BCO-SM. **As such the BCODMO vocabulary manager(s) will need access to a Linux or OSX compute environment with least 12GB of ram. This could be provided with an amazon cloud VM or similar.** On such a machine the commands can be run as follows (note you might need to run with `sudo`:
+
+```
+./run.sh make imports/chebi_import.owl
+./run.sh make imports/ncbitaxon_import.owl
+```
 
 For more information see the obo academy page on the subject. [https://oboacademy.github.io/obook//howto/deal-with-large-ontologies/](https://oboacademy.github.io/obook/howto/deal-with-large-ontologies/).&#x20;
 
