@@ -32,8 +32,8 @@ quantifiers	abundance	concentration			PATO:0000033	concentration	concentration	a
 quantifiers	abundance	weight			PATO:0000128	weight	weight	abundance											http://bcodmo/sm#quantifiers
 quantifiers	abundance	weight	dry weight		BSM:0000019	dry weight	dry weight	weight											http://bcodmo/sm#quantifiers
 quantifiers	abundance	weight	wet weight		BSM:0000020	wet weight	wet weight	weight											http://bcodmo/sm#quantifiers
-quantifiers	abundance	mass			PATO:0000125	mass	mass	abundance											http://bcodmo/sm#quantifiers
-quantifiers	abundance	mass	molecular mass		MS:1000224	molecular mass	molecular mass	mass	molecular weight										http://bcodmo/sm#quantifiers
+quantifiers	abundance	mass			PATO:0000125	mass	mass	BSM:0000003											http://bcodmo/sm#quantifiers
+quantifiers	abundance	mass	molecular mass		MS:1000224	molecular mass	molecular mass	PATO:0000125	molecular weight										http://bcodmo/sm#quantifiers
 quantifiers	statistic				STATO:0000039	statistic	statistic	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	statistic	sum			BSM:0000018	sum	sum	statistic			SIO:001112|NCIT:C25697								http://bcodmo/sm#quantifiers
 quantifiers	statistic	ratio			STATO:0000184	ratio	ratio	statistic		UO:0000190|PATO:0001470									http://bcodmo/sm#quantifiers
