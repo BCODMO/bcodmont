@@ -438,6 +438,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <obo:IAO_0000111 xml:lang="en">percentage</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">percentage</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/UO_00000187"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">allomerized</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The state of differing in chemical composition but having the same crystalline form.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://medical-dictionary.thefreedictionary.com/Allomer"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">allomerized</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MS_1000224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000224">
@@ -1152,17 +1177,6 @@
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:comment xml:lang="en">In STATO has a different name: center value</rdfs:comment>
         <rdfs:label xml:lang="en">median</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_00000187 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_00000187">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
-        <obo:IAO_0000111 xml:lang="en">percentage</obo:IAO_0000111>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
-        <rdfs:label xml:lang="en">percentage</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
