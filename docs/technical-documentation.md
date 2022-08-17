@@ -243,7 +243,7 @@ Any columns with `SPLIT=|` at the end of the string in the template (second) row
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
 
-Depending on the workflow chose by the BCODMO vocabulary manager(s) condider using the [Github Branch and Merge Workflow](technical-documentation.md#github-branch-and-merge-workflow) to make changes to a branch on a pull request rather than directly to the main branch in order to implement the changes described in the following sections.&#x20;
+Depending on the workflow chose by the BCODMO vocabulary manager(s) consider using the [Github Branch and Merge Workflow](technical-documentation.md#github-branch-and-merge-workflow) to make changes to a branch on a pull request rather than directly to the main branch in order to implement the changes described in the following sections.&#x20;
 
 ### 1) Modify Robot Templates
 
@@ -701,7 +701,9 @@ These could include any changes made while following the steps in the [**Compili
 
 4\. Add/commit changes with a message:
 
-`git commit -m 'Add speed address #23'` Best to have one commit message per new class added or changed.
+`git commit -m 'Add speed address #23'`&#x20;
+
+It could be considered good practice to have one commit message per new class added or changed, although this is not strictly necessary.
 
 5\. Push your branch to origin to create a pull request
 
