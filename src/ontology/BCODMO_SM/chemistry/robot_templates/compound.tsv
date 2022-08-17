@@ -366,6 +366,7 @@ compound	carbon compound	organic compound	pigment	accessory pigments	carotene	cy
 compound	carbon compound	organic compound	pigment	accessory pigments	carotene	cyclic carotene	epsilon-carotene		CHEBI:32549	epsilon-carotene	epsilon-carotene	cyclic carotene											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
 compound	carbon compound	organic compound	pigment	accessory pigments	carotene	cyclic carotene	gamma-carotene		CHEBI:27740	gamma-carotene	gamma-carotene	cyclic carotene											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
 compound	carbon compound	organic compound	pigment	accessory pigments	carotene	torulene			CHEBI:9638	torulene	torulene	carotene											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
+compound	carbon compound	organic compound	pigment	accessory pigments	phycoerythrin				BSM:0210011	phycoerythrin	phycoerythrin	accessory pigments						Add to CHEBI			https://meshb.nlm.nih.gov/record/ui?name=Phycoerythrin		http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
 compound	caesium compound								CHEBI:37128	caesium compound	caesium compound	compound											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
 compound	caesium compound	caesium hydroxide							CHEBI:33988	caesium hydroxide	caesium hydroxide	caesium compound											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
 compound	chlorine compound								CHEBI:23117	chlorine compound	chlorine compound	compound											http://bcodmo/sm#chemistry	http://bcodmo/sm#compound
