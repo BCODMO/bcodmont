@@ -118,25 +118,23 @@ This section is split into two subsections the first consists of OBO foundry ont
 
 ## New Term Requests
 
-In the interim stages of the BCO-SM's development we expect there to be many changes made to the model, mostly additions but perhaps also some term replacements or reshuffling. As such this section serves as a guide for data managers to request new terms to be added to BCO-SM. Once the model is a bit more solidified and the downstream data processing in order, the process of adding new terms could be taken up by interested Data Mangers.
-
-For the time being, data managers can do the following to request new terms.
+**This section is relevant to data managers who want to request new terms to be added to BCO-SM vocabulary.**&#x20;
 
 1\) First navigate to the [bcodmont/issues](https://github.com/BCODMO/bcodmont/issues/new) page.
 
-2\) Create a new issue describing the requested term. Explain what it is in clear concise language what the missing term is, what BCO-SM module you think it should be added to, and where in the module it should be located (with respect to pre-existing terms). Make sure for now to tag @kaiiam in the github issue (until the model is stabilized and others are trained to handle this as well or in place).
+2\) Create a new issue describing the requested term. Explain what it is in clear concise language what the missing term is, what BCO-SM module you think it should be added to, and where in the module it should be located (with respect to pre-existing terms). One could tag the relevant BCODMO vocabulary manager on the github issue to send them an automated email notification.&#x20;
 
 3\) Make sure to thoroughly check through the existing modules in [https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM).&#x20;
 
 4\) Next, search for appropriate pre-existing terms in OBO ontologies. Note that when possible BCO-SM uses existing OBO terms to both have greater interoperability with external projects as well as reuse the work of countless people who have contributed to many well-grounded biological and biomedical ontologies. To explore existing OBO ontology terms navigate to the [OLS ontology lookup page](https://www.ebi.ac.uk/ols/index) and type in your term into the search bar. There are many OBO ontologies; however, not all of which are of the same level of quality, therefore it can be a bit confusing to search. See the [OBO Ontologies Used](technical-documentation.md#obo-ontologies-used) section of [Overview](technical-documentation.md#overview) for a list of the OBO ontologies we are using for BCO-SM. This list is by no means the only OBO ontologies to search for terms in, but it represents a very good place to start.
 
-5\) **Optional** if you want to go the extra mile, check out the following section on preparing new BCO-SM terms for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. Make sure to check that if any new import terms are required (aka if we can leverage existing ontology terms). If so, make sure to add them to the list of imports, see the [Managing Imports](technical-documentation.md#managing-imports) section prior to [compiling](technical-documentation.md#compiling-bco-sm-1) the robot templates. Also note that when using imported terms, we do **NOT** need to add annotion properties such as synonyms or definitions when filling out the robot templates in the following section.
+5\) **Optional** if you want to go the extra mile, check out the following section on `preparing new BCO-SM terms` for the step-by-step instructions for adding to modules via the Robot templates by which they are compiled. Make sure to check that if any new import terms are required (aka if we can leverage existing ontology terms). If so, make sure to add them to the list of imports, see the [Managing Imports](technical-documentation.md#managing-imports) section prior to [compiling](technical-documentation.md#compiling-bco-sm-1) the robot templates. Also note that when using imported terms, we do **NOT** need to add annotation properties such as synonyms or definitions when filling out the robot templates in the following section.
 
 ### Preparing new BCO-SM terms
 
-The working versions of the BCO-SM robot templates are currently the google drive sheets (which are also linked within the _BCO-DMO Semantic Data Project_ trello page).  The links are to the working BCO-SM Robot Templates are as follows: [Biology vocab](https://docs.google.com/spreadsheets/d/11Cdr6OMGnJefhctlowwYL9YMHg8qiZglMJlTPH9mkuI/edit?usp=sharing), [Chemistry vocab](https://docs.google.com/spreadsheets/d/1\_yTKHLinTjgAUSCfgXGInGKrWWvehJbK0CrVDvwfd54/edit?usp=sharing), [Qualifiers vocab](https://docs.google.com/spreadsheets/d/1I-M7Z9qrtTt4YdfwnU86zYzsQt3lgYPiegyXAjHZSlc/edit?usp=sharing), [Physics vocab](https://docs.google.com/spreadsheets/d/1H\_iNCD3LzZ9LflzZXUDTU5UFtwfi594mbJRZqmUNYs4/edit?usp=sharing), [Matrix vocab](https://docs.google.com/spreadsheets/d/12vG3U698AEc7t31bffGhzOWybqIXJOP5Rc6eGsbr1I0/edit?usp=sharing), [Operational vocab](https://docs.google.com/spreadsheets/d/1OoKDrWMdFZa0oiGSmJe1rYcKVuWOoqa2evEkIP\_wxew/edit?usp=sharing).
+**This section is relevant to the BCODMO vocabulary manager(s).**
 
-At the moment these are exported down to the [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM) sub-directories e.g., [biology/robot\_templates/anatomy.tsv](../src/ontology/BCODMO\_SM/biology/robot\_templates/anatomy.tsv). However, relying on google sheets as the source of truth should not to be considered a long term solution. At some point, once we've stabilized the system, we will switch to treating the `tsv` files within the `X_module/robot_templates/` to being the source of truth (place to work from).
+The working versions of the BCO-SM Robot Templates are located in the BCODMONT repository's [BCODMO\_SM **** folder](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM)'s sub-directories e.g., [biology/robot\_templates/anatomy.tsv](../src/ontology/BCODMO\_SM/biology/robot\_templates/anatomy.tsv).
 
 #### Basics about Robot templates
 
@@ -144,7 +142,7 @@ Robot templates are structured as follows, the first row contains `headers`, the
 
 #### BCO-SM Category Headers
 
-At the moment the first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl. These are not strictly necessary (and could be removed, however, they can be helpful when adding new terms to the model).
+The first several columns contain headers such as `Sub category 1:`. These columns are not complied by the robot templates but are used to visualize the basic parent child hierarchy that is complied when the template is converted to owl.&#x20;
 
 #### Ontology IDs
 
@@ -231,7 +229,7 @@ The `cross reference` column provides a generic way to link to other resources s
 
 #### BCODMO master parameter
 
-The `BCODMO master parameter` column is used to link BCO-SM terms to the (previous system the) BCODMO master parameters, e.g., `http://lod.bco-dmo.org/id/parameter/1982`.
+The `BCODMO master parameter` column is used to (optionally) link BCO-SM terms to the (previous system the) BCODMO master parameters, e.g., `http://lod.bco-dmo.org/id/parameter/1982`.
 
 #### Subsets
 
@@ -245,11 +243,11 @@ Any columns with `SPLIT=|` at the end of the string in the template (second) row
 
 ## **Compiling BCO-SM**
 
-**//TODO perhaps add** something about when to commit i.e, with a set of new terms to a module. Original commands can be found in the `bcodmont/src/ontology/BCODMO_SM/robot_commands.md` file.
+**This section is relevant to the BCODMO vocabulary manager(s).**
 
 ### 1) Modify Robot Templates
 
-BCO-SM's modules are matained as [Robot Template](https://robot.obolibrary.org/template) `.tsv` files, which are stored in the bcodmont [github repo](https://github.com/BCODMO/bcodmont). To add or modify  BCO-SM terms, follow the steps described in the [Preparing new BCO-SM terms](technical-documentation.md#preparing-new-bco-sm-terms) section and edit the  Robot templates files accordingly. The paths for each module are as follows:
+BCO-SM's modules are maintained as [Robot Template](https://robot.obolibrary.org/template) `.tsv` files, which are stored in the bcodmont [github repo](https://github.com/BCODMO/bcodmont). To add or modify  BCO-SM terms, follow the steps described in the [Preparing new BCO-SM terms](technical-documentation.md#preparing-new-bco-sm-terms) section and edit the  Robot templates files accordingly. The paths for each module are as follows:
 
 **Biology**:
 
@@ -411,7 +409,7 @@ As before we can run these commands from `bcodmont/src/ontology/BCODMO_SM/`
 
 #### Merge Imports and Preliminary Robot Templates
 
-The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version of the merge command is used for the **physics** and **operational** modules. Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. Here we are effectively makeing a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. Run this command after modifying the following  modules:
+The following step merges imports with the robot templates without removing any axioms to produce the `BCODMO_SM_merged.owl` file. This version of the merge command is used for the **physics** and **operational** modules. Here we are intentionally not removing CHEBI or ENVO axioms. This step makes use of the [Robot merge command](https://robot.obolibrary.org/merge) which merges multiple ontology files into a single file. Here we are effectively making a merged file in which we are **not removing** axioms. Note that some ontologies, e.g., CHEBI, ENVO are used both here and in the next step for the axiom removed ontology merge product. Run this command after modifying the following  modules:
 
 > **Physics:** characteristic, phenomenon
 >
