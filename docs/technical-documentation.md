@@ -132,7 +132,7 @@ This section is split into two subsections the first consists of OBO foundry ont
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
 
-The working versions of the BCO-SM Robot Templates are located in the BCODMONT repository's [BCODMO\_SM **** folder](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM)'s sub-directories e.g., [biology/robot\_templates/anatomy.tsv](../src/ontology/BCODMO\_SM/biology/robot\_templates/anatomy.tsv).
+The working versions of the BCO-SM Robot Templates are located in the BCODMONT repository's [BCODMO\_SM](https://github.com/BCODMO/bcodmont/tree/main/src/ontology/BCODMO\_SM) folder's sub-directories e.g., [biology/robot\_templates/anatomy.tsv](../src/ontology/BCODMO\_SM/biology/robot\_templates/anatomy.tsv).
 
 #### Basics about Robot templates
 
@@ -797,7 +797,7 @@ To re-run an individual ontology (instead of all imported ontologies) one can ru
 
 #### NCBITaxon import
 
-Note that the **biology organism** module is a special cause in that it is not only generated from the robot template but that additionally, the [ncbitaxon\_import.owl](../src/ontology/imports/ncbitaxon\_import.owl) is directly merged in with the final version of the **biology organism** owl file. **** This is done in order to directly populate the **organism** module from the NCBITaxon terms imported in the  [ncbitaxon\_terms.txt](../src/ontology/imports/ncbitaxon\_terms.txt). That is to say any imported taxa will get directly merged into the **organism** module when running the filter command. This is noted in the organism filter commands description explaining how in addition to filtering the final version organism robot template, the command also merges the NCBITaxon import owl file.&#x20;
+Note that the **biology organism** module is a special cause in that it is not only generated from the robot template but that additionally, the [ncbitaxon\_import.owl](../src/ontology/imports/ncbitaxon\_import.owl) is directly merged in with the final version of the **biology organism** owl file. This is done in order to directly populate the **organism** module from the NCBITaxon terms imported in the [ncbitaxon\_terms.txt](../src/ontology/imports/ncbitaxon\_terms.txt). That is to say any imported taxa will get directly merged into the **organism** module when running the filter command. This is noted in the organism filter commands description explaining how in addition to filtering the final version organism robot template, the command also merges the NCBITaxon import owl file.
 
 #### Running the CHEBI & NCBITaxon imports
 
