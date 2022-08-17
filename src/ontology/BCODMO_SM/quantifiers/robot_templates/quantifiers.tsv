@@ -50,15 +50,15 @@ quantifiers	acidity				PATO:0001842	acidity	acidity	quantifiers	pH										http
 quantifiers	alkalinity				PATO:0001430	alkalinity	alkalinity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	conductivity				PATO:0001585	conductivity	conductivity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	density				PATO:0001019	density	density	quantifiers											http://bcodmo/sm#quantifiers
-quantifiers	density	potential density			BSM:0310003	potential density	potential density	density				A density which would inhere in a bearer if such bearer were adiabatically brought to a standard reference pressure.				sigma			http://bcodmo/sm#quantifiers
+quantifiers	density	potential density			BSM:0000026	potential density	potential density	density				A density which would inhere in a bearer if such bearer were adiabatically brought to a standard reference pressure.				sigma			http://bcodmo/sm#quantifiers
 quantifiers	depth				PATO:0001595	depth	depth	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	electrical conductivity				PATO:0001757	electrical conductivity	electrical conductivity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	electrical conductivity	electrical resistivity			BSM:0000021	electrical resistivity	electrical resistivity	electrical conductivity						TO ADD to PATO inverse of conductivity see https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity					http://bcodmo/sm#quantifiers
-quantifiers	fugacity				BSM:0000022	fugacity	fugacity	quantifiers						TO ADD TO PATO					http://bcodmo/sm#quantifiers
+quantifiers	fugacity				BSM:0000028	fugacity	fugacity	quantifiers						TO ADD TO PATO					http://bcodmo/sm#quantifiers
 quantifiers	porosity				PATO:0000973	porosity	porosity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	pressure				PATO:0001025	pressure	pressure	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	salinity				PATO:0085001	salinity	salinity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	temperature				PATO:0000146	temperature	temperature	quantifiers											http://bcodmo/sm#quantifiers
-quantifiers	temperature	potential temperature			BSM:0000023	potential temperature	potential temperature	temperature				A temperature which would inhere in a bearer if such bearer were adiabatically compressed from it's existing temperature and pressure to a standard presure.				theta			http://bcodmo/sm#quantifiers
-quantifiers	turbidity				BSM:0000024	turbidity	turbidity	quantifiers						TO ADD TO PATO High priority.					http://bcodmo/sm#quantifiers
-quantifiers	uptake				BSM:0000025	uptake	uptake	quantifiers	biological uptake			"The incorporation in a living organism of chemicals and substances from the environment, which can be evaluated by measuring their accumulation."			accumulation		https://medical-dictionary.thefreedictionary.com/biological+uptake		http://bcodmo/sm#quantifiers
+quantifiers	temperature	potential temperature			BSM:0000029	potential temperature	potential temperature	temperature				A temperature which would inhere in a bearer if such bearer were adiabatically compressed from it's existing temperature and pressure to a standard presure.				theta			http://bcodmo/sm#quantifiers
+quantifiers	turbidity				BSM:0000030	turbidity	turbidity	quantifiers						TO ADD TO PATO High priority.					http://bcodmo/sm#quantifiers
+quantifiers	uptake				BSM:0000031	uptake	uptake	quantifiers	biological uptake			"The incorporation in a living organism of chemicals and substances from the environment, which can be evaluated by measuring their accumulation."			accumulation		https://medical-dictionary.thefreedictionary.com/biological+uptake		http://bcodmo/sm#quantifiers
