@@ -38,7 +38,7 @@ quantifiers	statistic				STATO:0000039	statistic	statistic	quantifiers										
 quantifiers	statistic	sum			BSM:0000018	sum	sum	statistic			SIO:001112|NCIT:C25697								http://bcodmo/sm#quantifiers
 quantifiers	statistic	ratio			STATO:0000184	ratio	ratio	statistic		UO:0000190|PATO:0001470									http://bcodmo/sm#quantifiers
 quantifiers	statistic	average			STATO:0000573	average	average	statistic	mean										http://bcodmo/sm#quantifiers
-quantifiers	statistic	percentage			UO:00000187	percentage	percentage	statistic											http://bcodmo/sm#quantifiers
+quantifiers	statistic	percentage			BSM:0000032	percentage	percentage	statistic			UO:00000187								http://bcodmo/sm#quantifiers
 quantifiers	statistic	confidence interval			STATO:0000196	confidence interval	confidence interval	statistic	CI										http://bcodmo/sm#quantifiers
 quantifiers	statistic	median			STATO:0000574	median	median	statistic	center value				In STATO has a different name: center value						http://bcodmo/sm#quantifiers
 quantifiers	statistic	mode			STATO:0000033	mode	mode	statistic											http://bcodmo/sm#quantifiers
