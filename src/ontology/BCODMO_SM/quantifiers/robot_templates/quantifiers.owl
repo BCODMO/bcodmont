@@ -423,6 +423,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">isomerism</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A term used in chemistry that concerns the spatial arrangement of atoms within molecules.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Cis%E2%80%93trans_isomerism"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">configurational isomerism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">geometric isomerism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">isomerized</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">isomerism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">cis isomerism</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A chemical isomerism arrangement in which the functional groups (substituents) are on the same side of some plane.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Cis%E2%80%93trans_isomerism"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">cis isomerism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">trans isomerism</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A chemical isomerism arrangement in which the functional groups (substituents) are on the opposing (transverse) sides of some plane.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Cis%E2%80%93trans_isomerism"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">trans isomerism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MS_1000224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000224">
