@@ -609,7 +609,7 @@ robot filter --input merge_products/BCODMO_SM_merged.owl --prefix "bsm:http://bc
 
 ### 5) Units
 
-The units system used in BCO-SM is the [Units of Measurement](https://units-of-measurement.org/) (UOM) is a new units system based on the [The Unified Code for Units of Measure](https://ucum.org/ucum.html) (UCUM), which is itself an important standard in healthcare data interoperability.  It is a free service in which one can dynamically generate annotations for units including labels definitions and IRI's, based on input UCUM codes. For example the code `m.s-1` will create a unit entity for `meter per second`.&#x20;
+The units system used in BCO-SM is the [Units of Measurement](https://units-of-measurement.org/) (UOM) is a new units system based on the [The Unified Code for Units of Measure](https://ucum.org/ucum.html) (UCUM), which is itself an important standard in healthcare data interoperability.  UOM is a free service in which one can dynamically generate annotations for units including labels definitions and IRI's, based on input UCUM codes. For example the code `m.s-1` will create a unit entity for `meter per second`.&#x20;
 
 In future release we will make the [source code for UOM](https://github.com/units-of-measurement/units-of-measurement) into a python package, which will be downloadable from PyPI. For now the souce code from repository can be builed and used to generate the BCO-SM units module.
 
@@ -655,7 +655,7 @@ uom units/input_unit_codes.csv > units.ttl
 
 
 
-\*\*The following steps can be kept if needed by the UI script.\*\*
+**The following steps can be kept if needed by the UI script. If not, this section this can be removed TBD** [Jaci Saunders](https://app.gitbook.com/u/KVOPvJsccLSTSL3Ik2WqoZX4oWa2 "mention").
 
 Export the ttl file to a tsv file for the UI script to process:
 
@@ -676,6 +676,8 @@ robot convert --input units/units.ttl --output units/units.owl
 ```
 
 ## Maintaining BCO-SM
+
+**This section is relevant to the BCODMO vocabulary manager(s).**
 
 ### Managing Imports
 
@@ -922,7 +924,7 @@ Also modify the command in the [**Merge Modules with Axiom free Import Ontologie
 --input intermediate/pco_import_axioms_removed.owl
 ```
 
-Note that making the axiom removed version of the ontology might not always be necessary and one could instead merge the regular import as is the case for `iao_import.owl`. //TODO double check and remove this if necessary.&#x20;
+Note that making the axiom removed version of the ontology might not always be necessary and one could instead merge the regular import as is the case for `iao_import.owl`.&#x20;
 
 Also make sure to add the new module as an input to the  [**Merge Modules with Axiom free Import Ontologies**](technical-documentation.md#merge-modules-with-axiom-free-import-ontologies) command,  for example for the ecology module add:
 
@@ -956,7 +958,7 @@ In either case it's important to update the `--select "oboInOwl:inSubset=bsm:eco
 
 BCODMONT is based on the ODK and therefore requires [docker](https://www.docker.com/).
 
-**Step 1)** On the new system install docker (if not already installed), See the [https://www.docker.com/get-started](https://www.docker.com/get-started). Docker desktop on a personal computer, (docker hub for a cloud image?).
+**Step 1)** On the new system install docker (if not already installed), See the [https://www.docker.com/get-started](https://www.docker.com/get-started).&#x20;
 
 **Step 2)** Following the instructions described in the [ODK](https://github.com/INCATools/ontology-development-kit), pull the ODK docker image
 
@@ -965,55 +967,10 @@ docker pull obolibrary/odkfull
 ```
 
 **Step 3)** Clone BCODMONT repository\
-Note might suggest to do via ssh instead of HTTPS and using ssh keys as github is deprecating passwords as of the summer 2021.
+We suggested to do this ssh instead of HTTPS and using ssh keys as github is deprecated passwords as of the summer 2021. See this page on [adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). One could alternatively use github autentication tokins.&#x20;
 
 ```
 git clone https://github.com/BCODMO/bcodmont.git
 ```
 
-## Future Sections
-
-### Configuring and testing memory for running imports
-
-Temp notes on using CHEBI import I tried the following in the `run.sh`script to run chebi import but it still failed. Problem is documented [here](https://github.com/INCATools/ontology-development-kit/blob/master/docs/DealWithLargeOntologies.md). I think min 8 GB is required for CHEBI.
-
-```
-docker run -m 4g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx3G' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
-```
-
-Try again with: 8 GB instance and the following (if the regular command doesn't work).
-
-```
-docker run -m 8g -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx7' -e JAVA_OPTS='' --rm -ti obolibrary/odkfull "$@"
-```
-
-\*\*\*\*
-
-**//TODO section about** using wget or similar to download robot templates via the command line:
-
-#### Biology
-
-//TODO: Re-download **anatomy**.tsv:
-
-```
-//TODO
-```
-
-Try from [https://angelov.ai/post/2020/wget-files-from-gdrive/](https://angelov.ai/post/2020/wget-files-from-gdrive/) or [https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/](https://silicondales.com/tutorials/g-suite/how-to-wget-files-from-google-drive/)or or [https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/](https://bcrf.biochem.wisc.edu/2021/02/05/download-google-drive-files-using-wget/) or similar or the command like Nico used:
-
-```
-MIXTURES="https://docs.google.com/spreadsheets/d/e/2PACX-1vQr0nBpt5ySurXeTgAIoiI2t1wC3xk2fGrZRVQOvc_ugziNlKHoNj4-xbVGnz84ohOVc-0g693LWiiz/pub?output=tsv"
-
-templates/mixtures.tsv:
-    wget $(MIXTURES) -O $@
-```
-
-...
-
-@Kai - not sure if this is what you're looking for, but rclone is another program that easily lets you move files between googledrive & machines vis command line/programmatic interface
-
-\*\*\*\*
-
-**//TODO section about** Version control how to release a new version. Can release a V1 once all mods are in place but want to have another section. Directions on how do releases with named versions.
-
-**//TODO section about** Later once we move away form google sheets as source of truth for robot templates, we'll need some directions on how to edit them there. How do this with branches and pull requests rather than just commits to master.
+****
