@@ -243,7 +243,7 @@ Any columns with `SPLIT=|` at the end of the string in the template (second) row
 
 **This section is relevant to the BCODMO vocabulary manager(s).**
 
-Depending on the workflow chose by the BCODMO vocabulary manager(s) condider using the Github Branch and Merge Workflow to make changes to a branch on a pull request rather than directly to the main branch in order to implement the changes described in the following sections.&#x20;
+Depending on the workflow chose by the BCODMO vocabulary manager(s) condider using the [Github Branch and Merge Workflow](technical-documentation.md#github-branch-and-merge-workflow) to make changes to a branch on a pull request rather than directly to the main branch in order to implement the changes described in the following sections.&#x20;
 
 ### 1) Modify Robot Templates
 
