@@ -46,6 +46,7 @@ quantifiers	statistic	standard deviation			STATO:0000237	standard deviation	stan
 quantifiers	statistic	standard error			STATO:0000037	standard error	standard error	statistic	standard error of the mean|SE				In STATO has a different name: standard error of the mean						http://bcodmo/sm#quantifiers
 quantifiers	statistic	minimum			STATO:0000150	minimum	minimum	statistic	min										http://bcodmo/sm#quantifiers
 quantifiers	statistic	maximum			STATO:0000151	maximum	maximum	statistic	max										http://bcodmo/sm#quantifiers
+quantifiers	statistic	range			STATO:0000035	range	range	statistic											http://bcodmo/sm#quantifiers
 quantifiers	acidity				PATO:0001842	acidity	acidity	quantifiers	pH										http://bcodmo/sm#quantifiers
 quantifiers	alkalinity				PATO:0001430	alkalinity	alkalinity	quantifiers											http://bcodmo/sm#quantifiers
 quantifiers	conductivity				PATO:0001585	conductivity	conductivity	quantifiers											http://bcodmo/sm#quantifiers
