@@ -42,6 +42,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
@@ -465,6 +471,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">attenuation</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some gradual loss of flux intensity through a medium.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Attenuation"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">attenuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">backscatter</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some reflection of waves, particles, or signals back to the direction from which they came.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">To add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Backscatter"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">backscatter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">suspended</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality which inheres in a bearer by virtue of some substance within a heterogeneous mixture have the ability to settle down to form separate layers over time or from gravitational forces.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Could add to PATO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:resource="https://study.com/academy/lesson/what-is-suspension-in-science-definition-types-examples.html"/>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">suspended</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MS_1000224 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MS_1000224">
@@ -556,12 +604,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000003"/>
-        <obo:IAO_0000111 xml:lang="en">mass</obo:IAO_0000111>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
-        <rdfs:label xml:lang="en">mass</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
     
 
 
@@ -764,6 +807,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <obo:IAO_0000111 xml:lang="en">range</obo:IAO_0000111>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">range</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000037">
@@ -873,6 +927,22 @@
         <rdfs:comment xml:lang="en">In STATO has a different name: center value</rdfs:comment>
         <rdfs:label xml:lang="en">median</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">mass</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">mass</obo:IAO_0000111>
+    </rdf:Description>
 </rdf:RDF>
 
 
