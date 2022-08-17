@@ -2953,6 +2953,25 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L586</obo:STATO
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000028"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>the range is a measure of variation which describes the difference between the lowest score and the highest score in a set of numbers (a data set)</obo:IAO_0000115>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.sagepub.com/upm-data/47775_ch_3.pdf</obo:IAO_0000119>
+        <obo:STATO_0000032></obo:STATO_0000032>
+        <obo:STATO_0000041 xml:lang="en">range(..., na.rm = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</obo:STATO_0000041>
+        <rdfs:label xml:lang="en">range</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000037">

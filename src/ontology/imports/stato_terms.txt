@@ -9,3 +9,4 @@ STATO:0000196	#confidence interval
 STATO:0000237	#standard deviation
 STATO:0000573	#average
 STATO:0000574	#median
+STATO:0000035	#range
