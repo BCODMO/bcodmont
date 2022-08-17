@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bcodmont/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bcodmont/releases/2021-09-28/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-28</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bcodmont/releases/2022-08-17/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3357,7 +3357,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>FTT:830</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Geonames:H.SEA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21103</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sea</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sea</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Sea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>channel</oboInOwl:hasNarrowSynonym>
@@ -3374,7 +3374,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A large expanse of saline water usually connected with an ocean.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sea</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sea</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000016"/>
@@ -14238,7 +14238,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000091"/>
         <obo:IAO_0000115>A beach or wave cut platform raised above the shore line by a relative fall in the sea level.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:raised_beach</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Raised_beach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Raised_beach</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>terrace</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>ENVO:00000415</oboInOwl:id>
@@ -14248,7 +14248,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000415"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A beach or wave cut platform raised above the shore line by a relative fall in the sea level.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Raised_beach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Raised_beach</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000415"/>
@@ -15954,7 +15954,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000511"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A peatland whose development is mostly independent of basins or topographical features where water collects; it simply covers the landscape like a blanket. Peat develops due to a continuous supply of water from rainfall, maintaining waterlogged conditions on the ground. Blanket bogs are ombrotrophic or rain fed, and as a result their pH lies between 3.5 and 4.2.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>IPCC:http://www.ipcc.ie/infoblanketbogfs.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IPCC:http://www.ipcc.ie/infoblanketbogfs.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000511"/>
@@ -16450,7 +16450,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000545">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000091"/>
         <obo:IAO_0000115>A beach which is armoured with pebbles or small to medium sized cobbles.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shingle_beach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Shingle_beach</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>pebble beach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id>ENVO:00000545</oboInOwl:id>
@@ -16460,7 +16460,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000545"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A beach which is armoured with pebbles or small to medium sized cobbles.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shingle_beach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Shingle_beach</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -16641,7 +16641,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000291"/>
         <obo:IAO_0000115>A drainage basin from which there is no outflow of water, either on the surface as rivers, or underground by flow or diffusion through rock or permeable material.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:endorheic_basin</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Endorheic_basin</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Endorheic_basin</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>closed basin</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>terminal basin</oboInOwl:hasRelatedSynonym>
@@ -16652,7 +16652,7 @@ SOURCE DEFINITION: Marine brine pools are large areas of brine on the ocean basi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000551"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A drainage basin from which there is no outflow of water, either on the surface as rivers, or underground by flow or diffusion through rock or permeable material.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Endorheic_basin</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Endorheic_basin</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -22007,13 +22007,13 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000259"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cline across which the density of a fluid changes rapidly.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Pycnocline</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pycnocline</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000259"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>stable density gradient</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Pycnocline</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pycnocline</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

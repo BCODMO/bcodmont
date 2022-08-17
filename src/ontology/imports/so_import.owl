@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bcodmont/imports/so_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bcodmont/releases/2021-05-18/imports/so_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-05-18</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bcodmont/releases/2022-08-17/imports/so_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -338,7 +338,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000209"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>RNA that comprises part of a ribosome, and that can provide both structural scaffolding and catalytic activity.</obo:IAO_0000115>
+        <obo:IAO_0000115>rRNA is an RNA component of a ribosome that can provide both structural scaffolding and catalytic activity.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>INSDC_qualifier:unknown</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/RRNA</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>INSDC_feature:rRNA</oboInOwl:hasExactSynonym>
@@ -347,12 +347,13 @@
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0000252</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
+        <rdfs:comment>Definition updated 10 June 2021 as part of restructuring rRNA terms and reforming definitions to have similar structures. Request from EBI. See GitHub Issue #493</rdfs:comment>
         <rdfs:label>rRNA</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000252"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>RNA that comprises part of a ribosome, and that can provide both structural scaffolding and catalytic activity.</owl:annotatedTarget>
+        <owl:annotatedTarget>rRNA is an RNA component of a ribosome that can provide both structural scaffolding and catalytic activity.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.insdc.org/files/feature_table.html</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -406,20 +407,21 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000407">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000650"/>
-        <obo:IAO_0000115>A large polynucleotide in eukaryotes, which functions as the small subunit of the ribosome.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cytosolic 18S rRNA is an RNA component of the small subunit of cytosolic ribosomes in eukaryotes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/18S_ribosomal_RNA</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>18S rRNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>18S ribosomal RNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>rRNA 18S</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic 18S rRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic 18S ribosomal RNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic rRNA 18S</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0000407</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
-        <rdfs:label>rRNA_18S</rdfs:label>
+        <rdfs:comment>Renamed to cytosolic_18S_rRNA from rRNA_18S on 10 June 2021 as per restructuring of rRNA child terms. Updated definition to be consistent with format of other rRNA definitions. Request from EBI. See GitHub Issue #493.</rdfs:comment>
+        <rdfs:label>cytosolic_18S_rRNA</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000407"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A large polynucleotide in eukaryotes, which functions as the small subunit of the ribosome.</owl:annotatedTarget>
+        <owl:annotatedTarget>Cytosolic 18S rRNA is an RNA component of the small subunit of cytosolic ribosomes in eukaryotes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -455,39 +457,28 @@
     <!-- http://purl.obolibrary.org/obo/SO_0000650 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000650">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0002343"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/so#derives_from"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000255"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Ribosomal RNA transcript that structures the small subunit of the ribosome.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>SSU RNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>SSU rRNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>small subunit rRNA</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Cytosolic SSU rRNA is an RNA component of the small subunit of cytosolic ribosomes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>cytosolic SSU rRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic SSU ribosomal RNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic small subunit rRNA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0000650</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
-        <rdfs:label>small_subunit_rRNA</rdfs:label>
+        <rdfs:comment>Renamed to cytosolic_SSU_rRNA from small_subunit_rRNA on 10 June 2021 as per restructuring of rRNA child terms. Updated definition to be consistent with format of other rRNA definitions. Request from EBI. See GitHub Issue #493.</rdfs:comment>
+        <rdfs:label>cytosolic_SSU_rRNA</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000650"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Ribosomal RNA transcript that structures the small subunit of the ribosome.</owl:annotatedTarget>
+        <owl:annotatedTarget>Cytosolic SSU rRNA is an RNA component of the small subunit of cytosolic ribosomes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000650"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>SSU RNA</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSC:cb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000650"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>SSU rRNA</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSC:cb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -647,21 +638,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000650"/>
-        <obo:IAO_0000115>A large polynucleotide in Bacteria and Archaea, which functions as the small subunit of the ribosome.</obo:IAO_0000115>
+        <obo:IAO_0000115>Cytosolic 16S rRNA is an RNA component of the small subunit of cytosolic ribosomes in prokaryotes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/16S_ribosomal_RNA</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>16S SSU RNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>16S ribosomal RNA</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>rRNA 16S</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic 16S SSU RNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic 16S ribosomal RNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic rRNA 16S</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>16S rRNA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cytosolic 16S rRNA</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>SO:0001000</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/so#SOFA"/>
-        <rdfs:label>rRNA_16S</rdfs:label>
+        <rdfs:comment>Renamed to cytosolic_16S_rRNA from rRNA_16S on 10 June 2021 as per restructuring of rRNA child terms. Updated definition to be consistent with format of other rRNA definitions. Request from EBI. See GitHub Issue #493.</rdfs:comment>
+        <rdfs:label>cytosolic_16S_rRNA</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0001000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A large polynucleotide in Bacteria and Archaea, which functions as the small subunit of the ribosome.</owl:annotatedTarget>
+        <owl:annotatedTarget>Cytosolic 16S rRNA is an RNA component of the small subunit of cytosolic ribosomes in prokaryotes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:ke</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -752,6 +744,7 @@
         <oboInOwl:hasExactSynonym>rRNA gene</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0001637</oboInOwl:id>
+        <rdfs:comment>Adjusted heirarchy and names of rRNA_gene terms at the request of Steven Marygold GitHub Issue #513 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/513).</rdfs:comment>
         <rdfs:label>rRNA_gene</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -766,7 +759,7 @@
     <!-- http://purl.obolibrary.org/obo/SO_0002236 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002236">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001637"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0002362"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/so#derives_from"/>
@@ -780,8 +773,8 @@
         <oboInOwl:hasExactSynonym>18S_rRNA_gene</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0002236</oboInOwl:id>
-        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472)</rdfs:comment>
-        <rdfs:label>rRNA_18S_gene</rdfs:label>
+        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472). Adjusted heirarchy and names of rRNA_gene terms at the request of Steven Marygold GitHub Issue #513 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/513).</rdfs:comment>
+        <rdfs:label>cytosolic_rRNA_18S_gene</rdfs:label>
     </owl:Class>
     
 
@@ -789,7 +782,7 @@
     <!-- http://purl.obolibrary.org/obo/SO_0002237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001637"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0002362"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/so#derives_from"/>
@@ -803,8 +796,8 @@
         <oboInOwl:hasExactSynonym>16S_rRNA_gene</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SO:0002237</oboInOwl:id>
-        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472)</rdfs:comment>
-        <rdfs:label>rRNA_16S_gene</rdfs:label>
+        <rdfs:comment>Added as per request by Antonia Lock GitHub issue #472 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/472). Adjusted heirarchy and names of rRNA_gene terms at the request of Steven Marygold GitHub Issue #513 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/513).</rdfs:comment>
+        <rdfs:label>cytosolic_rRNA_16S_gene</rdfs:label>
     </owl:Class>
     
 
@@ -829,6 +822,60 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacterial_regulation_working_group:CMA</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:32665585</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0002343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000252"/>
+        <obo:IAO_0000115>Cytosolic rRNA is an RNA component of the small or large subunits of cytosolic ribosomes.</obo:IAO_0000115>
+        <oboInOwl:created_by>david</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-06-10T16:45:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>cytosolic rRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cytosolic ribosomal RNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0002343</oboInOwl:id>
+        <rdfs:comment>Added as a request from EBI. See GitHub Issue #493</rdfs:comment>
+        <rdfs:label>cytosolic_rRNA</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0002343"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Cytosolic rRNA is an RNA component of the small or large subunits of cytosolic ribosomes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:3044395</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0002360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001637"/>
+        <obo:IAO_0000115>A gene that codes for cytosolic rRNA.</obo:IAO_0000115>
+        <oboInOwl:created_by>evan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-11-19T04:30:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0002360</oboInOwl:id>
+        <rdfs:comment>Adjusted heirarchy and names of rRNA_gene terms at the request of Steven Marygold GitHub Issue #513 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/513).</rdfs:comment>
+        <rdfs:label>cytosolic_rRNA_gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0002362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0002362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0002360"/>
+        <obo:IAO_0000115>A gene that codes for cytosolic SSU rRNA.</obo:IAO_0000115>
+        <oboInOwl:created_by>evan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-11-19T04:37:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>cytosolic small subunit rRNA gene</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0002362</oboInOwl:id>
+        <rdfs:comment>Adjusted heirarchy and names of rRNA_gene terms at the request of Steven Marygold GitHub Issue #513 (https://github.com/The-Sequence-Ontology/SO-Ontologies/issues/513).</rdfs:comment>
+        <rdfs:label>cytosolic_SSU_rRNA_gene</rdfs:label>
+    </owl:Class>
     
 
 
