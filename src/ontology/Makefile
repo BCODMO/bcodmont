@@ -450,12 +450,12 @@ mirror/ncbitaxon.owl: ncbitaxon.obo
 #
 # .PRECIOUS: mirror/%.owl
 
-# ENVO Makefile's verion of CHEBI import
+# CDNO Makefile's verion of CHEBI import
 # chebi.owl is large and the owlapi often times out when reading it; use the obo instead
 mirror/chebi-local.owl:
 	wget --no-check-certificate $(URIBASE)/chebi.owl -O $@ && touch $@
 mirror/chebi.owl: mirror/chebi-local.owl
-	owltools  --no-debug $< --log-debug -l --make-subset-by-properties -f $(KEEPRELS)  -o $@
+	owltools  --no-debug $< --log-debug -o $@
 .PRECIOUS: mirror/%.owl
 
 
