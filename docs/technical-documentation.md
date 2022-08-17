@@ -928,7 +928,7 @@ git commit imports/so_import.owl -m 'Run make all_imports'
 
 Note that in these steps we are importing upstream OBO ontologies into BCODMONT, aka this github repository which was setup by running the Ontology Development Kit and serves as the application ontology upon which BCO-SM is built. These imports include all original axioms and annotation properties from the upstream ontologies. Note that although downstream in BCO-SM we remove some axioms from some ontologies for some modules, here we are importing everything from the upstream OBO ontologies.
 
-\*\*\*\*
+
 
 ### **Adding New BCO-SM Modules**
 
@@ -1018,7 +1018,7 @@ robot filter --input merge_products/BCODMO_SM_axioms_removed_merged.owl --prefix
 
 In either case it's important to update the `--select "oboInOwl:inSubset=bsm:ecology"` to be the name of the new module and the same url as added in **step 4**. These steps will generate the final version of the newly added module. In the case of `ecology`, `biology/ecology.owl`.
 
-\*\*\*\*
+
 
 ### Setting up BCODMONT on a new computer
 
