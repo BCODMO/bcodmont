@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -45,6 +46,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/pato#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#seeAlso"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -54,6 +61,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
     
 
 
@@ -278,6 +291,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSM_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001757"/>
+        <obo:IAO_0000111 xml:lang="en">electrical resistivity</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">TO ADD to PATO inverse of conductivity see https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity</obo:IAO_0000116>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">electrical resistivity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BSM_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000022">
@@ -334,10 +359,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
+        <obo:IAO_0000111 xml:lang="en">potential density</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">predicted</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A density which would inhere in a bearer if such bearer were adiabatically brought to a standard reference pressure.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">predict</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en">sigma</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">potential density</rdfs:label>
         <rdfs:label xml:lang="en">predicted</rdfs:label>
         <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54156"/>
     </owl:Class>
@@ -356,21 +386,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0310001 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001757"/>
-        <obo:IAO_0000111 xml:lang="en">electrical resistivity</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en">TO ADD to PATO inverse of conductivity see https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity</obo:IAO_0000116>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
-        <rdfs:label xml:lang="en">electrical resistivity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0310002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">fugacity</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">TO ADD TO PATO</obo:IAO_0000116>
@@ -380,22 +398,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0310003 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0000029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001019"/>
-        <obo:IAO_0000111 xml:lang="en">potential density</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A density which would inhere in a bearer if such bearer were adiabatically brought to a standard reference pressure.</obo:IAO_0000115>
-        <oboInOwl:hasNarrowSynonym xml:lang="en">sigma</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
-        <rdfs:label xml:lang="en">potential density</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BSM_0310004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
         <obo:IAO_0000111 xml:lang="en">potential temperature</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A temperature which would inhere in a bearer if such bearer were adiabatically compressed from it&apos;s existing temperature and pressure to a standard presure.</obo:IAO_0000115>
@@ -406,14 +411,29 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BSM_0310005 -->
+    <!-- http://purl.obolibrary.org/obo/BSM_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0310005">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
         <obo:IAO_0000111 xml:lang="en">turbidity</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">TO ADD TO PATO High priority.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <rdfs:label xml:lang="en">turbidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BSM_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSM_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BSM_0000000"/>
+        <obo:IAO_0000111 xml:lang="en">uptake</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The incorporation in a living organism of chemicals and substances from the environment, which can be evaluated by measuring their accumulation.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym xml:lang="en">accumulation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:resource="https://medical-dictionary.thefreedictionary.com/biological+uptake"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">biological uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
+        <rdfs:label xml:lang="en">uptake</rdfs:label>
     </owl:Class>
     
 
@@ -466,7 +486,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical quality inhering in a bearer by virtue of the bearer&apos;s scalar absolute value of the rate of change of the bearer&apos;s position.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/Velocity</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Velocity</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -593,12 +613,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <obo:IAO_0000111 xml:lang="en">length</obo:IAO_0000111>
         <obo:IAO_0000115>A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
+        <pato:seeAlso>https://github.com/pato-ontology/pato/issues/337</pato:seeAlso>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000122</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://bcodmo/sm#quantifiers"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:comment>Length often refers to the longer or longest dimension of an object, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.</rdfs:comment>
         <rdfs:label>length</rdfs:label>
         <rdfs:label xml:lang="en">length</rdfs:label>
     </owl:Class>
