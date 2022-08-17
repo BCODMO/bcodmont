@@ -697,7 +697,7 @@ e.g. `issue 23`&#x20;
 
 **3. Make changes**
 
-These could include any changes made while following the steps in the [**Compiling BCO-SM**](technical-documentation.md#compiling-bco-sm-1) **** or [**Maintaining BCO-SM**](technical-documentation.md#maintaining-bco-sm-1) **** sections.&#x20;
+These could include any changes made while following the steps in the `Compiling BCO-SM` or `Maintaining BCO-SM` sections.
 
 4\. Add/commit changes with a message:
 
